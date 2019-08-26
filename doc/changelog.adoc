@@ -1,0 +1,22 @@
+== 2018-11-14
+- Change the embedded google calendar to default to agenda view
+- Added the upcoming christmas party (details TBD)
+- Updated mention of the next meeting, the 5th of February
+
+== 2018-11-12
+- Updated the comittee contact details
+- Added embedded google calendar to the calendar page
+
+== 2018-11-05
+- Added favicon.ico
+
+== 2018-11-04
+- Turned on Joomla's caching - seems to speed up TTFB
+- Enabled content compression under CPanel > Optimize Website - seems to speed
+up content download
+- Updated the calendar page to mention when club meetings are on, and when the
+next one is on.
+- Turned on Search Engine Friendly URLs
+- Disabled Tweet display back module (on the right on the home page), since we
+no longer seem to use Twitter
+- Turn on force SSL in Joomla config

@@ -1,0 +1,110 @@
+= Use Cases
+:sectnums:
+Alex Chapman <alex@farfromthere.net>
+
+== I am a Local Pilot and I want to...
+
+. know whether it's flyable
+. know who's flying today
+. tell others where I'm going to be flying
+. get picked up after an XC
+. join an upcoming trip
+. find other pilots to fly with
+. know when the next meeting is
+. know what's happening at the next meeting
+. know what happened at the last club meeting
+. see a list of the latest club awards
+. see a list of past club awards
+. see a list of SOs and SSOs
+. learn more about the local sites
+. learn more about how the local weather works
+. have a parachute repack
+. find an instructor to:
+. have a check flight
+. go from PG2 to PG3
+. go from PG3 to PG4
+. go from PG4 to PG5
+. know when the next club event is on
+. know what's happening at the next club event
+. have my glider repaired / checked
+. help develop new sites
+. see the latest flights from the club
+. get a mentor
+. get advice on buying gear
+. learn about setting up my harness
+. learn about flight instruments
+. learn about flight apps I can run on my phone
+. learn about other pilots' setups
+. learn about flying XC
+. know what radio channel to use
+
+== Visiting Pilots
+
+. How much does it cost?
+
+== FAQ
+
+. Do you do training?
+. Can I have a Tandem?
+. How much deos it cost (visiting pilot)
+
+== I am Interested in Becoming a Pilot and I want to...
+
+. know whether free flight is for me
+. know what it's like to fly
+    - A hang glider
+    - A paraglider
+    - A paramotor
+    - A microlight
+. know how much it costs
+. know how dangerous it is
+. know where I could fly
+. know where I can learn
+. get advice on where best to learn
+. meet people in the community
+
+== My Child Wants to Become a Pilot and I want to...
+
+. know how dangerous it is
+. know how they can do it safely
+. know how much it costs
+. know how old they need to be
+. know where they should learn
+. meet pilots to ask them about it
+
+== I am a Local Landowner and...
+
+=== A pilot landed on my property and...
+
+. I'm angry about it
+. I want to know why
+. I'm curious about what hang/paragliding is
+. I don't know what they were flying and how it works
+. I want to contact the pilot
+
+=== I am Interested in Hosting Free Flight on my Property and I want to...
+
+. know whether I would be liable for accidents
+. know whether my land is suitable for launch/landing
+. know what I could get for it
+
+== I am a Non-Pilot and I want to...
+
+. have a tandem ride
+. know what HG/PG/free flight is
+. watch some flying
+. take photos
+. learn more about hang and paragliding
+
+== I am a Member of the Press and I want to...
+
+. Write a story about hang gliding and paragliding in the ACT
+. Get in contact with someone to interview
+. Get in contact with a particular pilot
+. Learn who would be good to interview
+
+== I am a Member of a National Parks Service and I want to...
+
+. Decide whether to allow hang gliding and paragliding in my national park
+. Learn about hang gliding and paragliding safety
+. Learn about hang gliding and paragliding ethics

@@ -1,0 +1,153 @@
+= ACTHPA Website Design
+
+== Header
+
+. A site banner, containing the ACTHPA logo.
+. A navigation menu.
+
+== Footer
+
+== Home Page
+
+The home page contains the following:
+
+. The site header.
+. Contact details, or a link to them.
+. Summary of current weather conditions, including wind talkers and weather readings.
+. Summary of latest flights.
+. Upcoming club events.
+. Recent photos.
+. A blurb about who we are and what we do.
+. Recent articles.
+. A Facebook group join button.
+. The site footer.
+
+== Activities
+
+== Flying ACT
+
+=== Flying Sites
+
+This is our official listing of flying sites.
+Perhaps we should replace this with a list of links to the national site guide?
+
+==== Lake George
+
+==== Spring Hill
+
+==== Collector
+
+==== Lanyon
+
+==== Tumut (Honeysuckle)
+
+==== Binalong
+
+==== New Flying Sites
+
+=== Canberra Weather
+
+=== Recent Flights
+
+=== Advice for Pilots
+
+Some general advice for pilots in the region.
+The sort of thing you would eventually learn through talking to others at a meeting.
+
+==== Flying Safely
+
+. Understand the weather,
+. Talk to local pilots,
+. (PG) Don't fly a wing that is too advanced for your skill and experience level,
+. (PG) Do SIV training,
+. (PG) When ridge soaring, test your penetration.
+. (PG) When ridge soaring, don't fly too close to the hill.
+
+==== Weather Hazards
+
+. Look out for the sea breeze,
+
+==== Comms
+
+. Post on and check Facebook,
+. Use channel HGFA 1 (frequency xxx, tone squelch yyy),
+. Track some XC pilots of highcloud.net (link).
+
+==== Flying the Lake
+
+. Look at the wind talker,
+. Hang gliders fly the sea breeze at the lake in the evening,
+. Paragliders fly the sea breeze at the lake early the next morning,
+. Collector is generally for XC,
+. Geary's Gap is a good place to learn to top land, but don't learn in strong winds.
+
+==== Flying XC
+
+. XC from Spring Hill is hard because of airspace, but possible,
+. Our best XC site is Collector, though it only works in a light prevailing easterly, and airspace is still a concern. 
+. Honeysuckle and Binalong are possible XC sites if you are willing to travel further,
+
+=== Learning to Fly
+
+Advice about how and where to learn to fly as an ACT resident.
+Also factual information about legal requirements.
+
+== About Flying
+
+A page about the different types of flight covered by the ACTHPA, with a description of each, interviews with local pilots, etc.
+
+. Hang Gliding
+. Paragliding
+. Paramotoring
+. Weight-Shift Microlights
+
+==== Cross Country (XC)
+
+. What it is,
+. How it works,
+. How far people can go,
+. Doing it around Canberra,
+. Landing on others' property,
+. National Parks,
+. Getting home,
+. Competitions.
+
+==== Hang Gliding
+
+Topics to cover:
+
+. What it is,
+. Safety,
+. Types of glider,
+. Gear,
+. Cost,
+. Performance,
+. Competitions,
+. XC
+. Adding a motor (microlights).
+
+==== Paragliding
+
+Topics to cover:
+
+. What it is,
+. Safety,
+. EN ratings,
+. Tandem,
+. Gear,
+. Cost,
+. Performance,
+. Competitions,
+. XC,
+. Adding a motor (paramotoring).
+
+== Articles
+
+Put the existing articles in here.
+Ask around for more articles.
+Include a process for sending in new articles.
+
+== About Us
+
+== Contact Us
+

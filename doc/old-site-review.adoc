@@ -1,0 +1,85 @@
+= A Review of the Existing site at http://www.acthpa.org, in early November 2018.
+
+== Visual Design
+
+=== Desktop View
+
+ACTHPA logo banner, Search box, contents tabs, main content column, footer.
+
+=== Mobile View
+
+ACTHPA logo banner, hamburger menu, main content column, footer.
+
+=== Footer
+
+The footer contains acknowledgments, Twitter and Facebook follow links, and contact details (out of date).
+
+== Site Contents
+
+=== Home
+
+Two columns: an ACTHPA overview and a Tweet Display Back.
+The overview is good, but mentions Twitter, which we no longer use.
+The latest tweet in the Twitter column is from 2016 :|
+
+=== Calendar
+
+Contains two events, from 2017.
+
+=== Wind Talkers
+
+Link to external site (http://www.freeflightwx.com/acthpa).
+
+=== Membership
+
+Link to Objects and Rules (AKA constitution) of the association. List of life members.
+
+=== Flying Canberra
+
+A brief blurb about flying in Canberra. Sections on Airspace and Communications.
+
+The Flying Canberra tab has a drop-down:
+
+- Tandem Pilots - a list of approved tandem pilots (PG and HG)
+- Honeysuckle, Tumut
+- Spring Hill
+- Lake George
+- Pig Hill
+- Collector
+- Lanyon
+- Site Records
+
+=== Weather
+
+A list of links to external sites and tools.
+No mention of local meteorological conditions, e.g. sea breeze etc.
+
+=== Schools
+
+Three schools mentioned, two in Stanwell Park and one being SkySurf.
+No mention of many of the schools that members are actually likely to recommend, e.g.  those in Bright, Manilla, etc.
+
+=== Articles
+
+Four articles.
+Good, but better would be if they were linked from their sections.
+E.g. an article on reading the weather should be linked from the weather section.
+
+=== Contacts
+
+List of committee members. Out of date.
+Twitter handle list is no longer relevant.
+
+== Technology
+
+The site uses Joomla, a PHP CMS. Is it up to date?
+
+== Hosting
+
+== Monitoring
+
+None that I know of.
+
+== Maintenance
+
+Ad hoc, as things break.

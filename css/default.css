@@ -15,7 +15,7 @@ nav {
   text-align: right;
 }
 
-nav a {
+header nav a {
   font-size: 1.8rem;
   font-weight: bold;
   color: black;
@@ -60,7 +60,7 @@ article .header {
   header {
     margin: 4.2rem 0;
   }
-  nav {
+  header nav {
     margin: 0 auto 3rem;
     text-align: center;
   }
@@ -74,7 +74,7 @@ article .header {
   .logo a {
     font-size: 2.4rem;
   }
-  nav a {
+  header nav a {
     display: block;
     line-height: 1.6;
   }
@@ -89,7 +89,7 @@ article .header {
   header {
     margin: 4.2rem 0;
   }
-  nav {
+  header nav {
     margin: 0 auto 3rem;
     text-align: center;
   }
@@ -103,7 +103,7 @@ article .header {
   .logo a {
     font-size: 2.4rem;
   }
-  nav a {
+  header nav a {
     display: inline;
     margin: 0 0.6rem;
   }
@@ -119,11 +119,11 @@ article .header {
     margin: 0 0 3rem;
     padding: 1.2rem 0;
   }
-  nav {
+  header nav {
     margin: 0;
     text-align: right;
   }
-  nav a {
+  header nav a {
     margin: 0 0 0 1.2rem;
     display: inline;
   }

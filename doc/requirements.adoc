@@ -1,0 +1,187 @@
+= ACTHPA Website Requirements
+:sectnums:
+Alex Chapman <alex@farfromthere.net>
+v0.1, 2018-11-07
+
+These requirements are for improvements to be made to https://www.acthpa.org.
+
+== Performance
+
+. Pages should load within 1000ms, including server-side processing, network transfer time and rendering in any standard browser (Chrome and Firefox).
+. Pages must not consume high CPU resources after loading.
+
+== Visual Design and Accessibility
+
+. Must work on mobile and desktop.
+. Must have a favicon representative of the site.
+. Should use the club logo and any club branding
+. Shall follow best practices in order to encourage good Google Sitelinks
+. Shall redirect the following old URLs to the right location:
+    Home:: http://www.acthpa.org/home/index.php
+    Alt. home:: http://www.acthpa.org/home/index.php?option=com_content&view=article&id=21&Itemid=32
+    Alt. home:: http://www.acthpa.org/home/index.php?option=com_content&view=article&id=5&Itemid=29
+    Lake george:: http://www.acthpa.org/home/index.php?option=com_content&view=article&id=7&Itemid=113
+    Spring hill:: http://www.acthpa.org/home/index.php?option=com_content&view=article&id=6&Itemid=112
+    Lanyon:: http://www.acthpa.org/home/index.php?option=com_content&view=article&id=9&Itemid=116
+    Flying Canberra:: http://www.acthpa.org/home/index.php?option=com_content&view=article&id=11&Itemid=110
+
+== Browser Support
+
+. The site must function properly in the latest version of the common major browsers, including but not limited to:
+.. Google Chrome,
+.. Firefox,
+.. Internet Explorer,
+.. Edge,
+.. Safari,
+.. Opera.
+. The site must not use vendor-specific browser extensions.
+. The site must use standards compliant HTML, CSS and Javascript.
+. The site may require Javascript in order to function properly.
+. The site should be possible to navigate without Javascript.
+
+== Integrations
+
+=== Club Calendar
+
+. The site must be able to load a third-party club calendar, such as a Google calendar.
+. The home page shall display the next upcoming event from the club calendar.
+. The home page may display further upcoming events.
+. A Club Events page may exist to display the calendar in more detail.
+
+=== Facebook Integration
+
+// TODO: it looks like we can't do any of this, because the group isn't public
+// But it's something people would like.
+// Open the Facebook group up again? Alistair is in favour of it.
+
+. The site shall have a Facebook integration, connecting to the '`ACT Hang gliding and Paragliding Association`' group.
+
+==== What from Facebook Should be Public
+
+. There will be a mechanism for determining whether Facebook gruop content should be made public.
+. Facebook group members should be able to cause a post to appear on the website.
+. Facebook group members should be able to prevent a post from appearing on the website.
+. Facebook group admins shall be able to prevent a post from appearing on the website, overruling ordinary group members if necessary.
+. Facebook group admins shall be able to cause a post to appear on the website, overruling ordinary group members if necessary.
+. Facebook group admins shall be able to prevent an image from appearing on the website, overruling ordinary group members if necessary.
+. Facebook group admins shall be able to cause an image to appear on the website, overruling ordinary group members if necessary.
+
+==== Facebook Image and Video Feed
+
+. The site shall have a feed of the latest images and videos from the group.
+. Facebook group members should be able to cause an image to appear on the website.
+. Facebook group members should be able to prevent an image from appearing on the website.
+
+=== Wind Talkers
+
+. The site shall at least link to the  ACTHPA windtalker page (http://www.freeflightwx.com/acthpa).
+. The site may embed the ACTHPA windtalker page.
+
+=== Latest Flights Feed
+
+. The site shall include a feed of latest flights.
+. The feed shall include flights by members of ACTHPA.
+. The feed shall include flights from local sites.
+. The feed shall be ordered by recency, either by flight date or by flight upload date.
+. The feed shall draw from commonly used flight logging sites, including:
+.. XContest,
+.. Leonardo,
+.. Ayvri.
+. The feed shall consist of rows of flights, where each row contains:
+.. The pilot's name,
+.. The site name,
+.. The XC distance (if available),
+.. The XC type (straight line, FAI triangle, by three turnpoints),
+.. A link to the logging site.
+. The feed may also include:
+.. Previews of the flight, e.g. a flight map,
+.. The pilot's photo.
+. The feed may merge flights logged on different sites if it determines them to be the same flight.
+
+=== BOM Wind Observations
+
+. The site shall be able to display observations from BOM wind stations.
+. The observations shall include the latest available readings from BOM.
+. The observations shall update without refreshing the page.
+
+== Content
+
+=== The Home Page
+
+. The home page shall contain:
+// TODO: should it have this intro, or should this stay in the 'About' section to leave room on the home page for other things??
+.. A brief introduction to ACTHPA,
+.. A <<_facebook_feed,feed of activity from Facebook>>,
+.. A <<_latest_flights_feed,latest flights feed>>,
+.. A list of upcoming club events,
+.. An abbreviated <<_wind_talkers,wind talker view>>,
+.. A <<_bom_wind_observations,BOM wind observations box>>,
+
+=== What is Hang Gliding and Paragliding?
+
+=== Hang Gliding and Paragliding in the ACT Region
+
+=== Learning to Fly
+
+. There shall be a list of local schools.
+. There shall be a list of other schools.
+. There may be an article containing recommendations from local pilots.
+
+==== Flying Canberra
+
+. There shall be information for pilots wishing to fly in Canberra, including:
+.. <<_flying_site_guides,Flying Sites>>,
+.. Local airspace,
+.. License requirements,
+.. Radio communications.
+.. A list of approved tandem pilots (PG and HG)
+
+==== Flying Site Guides
+
+. There shall be guides, or links to guides, to every official local flying site.
+. Guides should include photos.
+. Guides should be HTML, not PDF.
+. Guides should include Google Maps links for convenience of mobile navigation.
+. Guides should show site records.
+. Guides may show or link to lists of flights from those sites, from e.g. Ayvri and XContest.
+. There may be guides to unofficial, restricted, or in-development sites.
+
+==== Weather
+
+. There shall be a prominent warning about local dangers, particularly the sea breeze.
+. There shall be an article on forecasting local flying conditions.
+. There may be a series of articles on forecasting, tools, etc.
+. There may be a current flying forecast.
+. There may be past flying forecasts.
+. For past flying forecasts, there may be retrospectives, evaluating how the flying actually went.
+
+=== About ACTHPA
+
+==== What is the ACTHPA?
+
+==== Contacting the ACTHPA
+
+==== Membership
+
+. There shall be information about joining the ACTHPA.
+. There shall be a list of life members.
+. There shall be access to the Objects and Rules (AKA Constitution).
+
+=== FAQ
+
+== Authoring
+
+. There shall be a way for a technical user to add content to the site.
+. There shall be a way for a non-technical user to author content to be added to the site.
+. The may be a way for a non-technical user to add content to the site.
+
+== Maintenance
+
+. The site shall have a maintenance plan which a technical user can follow to keep the site maintained.
+. Maintenance shall include regular (at least quarterly) security patching.
+. Maintenance shall include updating of time-varying content, such as the next meeting date, upcoming events, etc, where necessary.
+
+== Site Guide
+
+. Link to national site guide
+
