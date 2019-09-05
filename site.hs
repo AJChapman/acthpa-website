@@ -6,8 +6,14 @@ import System.FilePath (takeBaseName, takeDirectory, (</>))
 
 
 --------------------------------------------------------------------------------
+
+config :: Configuration
+config = defaultConfiguration
+  { deployCommand = "rsync -av _site/ farfromthere.net:acthpa.farfromthere.net/"
+  }
+
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
   match "images/*" $ do
     route idRoute
     compile copyFileCompiler
@@ -16,7 +22,15 @@ main = hakyll $ do
     route idRoute
     compile compressCssCompiler
 
-  match "templates/*" $ compile templateBodyCompiler
+  match "js/*" $ do
+    route idRoute
+    compile copyFileCompiler
+
+  match "fonts/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
+  match "templates/*" $ compile templateCompiler
 
   match (fromList
           [ "About.md"
@@ -25,30 +39,44 @@ main = hakyll $ do
           , "Flying-ACT.md"
           ]) $ do
     route cleanRoute
-    defaultCompile defaultContext
+    compile $ withDefaultTemplate defaultContext
 
   match "Activities/*" $ do
     route cleanRoute
-    defaultCompile defaultContext
+    compile $ withDefaultTemplate defaultContext
 
   match "Articles/*" $ do
     route cleanRoute
-    defaultCompile defaultContext
+    compile $ withDefaultTemplate defaultContext
 
   match "Flying-ACT/*" $ do
     route cleanRoute
-    defaultCompile defaultContext
+    compile $ withDefaultTemplate defaultContext
+
+  match "features/*" $ compile $
+    withTemplate "templates/feature.html" featureContext
 
   match "index.md" $ do
     route (setExtension ".html")
-    defaultCompile (defaultContext <> constField "title" "Home")
+    compile $ do
+      let features = loadAll "features/*"
+          indexContext =
+            listField "features" featureContext features <>
+            metadataField <> defaultContext
+      withTemplate "templates/index.html" indexContext
 
-defaultCompile :: Context String -> Rules ()
-defaultCompile ctx =
-  compile $ pandocCompiler
-    >>= loadAndApplyTemplate "templates/default.html" ctx
+withDefaultTemplate :: Context String -> Compiler (Item String)
+withDefaultTemplate = withTemplate "templates/default.html"
+
+withTemplate :: Identifier -> Context String -> Compiler (Item String)
+withTemplate templatePath ctx =
+  pandocCompiler
+    >>= loadAndApplyTemplate templatePath ctx
     >>= relativizeUrls
     >>= cleanIndexUrls
+
+featureContext :: Context String
+featureContext = metadataField <> defaultContext
 
 --------------------------------------------------------------------------------
 cleanRoute :: Routes

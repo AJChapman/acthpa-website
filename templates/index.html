@@ -7,7 +7,15 @@
         <div id="page">
             $partial("templates/nav.html")$
 
-            $partial("templates/breadcrumbs.html")$
+            <aside id="colorlib-hero">
+                <div class="flexslider">
+                    <ul class="slides">
+                       $for(features)$
+                         $body$
+                       $endfor$
+                      </ul>
+                  </div>
+            </aside>
 
             <div id="colorlib-container">
                 <div class="container">
@@ -27,3 +35,4 @@
         $partial("templates/tail.html")$
     </body>
 </html>
+

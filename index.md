@@ -1,5 +1,5 @@
 ---
-title: "ACTHPA"
+title: "Home"
 ---
 The ACT Hang gliding and Paragliding Association (ACTHPA) is the club
 for all hang gliders, paragliders and their motorised forms in the
