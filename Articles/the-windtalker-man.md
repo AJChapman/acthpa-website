@@ -1,5 +1,6 @@
 ---
 title: "The Windtalker Man"
+author: Barry Oliver
 ---
 # The Windtalker Man
 
