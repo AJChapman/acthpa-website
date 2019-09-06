@@ -2,3 +2,4 @@ dist-newstyle/
 _cache
 _site
 theme
+.ghc.environment.*

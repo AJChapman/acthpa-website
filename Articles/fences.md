@@ -1,11 +1,9 @@
 ---
-title: "The Unforeseen Dangers of Ground-Handling Paragliders -- Fences"
+title: "The Unforeseen Dangers of Ground-Handling Paragliders - Fences"
 author: Matt Smith
 tags: [ground-handling, paraglider, safety]
 description: One man's unfortunate yet amusing encounters with fences
 ---
-
-# The Unforeseen Dangers of Ground-Handling Paragliders -- Fences
 
 We all know that ground handling when conditions are dangerous is, well
 dangerous, but what about when the conditions are perfect? What are the

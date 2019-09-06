@@ -11,6 +11,11 @@ config = defaultConfiguration
   { deployCommand = "rsync -av _site/ farfromthere.net:acthpa.farfromthere.net/"
   }
 
+data Crumb = Crumb
+  { crumbUrl :: String
+  , crumbTitle :: String
+  }
+
 main :: IO ()
 main = hakyllWith config $ do
   match "images/*" $ do
@@ -37,30 +42,29 @@ main = hakyllWith config $ do
           , "Flying-ACT.md"
           ]) $ do
     route cleanRoute
-    compile $ withDefaultTemplate defaultContext
+    let ctx = crumbsContext ["index.md"] <> metadataContext
+    compile $ withDefaultTemplate ctx
 
   match "Activities/*" $ do
     route cleanRoute
-    compile $ withDefaultTemplate defaultContext
+    let ctx = crumbsContext ["index.md", "Activities.md"] <> metadataContext
+    compile $ withDefaultTemplate ctx
 
   match "Articles/*" $ do
     route cleanRoute
     compile $ do
-      content <- pandocCompiler
-      content
-        &   loadAndApplyTemplate "templates/article-listing.html" metadataContext
-        >>= saveSnapshot "listing"
-      content
-        & applyTemplateAndFixUrls defaultTemplate metadataContext
+      let ctx = crumbsContext ["index.md", "Articles.md"] <> metadataContext
+      contentCompiler
+        >>= applyTemplateAndFixUrls defaultTemplate ctx
 
   match "Articles.md" $ do
     route cleanRoute
     compile $ do
-      articles <- loadAllSnapshots "Articles/*" "listing"
       let articlesContext =
-            listField "articles" metadataContext (pure articles)
+            crumbsContext ["index.md"]
+            <> listField "articles" metadataContext (loadAll "Articles/*")
             <> metadataContext
-      pandocCompiler
+      contentCompiler
         >>= loadAndApplyTemplate "templates/articles.html" articlesContext
         >>= loadAndApplyTemplate "templates/default.html" articlesContext
         >>= relativizeUrls
@@ -68,7 +72,8 @@ main = hakyllWith config $ do
 
   match "Flying-ACT/*" $ do
     route cleanRoute
-    compile $ withDefaultTemplate defaultContext
+    let ctx = crumbsContext ["index.md", "Flying-ACT.md"] <> metadataContext
+    compile $ withDefaultTemplate ctx
 
   match "features/*" $ compile $
     withTemplate "templates/feature.html" metadataContext
@@ -90,7 +95,7 @@ withDefaultTemplate = withTemplate defaultTemplate
 
 withTemplate :: Identifier -> Context String -> Compiler (Item String)
 withTemplate templatePath ctx =
-  pandocCompiler >>= applyTemplateAndFixUrls templatePath ctx
+  contentCompiler >>= applyTemplateAndFixUrls templatePath ctx
 
 applyTemplateAndFixUrls :: Identifier -> Context String -> Item String -> Compiler (Item String)
 applyTemplateAndFixUrls templatePath ctx item =
@@ -99,8 +104,15 @@ applyTemplateAndFixUrls templatePath ctx item =
     >>= relativizeUrls
     >>= cleanIndexUrls
 
+contentCompiler :: Compiler (Item String)
+contentCompiler = pandocCompiler >>= saveSnapshot "content"
+
 metadataContext :: Context String
 metadataContext = metadataField <> defaultContext
+
+crumbsContext :: [Identifier] -> Context String
+crumbsContext path =
+  listField "crumbs" metadataContext (flip loadSnapshot "content" `traverse` path)
 
 --------------------------------------------------------------------------------
 cleanRoute :: Routes

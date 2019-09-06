@@ -1,5 +1,5 @@
 ---
-title: "Flying in Canberra -- a few tips"
+title: "Flying in Canberra - a few tips"
 author: Barry Oliver
 tags: [weather, Canberra, advice]
 ---

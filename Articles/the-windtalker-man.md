@@ -2,7 +2,6 @@
 title: "The Windtalker Man"
 author: Barry Oliver
 ---
-# The Windtalker Man
 
 We are lucky in the ACT to have some exceptionally bright and energetic
 folk who have put their time and energy into making flying better. One
