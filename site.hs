@@ -45,10 +45,10 @@ main = hakyllWith config $ do
     let ctx = crumbsContext ["index.md"] <> metadataContext
     compile $ withDefaultTemplate ctx
 
-  match "Activities/*" $ do
-    route cleanRoute
-    let ctx = crumbsContext ["index.md", "Activities.md"] <> metadataContext
-    compile $ withDefaultTemplate ctx
+  -- match "Activities/*" $ do
+  --   route cleanRoute
+  --   let ctx = crumbsContext ["index.md", "Activities.md"] <> metadataContext
+  --   compile $ withDefaultTemplate ctx
 
   match "Articles/*" $ do
     route cleanRoute
