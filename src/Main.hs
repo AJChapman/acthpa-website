@@ -1,19 +1,15 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+module Main (main) where
+
 import Data.Function   ((&))
 import Data.List       (isSuffixOf)
+import Hakyll.Menu (addToMenu, getMenu)
 import Hakyll
 import System.FilePath (takeBaseName, takeDirectory, (</>))
---------------------------------------------------------------------------------
 
 config :: Configuration
 config = defaultConfiguration
   { deployCommand = "rsync -av _site/ farfromthere.net:acthpa.farfromthere.net/"
-  }
-
-data Crumb = Crumb
-  { crumbUrl :: String
-  , crumbTitle :: String
   }
 
 main :: IO ()
@@ -41,29 +37,34 @@ main = hakyllWith config $ do
           , "Activities.md"
           , "Flying-ACT.md"
           ]) $ do
+    addToMenu
     route cleanRoute
-    let ctx = crumbsContext ["index.md"] <> metadataContext
-    compile $ withDefaultTemplate ctx
+    -- let ctx = crumbsContext ["index.md"] <> contentContext
+    compile $ contentContext >>= withDefaultTemplate
 
   -- match "Activities/*" $ do
   --   route cleanRoute
-  --   let ctx = crumbsContext ["index.md", "Activities.md"] <> metadataContext
+  --   let ctx = crumbsContext ["index.md", "Activities.md"] <> contentContext
   --   compile $ withDefaultTemplate ctx
 
   match "Articles/*" $ do
+    addToMenu
     route cleanRoute
     compile $ do
-      let ctx = crumbsContext ["index.md", "Articles.md"] <> metadataContext
+      ctx <- contentContext
+      -- let ctx = crumbsContext ["index.md", "Articles.md"] <> contentContext
       contentCompiler
         >>= applyTemplateAndFixUrls defaultTemplate ctx
 
   match "Articles.md" $ do
+    addToMenu
     route cleanRoute
     compile $ do
+      ctx <- contentContext
       let articlesContext =
-            crumbsContext ["index.md"]
-            <> listField "articles" metadataContext (loadAll "Articles/*")
-            <> metadataContext
+            -- crumbsContext ["index.md"] <>
+            listField "articles" ctx (loadAll "Articles/*")
+            <> ctx
       contentCompiler
         >>= loadAndApplyTemplate "templates/articles.html" articlesContext
         >>= loadAndApplyTemplate "templates/default.html" articlesContext
@@ -71,20 +72,21 @@ main = hakyllWith config $ do
         >>= cleanIndexUrls
 
   match "Flying-ACT/*" $ do
+    addToMenu
     route cleanRoute
-    let ctx = crumbsContext ["index.md", "Flying-ACT.md"] <> metadataContext
-    compile $ withDefaultTemplate ctx
+    -- let ctx = crumbsContext ["index.md", "Flying-ACT.md"] <> contentContext
+    compile $ contentContext >>= withDefaultTemplate
 
   match "features/*" $ compile $
-    withTemplate "templates/feature.html" metadataContext
+    contentContext >>= withTemplate "templates/feature.html"
 
   match "index.md" $ do
+    addToMenu
     route (setExtension ".html")
     compile $ do
+      ctx <- contentContext
       let features = loadAll "features/*"
-          indexContext =
-            listField "features" metadataContext features <>
-            metadataContext
+          indexContext = listField "features" ctx features <> ctx
       withTemplate "templates/index.html" indexContext
 
 defaultTemplate :: Identifier
@@ -107,12 +109,18 @@ applyTemplateAndFixUrls templatePath ctx item =
 contentCompiler :: Compiler (Item String)
 contentCompiler = pandocCompiler >>= saveSnapshot "content"
 
-metadataContext :: Context String
-metadataContext = metadataField <> defaultContext
+contentContext :: Compiler (Context String)
+contentContext = do
+  menu <- getMenu
+  pure . mconcat $
+    [ metadataField
+    , defaultContext
+    , constField "menu" menu
+    ]
 
-crumbsContext :: [Identifier] -> Context String
-crumbsContext path =
-  listField "crumbs" metadataContext (flip loadSnapshot "content" `traverse` path)
+-- crumbsContext :: [Identifier] -> Context String
+-- crumbsContext path =
+--   listField "crumbs" contentContext (flip loadSnapshot "content" `traverse` path)
 
 --------------------------------------------------------------------------------
 cleanRoute :: Routes
@@ -124,14 +132,9 @@ cleanRoute = customRoute createIndexRoute
 cleanIndexUrls :: Item String -> Compiler (Item String)
 cleanIndexUrls = return . fmap (withUrls cleanIndex)
 
-cleanIndexHtmls :: Item String -> Compiler (Item String)
-cleanIndexHtmls = return . fmap (replaceAll pat replacement)
-  where
-    pat = "/index.html"
-    replacement = const ""
-
 cleanIndex :: String -> String
 cleanIndex url
     | idx `isSuffixOf` url = take (length url - length idx) url
     | otherwise            = url
   where idx = "/index.html"
+
