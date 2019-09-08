@@ -12,6 +12,7 @@ executable site
                   , hakyll ^>= 4.12
                   , filepath ^>= 1.4.2.1
                   , lens ^>= 4.17
+                  , pandoc ^>= 2.7.3
                   , taggy-lens ^>= 0.1.2
                   , text ^>= 1.2.3
   ghc-options:      -threaded

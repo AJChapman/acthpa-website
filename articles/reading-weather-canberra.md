@@ -21,7 +21,7 @@ So here goes,
 
 ## Summary of most commonly flown sites
 
-[Detailed site information](http://www.acthpa.org/home/index.php?option=com_content&view=article&id=5&Itemid=29[http://www.acthpa.org/index.php?option=com_content&view=article&id=5&Itemid=29]).
+[Detailed site information](/flying-ACT/sites).
 
 
 Site           Ideal conditions  Dynamic / Thermal

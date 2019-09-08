@@ -17,14 +17,15 @@ import Data.Text.Lens      (packed)
 import Hakyll              hiding (template)
 import Hakyll.Menu         (addToMenu, getMenu)
 import System.FilePath     (takeBaseName, takeDirectory, (</>))
-import Text.Taggy.Lens     (Node, attr, children, element, htmlWith,
-                            named)
+import Text.Pandoc         (ReaderOptions (..), def, githubMarkdownExtensions,
+                            pandocExtensions)
+import Text.Taggy.Lens     (Node, attr, children, element, html, named)
 
 import qualified Data.Text.Lazy as L
 
 config :: Configuration
 config = defaultConfiguration
-  { deployCommand = "rsync -av _site/ farfromthere.net:acthpa.farfromthere.net/"
+  { deployCommand = "rsync -av --delete _site/ farfromthere.net:acthpa.farfromthere.net/"
   }
 
 main :: IO ()
@@ -51,6 +52,8 @@ main = hakyllWith config $ do
           [ "activities.md"
           , "flying-ACT.md"
           , "about.md"
+          , "paragliding.md"
+          , "hang-gliding.md"
           ]) $ do
     addToMenu
     route cleanRoute
@@ -127,7 +130,11 @@ applyTemplateAndFixUrls templatePath ctx item =
     >>= cleanIndexUrls
 
 contentCompiler :: Compiler (Item String)
-contentCompiler = pandocCompiler >>= saveSnapshot "content" . fmap addTableClassToTables
+contentCompiler =
+  let pandocOptions = def
+        { readerExtensions = githubMarkdownExtensions <> pandocExtensions }
+  in pandocCompilerWith pandocOptions def
+  >>= saveSnapshot "content" . fmap addTableClassToTables
 
 contentContext :: Compiler (Context String)
 contentContext = do
@@ -167,9 +174,9 @@ addTableClassToTables =
 htmlChunks :: Prism' Text [Node]
 htmlChunks = prism' joinNodes getNodes where
   joinNodes :: [Node] -> Text
-  joinNodes = L.toStrict . mconcat . toListOf (traverse . re (htmlWith False))
+  joinNodes = L.toStrict . mconcat . toListOf (traverse . re html)
   getNodes :: Text -> Maybe [Node]
-  getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? htmlWith False . element . children
+  getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? html . element . children
 
 tablesClass :: Traversal' L.Text (Maybe Text)
 tablesClass = elementsClass "table"
@@ -179,7 +186,7 @@ nodeTablesClass = nodeElementsClass "table"
 
 elementsClass :: Text -> Traversal' L.Text (Maybe Text)
 elementsClass elt =
-  htmlWith False . nodeElementsClass elt
+  html . nodeElementsClass elt
 
 nodeElementsClass :: Text -> Traversal' Node (Maybe Text)
 nodeElementsClass elt =
