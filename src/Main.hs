@@ -1,11 +1,26 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Main (main) where
+{-# LANGUAGE RankNTypes        #-}
+module Main
+  ( main
+  , tablesClass
+  , elementsClass
+  , addTableClassToTables
+  , htmlChunks
+  ) where
 
-import Data.Function   ((&))
-import Data.List       (isSuffixOf)
-import Hakyll.Menu (addToMenu, getMenu)
-import Hakyll
-import System.FilePath (takeBaseName, takeDirectory, (</>))
+import Control.Lens        (Prism', Traversal', each, from, only, prism', re,
+                            toListOf, (%~), (&), (?~), (^.), (^..), (^?))
+import Control.Lens.Plated (deep)
+import Data.List           (isSuffixOf)
+import Data.Text           (Text, pack, unpack)
+import Data.Text.Lens      (packed, unpacked)
+import Hakyll              hiding (template)
+import Hakyll.Menu         (addToMenu, getMenu)
+import System.FilePath     (takeBaseName, takeDirectory, (</>))
+import Text.Taggy.Lens     (Node, attr, children, element, elements, html,
+                            htmlWith, named)
+
+import qualified Data.Text.Lazy as L
 
 config :: Configuration
 config = defaultConfiguration
@@ -33,9 +48,9 @@ main = hakyllWith config $ do
   match "templates/*" $ compile templateCompiler
 
   match (fromList
-          [ "About.md"
-          , "Activities.md"
+          [ "Activities.md"
           , "Flying-ACT.md"
+          , "About.md"
           ]) $ do
     addToMenu
     route cleanRoute
@@ -48,22 +63,23 @@ main = hakyllWith config $ do
   --   compile $ withDefaultTemplate ctx
 
   match "Articles/*" $ do
-    addToMenu
     route cleanRoute
     compile $ do
       ctx <- contentContext
       -- let ctx = crumbsContext ["index.md", "Articles.md"] <> contentContext
       contentCompiler
         >>= applyTemplateAndFixUrls defaultTemplate ctx
+    addToMenu
 
   match "Articles.md" $ do
     addToMenu
     route cleanRoute
     compile $ do
       ctx <- contentContext
+      articles <- loadAll ("Articles/*" .&&. hasNoVersion) -- Menu items show up, but have version "menu"
       let articlesContext =
             -- crumbsContext ["index.md"] <>
-            listField "articles" ctx (loadAll "Articles/*")
+            listField "articles" ctx (pure articles)
             <> ctx
       contentCompiler
         >>= loadAndApplyTemplate "templates/articles.html" articlesContext
@@ -107,7 +123,7 @@ applyTemplateAndFixUrls templatePath ctx item =
     >>= cleanIndexUrls
 
 contentCompiler :: Compiler (Item String)
-contentCompiler = pandocCompiler >>= saveSnapshot "content"
+contentCompiler = pandocCompiler >>= saveSnapshot "content" . fmap addTableClassToTables
 
 contentContext :: Compiler (Context String)
 contentContext = do
@@ -116,6 +132,7 @@ contentContext = do
     [ metadataField
     , defaultContext
     , constField "menu" menu
+    -- , listField "breadcrumbs" defaultContext getBreadcrumbs
     ]
 
 -- crumbsContext :: [Identifier] -> Context String
@@ -138,3 +155,30 @@ cleanIndex url
     | otherwise            = url
   where idx = "/index.html"
 
+--------------------------------------------------------------------------------
+addTableClassToTables :: String -> String
+addTableClassToTables =
+  packed %~ htmlChunks . traverse . nodeTablesClass ?~ "table"
+
+htmlChunks :: Prism' Text [Node]
+htmlChunks = prism' joinNodes getNodes where
+  joinNodes :: [Node] -> Text
+  joinNodes = L.toStrict . mconcat . toListOf (traverse . re html)
+  getNodes :: Text -> Maybe [Node]
+  getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? html . element . children
+
+tablesClass :: Traversal' L.Text (Maybe Text)
+tablesClass = elementsClass "table"
+
+nodeTablesClass :: Traversal' Node (Maybe Text)
+nodeTablesClass = nodeElementsClass "table"
+
+elementsClass :: Text -> Traversal' L.Text (Maybe Text)
+elementsClass elt =
+  htmlWith False . nodeElementsClass elt
+
+nodeElementsClass :: Text -> Traversal' Node (Maybe Text)
+nodeElementsClass elt =
+  element
+  . deep (named (only elt))
+  . attr "class"

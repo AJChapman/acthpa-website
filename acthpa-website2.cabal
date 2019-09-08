@@ -11,6 +11,9 @@ executable site
                   , blaze-html ^>= 0.9.1.1
                   , hakyll ^>= 4.12
                   , filepath ^>= 1.4.2.1
+                  , lens ^>= 4.17
+                  , taggy-lens ^>= 0.1.2
+                  , text ^>= 1.2.3
   ghc-options:      -threaded
   default-language: Haskell2010
   ghc-options:      -Weverything
