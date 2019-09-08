@@ -2,6 +2,7 @@
 
 This is a static site generator for the [ACTHPA website](http://www.acthpa.org).
 It is still a work in progress, and has not yet replaced the old site.
+A test site can be found at http://acthpa.farfromthere.net.
 
 ## Contributing
 
