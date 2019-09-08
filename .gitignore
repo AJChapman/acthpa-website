@@ -3,3 +3,5 @@ _cache
 _site
 theme
 .ghc.environment.*
+TAGS
+tags

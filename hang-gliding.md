@@ -1,4 +1,0 @@
----
-title: Hang Gliding
----
-TODO

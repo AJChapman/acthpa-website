@@ -8,7 +8,7 @@ Club](http://www.laborclub.com.au/weston-creek-labor-club/) in Weston Creek.
 We will be down the far end in the meeting room on right near the food area.
 Stop by, introduce yourself and have a chat. 
 
-For a full list of schools please visit the [HGFA Schools](http://www.hgfa.asn.au/Schools/schools.php) web page.
+For a full list of schools please visit the [SAFA Schools](https://www.safa.asn.au/training/flight-schools/flightschools?view=flightschools) web page.
 The closest schools to Canberra are listed below:
 
 ### SkySurf Canberra Paragliding School - Private Tuition and Tandem Flights

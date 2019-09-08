@@ -51,31 +51,18 @@ main = hakyllWith config $ do
   match (fromList
           [ "activities.md"
           , "about.md"
-          , "paragliding.md"
-          , "hang-gliding.md"
+          , "about/*"
+          , "flying.md"
+          , "flying/*"
           ]) $ do
     addToMenu
     route cleanRoute
-    -- let ctx = crumbsContext ["index.md"] <> contentContext
     compile $ contentContext >>= withDefaultTemplate
-
-  match "about/*" $ do
-    route cleanRoute
-    compile $ contentContext >>= withDefaultTemplate
-
-  -- match "activities/*" $ do
-  --   route cleanRoute
-  --   let ctx = crumbsContext ["index.md", "activities.md"] <> contentContext
-  --   compile $ withDefaultTemplate ctx
 
   match "articles/*" $ do
     addToMenu
     route cleanRoute
-    compile $ do
-      ctx <- contentContext
-      -- let ctx = crumbsContext ["index.md", "articles.md"] <> contentContext
-      contentCompiler
-        >>= applyTemplateAndFixUrls defaultTemplate ctx
+    compile $ contentContext >>= withDefaultTemplate
 
   match "articles.md" $ listingPage "articles/*"
   match "flying-ACT.md" $ listingPage "flying-ACT/*"

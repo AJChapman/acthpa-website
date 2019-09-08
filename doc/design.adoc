@@ -87,11 +87,6 @@ The sort of thing you would eventually learn through talking to others at a meet
 . Our best XC site is Collector, though it only works in a light prevailing easterly, and airspace is still a concern. 
 . Honeysuckle and Binalong are possible XC sites if you are willing to travel further,
 
-=== Learning to Fly
-
-Advice about how and where to learn to fly as an ACT resident.
-Also factual information about legal requirements.
-
 == About Flying
 
 A page about the different types of flight covered by the ACTHPA, with a description of each, interviews with local pilots, etc.
@@ -101,7 +96,12 @@ A page about the different types of flight covered by the ACTHPA, with a descrip
 . Paramotoring
 . Weight-Shift Microlights
 
-==== Cross Country (XC)
+=== Learning to Fly
+
+Advice about how and where to learn to fly as an ACT resident.
+Also factual information about legal requirements.
+
+=== Cross Country (XC)
 
 . What it is,
 . How it works,
@@ -112,7 +112,7 @@ A page about the different types of flight covered by the ACTHPA, with a descrip
 . Getting home,
 . Competitions.
 
-==== Hang Gliding
+=== Hang Gliding
 
 Topics to cover:
 
@@ -126,7 +126,7 @@ Topics to cover:
 . XC
 . Adding a motor (microlights).
 
-==== Paragliding
+=== Paragliding
 
 Topics to cover:
 
