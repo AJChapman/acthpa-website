@@ -2,7 +2,6 @@
 title: "Weather"
 description: Links to some useful weather resources
 ---
-# Weather
 
 The "Wind Talkers" tab shows the current conditions and trends at our
 local sites. The links below are to websites used by numerous pilots to

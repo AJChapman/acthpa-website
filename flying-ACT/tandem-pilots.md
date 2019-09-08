@@ -1,7 +1,6 @@
 ---
 title: "Tandem Pilots"
 ---
-# Tandem Pilots
 
 Pilots who currently have ACTHPA approval to conduct tandem flights from
 ACTHPA sites include:
