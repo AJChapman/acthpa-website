@@ -3,6 +3,7 @@
 module Hakyll.Menu
   ( addToMenu
   , getMenu
+  -- , getBreadcrumbs
   ) where
 
 -- Borrowed from https://github.com/athas/sigkill.dk/blob/master/sigkill.lhs
@@ -196,3 +197,17 @@ getMenuItems = loadAll (fromVersion $ Just "menu")
 
 getMenuItemBodies :: Compiler [String]
 getMenuItemBodies = map itemBody <$> getMenuItems
+
+-- getBreadcrumbs :: Compiler [Item String]
+-- getBreadcrumbs = do
+--   menu <- getMenuItems
+--   myRoute <- getRoute =<< getUnderlying
+--   let crumbs = case myRoute of
+--         Nothing -> []
+--         Just route -> filter (isChildOf route) menu
+--   -- TODO
+--   pure $ crumbs
+--   where
+--     isChildOf :: FilePath -> FilePath -> Bool
+--     isChildOf child parent =
+--       parent `isPrefixOf` child

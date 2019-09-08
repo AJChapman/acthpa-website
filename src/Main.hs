@@ -57,6 +57,10 @@ main = hakyllWith config $ do
     -- let ctx = crumbsContext ["index.md"] <> contentContext
     compile $ contentContext >>= withDefaultTemplate
 
+  match "about/*" $ do
+    route cleanRoute
+    compile $ contentContext >>= withDefaultTemplate
+
   -- match "activities/*" $ do
   --   route cleanRoute
   --   let ctx = crumbsContext ["index.md", "activities.md"] <> contentContext

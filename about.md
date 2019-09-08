@@ -2,38 +2,29 @@
 title: "About ACTHPA"
 ---
 
-The ACTHPA is an incorporated body in the ACT.  It is both a State
-Association affiliated with the Hang Gliding Federation of Australia
-(HGFA), and the primary club for free flying in the Canberra region. [Here are
- the ACTHPA Objects and Rules as of 7 June 2016](https://www.dropbox.com/s/2586faq56i1sy62/ACTHPA%20Constitution%20-%207%20June%202016.pdf?dl=0).
+The ACTHPA is an incorporated body in the ACT.
+It is both a State Association affiliated with the Hang Gliding Federation of Australia (HGFA), and the primary club for free flying in the Canberra region.
+[Here are the ACTHPA Objects and Rules as of 7 June 2016](https://www.dropbox.com/s/2586faq56i1sy62/ACTHPA%20Constitution%20-%207%20June%202016.pdf?dl=0).
  
 # Life Members
 
-Life members shall be any person who, having rendered significant
-service to the Association for a continuous period of not less than
-three (3) years and having been recommended for life membership by an
-ordinary resolution of the Committee, has been accepted as a life member
-by an ordinary resolution of the next Annual General Meeting immediately
-following the Committee meeting at which the resolution recommending
-such honour is passed. A life member shall be entitled to receive
-notices of and to attend and address meetings of the Association. A life
-member shall not vote on matters requiring resolution unless they meet
-the membership requirements of section 5.1 of the Constitution. 
+Life members shall be any person who, having rendered significant service to the Association for a continuous period of not less than three (3) years and having been recommended for life membership by an ordinary resolution of the Committee, has been accepted as a life member by an ordinary resolution of the next Annual General Meeting immediately following the Committee meeting at which the resolution recommending such honour is passed.
+A life member shall be entitled to receive notices of and to attend and address meetings of the Association.
+A life member shall not vote on matters requiring resolution unless they meet the membership requirements of section 5.1 of the Constitution.
 
 The following members have been honoured with Life Membership of the
 ACTHPA.
 
-------------------------------------------
- *Name*               *Year of admission*
--------------------- ---------------------
-Barry Oliver         August 2012
-Steve Foggett        October 2016
-Phil Robinson        October 2016
-Michael Porter       October 2016
-Michael Imholz       October 2016
-Alistair Dickie      October 2017
-Matt Smith           October 2017
-Nick Siefken         October 2017
+ *Name*                                    *Year of admission*
+--------------------                      ---------------------
+Barry Oliver                              August 2012
+Steve Foggett                             October 2016
+[Phil Robinson](/about/Phil-Robinson)     October 2016
+[Michael Porter](/about/Michael-Porter)   October 2016
+Michael Imholz                            October 2016
+[Alistair Dickie](/about/Alistair-Dickie) October 2017
+[Matt Smith](/about/Matt-Smith)           October 2017
+[Nick Siefken](/about/Nick-Siefken)       October 2017
 
 # Contacts
 
