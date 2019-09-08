@@ -8,17 +8,17 @@ module Main
   , htmlChunks
   ) where
 
-import Control.Lens        (Prism', Traversal', each, from, only, prism', re,
-                            toListOf, (%~), (&), (?~), (^.), (^..), (^?))
+import Control.Lens        (Prism', Traversal', only, prism', re, toListOf,
+                            (%~), (&), (?~), (^?))
 import Control.Lens.Plated (deep)
 import Data.List           (isSuffixOf)
-import Data.Text           (Text, pack, unpack)
-import Data.Text.Lens      (packed, unpacked)
+import Data.Text           (Text)
+import Data.Text.Lens      (packed)
 import Hakyll              hiding (template)
 import Hakyll.Menu         (addToMenu, getMenu)
 import System.FilePath     (takeBaseName, takeDirectory, (</>))
-import Text.Taggy.Lens     (Node, attr, children, element, elements, html,
-                            htmlWith, named)
+import Text.Taggy.Lens     (Node, attr, children, element, htmlWith,
+                            named)
 
 import qualified Data.Text.Lazy as L
 
@@ -48,35 +48,35 @@ main = hakyllWith config $ do
   match "templates/*" $ compile templateCompiler
 
   match (fromList
-          [ "Activities.md"
-          , "Flying-ACT.md"
-          , "About.md"
+          [ "activities.md"
+          , "flying-ACT.md"
+          , "about.md"
           ]) $ do
     addToMenu
     route cleanRoute
     -- let ctx = crumbsContext ["index.md"] <> contentContext
     compile $ contentContext >>= withDefaultTemplate
 
-  -- match "Activities/*" $ do
+  -- match "activities/*" $ do
   --   route cleanRoute
-  --   let ctx = crumbsContext ["index.md", "Activities.md"] <> contentContext
+  --   let ctx = crumbsContext ["index.md", "activities.md"] <> contentContext
   --   compile $ withDefaultTemplate ctx
 
-  match "Articles/*" $ do
+  match "articles/*" $ do
+    addToMenu
     route cleanRoute
     compile $ do
       ctx <- contentContext
-      -- let ctx = crumbsContext ["index.md", "Articles.md"] <> contentContext
+      -- let ctx = crumbsContext ["index.md", "articles.md"] <> contentContext
       contentCompiler
         >>= applyTemplateAndFixUrls defaultTemplate ctx
-    addToMenu
 
-  match "Articles.md" $ do
+  match "articles.md" $ do
     addToMenu
     route cleanRoute
     compile $ do
       ctx <- contentContext
-      articles <- loadAll ("Articles/*" .&&. hasNoVersion) -- Menu items show up, but have version "menu"
+      articles <- loadAll ("articles/*" .&&. hasNoVersion) -- Menu items show up, but have version "menu"
       let articlesContext =
             -- crumbsContext ["index.md"] <>
             listField "articles" ctx (pure articles)
@@ -87,10 +87,10 @@ main = hakyllWith config $ do
         >>= relativizeUrls
         >>= cleanIndexUrls
 
-  match "Flying-ACT/*" $ do
+  match "flying-ACT/*" $ do
     addToMenu
     route cleanRoute
-    -- let ctx = crumbsContext ["index.md", "Flying-ACT.md"] <> contentContext
+    -- let ctx = crumbsContext ["index.md", "flying-ACT.md"] <> contentContext
     compile $ contentContext >>= withDefaultTemplate
 
   match "features/*" $ compile $
@@ -163,9 +163,9 @@ addTableClassToTables =
 htmlChunks :: Prism' Text [Node]
 htmlChunks = prism' joinNodes getNodes where
   joinNodes :: [Node] -> Text
-  joinNodes = L.toStrict . mconcat . toListOf (traverse . re html)
+  joinNodes = L.toStrict . mconcat . toListOf (traverse . re (htmlWith False))
   getNodes :: Text -> Maybe [Node]
-  getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? html . element . children
+  getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? htmlWith False . element . children
 
 tablesClass :: Traversal' L.Text (Maybe Text)
 tablesClass = elementsClass "table"
