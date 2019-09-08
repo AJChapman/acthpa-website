@@ -1,7 +1,7 @@
 ---
 title: "An Amateur Guide to Reading the Weather in Canberra"
+author: Matt Smith
 ---
-# An Amateur Guide to Reading the Weather in Canberra
 
 First up, I’m a relative newbie to paragliding with about a year and a
 half of experience. So if you have any suggestions hints etc on how to
@@ -24,13 +24,13 @@ So here goes,
 [Detailed site information](http://www.acthpa.org/home/index.php?option=com_content&view=article&id=5&Itemid=29[http://www.acthpa.org/index.php?option=com_content&view=article&id=5&Itemid=29]).
 
 
- *Site*        *Ideal conditions*  *Dynamic / Thermal*
----------       ------------------ --------------------
-Spring Hill     W 18mph            Both
-Lake Gearies    E 13mph            Dynamic
-Lake Collector  E 5 to 13mph       Thermic
-Pig Hill E      E < 12mph          Thermic
-Pig Hill N      N < 12mph          Thermic
+Site           Ideal conditions  Dynamic / Thermal
+-------------- ----------------- -----------------
+Spring Hill    W 18mph           Both
+Lake Gearies   E 13mph           Dynamic
+Lake Collector E 5 to 13mph      Thermic
+Pig Hill E     E < 12mph         Thermic
+Pig Hill N     N < 12mph         Thermic
 
 So we can fly in most wind directions, other than a southerly and can
 fly dynamic and thermal… nice
