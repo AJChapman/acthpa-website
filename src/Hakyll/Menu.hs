@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE RecordWildCards   #-}
 module Hakyll.Menu
   ( addToMenu
   , getMenu
@@ -6,12 +7,12 @@ module Hakyll.Menu
 
 -- Borrowed from https://github.com/athas/sigkill.dk/blob/master/sigkill.lhs
 
-import Control.Arrow                   (first, (&&&))
 import Control.Monad                   (zipWithM_)
 import Data.List                       (delete, insert, partition)
 import Data.Maybe                      (fromMaybe)
 import Hakyll
 import System.FilePath                 (dropExtension, dropFileName,
+                                        dropTrailingPathSeparator,
                                         hasTrailingPathSeparator, normalise,
                                         splitPath, takeBaseName, takeFileName)
 import Text.Blaze.Html.Renderer.String (renderHtml)
@@ -35,12 +36,18 @@ import qualified Text.Blaze.Html5.Attributes as A
 -- element of the `aftItems` list.  This definition ensures that we have
 -- at most a single focused element per menu level.  Each element is a
 -- pair consisting of a URL and a name.
-data MenuLevel = MenuLevel
-  { prevItems :: [(FilePath, String)]
-  , aftItems  :: [(FilePath, String)]
-  }
 
-allItems :: MenuLevel -> [(FilePath, String)]
+data MenuItem = MenuItem
+  { itemPath :: FilePath
+  , itemName :: String
+  } deriving (Eq, Ord, Show)
+
+data MenuLevel = MenuLevel
+  { prevItems :: [MenuItem]
+  , aftItems  :: [MenuItem]
+  } deriving (Eq, Ord, Show)
+
+allItems :: MenuLevel -> [MenuItem]
 allItems l = prevItems l ++ aftItems l
 
 emptyMenuLevel :: MenuLevel
@@ -55,7 +62,7 @@ insertUniq x xs | x `elem` xs = xs
 -- We can use this function to insert a non-focused element into a
 -- `MenuLevel`.  We take care to put the new element in its proper sorted
 -- position relative to the focused element, if any.
-insertItem :: MenuLevel -> (FilePath, String) -> MenuLevel
+insertItem :: MenuLevel -> MenuItem -> MenuLevel
 insertItem l v = case aftItems l of
                    []     -> atPrev
                    (x:xs) | v < x     -> atPrev
@@ -64,7 +71,7 @@ insertItem l v = case aftItems l of
 
 -- When inserting a focused element, we have to split the elements into
 -- those that go before and those that come after the focused element.
-insertFocused :: MenuLevel -> (FilePath, String) -> MenuLevel
+insertFocused :: MenuLevel -> MenuItem -> MenuLevel
 insertFocused l v = MenuLevel bef (v:aft)
   where (bef, aft) = partition (<v) (delete v $ allItems l)
 
@@ -86,8 +93,8 @@ showMenu = zipWithM_ showMenuLevel [0..] . menuLevels
 showMenuLevel :: Int -> MenuLevel -> H.Html
 showMenuLevel d m =
   H.ul (mapM_ H.li elems) ! A.class_ (H.toValue $ "menu" ++ show d)
-  where showElem (p,k) = H.a (H.toHtml k) ! A.href (H.toValue p)
-        showFocusElem (p,k) = showElem (p,k) ! A.class_ "thisPage"
+  where showElem MenuItem{..} = H.a (H.toHtml itemName) ! A.href (H.toValue itemPath)
+        showFocusElem item = showElem item ! A.class_ "active"
         elems = map showElem (prevItems m) ++
                 case aftItems m of []     -> []
                                    (l:ls) -> showFocusElem l :
@@ -119,28 +126,34 @@ relevant this other = relevant' (splitPath this) (splitPath other)
 -- taking the file name and dropping the extension of the path, also
 -- dropping any trailing "index.html" from paths.
 buildMenu :: FilePath -> [FilePath] -> Menu
-buildMenu this = foldl (extendMenu this) emptyMenu
-                 . map (first dropIndex . (id &&& dropExtension . takeFileName))
+buildMenu this =
+  foldl (extendMenu this) emptyMenu . map buildItem
+  where
+    buildItem :: FilePath -> MenuItem
+    buildItem path =
+      MenuItem (dropIndex path) (dropExtension . takeFileName $ path)
 
 dropIndex :: FilePath -> FilePath
 dropIndex p | takeBaseName p == "index" = dropFileName p
             | otherwise                 = p
 
-extendMenu :: FilePath -> Menu -> (FilePath, String) -> Menu
-extendMenu this m (path, name) =
+extendMenu :: FilePath -> Menu -> MenuItem -> Menu
+extendMenu this m MenuItem{..} =
   if path' `elem` ["./", "/", ""] then m else
     Menu $ add (menuLevels m) (relevant this' path') "/"
     where
       add :: [MenuLevel] -> [FilePath] -> [Char] -> [MenuLevel]
       add ls [] _ = ls
       add ls (x:xs) p
-        | x `elem` focused = insertFocused l (p++x,name') : add ls' xs (p++x)
-        | otherwise        = insertItem l (p++x,name') : add ls' xs (p++x)
+        | x `elem` focused = insertFocused l (MenuItem (p ++ x) name') : add ls' xs (p++x)
+        | otherwise        = insertItem l (MenuItem (p++x) name') : add ls' xs (p++x)
         where (l,ls') = case ls of []   -> (emptyMenuLevel, [])
                                    k:ks -> (k,ks)
-              name' = if hasTrailingPathSeparator x then x else name
+              name' = if hasTrailingPathSeparator x
+                        then dropTrailingPathSeparator x
+                        else itemName
       focused = splitPath this'
-      path' = normalise path
+      path' = normalise itemPath
       this' = normalise this
 
 -- For convenience, we define a Hakyll rule that adds anything currently
@@ -172,9 +185,14 @@ addToMenu = version "menu" $ compile $ makeItem =<< normalRoute
 -- but a `FilePath`, Hakyll will signal a run-time type error.
 getMenu :: Compiler String
 getMenu = do
-  menu <- map itemBody <$> loadAll (fromVersion $ Just "menu")
+  menu <- getMenuItemBodies
   myRoute <- getRoute =<< getUnderlying
   return $ renderHtml $ showMenu $ case myRoute of
     Nothing -> buildMenu "" menu
     Just me -> buildMenu me menu
 
+getMenuItems :: Compiler [Item String]
+getMenuItems = loadAll (fromVersion $ Just "menu")
+
+getMenuItemBodies :: Compiler [String]
+getMenuItemBodies = map itemBody <$> getMenuItems
