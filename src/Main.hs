@@ -50,7 +50,6 @@ main = hakyllWith config $ do
 
   match (fromList
           [ "activities.md"
-          , "flying-ACT.md"
           , "about.md"
           , "paragliding.md"
           , "hang-gliding.md"
@@ -78,26 +77,12 @@ main = hakyllWith config $ do
       contentCompiler
         >>= applyTemplateAndFixUrls defaultTemplate ctx
 
-  match "articles.md" $ do
-    addToMenu
-    route cleanRoute
-    compile $ do
-      ctx <- contentContext
-      articles <- loadAll ("articles/*" .&&. hasNoVersion) -- Menu items show up, but have version "menu"
-      let articlesContext =
-            -- crumbsContext ["index.md"] <>
-            listField "articles" ctx (pure articles)
-            <> ctx
-      contentCompiler
-        >>= loadAndApplyTemplate "templates/articles.html" articlesContext
-        >>= loadAndApplyTemplate "templates/default.html" articlesContext
-        >>= relativizeUrls
-        >>= cleanIndexUrls
+  match "articles.md" $ listingPage "articles/*"
+  match "flying-ACT.md" $ listingPage "flying-ACT/*"
 
   match "flying-ACT/*" $ do
     addToMenu
     route cleanRoute
-    -- let ctx = crumbsContext ["index.md", "flying-ACT.md"] <> contentContext
     compile $ contentContext >>= withDefaultTemplate
 
   match "features/*" $ compile $
@@ -111,6 +96,22 @@ main = hakyllWith config $ do
       let features = loadAll "features/*"
           indexContext = listField "features" ctx features <> ctx
       withTemplate "templates/index.html" indexContext
+
+listingPage :: Pattern -> Rules ()
+listingPage items = do
+  addToMenu
+  route cleanRoute
+  compile $ do
+    ctx <- contentContext
+    itemsContent <- loadAll (items .&&. hasNoVersion) -- Menu items show up, but have version "menu"
+    let itemsContext =
+          listField "items" ctx (pure itemsContent)
+          <> ctx
+    contentCompiler
+      >>= loadAndApplyTemplate "templates/items-list.html" itemsContext
+      >>= loadAndApplyTemplate "templates/default.html" itemsContext
+      >>= relativizeUrls
+      >>= cleanIndexUrls
 
 defaultTemplate :: Identifier
 defaultTemplate = "templates/default.html"
