@@ -38,6 +38,12 @@ Or if you used stack to build:
 This will start a web server on port 8000 of your machine, so you can view the test site in your browser at http://localhost:8000.
 The site will automatically update as you make changes to the site content (templates and markdown files), but you will need to rebuild to see the effects of changing any of the Haskell code.
 
+## Scraping Content
+
+To scrape content (populating the `scraped/` folder), currently only from xcontest.org:
+
+    cabal new-exec -- scrape
+
 ## Generating the Site
 
 To generate the site (in the _site subfolder), run:
