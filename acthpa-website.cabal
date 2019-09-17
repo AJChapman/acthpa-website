@@ -27,3 +27,9 @@ executable site
                     -Wno-monomorphism-restriction
                     -Wno-safe
                     -Wno-unsafe
+                    -- For faster linking
+                    -optl-fuse-ld=gold
+  ld-options:       -fuse-ld=gold
+  -- The below is even faster linking, but doesn't seem to work on nix
+  -- ghc-options:     "-pgmP clang" "-pgmc clang" "-pgma clang" "-pgml clang"
+  -- ld-options:       -fuse-ld=lld

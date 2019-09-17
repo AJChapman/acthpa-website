@@ -2,6 +2,7 @@
 , compiler ? "default"
 , doBenchmark ? false
 , doTest ? false
+, fastLink ? true
 }:
 
 let
@@ -19,7 +20,8 @@ let
 
   modifiedHaskellPackages = import ./haskell-package-overrides.nix { haskellLib = pkgs.haskell.lib; inherit haskellPackages; };
 
+  link = if fastLink then pkgs.haskell.lib.linkWithGold else pkgs.lib.id;
   bench = if doBenchmark then pkgs.haskell.lib.doBenchmark else pkgs.lib.id;
   check = if doTest then pkgs.lib.id else pkgs.haskell.lib.dontCheck;
 in
-  bench (check (modifiedHaskellPackages.callPackage pkg {}))
+  bench (check (link (modifiedHaskellPackages.callPackage pkg {})))
