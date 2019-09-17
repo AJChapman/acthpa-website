@@ -8,7 +8,9 @@ module Hakyll.Menu
 
 -- Borrowed from https://github.com/athas/sigkill.dk/blob/master/sigkill.lhs
 
+import Control.Lens                    (over, _head)
 import Control.Monad                   (zipWithM_)
+import Data.Char                       (toUpper)
 import Data.List                       (delete, insert, partition)
 import Data.Maybe                      (fromMaybe)
 import Hakyll
@@ -70,11 +72,26 @@ insertItem l v = case aftItems l of
                           | otherwise -> l { aftItems = x:insertUniq v xs }
   where atPrev = l { prevItems = insertUniq v (prevItems l) }
 
+addItem :: MenuLevel -> MenuItem -> MenuLevel
+addItem l v =
+  case aftItems l of
+    [] -> l { prevItems = addItem' v (prevItems l) }
+    xs -> l { aftItems = addItem' v xs }
+  where
+    addItem' :: MenuItem -> [MenuItem] -> [MenuItem]
+    addItem' i lst =
+      if i `elem` lst
+        then lst
+        else lst <> [i]
+
 -- When inserting a focused element, we have to split the elements into
 -- those that go before and those that come after the focused element.
 insertFocused :: MenuLevel -> MenuItem -> MenuLevel
 insertFocused l v = MenuLevel bef (v:aft)
   where (bef, aft) = partition (<v) (delete v $ allItems l)
+
+addFocused :: MenuLevel -> MenuItem -> MenuLevel
+addFocused l v = MenuLevel (prevItems l) [v]
 
 -- Finally, a menu is just a list of menu levels.
 newtype Menu = Menu { menuLevels :: [MenuLevel] }
@@ -115,6 +132,12 @@ showMenuLevel d m =
 --
 -- To begin, we define a function that given the current path, decomposes
 -- some other path into the part that should be visible.  For example:
+--
+--     relevant "foo/bar/baz" "foo/bar/quux" = ["foo/","bar/","quux"]
+--     relevant "foo/bar/baz" "foo/bar/quux/" = ["foo/","bar/","quux/"]
+--     relevant "foo/bar/baz" "foo/bar/quux/zog" = ["foo/","bar/","quux/"]
+--     relevant "foo/bar/baz" "quux/zog" = ["quux/"]
+--
 relevant :: FilePath -> FilePath -> [FilePath]
 relevant this other = relevant' (splitPath this) (splitPath other)
   where relevant' (x:xs) (y:ys) = y : if x == y then relevant' xs ys else []
@@ -132,7 +155,7 @@ buildMenu this =
   where
     buildItem :: FilePath -> MenuItem
     buildItem path =
-      MenuItem (dropIndex path) (dropExtension . takeFileName $ path)
+      MenuItem (dropIndex path) (over _head toUpper . dropExtension . takeFileName $ path)
 
 dropIndex :: FilePath -> FilePath
 dropIndex p | takeBaseName p == "index" = dropFileName p
@@ -146,8 +169,8 @@ extendMenu this m MenuItem{..} =
       add :: [MenuLevel] -> [FilePath] -> [Char] -> [MenuLevel]
       add ls [] _ = ls
       add ls (x:xs) p
-        | x `elem` focused = insertFocused l (MenuItem (p ++ x) name') : add ls' xs (p++x)
-        | otherwise        = insertItem l (MenuItem (p++x) name') : add ls' xs (p++x)
+        | x `elem` focused = addFocused l (MenuItem (p ++ x) name') : add ls' xs (p++x)
+        | otherwise        = addItem l (MenuItem (p++x) name') : add ls' xs (p++x)
         where (l,ls') = case ls of []   -> (emptyMenuLevel, [])
                                    k:ks -> (k,ks)
               name' = if hasTrailingPathSeparator x

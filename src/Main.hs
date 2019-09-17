@@ -9,7 +9,7 @@ module Main
   ) where
 
 import Control.Lens        (Prism', Traversal', only, prism', re, toListOf,
-                            (%~), (&), (?~), (^?))
+                            (%~), (&), (?~), (^?), (<&>))
 import Control.Lens.Plated (deep)
 import Data.List           (isSuffixOf)
 import Data.Text           (Text)
@@ -29,7 +29,10 @@ config = defaultConfiguration
   }
 
 main :: IO ()
-main = hakyllWith config $ do
+main = acthpa 
+
+acthpa :: IO ()
+acthpa = hakyllWith config $ do
   match "images/*" $ do
     route idRoute
     compile copyFileCompiler
@@ -48,32 +51,20 @@ main = hakyllWith config $ do
 
   match "templates/*" $ compile templateCompiler
 
-  match (fromList
-          [ "activities.md"
-          , "about.md"
-          , "about/*"
-          , "flying.md"
-          , "flying/*"
-          ]) $ do
-    addToMenu
-    route cleanRoute
-    compile $ contentContext >>= withDefaultTemplate
-
-  match "articles/*" $ do
-    addToMenu
-    route cleanRoute
-    compile $ contentContext >>= withDefaultTemplate
-
+  defaultPage "activities.md"
+  defaultPage "about.md"
+  cleanPage "about/*"
+  defaultPage "flying.md"
+  defaultPage "flying/*"
+  defaultPage "articles/*"
   match "articles.md" $ listingPage "articles/*"
   match "flying-ACT.md" $ listingPage "flying-ACT/*"
-
-  match "flying-ACT/*" $ do
-    addToMenu
-    route cleanRoute
-    compile $ contentContext >>= withDefaultTemplate
+  defaultPage "flying-ACT/*"
 
   match "features/*" $ compile $
     contentContext >>= withTemplate "templates/feature.html"
+
+  match "scraped/*" $ compile getResourceBody
 
   match "index.md" $ do
     addToMenu
@@ -83,6 +74,19 @@ main = hakyllWith config $ do
       let features = loadAll "features/*"
           indexContext = listField "features" ctx features <> ctx
       withTemplate "templates/index.html" indexContext
+
+defaultPage :: Pattern -> Rules ()
+defaultPage p = match p $ do
+  addToMenu
+  cleanPageRules
+
+cleanPageRules :: Rules ()
+cleanPageRules = do
+  route cleanRoute
+  compile $ contentContext >>= withDefaultTemplate
+
+cleanPage :: Pattern -> Rules ()
+cleanPage p = match p cleanPageRules
 
 listingPage :: Pattern -> Rules ()
 listingPage items = do
@@ -119,18 +123,49 @@ applyTemplateAndFixUrls templatePath ctx item =
 
 contentCompiler :: Compiler (Item String)
 contentCompiler =
-  let pandocOptions = def
+  cached "Main.contentCompiler" $
+  let readerOptions = def
         { readerExtensions = githubMarkdownExtensions <> pandocExtensions }
-  in pandocCompilerWith pandocOptions def
-  >>= saveSnapshot "content" . fmap addTableClassToTables
+  in do
+    ctx <- contentContext
+    raw <- getResourceBody
+    md <- applyAsTemplate ctx raw
+    str <- readPandocWith readerOptions md
+    saveSnapshot "content" (str & writePandoc <&> addTableClassToTables)
 
 contentContext :: Compiler (Context String)
 contentContext = do
   menu <- getMenu
+  longestCanberra    <- loadBody "scraped/longestCanberra.html"
+  longestSpringHill  <- loadBody "scraped/longestSpringHill.html"
+  longestCollector   <- loadBody "scraped/longestCollector.html"
+  longestLakeGeorge  <- loadBody "scraped/longestLakeGeorge.html"
+  longestLanyon      <- loadBody "scraped/longestLanyon.html"
+  longestPigHill     <- loadBody "scraped/longestPigHill.html"
+  longestHoneysuckle <- loadBody "scraped/longestHoneysuckle.html"
+  longestBowning     <- loadBody "scraped/longestBowning.html"
+  longestArgalong    <- loadBody "scraped/longestArgalong.html"
+  longestCastleHill  <- loadBody "scraped/longestCastleHill.html"
+  longestBooroomba   <- loadBody "scraped/longestBooroomba.html"
+  longestCarols      <- loadBody "scraped/longestCarols.html"
+  recentCanberra     <- loadBody "scraped/recentCanberra.html"
   pure . mconcat $
     [ metadataField
     , defaultContext
     , constField "menu" menu
+    , constField "longestCanberra"    longestCanberra 
+    , constField "longestSpringHill"  longestSpringHill 
+    , constField "longestCollector"   longestCollector 
+    , constField "longestLakeGeorge"  longestLakeGeorge 
+    , constField "longestLanyon"      longestLanyon 
+    , constField "longestPigHill"     longestPigHill 
+    , constField "longestHoneysuckle" longestHoneysuckle 
+    , constField "longestBowning"     longestBowning 
+    , constField "longestArgalong"    longestArgalong 
+    , constField "longestCastleHill"  longestCastleHill 
+    , constField "longestBooroomba"   longestBooroomba 
+    , constField "longestCarols"      longestCarols
+    , constField "recentCanberra"     recentCanberra
     -- , listField "breadcrumbs" defaultContext getBreadcrumbs
     ]
 

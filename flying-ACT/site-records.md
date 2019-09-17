@@ -51,3 +51,6 @@ Each month we acknowledge the winners at the club meeting and all site records t
 
 When submitting your IGC file the XC contest site will check for airspace infringements, but you may wish to check your flight log [using aircheck](http://xcaustralia.org/aircheck/aircheck.php) before you submit your IGC file to the contest. 
 
+## Region Longest Flights
+
+$longestCanberra$

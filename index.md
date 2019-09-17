@@ -17,3 +17,6 @@ The weather section links to the Bureau of Meteorology and other useful weather 
 
 If you are a visiting pilot, remember to contact one of the locals prior to flying any site.
 
+## Recent Flights Around Canberra
+
+$recentCanberra$
