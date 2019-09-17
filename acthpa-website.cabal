@@ -3,16 +3,10 @@ name:               acthpa-website
 version:            0.1.0.0
 build-type:         Simple
 
-executable site
-  main-is:          Main.hs
-  hs-source-dirs:   src
-  other-modules:    Hakyll.Menu
+common deps
   build-depends:    base ^>=4.12.0.0
                   , blaze-html ^>= 0.9.1.1
-                  , hakyll ^>= 4.12
-                  , filepath ^>= 1.4.2.1
                   , lens ^>= 4.17
-                  , pandoc ^>= 2.7.3
                   , taggy-lens ^>= 0.1.2
                   , text ^>= 1.2.3
   ghc-options:      -threaded
@@ -33,3 +27,29 @@ executable site
   -- The below is even faster linking, but doesn't seem to work on nix
   -- ghc-options:     "-pgmP clang" "-pgmc clang" "-pgma clang" "-pgml clang"
   -- ld-options:       -fuse-ld=lld
+
+executable site
+  import:           deps
+  main-is:          Main.hs
+  hs-source-dirs:   src
+  other-modules:    Hakyll.Menu
+  build-depends:  , bytestring ^>= 0.10.8.2
+                  , hakyll ^>= 4.12
+                  , filepath ^>= 1.4.2.1
+                  , pandoc ^>= 2.7.3
+
+executable scrape
+  import:           deps
+  main-is:          Main.hs
+  hs-source-dirs:   scrape
+  other-modules:    Flights
+  build-depends:    blaze-markup ^>= 0.8.2.2
+                  , coordinate ^>= 0.2
+                  , either ^>= 5.0.1.1
+                  , exceptions ^>= 0.10.2
+                  , formatting ^>= 6.3.7
+                  , modern-uri ^>= 0.3.1.0
+                  , req ^>= 2.1.0
+                  , time ^>= 1.8.0.2
+                  , unordered-containers ^>= 0.2.10.0
+
