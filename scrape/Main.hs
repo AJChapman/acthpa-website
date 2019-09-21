@@ -14,7 +14,7 @@ import qualified Data.Text.IO as TIO
 
 scrapeSite :: Bool -> String -> Req [Flight] -> IO ()
 scrapeSite showSite fileName getFlights = do
-  let file = "scraped/" <> fileName <> ".html"
+  let file = "site/scraped/" <> fileName <> ".html"
   putStrLn $ "Populating '" <> file <> "'"
   flights <- runReq defaultHttpConfig getFlights
   putStrLn $ "Found " <> show (length flights) <> " flights."

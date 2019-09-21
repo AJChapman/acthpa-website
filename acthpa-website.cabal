@@ -5,11 +5,10 @@ build-type:         Simple
 
 common deps
   build-depends:    base ^>=4.12.0.0
-                  , blaze-html ^>= 0.9.1.1
                   , lens ^>= 4.17
                   , taggy-lens ^>= 0.1.2
                   , text ^>= 1.2.3
-  ghc-options:      -threaded
+  ghc-options:      -threaded -rtsopts -with-rtsopts=-N
   default-language: Haskell2010
   ghc-options:      -Weverything
                     -Wno-all-missed-specialisations
@@ -28,17 +27,19 @@ common deps
   -- ghc-options:     "-pgmP clang" "-pgmc clang" "-pgma clang" "-pgml clang"
   -- ld-options:       -fuse-ld=lld
 
-executable site
+executable build-site
   import:           deps
   main-is:          Main.hs
-  hs-source-dirs:   src
-  other-modules:    Hakyll.Menu
-  build-depends:  , binary ^>= 0.8.6.0
+  hs-source-dirs:   build-site
+  build-depends:    aeson
+                  , binary ^>= 0.8.6.0
                   , bytestring ^>= 0.10.8.2
                   , containers ^>= 0.6
-                  , hakyll ^>= 4.12
                   , filepath ^>= 1.4.2.1
+                  , lens-aeson
                   , pandoc ^>= 2.7.3
+                  , shake
+                  , slick ^>= 1.0.0
 
 executable scrape
   import:           deps
