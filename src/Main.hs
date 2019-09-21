@@ -166,12 +166,7 @@ contentContext = do
     , constField "longestBooroomba"   longestBooroomba 
     , constField "longestCarols"      longestCarols
     , constField "recentCanberra"     recentCanberra
-    -- , listField "breadcrumbs" defaultContext getBreadcrumbs
     ]
-
--- crumbsContext :: [Identifier] -> Context String
--- crumbsContext path =
---   listField "crumbs" contentContext (flip loadSnapshot "content" `traverse` path)
 
 --------------------------------------------------------------------------------
 cleanRoute :: Routes

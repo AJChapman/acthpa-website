@@ -98,8 +98,8 @@ $(makeLenses ''Site)
 
 newtype Distance = Km
   { _distanceKm :: Centi
-  } deriving (Eq, Ord, Show)
-  deriving newtype (Read)
+  } deriving (Eq, Ord)
+  deriving newtype (Show, Read)
 
 $(makeLenses ''Distance)
 
