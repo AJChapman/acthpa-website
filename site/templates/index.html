@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
-    $partial("templates/head.html")$
+    {{>site/templates/head.html}}
     <body>
         <div class="colorlib-loader"></div>
 
         <div id="page">
-            $partial("templates/nav.html")$
+            {{>site/templates/nav.html}}
 
             <aside id="colorlib-hero">
                 <div class="flexslider">
                     <ul class="slides">
-                       $for(features)$
-                         $body$
-                       $endfor$
+                       {{#upcomingEvents}}
+                         {{>site/templates/feature.html}}
+                       {{/upcomingEvents}}
                       </ul>
                   </div>
             </aside>
@@ -21,18 +21,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            $body$
+                            {{#page}}
+                              {{{content}}}
+                            {{/page}}
                         </div>
                     </div>
                 </div>
             </div>
 
-            $partial("templates/photostrip.html")$
+            {{>site/templates/photostrip.html}}
 
-            $partial("templates/footer.html")$
+            {{>site/templates/footer.html}}
         </div>
 
-        $partial("templates/tail.html")$
+        {{>site/templates/tail.html}}
     </body>
 </html>
 

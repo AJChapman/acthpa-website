@@ -1,8 +1,8 @@
-<a href='$url$'>$title$</a>
-$if(author)$
-    by $author$
-$endif$
-$if(date)$
-    - $date$
-$endif
+<a href='$url$'>{{title}}</a>
+{{#author}}
+    by {{author}}
+{{/author}
+{{#published}
+    - {{published}}
+{{/published}}
 

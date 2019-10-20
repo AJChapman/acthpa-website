@@ -1,4 +1,4 @@
-<li style="background-image: url(images/$image$);">
+<li style="background-image: url(images/{{image}});">
    <div class="overlay"></div>
    <div class="container">
        <div class="row">
@@ -6,12 +6,12 @@
                <div class="slider-text-inner">
                    <div class="desc">
                        <p class="meta">
-                            <span class="cat"><a href="#">$title$</a></span>
-                            $if(date)$
-                                <span class="date">$date$</span>
-                            $endif$
+                            <span class="cat"><a href="#">{{title}}</a></span>
+                            {{#eventStart}}
+                                <span class="date">{{eventStart}}{{#eventEnd}} - {{eventEnd}}{{/eventEnd}}</span>
+                            {{/eventStart}}
                         </p>
-                       <h1>$body$</h1>
+                       <h1>{{{teaser}}}</h1>
                    </div>
                </div>
            </div>

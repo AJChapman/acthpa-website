@@ -1,7 +1,8 @@
-{ mkDerivation, base, blaze-html, blaze-markup, bytestring
+{ mkDerivation, aeson, aeson-generic-shorthand, base, binary
+, binary-instances, blaze-html, blaze-markup, bytestring
 , containers, coordinate, either, exceptions, filepath, formatting
-, hakyll, lens, modern-uri, pandoc, req, stdenv, taggy-lens, text
-, time, unordered-containers
+, lens, lens-aeson, modern-uri, mustache, pandoc, req, shake, slick
+, stdenv, taggy-lens, text, time, unordered-containers
 }:
 mkDerivation {
   pname = "acthpa-website";
@@ -10,9 +11,10 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    base blaze-html blaze-markup bytestring containers coordinate
-    either exceptions filepath formatting hakyll lens modern-uri pandoc
-    req taggy-lens text time unordered-containers
+    aeson aeson-generic-shorthand base binary binary-instances
+    blaze-html blaze-markup bytestring containers coordinate either
+    exceptions filepath formatting lens lens-aeson modern-uri mustache
+    pandoc req shake slick taggy-lens text time unordered-containers
   ];
   license = "unknown";
   hydraPlatforms = stdenv.lib.platforms.none;

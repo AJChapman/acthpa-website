@@ -60,6 +60,7 @@ Anything marked with an '@' symbol should be its own page
     - Radio frequency
     - Quick list of sites, with links
     - Visiting Pilots
+    - 
     - @Sites
     - @FAQ
     - @About ACTHPA
@@ -68,11 +69,12 @@ Anything marked with an '@' symbol should be its own page
         - Safety officers and tandem pilots
         - Schools
 - Advice
-    - How to read weather
-    - Gear
-    - Article: 'Flying Canberra - a few tips'
-- Stories
-    - Fences article
+    - @How to read weather
+    - @Gear
+    - @Article: 'Flying Canberra - a few tips'
+    - @Reserve throwing talk
+- @Stories
+    - @Fences article
     - Pilot profiles
     - Yarns from local pilots
 
@@ -82,9 +84,7 @@ The above is where I want to get to, but at the moment I only have (or can easil
 
 - @Home
     - Next upcoming event
-    - Next big upcoming event
     - Latest news item
-    - Latest big news item
     - Prominent links to info (sites, visiting pilot info, FAQ)
     - Prominent link to Facebook group
     - A randomly selected story (weighted perhaps?)
@@ -110,10 +110,11 @@ The above is where I want to get to, but at the moment I only have (or can easil
         - About us and contact info
         - Safety officers and tandem pilots
         - Schools
-- Advice
-    - How to read weather
-    - Article: 'Flying Canberra - a few tips'
-- Stories
-    - Fences article
+- @Advice
+    - @How to read weather
+    - @Article: 'Flying Canberra - a few tips'
+    - @Reserve throwing talk
+- @Stories
+    - @Fences article
 
 That's actually not too far from what we want!

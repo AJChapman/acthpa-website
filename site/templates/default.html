@@ -1,29 +1,29 @@
 <!doctype html>
 <html lang="en">
-    $partial("templates/head.html")$
+    {{>site/templates/head.html}}
     <body>
         <div class="colorlib-loader"></div>
 
         <div id="page">
-            $partial("templates/nav.html")$
+            {{>site/templates/nav.html}}
 
-            $partial("templates/breadcrumbs.html")$
+            {{>site/templates/breadcrumbs.html}}
 
             <div id="colorlib-container">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            $body$
+                            {{{content}}}
                         </div>
                     </div>
                 </div>
             </div>
 
-            $partial("templates/photostrip.html")$
+            {{>site/templates/photostrip.html}}
 
-            $partial("templates/footer.html")$
+            {{>site/templates/footer.html}}
         </div>
 
-        $partial("templates/tail.html")$
+        {{>site/templates/tail.html}}
     </body>
 </html>

@@ -8,6 +8,7 @@ common deps
                   , lens ^>= 4.17
                   , taggy-lens ^>= 0.1.2
                   , text ^>= 1.2.3
+                  , time ^>= 1.8.0.2
   ghc-options:      -threaded -rtsopts -with-rtsopts=-N
   default-language: Haskell2010
   ghc-options:      -Weverything
@@ -31,28 +32,32 @@ executable build-site
   import:           deps
   main-is:          Main.hs
   hs-source-dirs:   build-site
-  build-depends:    aeson
+  build-depends:    aeson ^>= 1.4.5.0
+                  , aeson-generic-shorthand ^>= 0.1
                   , binary ^>= 0.8.6.0
+                  , binary-instances ^>= 1
                   , bytestring ^>= 0.10.8.2
                   , containers ^>= 0.6
                   , filepath ^>= 1.4.2.1
-                  , lens-aeson
+                  , lens-aeson ^>= 1.0.2
+                  , mustache ^>= 2.3.0
                   , pandoc ^>= 2.7.3
-                  , shake
+                  , shake ^>= 0.18.3
                   , slick ^>= 1.0.0
+                  , unordered-containers ^>= 0.2.10
 
 executable scrape
   import:           deps
   main-is:          Main.hs
   hs-source-dirs:   scrape
   other-modules:    Flights
-  build-depends:    blaze-markup ^>= 0.8.2.2
+  build-depends:    blaze-html ^>= 0.9.1.1
+                  , blaze-markup ^>= 0.8.2.2
                   , coordinate ^>= 0.2
                   , either ^>= 5.0.1.1
                   , exceptions ^>= 0.10.2
                   , formatting ^>= 6.3.7
                   , modern-uri ^>= 0.3.1.0
                   , req ^>= 2.1.0
-                  , time ^>= 1.8.0.2
                   , unordered-containers ^>= 0.2.10.0
 
