@@ -51,14 +51,14 @@ A life member shall not vote on matters requiring resolution unless they meet t
 The following members have been honoured with Life Membership of the
 ACTHPA.
 
- *Name*                                    *Year of admission*
---------------------                      ---------------------
-Barry Oliver                              August 2012
-Steve Foggett                             October 2016
-[Phil Robinson](/about/Phil-Robinson)     October 2016
-[Michael Porter](/about/Michael-Porter)   October 2016
-Michael Imholz                            October 2016
-[Alistair Dickie](/about/Alistair-Dickie) October 2017
-[Matt Smith](/about/Matt-Smith)           October 2017
-[Nick Siefken](/about/Nick-Siefken)       October 2017
+ *Name*                                         *Year of admission*
+--------------------                           ---------------------
+Barry Oliver                                   August 2012
+Steve Foggett                                  October 2016
+[Phil Robinson](/info/about/Phil-Robinson)     October 2016
+[Michael Porter](/info/about/Michael-Porter)   October 2016
+Michael Imholz                                 October 2016
+[Alistair Dickie](/info/about/Alistair-Dickie) October 2017
+[Matt Smith](/info/about/Matt-Smith)           October 2017
+[Nick Siefken](/info/about/Nick-Siefken)       October 2017
 

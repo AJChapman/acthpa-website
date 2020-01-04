@@ -90,6 +90,7 @@ The above is where I want to get to, but at the moment I only have (or can easil
     - A randomly selected story (weighted perhaps?)
 - @Now 
     - Wind Talkers
+    - Current events
 - @Future (upcoming events?)
     - Club meeting
     - National competition
@@ -113,6 +114,7 @@ The above is where I want to get to, but at the moment I only have (or can easil
 - @Advice
     - @How to read weather
     - @Article: 'Flying Canberra - a few tips'
+-   - @How to fly the ACT sites
     - @Reserve throwing talk
 - @Stories
     - @Fences article
