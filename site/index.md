@@ -19,4 +19,6 @@ If you are a visiting pilot, remember to contact one of the locals prior to flyi
 
 ## Recent Flights Around Canberra
 
+These are just a few of the recent flights by club members in the ACT region.
+
 {{{recentCanberra}}}

@@ -54,6 +54,7 @@ import Data.Aeson.Lens               (_Object, _String)
 import Data.Binary.Instances.Time    ()
 import Data.Foldable                 (traverse_)
 import Data.Text                     (Text)
+import Data.Text.Lens                (unpacked)
 import Data.Time                     (Day, getZonedTime, localDay,
                                       zonedTimeToLocalTime)
 import Development.Shake             (Action, copyFileChanged, forP,
@@ -142,11 +143,18 @@ data Site = Site
 
 makeLenses ''Site
 
-writeOutFileWithTemplate :: (ToJSON a) => Template -> FilePath -> a -> Action ()
-writeOutFileWithTemplate template relPath obj =
-  writeFile'
+writeOutFileWithTemplate :: Template -> Site -> Page -> Action ()
+writeOutFileWithTemplate template site page =
+  let templateVars = toJSON page & addMenu site page
+      relPath = pageFilePath page
+  in writeFile'
     (outputFolder </> relPath)
-    (T.unpack $ renderWithTemplate (pathToRootPath relPath) template obj)
+    (T.unpack $ renderWithTemplate (pathToRootPath relPath) template templateVars)
+
+pageFilePath :: Page -> FilePath
+pageFilePath page =
+  -- We change /foo/bar.html into /foo/bar/index.html to give it a clean path (when a server serves the index automatically)
+  page ^. pageUrl . unpacked </> "index.html"
 
 pathToRootPath :: FilePath -> FilePath
 pathToRootPath p =
@@ -249,30 +257,27 @@ inPast today page =
 buildHome :: Site -> Home -> Action ()
 buildHome site home = do
   homeT <- compileTemplate' "site/templates/index.html"
-  let templateVars =
-        toJSON home
-        & addMenu site (home ^. homePage)
-  writeOutFileWithTemplate homeT "index.html" templateVars
+  writeOutFileWithTemplate homeT site (home ^. homePage)
 
-buildEvents :: EventList -> Action ()
-buildEvents EventList{..} = do
+buildEvents :: Site -> EventList -> Action ()
+buildEvents site EventList{..} = do
   eventListT <- compileTemplate' "site/templates/eventList.html"
   let eventListJson = (object [ "eventList" .= toJSON _elEvents ])
   eventList <- substitute' eventListT eventListJson
   newContent <- substituteInContent (_elPage ^. pageContent) (object [ "eventList" .= eventList ])
   let page = _elPage & pageContent .~ newContent
-  buildPage page
+  buildPage site page
 
-buildInfo :: Info -> Action ()
-buildInfo Info{..} = do
-  buildPage _infoPage
-  traverse_ buildPage _infoSites
-  buildPage _infoFAQ
+buildInfo :: Site -> Info -> Action ()
+buildInfo site Info{..} = do
+  buildPage site _infoPage
+  traverse_ (buildPage site) _infoSites
+  buildPage site _infoFAQ
 
-buildPage :: Page -> Action ()
-buildPage page@Page{..} = do
+buildPage :: Site -> Page -> Action ()
+buildPage site page@Page{..} = do
   defaultT <- compileTemplate' "site/templates/default.html"
-  writeOutFileWithTemplate defaultT (T.unpack _pageUrl </> "index.html") page
+  writeOutFileWithTemplate defaultT site page
 
 substitute' :: ToJSON k => Template -> k -> Action Text
 substitute' tpl v =
@@ -311,9 +316,11 @@ makeMenu site activePage =
   where
     pageLink :: Page -> H.Html
     pageLink p =
-      let link = H.a
+      let path = p ^. pageUrl . unpacked
+          root = pathToRootPath (pageFilePath p)
+          link = H.a
             (H.toHtml $ p ^. pageTitle)
-            ! A.href (H.toValue $ p ^. pageUrl)
+            ! A.href (H.toValue $ root </> path)
       in if p == activePage
          then link ! A.class_ "active"
          else link
@@ -321,10 +328,10 @@ makeMenu site activePage =
 buildSite :: Site -> Action ()
 buildSite site@Site{..} = do
   buildHome site _siteHome
-  buildEvents _siteNow
-  buildEvents _siteFuture
-  buildEvents _sitePast
-  buildInfo _siteInfo
+  buildEvents site _siteNow
+  buildEvents site _siteFuture
+  buildEvents site _sitePast
+  buildInfo site _siteInfo
 
 selectFeatures :: [Page] -> [Page]
 selectFeatures = id -- TODO: closest to now first, weighted randomisation
