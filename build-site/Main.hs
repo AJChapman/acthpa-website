@@ -3,6 +3,7 @@
 {-# LANGUAGE DeriveGeneric       #-}
 {-# LANGUAGE DerivingVia         #-}
 {-# LANGUAGE OverloadedStrings   #-}
+{-# LANGUAGE RankNTypes          #-}
 {-# LANGUAGE RecordWildCards     #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TemplateHaskell     #-}
@@ -41,14 +42,17 @@ module Main
   , siteInfo
   ) where
 
-import Control.Lens                  (at, ix, makeLenses)
+import Control.Lens                  (Prism', Traversal', at, ix, makeLenses,
+                                      only, prism', re, toListOf)
 import Control.Lens.Operators        hiding ((.=))
+import Control.Lens.Plated           (deep)
 import Control.Monad                 (void)
 import Data.Aeson                    (FromJSON, ToJSON, Value (..), object,
                                       toJSON, (.=))
 import Data.Aeson.Generic.Shorthand  (CamelFields, GenericToFromJSON (..))
 import Data.Aeson.Lens               (_Object, _String)
 import Data.Binary.Instances.Time    ()
+import Data.Foldable                 (traverse_)
 import Data.Text                     (Text)
 import Data.Time                     (Day, getZonedTime, localDay,
                                       zonedTimeToLocalTime)
@@ -56,7 +60,7 @@ import Development.Shake             (Action, copyFileChanged, forP,
                                       getDirectoryFiles, liftIO, readFile',
                                       writeFile')
 import Development.Shake.Classes     (Binary)
-import Development.Shake.FilePath    (dropDirectory1, (-<.>), (</>))
+import Development.Shake.FilePath    (dropDirectory1, dropExtension, (</>))
 import Development.Shake.Forward     (cacheAction)
 import GHC.Generics                  (Generic)
 import Slick                         (compileTemplate', convert, markdownToHTML,
@@ -67,9 +71,11 @@ import Text.Blaze.Html5              ((!))
 import Text.Mustache                 (Template, checkedSubstitute,
                                       compileTemplate)
 import Text.Mustache.Types           (mFromJSON)
+import Text.Taggy.Lens               (Node, attr, children, element, html,
+                                      named)
 
 import qualified Data.Text                   as T
-import qualified Data.Text.Lazy              as TL
+import qualified Data.Text.Lazy              as L
 import qualified Text.Blaze.Html5            as H
 import qualified Text.Blaze.Html5.Attributes as A
 
@@ -82,7 +88,7 @@ outputFolder = "gen/"
 data Page = Page
   { _pageTitle       :: Text
   , _pageContent     :: Text
-  , _pageUrl         :: Text
+  , _pageUrl         :: Text -- E.g. "info/faq", with the filepath for that url being "info/faq/index.html"
   , _pageTeaser      :: Maybe Text
   , _pageImage       :: Maybe Text
   , _pageAuthor      :: Maybe Text
@@ -166,6 +172,28 @@ addScrapedContent = do
   pure
     $ setTextValue "recentCanberra" (T.pack recentCanberra)
 
+--------------------------------------------------------------------------------
+addTableClassToTables :: Text -> Text
+addTableClassToTables =
+  htmlChunks . traverse . nodeTablesClass ?~ "table"
+
+htmlChunks :: Prism' Text [Node]
+htmlChunks = prism' joinNodes getNodes where
+  joinNodes :: [Node] -> Text
+  joinNodes = L.toStrict . mconcat . toListOf (traverse . re html)
+  getNodes :: Text -> Maybe [Node]
+  getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? html . element . children
+
+nodeTablesClass :: Traversal' Node (Maybe Text)
+nodeTablesClass = nodeElementsClass "table"
+
+nodeElementsClass :: Text -> Traversal' Node (Maybe Text)
+nodeElementsClass elt =
+  element
+  . deep (named (only elt))
+  . attr "class"
+--------------------------------------------------------------------------------
+
 loadPage :: FilePath -> Action Page
 loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
   liftIO . putStrLn $ "Rebuilding page: " <> srcPath
@@ -180,9 +208,10 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
 
   -- Convert page to HTML, with metadata as JSON blob
   pageData <- markdownToHTML content
+    <&> _Object . at "content" . traverse . _String %~ addTableClassToTables
 
   -- Add more metadata: (clean) url, teaser
-  let url = T.pack . dropDirectory1 $ srcPath -<.> "html"
+  let url = T.pack . dropDirectory1 . dropExtension $ srcPath
       withPageUrl = setTextValue "url" url
       teaser = pageData ^? _Object . at "teaser" . traverse . _String
   teaser' <- traverse markdownToHTML teaser
@@ -225,15 +254,25 @@ buildHome site home = do
         & addMenu site (home ^. homePage)
   writeOutFileWithTemplate homeT "index.html" templateVars
 
-buildEvents :: FilePath -> EventList -> Action ()
-buildEvents path EventList{..} = do
+buildEvents :: EventList -> Action ()
+buildEvents EventList{..} = do
   eventListT <- compileTemplate' "site/templates/eventList.html"
   let eventListJson = (object [ "eventList" .= toJSON _elEvents ])
   eventList <- substitute' eventListT eventListJson
-  defaultT <- compileTemplate' "site/templates/default.html"
   newContent <- substituteInContent (_elPage ^. pageContent) (object [ "eventList" .= eventList ])
   let page = _elPage & pageContent .~ newContent
-  writeOutFileWithTemplate defaultT path page
+  buildPage page
+
+buildInfo :: Info -> Action ()
+buildInfo Info{..} = do
+  buildPage _infoPage
+  traverse_ buildPage _infoSites
+  buildPage _infoFAQ
+
+buildPage :: Page -> Action ()
+buildPage page@Page{..} = do
+  defaultT <- compileTemplate' "site/templates/default.html"
+  writeOutFileWithTemplate defaultT (T.unpack _pageUrl </> "index.html") page
 
 substitute' :: ToJSON k => Template -> k -> Action Text
 substitute' tpl v =
@@ -255,7 +294,7 @@ addMenu site page =
 
 makeMenu :: Site -> Page -> Text
 makeMenu site activePage =
-  TL.toStrict . renderHtml . H.ul $
+  L.toStrict . renderHtml . H.ul $
     H.li (pageLink (site ^. siteHome . homePage))
     <> H.li (pageLink (site ^. siteNow . elPage))
     <> H.li (pageLink (site ^. siteFuture . elPage))
@@ -282,8 +321,10 @@ makeMenu site activePage =
 buildSite :: Site -> Action ()
 buildSite site@Site{..} = do
   buildHome site _siteHome
-  buildEvents "future/index.html" _siteFuture
-  buildEvents "past/index.html" _sitePast
+  buildEvents _siteNow
+  buildEvents _siteFuture
+  buildEvents _sitePast
+  buildInfo _siteInfo
 
 selectFeatures :: [Page] -> [Page]
 selectFeatures = id -- TODO: closest to now first, weighted randomisation
