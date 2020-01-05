@@ -10,15 +10,16 @@ It is both a State Association affiliated with the Sports Aviation Federation of
 
 ### Committee Members
 
-Position        Name              Phone             Email
---------------- ----------------- ----------------- ---------------------------
-President       Rene Sedlmaier    0408 621 100
-Vice President  Jason McGregor
-Treasurer       Allister Higgins  0408 608 709      treasurer.acthpa@gmail.com
-Secretary       Wes Kilham        0420 322 040
-General Member  Ian Leaver        0402 725 235
-General Member  Alex Chapman
-Public Officer  Peter Lamont      0407 771 075
+Position                 Name              Phone             Email
+---------------          ----------------- ----------------- ---------------------------
+President                Rene Sedlmaier    0408 621 100
+Vice President           Graham Rose
+Treasurer                Allister Higgins  0408 608 709      treasurer.acthpa@gmail.com
+Secretary                Wes Kilham        0420 322 040
+Site Development Officer Doug Mathie
+General Member           Alex Chapman
+General Member           Phil Lyng
+Public Officer           Peter Lamont      0407 771 075
 
 ### ACTHPA Safety Committee:
 
@@ -26,21 +27,23 @@ Public Officer  Peter Lamont      0407 771 075
 
 **Flight Instructor:** Mike Brady
 
+**AIRS Managers:** James Astley, Peter Evans, Peter Lamont
+
+**Site Guide Administrator:** Doug Mathie
+
+
 #### Senior Safety Officers:
 
-* **PG:** Matt Smith, Alistair Dickie, Phil Robinson, Shaun Archer, Mike
-Brady
-* **PPG:** Matt Smith
-* **HG:** Geoff Robertson, Phil Robinson
+- **PG:** Matt Smith, Alistair Dickie, Phil Robinson, Shaun Archer, Mike Brady
+- **PPG:** Matt Smith
+- **HG:** Geoff Robertson, Phil Robinson
+
 
 #### Safety Officers:
 
-* **PG:** Kris Smith, Stu McElroy, Andrew Gough, Rafael Esquillaro, Bill
-Oates, Belinda Head, Dave Hanna, Mike Brady, Rene Sedlmaier, Anthony
-Willing, Ian Leaver, Jim Astley
-* **PPG:** Belinda Head, Dave Hanna, Mike Brady, Anthony Willing, Ian
-Leaver
-* **HG:** Stu McElroy, Phil Seeley
+- **PG:** Kris Smith, Stu McElroy, Andrew Gough, Rafael Esquillaro, Bill Oates, Belinda Head, Dave Hanna, Rene Sedlmaier, Anthony Willing, Ian Leaver, Jim Astley, Alex Chapman, Bruce March, Cameron Lawrence, Graham Rose, Jonathan Bishop, Kari Ellis, Wesley Kilham
+- **PPG:** Belinda Head, Dave Hanna, Mike Brady, Anthony Willing, Ian Leaver, Peter Evans
+- **HG:** Stu McElroy, Phil Seeley, Bruce March, Peter Evans, Peter Kupsovsky
 
 ## Life Members
 
@@ -55,10 +58,10 @@ ACTHPA.
 --------------------                           ---------------------
 Barry Oliver                                   August 2012
 Steve Foggett                                  October 2016
-[Phil Robinson](/info/about/Phil-Robinson)     October 2016
-[Michael Porter](/info/about/Michael-Porter)   October 2016
+[Phil Robinson](Phil-Robinson)                 October 2016
+[Michael Porter](Michael-Porter)               October 2016
 Michael Imholz                                 October 2016
-[Alistair Dickie](/info/about/Alistair-Dickie) October 2017
-[Matt Smith](/info/about/Matt-Smith)           October 2017
-[Nick Siefken](/info/about/Nick-Siefken)       October 2017
+[Alistair Dickie](Alistair-Dickie)             October 2017
+[Matt Smith](Matt-Smith)                       October 2017
+[Nick Siefken](Nick-Siefken)                   October 2017
 

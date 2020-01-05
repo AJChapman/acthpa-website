@@ -42,8 +42,8 @@ module Main
   , siteInfo
   ) where
 
-import Control.Lens                  (Lens', Prism', Traversal', at, makeLenses, only,
-                                      prism', re, toListOf)
+import Control.Lens                  (Lens', Prism', Traversal', at, makeLenses,
+                                      only, prism', re, toListOf)
 import Control.Lens.Operators        hiding ((.=))
 import Control.Lens.Plated           (deep)
 import Control.Monad                 (void)
@@ -64,14 +64,19 @@ import Development.Shake.Classes     (Binary)
 import Development.Shake.FilePath    (dropDirectory1, dropExtension, (</>))
 import Development.Shake.Forward     (cacheAction)
 import GHC.Generics                  (Generic)
-import Slick                         (compileTemplate', convert, markdownToHTML,
-                                      slick)
-import System.FilePath               (joinPath, splitDirectories)
+import Slick                         (compileTemplate', convert, slick)
+import Slick.Pandoc                  (defaultHtml5Options,
+                                      defaultMarkdownOptions,
+                                      markdownToHTMLWithOpts)
+import System.FilePath               (joinPath, splitDirectories, (-<.>))
 import Text.Blaze.Html.Renderer.Text (renderHtml)
 import Text.Blaze.Html5              ((!))
 import Text.Mustache                 (Template, checkedSubstitute,
                                       compileTemplate)
 import Text.Mustache.Types           (mFromJSON)
+import Text.Pandoc                   (ReaderOptions (..),
+                                      githubMarkdownExtensions,
+                                      pandocExtensions)
 import Text.Taggy.Lens               (Node, attr, children, element, html,
                                       named)
 
@@ -163,13 +168,30 @@ copyStaticFiles = do
     copyFileChanged ("site" </> filePath) (outputFolder </> filePath)
 
 addScrapedContent :: Action (Value -> Value)
-addScrapedContent = do
-  recentCanberra <- loadScraped "site/scraped/recentCanberra.html"
-  pure $ setTextValue "recentCanberra" recentCanberra
+addScrapedContent =
+  foldr (.) id <$> traverse addScraped
+    [ "longestCanberra"
+    , "longestSpringHill"
+    , "longestCollector"
+    , "longestLakeGeorge"
+    , "longestLanyon"
+    , "longestPigHill"
+    , "longestHoneysuckle"
+    , "longestBowning"
+    , "longestArgalong"
+    , "longestCastleHill"
+    , "longestBooroomba"
+    , "longestCarols"
+    , "recentCanberra"
+    ]
   where
-    loadScraped :: FilePath -> Action Text
-    loadScraped fp =
-      readFile' fp <&> T.pack <&> addTableClassToTables
+    addScraped :: FilePath -> Action (Value -> Value)
+    addScraped filename =
+      "site/scraped" </> filename -<.> "html"
+        & readFile'
+        <&> T.pack
+        <&> addTableClassToTables
+        <&> setTextValue (T.pack filename)
 
 --------------------------------------------------------------------------------
 addTableClassToTables :: Text -> Text
@@ -197,19 +219,11 @@ loadPage :: FilePath -> Action Page
 loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
   liftIO . putStrLn $ "Loading page: " <> srcPath
 
-  -- Load the markdown page
-  -- mustacheContent <- compileTemplate' srcPath
+  -- Load the markdown page and metadata
   markdown <- readFile' srcPath <&> T.pack
-  pageData <- markdownToHTML markdown
-
-  -- Substitute mustache values within the markdown page
-  -- withScrapedContent <- addScrapedContent
-  -- let contentVals = withScrapedContent $ Object mempty
-  --     content = substitute mustacheContent contentVals
-
-  -- Convert page to HTML, with metadata as JSON blob
-  -- pageData <- markdownToHTML content
-  --   <&> _Object . at "content" . traverse . _String %~ addTableClassToTables
+  let readerOptions = defaultMarkdownOptions { readerExtensions = githubMarkdownExtensions <> pandocExtensions }
+      writerOptions = defaultHtml5Options
+  pageData <- markdown & markdownToHTMLWithOpts readerOptions writerOptions
 
   -- Add more metadata: (clean) url, teaser
   let url = T.pack . dropDirectory1 . dropExtension $ srcPath
@@ -219,8 +233,10 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
       withPageUrl = setTextValue "url" url'
       teaser = pageData ^? _Object . at "teaser" . traverse . _String
       withTeaser = _Object . at "teaser" .~ (String <$> teaser)
-      -- Add additional metadata we've been able to compute
+      -- Add url and teaser
       fullPageData = pageData & withPageUrl & withTeaser
+
+  -- Convert to our Page datatype
   convert fullPageData
 
 data Tense = Future | Present | Past
@@ -293,7 +309,7 @@ writeOutFileWithTemplate template site page lContent obj = do
   -- Render the content, expanding any mustache within the markdown
   renderedContent <- substituteInContent (obj ^. lContent) templateVars
   let templateVars' = obj
-        & lContent .~ (addTableClassToTables renderedContent)
+        & lContent .~ addTableClassToTables renderedContent
         & toJSON
         & addToVars
   -- Render the whole page
@@ -348,7 +364,7 @@ makeMenu site activePage =
       let dropdown = not . isActive $ page
       in H.li
            ( pageLink page
-             <> ((H.ul (mconcat kids)) ! A.class_ "dropdown")
+             <> H.ul (mconcat kids) ! A.class_ "dropdown"
            ) & if dropdown
                  then (! A.class_ "has-dropdown")
                  else id
