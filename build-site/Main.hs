@@ -143,9 +143,9 @@ data Site = Site
 
 makeLenses ''Site
 
-writeOutFileWithTemplate :: Template -> Site -> Page -> Action ()
-writeOutFileWithTemplate template site page =
-  let templateVars = toJSON page & addMenu site page
+writeOutFileWithTemplate :: ToJSON a => Template -> Site -> Page ->  a -> Action ()
+writeOutFileWithTemplate template site page obj =
+  let templateVars = toJSON obj & addMenu site page
       relPath = pageFilePath page
   in writeFile'
     (outputFolder </> relPath)
@@ -220,7 +220,10 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
 
   -- Add more metadata: (clean) url, teaser
   let url = T.pack . dropDirectory1 . dropExtension $ srcPath
-      withPageUrl = setTextValue "url" url
+      url' = if url == "index" -- Special case for home page
+        then ""
+        else url
+      withPageUrl = setTextValue "url" url'
       teaser = pageData ^? _Object . at "teaser" . traverse . _String
   teaser' <- traverse markdownToHTML teaser
   let teaser'' = teaser' ^? traverse . _Object . ix "content"
@@ -257,7 +260,7 @@ inPast today page =
 buildHome :: Site -> Home -> Action ()
 buildHome site home = do
   homeT <- compileTemplate' "site/templates/index.html"
-  writeOutFileWithTemplate homeT site (home ^. homePage)
+  writeOutFileWithTemplate homeT site (home ^. homePage) home
 
 buildEvents :: Site -> EventList -> Action ()
 buildEvents site EventList{..} = do
@@ -268,16 +271,22 @@ buildEvents site EventList{..} = do
   let page = _elPage & pageContent .~ newContent
   buildPage site page
 
+buildAbout :: Site -> About -> Action ()
+buildAbout site About{..} = do
+  buildPage site _aboutPage
+  traverse_ (buildPage site) _aboutLifeMembers
+
 buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
   buildPage site _infoPage
   traverse_ (buildPage site) _infoSites
   buildPage site _infoFAQ
+  buildAbout site _infoAbout
 
 buildPage :: Site -> Page -> Action ()
 buildPage site page@Page{..} = do
   defaultT <- compileTemplate' "site/templates/default.html"
-  writeOutFileWithTemplate defaultT site page
+  writeOutFileWithTemplate defaultT site page page
 
 substitute' :: ToJSON k => Template -> k -> Action Text
 substitute' tpl v =
@@ -300,28 +309,46 @@ addMenu site page =
 makeMenu :: Site -> Page -> Text
 makeMenu site activePage =
   L.toStrict . renderHtml . H.ul $
-    H.li (pageLink (site ^. siteHome . homePage))
-    <> H.li (pageLink (site ^. siteNow . elPage))
-    <> H.li (pageLink (site ^. siteFuture . elPage))
-    <> H.li (pageLink (site ^. sitePast . elPage))
-    <> H.li
-         ( pageLink (site ^. siteInfo . infoPage)
-         <> H.ul
-             ( H.li (pageLink (site ^. siteInfo . infoFAQ))
-             <> H.li (pageLink (site ^. siteInfo . infoAbout . aboutPage))
-             )
-           ! A.class_ "dropdown"
-         )
-         ! A.class_ "has-dropdown"
+    leafItem (site ^. siteHome . homePage)
+    <> leafItem (site ^. siteNow . elPage)
+    <> leafItem (site ^. siteFuture . elPage)
+    <> leafItem (site ^. sitePast . elPage)
+    <> branchItem (site ^. siteInfo . infoPage)
+         [ leafItem (site ^. siteInfo . infoFAQ)
+         , leafItem (site ^. siteInfo . infoAbout . aboutPage)
+         ]
   where
+    isActive :: Page -> Bool
+    isActive page =
+      if page == site ^. siteHome . homePage
+        then page == activePage
+        else page `isParentOf` activePage
+
+    isParentOf :: Page -> Page -> Bool
+    isParentOf parent child =
+      (parent ^. pageUrl) `T.isPrefixOf` (child ^. pageUrl)
+
+    leafItem :: Page -> H.Html
+    leafItem = H.li . pageLink
+
+    branchItem :: Page -> [H.Html] -> H.Html
+    branchItem page kids =
+      let dropdown = not . isActive $ page
+      in H.li
+           ( pageLink page
+             <> ((H.ul (mconcat kids)) ! A.class_ "dropdown")
+           ) & if dropdown
+                 then (! A.class_ "has-dropdown")
+                 else id
+
     pageLink :: Page -> H.Html
     pageLink p =
       let path = p ^. pageUrl . unpacked
-          root = pathToRootPath (pageFilePath p)
+          root = pathToRootPath (pageFilePath activePage)
           link = H.a
             (H.toHtml $ p ^. pageTitle)
             ! A.href (H.toValue $ root </> path)
-      in if p == activePage
+      in if isActive p
          then link ! A.class_ "active"
          else link
 
