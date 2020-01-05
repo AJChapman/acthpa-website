@@ -42,8 +42,8 @@ module Main
   , siteInfo
   ) where
 
-import Control.Lens                  (Prism', Traversal', at, ix, makeLenses,
-                                      only, prism', re, toListOf)
+import Control.Lens                  (Lens', Prism', Traversal', at, makeLenses, only,
+                                      prism', re, toListOf)
 import Control.Lens.Operators        hiding ((.=))
 import Control.Lens.Plated           (deep)
 import Control.Monad                 (void)
@@ -65,7 +65,7 @@ import Development.Shake.FilePath    (dropDirectory1, dropExtension, (</>))
 import Development.Shake.Forward     (cacheAction)
 import GHC.Generics                  (Generic)
 import Slick                         (compileTemplate', convert, markdownToHTML,
-                                      slick, substitute)
+                                      slick)
 import System.FilePath               (joinPath, splitDirectories)
 import Text.Blaze.Html.Renderer.Text (renderHtml)
 import Text.Blaze.Html5              ((!))
@@ -143,14 +143,6 @@ data Site = Site
 
 makeLenses ''Site
 
-writeOutFileWithTemplate :: ToJSON a => Template -> Site -> Page ->  a -> Action ()
-writeOutFileWithTemplate template site page obj =
-  let templateVars = toJSON obj & addMenu site page
-      relPath = pageFilePath page
-  in writeFile'
-    (outputFolder </> relPath)
-    (T.unpack $ renderWithTemplate (pathToRootPath relPath) template templateVars)
-
 pageFilePath :: Page -> FilePath
 pageFilePath page =
   -- We change /foo/bar.html into /foo/bar/index.html to give it a clean path (when a server serves the index automatically)
@@ -164,10 +156,6 @@ pathToRootPath p =
 setTextValue :: Text -> Text -> Value -> Value
 setTextValue k t = _Object . at k ?~ String t
 
-renderWithTemplate :: (ToJSON a) => FilePath -> Template -> a -> Text
-renderWithTemplate pathToRoot t d =
-  substitute t (toJSON d & setTextValue "root" (T.pack pathToRoot))
-
 copyStaticFiles :: Action ()
 copyStaticFiles = do
   filePaths <- getDirectoryFiles "./site/" ["images//*", "css//*", "js//*", "fonts//*"]
@@ -176,9 +164,12 @@ copyStaticFiles = do
 
 addScrapedContent :: Action (Value -> Value)
 addScrapedContent = do
-  recentCanberra <- readFile' "site/scraped/recentCanberra.html"
-  pure
-    $ setTextValue "recentCanberra" (T.pack recentCanberra)
+  recentCanberra <- loadScraped "site/scraped/recentCanberra.html"
+  pure $ setTextValue "recentCanberra" recentCanberra
+  where
+    loadScraped :: FilePath -> Action Text
+    loadScraped fp =
+      readFile' fp <&> T.pack <&> addTableClassToTables
 
 --------------------------------------------------------------------------------
 addTableClassToTables :: Text -> Text
@@ -204,19 +195,21 @@ nodeElementsClass elt =
 
 loadPage :: FilePath -> Action Page
 loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
-  liftIO . putStrLn $ "Rebuilding page: " <> srcPath
+  liftIO . putStrLn $ "Loading page: " <> srcPath
 
   -- Load the markdown page
-  mustacheContent <- compileTemplate' srcPath
+  -- mustacheContent <- compileTemplate' srcPath
+  markdown <- readFile' srcPath <&> T.pack
+  pageData <- markdownToHTML markdown
 
   -- Substitute mustache values within the markdown page
-  withScrapedContent <- addScrapedContent
-  let contentVals = withScrapedContent $ Object mempty
-      content = substitute mustacheContent contentVals
+  -- withScrapedContent <- addScrapedContent
+  -- let contentVals = withScrapedContent $ Object mempty
+  --     content = substitute mustacheContent contentVals
 
   -- Convert page to HTML, with metadata as JSON blob
-  pageData <- markdownToHTML content
-    <&> _Object . at "content" . traverse . _String %~ addTableClassToTables
+  -- pageData <- markdownToHTML content
+  --   <&> _Object . at "content" . traverse . _String %~ addTableClassToTables
 
   -- Add more metadata: (clean) url, teaser
   let url = T.pack . dropDirectory1 . dropExtension $ srcPath
@@ -225,11 +218,9 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
         else url
       withPageUrl = setTextValue "url" url'
       teaser = pageData ^? _Object . at "teaser" . traverse . _String
-  teaser' <- traverse markdownToHTML teaser
-  let teaser'' = teaser' ^? traverse . _Object . ix "content"
-  let withTeaser = _Object . at "teaser" .~ teaser''
-  -- Add additional metadata we've been able to compute
-  let fullPageData = pageData & withPageUrl & withTeaser & withScrapedContent
+      withTeaser = _Object . at "teaser" .~ (String <$> teaser)
+      -- Add additional metadata we've been able to compute
+      fullPageData = pageData & withPageUrl & withTeaser
   convert fullPageData
 
 data Tense = Future | Present | Past
@@ -260,7 +251,8 @@ inPast today page =
 buildHome :: Site -> Home -> Action ()
 buildHome site home = do
   homeT <- compileTemplate' "site/templates/index.html"
-  writeOutFileWithTemplate homeT site (home ^. homePage) home
+  writeOutFileWithTemplate
+    homeT site (home ^. homePage) (homePage . pageContent) home
 
 buildEvents :: Site -> EventList -> Action ()
 buildEvents site EventList{..} = do
@@ -286,12 +278,32 @@ buildInfo site Info{..} = do
 buildPage :: Site -> Page -> Action ()
 buildPage site page@Page{..} = do
   defaultT <- compileTemplate' "site/templates/default.html"
-  writeOutFileWithTemplate defaultT site page page
+  writeOutFileWithTemplate defaultT site page pageContent page
+
+writeOutFileWithTemplate :: ToJSON a => Template -> Site -> Page -> Lens' a Text -> a -> Action ()
+writeOutFileWithTemplate template site page lContent obj = do
+  liftIO . putStrLn $ "Writing page: " <> pageFilePath page
+  withScrapedContent <- addScrapedContent
+  let relPath = pageFilePath page
+      addToVars =
+        addMenu site page     -- Plus the page menu
+        . withScrapedContent    -- Plus scraped content
+        . setTextValue "root" (T.pack $ pathToRootPath relPath)
+      templateVars = toJSON obj & addToVars -- The page and metadata
+  -- Render the content, expanding any mustache within the markdown
+  renderedContent <- substituteInContent (obj ^. lContent) templateVars
+  let templateVars' = obj
+        & lContent .~ (addTableClassToTables renderedContent)
+        & toJSON
+        & addToVars
+  -- Render the whole page
+  content <- substitute' template templateVars'
+  writeFile' (outputFolder </> relPath) (T.unpack content)
 
 substitute' :: ToJSON k => Template -> k -> Action Text
-substitute' tpl v =
+substitute' tpl v = do
   let (errs, result) = checkedSubstitute tpl (mFromJSON v)
-  in case errs of
+  case errs of
     [] -> pure result
     _  -> fail $ show errs
 

@@ -1,4 +1,4 @@
 ---
-title: Future Events
+title: Future
 ---
 {{{eventList}}}
