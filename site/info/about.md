@@ -6,9 +6,7 @@ The Australian Capital Territory Hang Gliding and Paragliding Association (ACTHP
 It is both a State Association affiliated with the Sports Aviation Federation of Australia (SAFA, formerly HGFA), and the primary club for free flying in the Canberra region.
 [Here are the ACTHPA Objects and Rules as of 7 June 2016](https://www.dropbox.com/s/2586faq56i1sy62/ACTHPA%20Constitution%20-%207%20June%202016.pdf?dl=0).
  
-## Contacts
-
-### Committee Members
+## Committee Members
 
 Position                 Name              Phone             Email
 ---------------          ----------------- ----------------- ---------------------------
@@ -21,7 +19,7 @@ General Member           Alex Chapman
 General Member           Phil Lyng
 Public Officer           Peter Lamont      0407 771 075
 
-### ACTHPA Safety Committee:
+## ACTHPA Safety Committee:
 
 **Chief Flight Instructor:** Rafael Esquillaro
 
@@ -32,18 +30,42 @@ Public Officer           Peter Lamont      0407 771 075
 **Site Guide Administrator:** Doug Mathie
 
 
-#### Senior Safety Officers:
+### Senior Safety Officers:
 
 - **PG:** Matt Smith, Alistair Dickie, Phil Robinson, Shaun Archer, Mike Brady
 - **PPG:** Matt Smith
 - **HG:** Geoff Robertson, Phil Robinson
 
 
-#### Safety Officers:
+### Safety Officers:
 
 - **PG:** Kris Smith, Stu McElroy, Andrew Gough, Rafael Esquillaro, Bill Oates, Belinda Head, Dave Hanna, Rene Sedlmaier, Anthony Willing, Ian Leaver, Jim Astley, Alex Chapman, Bruce March, Cameron Lawrence, Graham Rose, Jonathan Bishop, Kari Ellis, Wesley Kilham
 - **PPG:** Belinda Head, Dave Hanna, Mike Brady, Anthony Willing, Ian Leaver, Peter Evans
 - **HG:** Stu McElroy, Phil Seeley, Bruce March, Peter Evans, Peter Kupsovsky
+
+## Tandem Pilots
+
+Pilots who currently have ACTHPA approval to conduct tandem flights from
+ACTHPA sites include:
+
+  Paragliding         Hang gliding
+ ------------------- --------------
+ Barry Oliver        Andrew Luton
+ Alistair Dickie     Phil Robinson
+ Matt Smith          Brad Porter
+ Kari Ellis
+ Rafael Esquillaro
+ Clancy Pamment
+ Andrew Gough
+ Chris Neal
+ Mike Brady
+ William Oates
+ Jim Astley
+ Karl Texler
+ Antony Prehn
+ Phil Robinson
+ Stuart McElroy
+ Rene Sedlmaier
 
 ## Life Members
 

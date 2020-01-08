@@ -7,22 +7,11 @@
 {-# LANGUAGE RecordWildCards     #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TemplateHaskell     #-}
-
 module Main
   ( main
   , Home(..)
   , homePage
   , homeFeatures
-  , Page(..)
-  , pageTitle
-  , pageContent
-  , pageUrl
-  , pageTeaser
-  , pageImage
-  , pageAuthor
-  , pagePublished
-  , pageEventStart
-  , pageEventFinish
   , EventList
   , elPage
   , elEvents
@@ -34,76 +23,67 @@ module Main
   , infoSites
   , infoFAQ
   , infoAbout
+  , Advice(..)
+  , advicePage
+  , adviceHowToReadWeather
+  , adviceFlyingCanberraTips
+  , Stories(..)
+  , storiesPage
+  , storiesFences
+  , storiesWindTalkerMan
   , Site(..)
   , siteHome
   , siteNow
   , siteFuture
   , sitePast
   , siteInfo
+  , siteAdvice
+  , siteStories
   ) where
 
-import Control.Lens                  (Lens', Prism', Traversal', at, makeLenses,
-                                      only, prism', re, toListOf)
-import Control.Lens.Operators        hiding ((.=))
-import Control.Lens.Plated           (deep)
-import Control.Monad                 (void)
-import Data.Aeson                    (FromJSON, ToJSON, Value (..), object,
-                                      toJSON, (.=))
-import Data.Aeson.Generic.Shorthand  (CamelFields, GenericToFromJSON (..))
-import Data.Aeson.Lens               (_Object, _String)
-import Data.Binary.Instances.Time    ()
-import Data.Foldable                 (traverse_)
-import Data.Text                     (Text)
-import Data.Text.Lens                (unpacked)
-import Data.Time                     (Day, getZonedTime, localDay,
-                                      zonedTimeToLocalTime)
-import Development.Shake             (Action, copyFileChanged, forP,
-                                      getDirectoryFiles, liftIO, readFile',
-                                      writeFile')
-import Development.Shake.Classes     (Binary)
-import Development.Shake.FilePath    (dropDirectory1, dropExtension, (</>))
-import Development.Shake.Forward     (cacheAction)
-import GHC.Generics                  (Generic)
-import Slick                         (compileTemplate', convert, slick)
-import Slick.Pandoc                  (defaultHtml5Options,
-                                      defaultMarkdownOptions,
-                                      markdownToHTMLWithOpts)
-import System.FilePath               (joinPath, splitDirectories, (-<.>))
-import Text.Blaze.Html.Renderer.Text (renderHtml)
-import Text.Blaze.Html5              ((!))
-import Text.Mustache                 (Template, checkedSubstitute,
-                                      compileTemplate)
-import Text.Mustache.Types           (mFromJSON)
-import Text.Pandoc                   (ReaderOptions (..),
-                                      githubMarkdownExtensions,
-                                      pandocExtensions)
-import Text.Taggy.Lens               (Node, attr, children, element, html,
-                                      named)
+import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses,
+                                     only, prism', re, toListOf)
+import Control.Lens.Operators       hiding ((.=))
+import Control.Lens.Plated          (deep)
+import Control.Monad                (void)
+import Data.Aeson                   (FromJSON, ToJSON, Value (..), object,
+                                     toJSON, (.=))
+import Data.Aeson.Generic.Shorthand (CamelFields, GenericToFromJSON (..))
+import Data.Aeson.Lens              (_Object, _String)
+import Data.Binary.Instances.Time   ()
+import Data.Foldable                (traverse_)
+import Data.List.NonEmpty           (nonEmpty)
+import Data.Text                    (Text)
+import Data.Time                    (Day, getZonedTime, localDay,
+                                     zonedTimeToLocalTime)
+import Development.Shake            (Action, copyFileChanged, forP,
+                                     getDirectoryFiles, liftIO, readFile',
+                                     writeFile')
+import Development.Shake.Classes    (Binary)
+import Development.Shake.FilePath   (dropDirectory1, dropExtension, (</>))
+import Development.Shake.Forward    (cacheAction)
+import GHC.Generics                 (Generic)
+import Slick                        (compileTemplate', convert, slick)
+import Slick.Pandoc                 (defaultHtml5Options,
+                                     defaultMarkdownOptions,
+                                     markdownToHTMLWithOpts)
+import System.FilePath              ((-<.>))
+import Text.Mustache                (Template, checkedSubstitute,
+                                     compileTemplate)
+import Text.Mustache.Types          (mFromJSON)
+import Text.Pandoc                  (ReaderOptions (..),
+                                     githubMarkdownExtensions, pandocExtensions)
+import Text.Taggy.Lens              (Node, attr, children, element, html, named)
 
-import qualified Data.Text                   as T
-import qualified Data.Text.Lazy              as L
-import qualified Text.Blaze.Html5            as H
-import qualified Text.Blaze.Html5.Attributes as A
+import qualified Data.List.NonEmpty as NE
+import qualified Data.Text          as T
+import qualified Data.Text.Lazy     as L
+
+import Menu
+import Page
 
 outputFolder :: FilePath
 outputFolder = "gen/"
-
--- | Page is the data structure that we load from MarkDown files.
--- It has a lot of `Maybe` fields, because most metadata is optional.
--- We also keep it around in other data structures (for now).
-data Page = Page
-  { _pageTitle       :: Text
-  , _pageContent     :: Text
-  , _pageUrl         :: Text -- E.g. "info/faq", with the filepath for that url being "info/faq/index.html"
-  , _pageTeaser      :: Maybe Text
-  , _pageImage       :: Maybe Text
-  , _pageAuthor      :: Maybe Text
-  , _pagePublished   :: Maybe Day
-  , _pageEventStart  :: Maybe Day
-  , _pageEventFinish :: Maybe Day
-  } deriving (Generic, Eq, Ord, Show, Binary)
-  deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Page)
-$(makeLenses ''Page)
 
 data Home = Home
   { _homePage     :: Page
@@ -128,35 +108,85 @@ makeLenses ''About
 
 data Info = Info
   { _infoPage  :: Page
-  , _infoSites :: [Page]
-  , _infoFAQ   :: Page
   , _infoAbout :: About
+  , _infoSites :: Page
+  , _infoFAQ   :: Page
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Info)
 makeLenses ''Info
 
+data Advice = Advice
+  { _advicePage               :: Page
+  , _adviceHowToReadWeather   :: Page
+  , _adviceFlyingCanberraTips :: Page
+  } deriving (Generic, Eq, Ord, Show, Binary)
+  deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Advice)
+makeLenses ''Advice
+
+data Stories = Stories
+  { _storiesPage          :: Page
+  , _storiesFences        :: Page
+  , _storiesWindTalkerMan :: Page
+  } deriving (Generic, Eq, Ord, Show, Binary)
+  deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Stories)
+makeLenses ''Stories
+
 data Site = Site
-  { _siteHome   :: Home
-  , _siteNow    :: EventList
-  , _siteFuture :: EventList
-  , _sitePast   :: EventList
-  , _siteInfo   :: Info
-  -- , _siteAdvice  :: Advice
-  -- , _siteStories :: Stories
+  { _siteHome    :: Home
+  , _siteNow     :: EventList
+  , _siteFuture  :: EventList
+  , _sitePast    :: EventList
+  , _siteInfo    :: Info
+  , _siteAdvice  :: Advice
+  , _siteStories :: Stories
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Site)
-
 makeLenses ''Site
 
-pageFilePath :: Page -> FilePath
-pageFilePath page =
-  -- We change /foo/bar.html into /foo/bar/index.html to give it a clean path (when a server serves the index automatically)
-  page ^. pageUrl . unpacked </> "index.html"
+instance ToMenuItem Home where toMenuItem = LeafItem . _homePage
 
-pathToRootPath :: FilePath -> FilePath
-pathToRootPath p =
-  let depth = length (splitDirectories p) - 1
-  in joinPath . take depth $ repeat "../"
+instance ToMenuItem EventList where
+  toMenuItem EventList{..} =
+    case nonEmpty _elEvents of
+      Nothing     -> LeafItem _elPage
+      Just events -> BranchItem _elPage (toMenuItem <$> events)
+
+instance ToMenuItem Info where
+  toMenuItem Info{..} =
+    BranchItem _infoPage $ NE.fromList
+      [ toMenuItem _infoAbout
+      , toMenuItem _infoSites
+      , toMenuItem _infoFAQ
+      ]
+
+instance ToMenuItem About where
+  toMenuItem = LeafItem . _aboutPage
+
+instance ToMenuItem Advice where
+  toMenuItem Advice{..} =
+    BranchItem _advicePage $ NE.fromList
+      [ toMenuItem _adviceHowToReadWeather
+      , toMenuItem _adviceFlyingCanberraTips
+      ]
+
+instance ToMenuItem Stories where
+  toMenuItem Stories{..} =
+    BranchItem _storiesPage $ NE.fromList
+      [ toMenuItem _storiesFences
+      , toMenuItem _storiesWindTalkerMan
+      ]
+
+makeMenu :: Site -> Menu
+makeMenu Site{..} =
+  Menu . NE.fromList $
+    [ toMenuItem _siteHome
+    , toMenuItem _siteNow
+    , toMenuItem _siteFuture
+    , toMenuItem _sitePast
+    , toMenuItem _siteInfo
+    , toMenuItem _siteAdvice
+    , toMenuItem _siteStories
+    ]
 
 setTextValue :: Text -> Text -> Value -> Value
 setTextValue k t = _Object . at k ?~ String t
@@ -272,12 +302,22 @@ buildHome site home = do
 
 buildEvents :: Site -> EventList -> Action ()
 buildEvents site EventList{..} = do
+  traverse_ (buildPage site) _elEvents
   eventListT <- compileTemplate' "site/templates/eventList.html"
   let eventListJson = (object [ "eventList" .= toJSON _elEvents ])
   eventList <- substitute' eventListT eventListJson
   newContent <- substituteInContent (_elPage ^. pageContent) (object [ "eventList" .= eventList ])
   let page = _elPage & pageContent .~ newContent
   buildPage site page
+
+buildPostListPage :: Site -> Page -> [Page] -> Action ()
+buildPostListPage site page posts = do
+  let posts' = pageRelativizeUrl page <$> posts
+  let postListJson = (object [ "postList" .= toJSON posts' ])
+  postListT <- compileTemplate' "site/templates/postList.html"
+  postList <- substitute' postListT postListJson
+  newContent <- substituteInContent (page ^. pageContent) (object [ "postList" .= postList ])
+  buildPage site (page & pageContent .~ newContent)
 
 buildAbout :: Site -> About -> Action ()
 buildAbout site About{..} = do
@@ -287,9 +327,9 @@ buildAbout site About{..} = do
 buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
   buildPage site _infoPage
-  traverse_ (buildPage site) _infoSites
-  buildPage site _infoFAQ
   buildAbout site _infoAbout
+  buildPage site _infoFAQ
+  buildPage site _infoSites
 
 buildPage :: Site -> Page -> Action ()
 buildPage site page@Page{..} = do
@@ -302,7 +342,7 @@ writeOutFileWithTemplate template site page lContent obj = do
   withScrapedContent <- addScrapedContent
   let relPath = pageFilePath page
       addToVars =
-        addMenu site page     -- Plus the page menu
+        addMenus site page     -- Plus the page menu
         . withScrapedContent    -- Plus scraped content
         . setTextValue "root" (T.pack $ pathToRootPath relPath)
       templateVars = toJSON obj & addToVars -- The page and metadata
@@ -330,55 +370,24 @@ substituteInContent t v =
     Left err   -> fail $ show err
     Right tpl' -> substitute' tpl' v
 
-addMenu :: Site -> Page -> Value -> Value
-addMenu site page =
-  setTextValue "menu" $ makeMenu site page
+addMenus :: Site -> Page -> Value -> Value
+addMenus site page =
+  let menu = makeMenu site & menuText page
+  in do
+    setTextValue "menu" menu
+    -- setTextValue "secondaryMenu" $ secondary
 
-makeMenu :: Site -> Page -> Text
-makeMenu site activePage =
-  L.toStrict . renderHtml . H.ul $
-    leafItem (site ^. siteHome . homePage)
-    <> leafItem (site ^. siteNow . elPage)
-    <> leafItem (site ^. siteFuture . elPage)
-    <> leafItem (site ^. sitePast . elPage)
-    <> branchItem (site ^. siteInfo . infoPage)
-         [ leafItem (site ^. siteInfo . infoFAQ)
-         , leafItem (site ^. siteInfo . infoAbout . aboutPage)
-         ]
-  where
-    isActive :: Page -> Bool
-    isActive page =
-      if page == site ^. siteHome . homePage
-        then page == activePage
-        else page `isParentOf` activePage
+buildAdvice :: Site -> Advice -> Action ()
+buildAdvice site Advice{..} = do
+  buildPostListPage site _advicePage [_adviceHowToReadWeather, _adviceFlyingCanberraTips]
+  buildPage site _adviceHowToReadWeather
+  buildPage site _adviceFlyingCanberraTips
 
-    isParentOf :: Page -> Page -> Bool
-    isParentOf parent child =
-      (parent ^. pageUrl) `T.isPrefixOf` (child ^. pageUrl)
-
-    leafItem :: Page -> H.Html
-    leafItem = H.li . pageLink
-
-    branchItem :: Page -> [H.Html] -> H.Html
-    branchItem page kids =
-      let dropdown = not . isActive $ page
-      in H.li
-           ( pageLink page
-             <> H.ul (mconcat kids) ! A.class_ "dropdown"
-           ) & if dropdown
-                 then (! A.class_ "has-dropdown")
-                 else id
-
-    pageLink :: Page -> H.Html
-    pageLink p =
-      let path = p ^. pageUrl . unpacked
-          root = pathToRootPath (pageFilePath activePage)
-          link = H.a
-            (H.toHtml $ p ^. pageTitle)
-            ! A.href (H.toValue $ root </> path)
-      in if isActive p
-         then link ! A.class_ "active"
-         else link
+buildStories :: Site -> Stories -> Action ()
+buildStories site Stories{..} = do
+  buildPostListPage site _storiesPage [_storiesFences, _storiesWindTalkerMan]
+  buildPage site _storiesFences
+  buildPage site _storiesWindTalkerMan
 
 buildSite :: Site -> Action ()
 buildSite site@Site{..} = do
@@ -387,6 +396,8 @@ buildSite site@Site{..} = do
   buildEvents site _siteFuture
   buildEvents site _sitePast
   buildInfo site _siteInfo
+  buildAdvice site _siteAdvice
+  buildStories site _siteStories
 
 selectFeatures :: [Page] -> [Page]
 selectFeatures = id -- TODO: closest to now first, weighted randomisation
@@ -405,10 +416,20 @@ buildRules = do
   futurePage <- loadPage "site/future.md"
   pastPage   <- loadPage "site/past.md"
   infoPage'  <- loadPage "site/info.md"
-  faqPage    <- loadPage "site/info/faq.md"
   lifeMemberPagePaths <- getDirectoryFiles "." ["site/info/about//*.md"]
   lifeMemberPages <- forP lifeMemberPagePaths loadPage
-  about  <- loadPage "site/info/about.md"
+  about      <- loadPage "site/info/about.md"
+  faqPage    <- loadPage "site/info/faq.md"
+  sitesPage  <- loadPage "site/info/sites.md"
+
+  advicePage'            <- loadPage "site/advice.md"
+  howToReadWeatherPage   <- loadPage "site/advice/reading-weather-canberra.md"
+  flyingCanberraTipsPage <- loadPage "site/advice/flying-canberra-a-few-tips.md"
+
+  storiesPage'      <- loadPage "site/stories.md"
+  fencesPage        <- loadPage "site/stories/fences.md"
+  windTalkerManPage <- loadPage "site/stories/the-windtalker-man.md"
+
   let home = Home
         homePage'
         (selectFeatures $ futureEvents <> pastEvents) -- TODO: also list of stories
@@ -417,7 +438,9 @@ buildRules = do
         (EventList nowPage currentEvents)
         (EventList futurePage futureEvents)
         (EventList pastPage pastEvents)
-        (Info infoPage' [] faqPage (About about lifeMemberPages))
+        (Info infoPage' (About about lifeMemberPages) sitesPage faqPage )
+        (Advice advicePage' howToReadWeatherPage flyingCanberraTipsPage)
+        (Stories storiesPage' fencesPage windTalkerManPage)
   buildSite site
 
 main :: IO ()

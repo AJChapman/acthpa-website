@@ -7,8 +7,7 @@ tags: [weather, Canberra, advice]
 Below is an article by Barry Oliver outlining his flying routine as it
 was when we were graced with his presence in the ACT. It gives a great
 outline of flying during the warmer months. I’ve taken the liberty of
-adding some notes to update the information for 2017 [in the square
-brackets].
+adding some footnotes to update the information for 2017.
 
 Enjoy! 
 
@@ -316,20 +315,20 @@ soil. There are also airspace restrictions and other site specific
 matters that you must be advised of to make your flight as enjoyable and
 as safe as possible.
 
-[^1] Weatherzone membership is free and I’ve found that the briefings are
+[^1]: Weatherzone membership is free and I’ve found that the briefings are
 sometimes a little more current than the hourly weather observations
 from BOM.
 
-[^2] A third wind-talker is being installed at Lake George, the third
+[^2]: A third wind-talker is being installed at Lake George, the third
 main flying site around Canberra.
 
-[^3] Pig Hill isn’t a soaring site so it doesn’t ‘work’ early morning.
+[^3]: Pig Hill isn’t a soaring site so it doesn’t ‘work’ early morning.
 
-[^4] Lake George has been dry on the western side for the past 10 years.
+[^4]: Lake George has been dry on the western side for the past 10 years.
 The recent rains have provided some water but this has remained on the
 eastern side. Whether it fills in again soon is anyone’s guess.
 
-[^5] Dr Matthew Davey (affectionately known as Average Man) was
+[^5]: Dr Matthew Davey (affectionately known as Average Man) was
 tragically killed on 2 April 2005 in the Australian Navy Sea King crash
 on the Indonesian Island of Nias. At the time, he was actively engaged
 in military service and deployed from the HMAS Kinimbla to provide much
@@ -337,11 +336,11 @@ needed medical assistance to the people of Nias following severe
 earthquakes. The Australian Paragliding Centre has established the Dr
 Matthew Davey Memorial Trophy in memory of Average Man.
 
-[^6] There are also resident Wedge-tailed eagles that we fly with.
+[^6]: There are also resident Wedge-tailed eagles that we fly with.
 Although none have ever caused me any concern, I have heard
 stories…particularly during nesting season.  
 
-[^7] North of the Madew winery there are quite a few powerlines. Be very
+[^7]: North of the Madew winery there are quite a few powerlines. Be very
 careful at all times but extra vigilant up the north end of the Lake.
 Around Geary’s there is one powerline at the first rest-stop but it is
 below tree height and doesn’t cause any problems. There is also a set of

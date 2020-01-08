@@ -33,6 +33,8 @@ executable build-site
   import:           deps
   main-is:          Main.hs
   hs-source-dirs:   build-site
+  other-modules:    Menu
+                  , Page
   build-depends:    aeson ^>= 1.4.5.0
                   , aeson-generic-shorthand ^>= 0.1
                   , binary ^>= 0.8.6.0

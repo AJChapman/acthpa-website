@@ -12,21 +12,21 @@ These are our regular flying sites.
 **[Spring Hill Site Guide](https://siteguide.org.au/Sites/Spring%20Hill.html)**
 
 : Longest flights from Spring Hill
-$longestSpringHill$
+{{{longestSpringHill}}}
 
 ### Lake George
 
 **[Lake George Site Guide](https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html)** 
 
 : Longest flights from Lake George (South and Geary's launches)
-$longestLakeGeorge$
+{{{longestLakeGeorge}}}
 
 ### Lanyon
 
 **[Lanyon Site Guide](https://siteguide.org.au/Sites/Lanyon.html)**
 
 : Longest flights from Lanyon
-$longestLanyon$
+{{{longestLanyon}}}
 
 ## Sites for Special Occasions
 
@@ -37,14 +37,14 @@ These sites work for cross country when the weather is right.
 **[Collector Site Guide](https://siteguide.org.au/Sites/Lake%20George%20(Collector).html)**
 
 : Longest flights from Collector
-$longestCollector$
+{{{longestCollector}}}
 
 ### Honeysuckle
 
 **[Honeysuckle Site Guide](https://siteguide.org.au/Sites/Honeysuckle.html)**
 
 : Longest flights from Honeysuckle
-$longestHoneysuckle$
+{{{longestHoneysuckle}}}
 
 ## Sites Lost and Found
 
@@ -55,7 +55,7 @@ These are sites we have previously flown from, but are currently closed.
 **[Pig Hill Site Guide](https://siteguide.org.au/Sites/Pig%20Hill.html)**
 
 : Longest flights from Pig Hill
-$longestPigHill$
+{{{longestPigHill}}}
 
 ### Lake George
 
