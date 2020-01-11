@@ -53,4 +53,4 @@ When submitting your IGC file the XC contest site will check for airspace infrin
 
 ## Region Longest Flights
 
-$longestCanberra$
+{{{longestCanberra}}}

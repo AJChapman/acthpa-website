@@ -1,11 +1,10 @@
 ---
-title: "Weather"
+title: "Weather Resources"
 description: Links to some useful weather resources
 ---
 
-The "Wind Talkers" tab shows the current conditions and trends at our
-local sites. The links below are to websites used by numerous pilots to
-access local weather conditions:
+The [Wind Talkers] show the current conditions and trends at our most commonly used local sites.
+The links below are to websites used by numerous pilots to access local weather conditions:
 
 * [Bureau of Meteorology (BOM)]
 * [Weatherzone] - [iPhone App][Weatherzone iPhone App] / [Android App][Weatherzone Android App]
@@ -25,6 +24,7 @@ the obvious rain radar.
 * [Rain Radar]
 * [Synoptic Charts]
 
+[Wind Talkers]: http://freeflightwx.com/acthpa
 [Bureau of Meteorology (BOM)]: http://www.bom.gov.au/
 [Weatherzone]: http://www.weatherzone.com.au/
 [Weatherzone iPhone App]: https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8
@@ -33,7 +33,7 @@ the obvious rain radar.
 [WillyWeather iPhone App]: https://itunes.apple.com/au/app/weather-by-willyweather/id592978502?mt=8
 [WillyWeather Android App]: https://play.google.com/store/apps/details?id=au.com.willyweather&hl=en
 [XC Skies]: http://www.xcskies.com
-[RASP]: http://glidingforecast.on.net/RASP/RASPtable.html:
+[RASP]: https://ausrasp.nfshost.com/VIC/
 [RASP iPhone App]: https://itunes.apple.com/au/app/rasp/id426040634?mt=8
 [SkySight]: https://skysight.io
 [Oz Forecast]: http://ozforecast.com.au/

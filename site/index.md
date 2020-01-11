@@ -22,3 +22,10 @@ If you are a visiting pilot, remember to contact one of the locals prior to flyi
 These are just a few of the recent flights by club members in the ACT region.
 
 {{{recentCanberra}}}
+
+## Longest Flights in the Canberra Region
+
+These are some of the longest cross-country flights recorded in the Canberra region.
+Also see the [site records page](info/site-records) for records broken down by site and wing category.
+
+{{{longestCanberra}}}

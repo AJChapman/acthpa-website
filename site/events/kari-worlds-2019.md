@@ -3,5 +3,14 @@ title: Kari Ellis 3rd in World Championships
 eventStart: 2019-08-07
 eventFinish: 2019-08-17
 image: kari-3rd-podium-world-champs-krushevo-2019-narrow.jpg
-teaser:  Canberra pilot Kari Ellis secured third place in the women's category of the Paragliding World Championships held in Krushevo, Macedonia. She came 65th overall, racing the world's best pilots over ten cross-country tasks of between 63km and 130km.
+teaser:  Canberra pilot Kari Ellis secured [third place in the women's category](http://pgworlds2019.mk/live/results) of the Paragliding World Championships held in Krushevo, Macedonia. She came 65th overall, racing the world's best pilots over ten cross-country tasks of between 63km and 130km.
 ---
+Canberra pilot Kari Ellis secured third place in the women's category of the Paragliding World Championships held in Krushevo, Macedonia. She came 65th overall, racing the world's best pilots over ten cross-country tasks of between 63km and 130km.
+
+![Left to right: Yael Margelisch from Switzerland, Meryl Delferriere from France, and Kari Ellis from Australia](/images/kari-3rd-podium-world-champs-krushevo-2019-narrow.jpg)
+
+Kari flew a very tactical race, with the help of the rest of the Australian team, to edge out Marcella Uchoa by only 19 points.
+This was Kari's second World Championships, having [secured second place in the 2017 event in Monte Avena, Italy](https://airtribune.com/worlds2017/results/task2702/comp/women).
+
+Kari can often be seen flying at our local sites.
+Just look for the comp wing flying high above everyone else.

@@ -3,22 +3,13 @@ title: "The Windtalker Man"
 author: Barry Oliver
 ---
 
-We are lucky in the ACT to have some exceptionally bright and energetic
-folk who have put their time and energy into making flying better. One
-of the innovations we’ve seen is the introduction of wind talkers. Below
-is an article by Barry Oliver from 2007 which explores the wind talkers
-as they were before moving to our current (as of August 2017) internet
-based system.
+We are lucky in the ACT to have some exceptionally bright and energetic folk who have put their time and energy into making flying better.
+One of the innovations we’ve seen is the introduction of wind talkers.
+Below is an article by Barry Oliver from 2007 which explores the wind talkers as they were before moving to our current (as of August 2017) internet based system.
 
-Over the past few years Alistair Dickie has taken over the mantel as our
-wind talker guru and he has installed and upgraded the windtalkers in
-the ACT. The talkers measure wind strength and direction every 3 seconds
-as well as current temperature, air pressure, and estimated cloud base,
-all presented within an easy to read graph online. You can find the
-talkers webpage by clicking on the “wind talkers” tab on the ACTPHA
-website.  I would like to acknowledge and express my appreciation for
-the work that Al puts into the wind talkers and paragliding in the ACT
-as a whole.
+Over the past few years Alistair Dickie has taken over the mantel as our wind talker guru and he has installed and upgraded the [windtalkers in the ACT](http://freeflightwx.com/acthpa).
+The talkers measure wind strength and direction every 3 seconds as well as current temperature, air pressure, and estimated cloud base, all presented within an easy to read graph online.
+I would like to acknowledge and express my appreciation for the work that Al puts into the wind talkers and paragliding in the ACT as a whole.
 
 Shaun Archer
 

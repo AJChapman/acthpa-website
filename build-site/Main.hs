@@ -21,6 +21,8 @@ module Main
   , Info(..)
   , infoPage
   , infoSites
+  , infoSiteRecords
+  , infoWeatherResources
   , infoFAQ
   , infoAbout
   , Advice(..)
@@ -107,10 +109,12 @@ data About = About
 makeLenses ''About
 
 data Info = Info
-  { _infoPage  :: Page
-  , _infoAbout :: About
-  , _infoSites :: Page
-  , _infoFAQ   :: Page
+  { _infoPage        :: Page
+  , _infoAbout       :: About
+  , _infoSites       :: Page
+  , _infoSiteRecords :: Page
+  , _infoWeatherResources   :: Page
+  , _infoFAQ         :: Page
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Info)
 makeLenses ''Info
@@ -156,6 +160,8 @@ instance ToMenuItem Info where
     BranchItem _infoPage $ NE.fromList
       [ toMenuItem _infoAbout
       , toMenuItem _infoSites
+      , toMenuItem _infoSiteRecords
+      , toMenuItem _infoWeatherResources
       , toMenuItem _infoFAQ
       ]
 
@@ -183,9 +189,9 @@ makeMenu Site{..} =
     , toMenuItem _siteNow
     , toMenuItem _siteFuture
     , toMenuItem _sitePast
-    , toMenuItem _siteInfo
-    , toMenuItem _siteAdvice
     , toMenuItem _siteStories
+    , toMenuItem _siteAdvice
+    , toMenuItem _siteInfo
     ]
 
 setTextValue :: Text -> Text -> Value -> Value
@@ -302,39 +308,54 @@ buildHome site home = do
 
 buildEvents :: Site -> EventList -> Action ()
 buildEvents site EventList{..} = do
-  traverse_ (buildPage site) _elEvents
-  eventListT <- compileTemplate' "site/templates/eventList.html"
-  let eventListJson = (object [ "eventList" .= toJSON _elEvents ])
-  eventList <- substitute' eventListT eventListJson
-  newContent <- substituteInContent (_elPage ^. pageContent) (object [ "eventList" .= eventList ])
-  let page = _elPage & pageContent .~ newContent
-  buildPage site page
+  traverse_ (buildPageDefault site) _elEvents
+  page <- buildPageList _elPage _elEvents "eventList"
+  buildPageDefault site page
+
+buildNow :: Site -> EventList -> Action ()
+buildNow site EventList{..} = do
+  traverse_ (buildPageDefault site) _elEvents
+  page <- buildPageList _elPage _elEvents "eventList"
+  -- TODO: add in the live wind diagram?
+  buildPage "windmap" site page
 
 buildPostListPage :: Site -> Page -> [Page] -> Action ()
-buildPostListPage site page posts = do
-  let posts' = pageRelativizeUrl page <$> posts
-  let postListJson = (object [ "postList" .= toJSON posts' ])
-  postListT <- compileTemplate' "site/templates/postList.html"
-  postList <- substitute' postListT postListJson
-  newContent <- substituteInContent (page ^. pageContent) (object [ "postList" .= postList ])
-  buildPage site (page & pageContent .~ newContent)
+buildPostListPage site page posts =
+  buildPageList page posts "postList"
+    >>= buildPageDefault site
 
-buildAbout :: Site -> About -> Action ()
-buildAbout site About{..} = do
-  buildPage site _aboutPage
-  traverse_ (buildPage site) _aboutLifeMembers
+buildPageList :: Page -> [Page] -> Text -> Action Page
+buildPageList page listables templateName = do
+  let listables' = pageRelativizeUrl page <$> listables
+      listJson = (object [ templateName .= toJSON listables' ])
+  listT <- compileTemplate' $ "site/templates/" <> T.unpack templateName <> ".html"
+  list <- substitute' listT listJson
+  page & pageContent %%~ substituteInContent (object [ templateName .= list ])
+
+buildAbout :: Site -> About -> [Page] -> Action ()
+buildAbout site About{..} pages = do
+  buildPostListPage site _aboutPage pages
+  traverse_ (buildPageDefault site) _aboutLifeMembers
 
 buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
-  buildPage site _infoPage
-  buildAbout site _infoAbout
-  buildPage site _infoFAQ
-  buildPage site _infoSites
+  let pages =
+        [ _infoFAQ
+        , _infoSites
+        , _infoSiteRecords
+        , _infoWeatherResources
+        ]
+  buildAbout site _infoAbout pages
+  buildPostListPage site _infoPage pages
+  traverse_ (buildPageDefault site) pages
 
-buildPage :: Site -> Page -> Action ()
-buildPage site page@Page{..} = do
-  defaultT <- compileTemplate' "site/templates/default.html"
-  writeOutFileWithTemplate defaultT site page pageContent page
+buildPageDefault :: Site -> Page -> Action ()
+buildPageDefault = buildPage "default"
+
+buildPage :: Text -> Site -> Page -> Action ()
+buildPage templateName site page@Page{..} = do
+  template <- compileTemplate' $ "site/templates/" <> T.unpack templateName <> ".html"
+  writeOutFileWithTemplate template site page pageContent page
 
 writeOutFileWithTemplate :: ToJSON a => Template -> Site -> Page -> Lens' a Text -> a -> Action ()
 writeOutFileWithTemplate template site page lContent obj = do
@@ -342,12 +363,12 @@ writeOutFileWithTemplate template site page lContent obj = do
   withScrapedContent <- addScrapedContent
   let relPath = pageFilePath page
       addToVars =
-        addMenus site page     -- Plus the page menu
+        addMenu site page     -- Plus the page menu
         . withScrapedContent    -- Plus scraped content
         . setTextValue "root" (T.pack $ pathToRootPath relPath)
       templateVars = toJSON obj & addToVars -- The page and metadata
   -- Render the content, expanding any mustache within the markdown
-  renderedContent <- substituteInContent (obj ^. lContent) templateVars
+  renderedContent <- substituteInContent templateVars (obj ^. lContent)
   let templateVars' = obj
         & lContent .~ addTableClassToTables renderedContent
         & toJSON
@@ -363,36 +384,39 @@ substitute' tpl v = do
     [] -> pure result
     _  -> fail $ show errs
 
-substituteInContent :: ToJSON k => Text -> k -> Action Text
-substituteInContent t v =
+substituteInContent :: ToJSON k => k -> Text -> Action Text
+substituteInContent v t =
   let tpl = compileTemplate "" t
   in case tpl of
     Left err   -> fail $ show err
     Right tpl' -> substitute' tpl' v
 
-addMenus :: Site -> Page -> Value -> Value
-addMenus site page =
-  let menu = makeMenu site & menuText page
-  in do
-    setTextValue "menu" menu
-    -- setTextValue "secondaryMenu" $ secondary
+addMenu :: Site -> Page -> Value -> Value
+addMenu site page =
+  setTextValue "menu" $ makeMenu site & menuText page
 
 buildAdvice :: Site -> Advice -> Action ()
 buildAdvice site Advice{..} = do
-  buildPostListPage site _advicePage [_adviceHowToReadWeather, _adviceFlyingCanberraTips]
-  buildPage site _adviceHowToReadWeather
-  buildPage site _adviceFlyingCanberraTips
+  let pages =
+        [ _adviceHowToReadWeather
+        , _adviceFlyingCanberraTips
+        ]
+  buildPostListPage site _advicePage pages
+  traverse_ (buildPageDefault site) pages
 
 buildStories :: Site -> Stories -> Action ()
 buildStories site Stories{..} = do
-  buildPostListPage site _storiesPage [_storiesFences, _storiesWindTalkerMan]
-  buildPage site _storiesFences
-  buildPage site _storiesWindTalkerMan
+  let pages =
+        [ _storiesFences
+        , _storiesWindTalkerMan
+        ]
+  buildPostListPage site _storiesPage pages
+  traverse_ (buildPageDefault site) pages
 
 buildSite :: Site -> Action ()
 buildSite site@Site{..} = do
   buildHome site _siteHome
-  buildEvents site _siteNow
+  buildNow site _siteNow
   buildEvents site _siteFuture
   buildEvents site _sitePast
   buildInfo site _siteInfo
@@ -411,17 +435,18 @@ buildRules = do
   let futureEvents  = filter (inFuture today) allEventPages
       pastEvents    = filter (inPast today) allEventPages
       currentEvents = filter (inPresent today) allEventPages
-  homePage'  <- loadPage "site/index.md"
-  nowPage    <- loadPage "site/now.md"
-  futurePage <- loadPage "site/future.md"
-  pastPage   <- loadPage "site/past.md"
-  infoPage'  <- loadPage "site/info.md"
-  lifeMemberPagePaths <- getDirectoryFiles "." ["site/info/about//*.md"]
-  lifeMemberPages <- forP lifeMemberPagePaths loadPage
-  about      <- loadPage "site/info/about.md"
-  faqPage    <- loadPage "site/info/faq.md"
-  sitesPage  <- loadPage "site/info/sites.md"
-
+  homePage'              <- loadPage "site/index.md"
+  nowPage                <- loadPage "site/now.md"
+  futurePage             <- loadPage "site/future.md"
+  pastPage               <- loadPage "site/past.md"
+  infoPage'              <- loadPage "site/info.md"
+  lifeMemberPagePaths    <- getDirectoryFiles "." ["site/info/about//*.md"]
+  lifeMemberPages        <- forP lifeMemberPagePaths loadPage
+  about                  <- loadPage "site/info/about.md"
+  faqPage                <- loadPage "site/info/faq.md"
+  sitesPage              <- loadPage "site/info/sites.md"
+  siteRecordsPage        <- loadPage "site/info/site-records.md"
+  weatherResourcesPage   <- loadPage "site/info/weather-resources.md"
   advicePage'            <- loadPage "site/advice.md"
   howToReadWeatherPage   <- loadPage "site/advice/reading-weather-canberra.md"
   flyingCanberraTipsPage <- loadPage "site/advice/flying-canberra-a-few-tips.md"
@@ -438,7 +463,7 @@ buildRules = do
         (EventList nowPage currentEvents)
         (EventList futurePage futureEvents)
         (EventList pastPage pastEvents)
-        (Info infoPage' (About about lifeMemberPages) sitesPage faqPage )
+        (Info infoPage' (About about lifeMemberPages) sitesPage siteRecordsPage weatherResourcesPage faqPage )
         (Advice advicePage' howToReadWeatherPage flyingCanberraTipsPage)
         (Stories storiesPage' fencesPage windTalkerManPage)
   buildSite site
