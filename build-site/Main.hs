@@ -27,12 +27,10 @@ module Main
   , infoAbout
   , Advice(..)
   , advicePage
-  , adviceHowToReadWeather
-  , adviceFlyingCanberraTips
+  , advicePages
   , Stories(..)
   , storiesPage
-  , storiesFences
-  , storiesWindTalkerMan
+  , storiesPages
   , Site(..)
   , siteHome
   , siteNow
@@ -69,7 +67,7 @@ import Slick                        (compileTemplate', convert, slick)
 import Slick.Pandoc                 (defaultHtml5Options,
                                      defaultMarkdownOptions,
                                      markdownToHTMLWithOpts)
-import System.FilePath              ((-<.>))
+import System.FilePath              (takeBaseName)
 import Text.Mustache                (Template, checkedSubstitute,
                                      compileTemplate)
 import Text.Mustache.Types          (mFromJSON)
@@ -109,28 +107,26 @@ data About = About
 makeLenses ''About
 
 data Info = Info
-  { _infoPage        :: Page
-  , _infoAbout       :: About
-  , _infoSites       :: Page
-  , _infoSiteRecords :: Page
-  , _infoWeatherResources   :: Page
-  , _infoFAQ         :: Page
+  { _infoPage             :: Page
+  , _infoAbout            :: About
+  , _infoSites            :: Page
+  , _infoSiteRecords      :: Page
+  , _infoWeatherResources :: Page
+  , _infoFAQ              :: Page
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Info)
 makeLenses ''Info
 
 data Advice = Advice
-  { _advicePage               :: Page
-  , _adviceHowToReadWeather   :: Page
-  , _adviceFlyingCanberraTips :: Page
+  { _advicePage  :: Page
+  , _advicePages :: [Page]
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Advice)
 makeLenses ''Advice
 
 data Stories = Stories
   { _storiesPage          :: Page
-  , _storiesFences        :: Page
-  , _storiesWindTalkerMan :: Page
+  , _storiesPages :: [Page]
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Stories)
 makeLenses ''Stories
@@ -170,17 +166,11 @@ instance ToMenuItem About where
 
 instance ToMenuItem Advice where
   toMenuItem Advice{..} =
-    BranchItem _advicePage $ NE.fromList
-      [ toMenuItem _adviceHowToReadWeather
-      , toMenuItem _adviceFlyingCanberraTips
-      ]
+    pageListMenuItem _advicePage _advicePages
 
 instance ToMenuItem Stories where
   toMenuItem Stories{..} =
-    BranchItem _storiesPage $ NE.fromList
-      [ toMenuItem _storiesFences
-      , toMenuItem _storiesWindTalkerMan
-      ]
+    pageListMenuItem _storiesPage _storiesPages
 
 makeMenu :: Site -> Menu
 makeMenu Site{..} =
@@ -199,35 +189,21 @@ setTextValue k t = _Object . at k ?~ String t
 
 copyStaticFiles :: Action ()
 copyStaticFiles = do
-  filePaths <- getDirectoryFiles "./site/" ["images//*", "css//*", "js//*", "fonts//*"]
+  filePaths <- getDirectoryFiles "./site/" ["images//*", "css//*", "js//*", "fonts//*", "files//*"]
   void $ forP filePaths $ \filePath ->
     copyFileChanged ("site" </> filePath) (outputFolder </> filePath)
 
 addScrapedContent :: Action (Value -> Value)
-addScrapedContent =
-  foldr (.) id <$> traverse addScraped
-    [ "longestCanberra"
-    , "longestSpringHill"
-    , "longestCollector"
-    , "longestLakeGeorge"
-    , "longestLanyon"
-    , "longestPigHill"
-    , "longestHoneysuckle"
-    , "longestBowning"
-    , "longestArgalong"
-    , "longestCastleHill"
-    , "longestBooroomba"
-    , "longestCarols"
-    , "recentCanberra"
-    ]
+addScrapedContent = do
+  scrapedFiles <- getDirectoryFiles "." ["site/scraped//*.html"]
+  foldr (.) id <$> traverse addScraped scrapedFiles
   where
     addScraped :: FilePath -> Action (Value -> Value)
-    addScraped filename =
-      "site/scraped" </> filename -<.> "html"
-        & readFile'
-        <&> T.pack
-        <&> addTableClassToTables
-        <&> setTextValue (T.pack filename)
+    addScraped file = file
+      & readFile'
+      <&> T.pack
+      <&> addTableClassToTables
+      <&> setTextValue (T.pack $ takeBaseName file)
 
 --------------------------------------------------------------------------------
 addTableClassToTables :: Text -> Text
@@ -316,7 +292,6 @@ buildNow :: Site -> EventList -> Action ()
 buildNow site EventList{..} = do
   traverse_ (buildPageDefault site) _elEvents
   page <- buildPageList _elPage _elEvents "eventList"
-  -- TODO: add in the live wind diagram?
   buildPage "windmap" site page
 
 buildPostListPage :: Site -> Page -> [Page] -> Action ()
@@ -397,21 +372,13 @@ addMenu site page =
 
 buildAdvice :: Site -> Advice -> Action ()
 buildAdvice site Advice{..} = do
-  let pages =
-        [ _adviceHowToReadWeather
-        , _adviceFlyingCanberraTips
-        ]
-  buildPostListPage site _advicePage pages
-  traverse_ (buildPageDefault site) pages
+  buildPostListPage site _advicePage _advicePages
+  traverse_ (buildPageDefault site) _advicePages
 
 buildStories :: Site -> Stories -> Action ()
 buildStories site Stories{..} = do
-  let pages =
-        [ _storiesFences
-        , _storiesWindTalkerMan
-        ]
-  buildPostListPage site _storiesPage pages
-  traverse_ (buildPageDefault site) pages
+  buildPostListPage site _storiesPage _storiesPages
+  traverse_ (buildPageDefault site) _storiesPages
 
 buildSite :: Site -> Action ()
 buildSite site@Site{..} = do
@@ -423,50 +390,59 @@ buildSite site@Site{..} = do
   buildAdvice site _siteAdvice
   buildStories site _siteStories
 
-selectFeatures :: [Page] -> [Page]
-selectFeatures = id -- TODO: closest to now first, weighted randomisation
-
 buildRules :: Action ()
 buildRules = do
+  -- Resources
   copyStaticFiles
-  eventPaths <- getDirectoryFiles "." ["site/events//*.md"]
-  allEventPages <- forP eventPaths loadPage
-  today <- liftIO $ localDay . zonedTimeToLocalTime <$> getZonedTime
+
+  -- Events (Now, Future, Past)
+  eventPaths    <- getDirectoryFiles "." ["site/events//*.md"]
+  today         <- liftIO $ localDay . zonedTimeToLocalTime <$> getZonedTime
+  allEventPages <- forP eventPaths loadPage <&> sortPages today
   let futureEvents  = filter (inFuture today) allEventPages
       pastEvents    = filter (inPast today) allEventPages
       currentEvents = filter (inPresent today) allEventPages
-  homePage'              <- loadPage "site/index.md"
-  nowPage                <- loadPage "site/now.md"
-  futurePage             <- loadPage "site/future.md"
-  pastPage               <- loadPage "site/past.md"
-  infoPage'              <- loadPage "site/info.md"
-  lifeMemberPagePaths    <- getDirectoryFiles "." ["site/info/about//*.md"]
-  lifeMemberPages        <- forP lifeMemberPagePaths loadPage
-  about                  <- loadPage "site/info/about.md"
-  faqPage                <- loadPage "site/info/faq.md"
-  sitesPage              <- loadPage "site/info/sites.md"
-  siteRecordsPage        <- loadPage "site/info/site-records.md"
-  weatherResourcesPage   <- loadPage "site/info/weather-resources.md"
-  advicePage'            <- loadPage "site/advice.md"
-  howToReadWeatherPage   <- loadPage "site/advice/reading-weather-canberra.md"
-  flyingCanberraTipsPage <- loadPage "site/advice/flying-canberra-a-few-tips.md"
+  nowPage    <- loadPage "site/now.md"
+  futurePage <- loadPage "site/future.md"
+  pastPage   <- loadPage "site/past.md"
+  let now    = EventList nowPage currentEvents
+      future = EventList futurePage futureEvents
+      past   = EventList pastPage pastEvents
 
-  storiesPage'      <- loadPage "site/stories.md"
-  fencesPage        <- loadPage "site/stories/fences.md"
-  windTalkerManPage <- loadPage "site/stories/the-windtalker-man.md"
+  -- Home
+  homePage' <- loadPage "site/index.md"
+  let home = Home homePage' allEventPages
 
-  let home = Home
-        homePage'
-        (selectFeatures $ futureEvents <> pastEvents) -- TODO: also list of stories
-      site = Site
-        home
-        (EventList nowPage currentEvents)
-        (EventList futurePage futureEvents)
-        (EventList pastPage pastEvents)
-        (Info infoPage' (About about lifeMemberPages) sitesPage siteRecordsPage weatherResourcesPage faqPage )
-        (Advice advicePage' howToReadWeatherPage flyingCanberraTipsPage)
-        (Stories storiesPage' fencesPage windTalkerManPage)
-  buildSite site
+  -- Info
+  infoPage'            <- loadPage "site/info.md"
+  lifeMemberPagePaths  <- getDirectoryFiles "." ["site/info/about//*.md"]
+  lifeMemberPages      <- forP lifeMemberPagePaths loadPage
+  about                <- loadPage "site/info/about.md"
+  faqPage              <- loadPage "site/info/faq.md"
+  sitesPage            <- loadPage "site/info/sites.md"
+  siteRecordsPage      <- loadPage "site/info/site-records.md"
+  weatherResourcesPage <- loadPage "site/info/weather-resources.md"
+  let info = Info
+        infoPage'
+        (About about lifeMemberPages)
+        sitesPage
+        siteRecordsPage
+        weatherResourcesPage
+        faqPage
+
+  -- Advice
+  advicePage'     <- loadPage "site/advice.md"
+  advicePagePaths <- getDirectoryFiles "." ["site/advice//*.md"]
+  advicePages'    <- forP advicePagePaths loadPage
+  let advice = Advice advicePage' advicePages'
+
+  -- Stories
+  storiesPage'     <- loadPage "site/stories.md"
+  storiesPagePaths <- getDirectoryFiles "." ["site/stories//*.md"]
+  storiesPages'    <- forP storiesPagePaths loadPage
+  let stories = Stories storiesPage' storiesPages'
+
+  buildSite $ Site home now future past info advice stories
 
 main :: IO ()
 main = slick buildRules

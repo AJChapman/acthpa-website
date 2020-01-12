@@ -5,10 +5,11 @@ module Menu
   , ToMenuItem(..)
   , menuText
   , menuHtml
+  , pageListMenuItem
   ) where
 
 import Control.Lens.Operators
-import Data.List.NonEmpty            (NonEmpty)
+import Data.List.NonEmpty            (NonEmpty, nonEmpty)
 import Data.Text                     (Text)
 import Text.Blaze.Html.Renderer.Text (renderHtml)
 import Text.Blaze.Html5              ((!))
@@ -59,3 +60,10 @@ pageLink activePage page =
     & if isActivePage activePage page
         then (! A.class_ "active")
         else id
+
+pageListMenuItem :: Page -> [Page] -> MenuItem
+pageListMenuItem listPage subPages =
+    case nonEmpty subPages of
+      Nothing -> LeafItem listPage
+      Just pages ->
+        BranchItem listPage (toMenuItem <$> pages)

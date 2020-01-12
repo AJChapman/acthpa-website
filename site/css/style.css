@@ -84,14 +84,14 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase; }
   .colorlib-nav #colorlib-logo a {
     position: relative;
     color: #000; }
 
 #colorlib-logo img {
-    width: 40%;
+    width: 30%;
 }
 
 @media screen and (max-width: 768px) {
