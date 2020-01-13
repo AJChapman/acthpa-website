@@ -52,7 +52,7 @@ import Control.Lens                  (Fold, Prism', Traversal', at, ix,
 import Control.Monad                 (when)
 import Control.Monad.Catch.Pure      (runCatch)
 import Control.Monad.IO.Class        (liftIO)
-import Data.Either.Combinators       (rightToMaybe, isRight)
+import Data.Either.Combinators       (isRight, rightToMaybe)
 import Data.Fixed                    (Centi)
 import Data.Geodetic.LL              (LL (..), lat, lon)
 import Data.Maybe                    (mapMaybe)
@@ -75,13 +75,11 @@ import Text.Blaze.Html5.Attributes   (href)
 import Text.Taggy.Lens               (Element, allAttributed, allNamed,
                                       attributed, attrs, children, content,
                                       contents, element, elements, html, named)
-import Text.URI                      (Authority (..), URI, isPathAbsolute,
-                                      makeAbsolute, mkHost, mkScheme, mkURI,
-                                      render)
-import Text.URI.Lens                 (authHost, uriAuthority)
+import Text.URI                      (Authority (..), URI, makeAbsolute, mkHost,
+                                      mkScheme, mkURI, render)
+import Text.URI.Lens                 (uriAuthority)
 
 import qualified Data.Text      as T
-import qualified Data.Text.IO   as TIO
 import qualified Data.Text.Lazy as L
 
 newtype Pilot = Pilot
