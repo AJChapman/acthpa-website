@@ -1395,11 +1395,10 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0; }
 
-.event-image {
-    max-width: 800px;
-    max-height: 600px;
+.container img {
+    max-width: 100%;
 }
 
-.container img {
-    max-width: 1200px;
+.container img.event-image {
+    max-width: 80%;
 }
