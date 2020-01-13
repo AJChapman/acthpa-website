@@ -3,7 +3,10 @@ module Main
   ( main
   ) where
 
+import Control.Monad (void)
 import Network.HTTP.Req (Req, defaultHttpConfig, runReq)
+import System.FilePath ((</>))
+import System.Directory (createDirectoryIfMissing)
 
 import Flights (Flight, argalong, booroomba, bowning, canberra, carols,
                 castleHill, collector, getLongestFlightsAt, getRecentFlightsAt,
@@ -14,7 +17,9 @@ import qualified Data.Text.IO as TIO
 
 scrapeSite :: Bool -> String -> Req [Flight] -> IO ()
 scrapeSite showSite fileName getFlights = do
-  let file = "site/scraped/" <> fileName <> ".html"
+  let scrapeDir = "site/scraped"
+  void $ createDirectoryIfMissing False scrapeDir
+  let file = scrapeDir </> fileName <> ".html"
   putStrLn $ "Populating '" <> file <> "'"
   flights <- runReq defaultHttpConfig getFlights
   putStrLn $ "Found " <> show (length flights) <> " flights."
