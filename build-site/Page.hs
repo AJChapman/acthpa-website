@@ -70,7 +70,7 @@ sortPagesByDate today = sortBy (comparingPagesByDate today)
 
 comparingPagesByDate :: Day -> Page -> Page -> Ordering
 comparingPagesByDate today =
-  comparing (pageDaysDistant today)
+  comparing (ReverseMaybe <$> pageDaysDistant today)
 
 sortPages :: Day -> [Page] -> [Page]
 sortPages today = sortBy (comparingPages today)
@@ -81,6 +81,17 @@ comparingPages today l r =
     EQ -> compare l r -- Fall back on Ord instance
     x  -> x
 
+-- A Maybe that sorts in reverse order, so that (Just x) < Nothing,
+-- which allows us to sort pages with a date before pages without one.
+data ReverseMaybe a = ReverseMaybe (Maybe a)
+  deriving (Eq)
+
+instance Ord a => Ord (ReverseMaybe a) where
+  compare (ReverseMaybe Nothing)  (ReverseMaybe Nothing)  = EQ
+  compare (ReverseMaybe Nothing)  (ReverseMaybe (Just _)) = GT
+  compare (ReverseMaybe (Just _)) (ReverseMaybe Nothing)  = LT
+  compare (ReverseMaybe (Just x)) (ReverseMaybe (Just y)) = compare x y
+  
 pageDaysDistant :: Day -> Page -> Maybe Integer
 pageDaysDistant today Page{..} =
   let distances = daysDistant today  <$> catMaybes [_pagePublished, _pageEventStart, _pageEventFinish]

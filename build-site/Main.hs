@@ -56,7 +56,7 @@ import Data.List.NonEmpty           (nonEmpty)
 import Data.Text                    (Text)
 import Data.Time                    (Day, getZonedTime, localDay,
                                      zonedTimeToLocalTime)
-import Development.Shake            (Action, copyFileChanged, forP,
+import Development.Shake            (Action, FilePattern, copyFileChanged, forP,
                                      getDirectoryFiles, liftIO, readFile',
                                      writeFile')
 import Development.Shake.Classes    (Binary)
@@ -125,7 +125,7 @@ data Advice = Advice
 makeLenses ''Advice
 
 data Stories = Stories
-  { _storiesPage          :: Page
+  { _storiesPage  :: Page
   , _storiesPages :: [Page]
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Stories)
@@ -390,33 +390,39 @@ buildSite site@Site{..} = do
   buildAdvice site _siteAdvice
   buildStories site _siteStories
 
+loadSortedPages :: Day -> FilePattern -> Action [Page]
+loadSortedPages today filePattern = do
+  pagePaths <- getDirectoryFiles "." [filePattern]
+  forP pagePaths loadPage <&> sortPages today
+
 buildRules :: Action ()
 buildRules = do
   -- Resources
   copyStaticFiles
 
   -- Events (Now, Future, Past)
-  eventPaths    <- getDirectoryFiles "." ["site/events//*.md"]
   today         <- liftIO $ localDay . zonedTimeToLocalTime <$> getZonedTime
-  allEventPages <- forP eventPaths loadPage <&> sortPages today
+  nowPage       <- loadPage "site/now.md"
+  futurePage    <- loadPage "site/future.md"
+  pastPage      <- loadPage "site/past.md"
+  allEventPages <- loadSortedPages today "site/events//*.md"
   let futureEvents  = filter (inFuture today) allEventPages
       pastEvents    = filter (inPast today) allEventPages
       currentEvents = filter (inPresent today) allEventPages
-  nowPage    <- loadPage "site/now.md"
-  futurePage <- loadPage "site/future.md"
-  pastPage   <- loadPage "site/past.md"
-  let now    = EventList nowPage currentEvents
+      now    = EventList nowPage currentEvents
       future = EventList futurePage futureEvents
       past   = EventList pastPage pastEvents
 
   -- Home
   homePage' <- loadPage "site/index.md"
-  let home = Home homePage' allEventPages
+  let home = Home homePage'
+        -- Feature all current events (there's probably at most 1), 4 future events and 4 news items
+        -- Order them by how close to the present they are.
+        (sortPages today $ currentEvents <> take 4 futureEvents <> take 4 pastEvents)
 
   -- Info
   infoPage'            <- loadPage "site/info.md"
-  lifeMemberPagePaths  <- getDirectoryFiles "." ["site/info/about//*.md"]
-  lifeMemberPages      <- forP lifeMemberPagePaths loadPage
+  lifeMemberPages      <- loadSortedPages today "site/info/about//*.md"
   about                <- loadPage "site/info/about.md"
   -- faqPage              <- loadPage "site/info/faq.md"
   sitesPage            <- loadPage "site/info/sites.md"
@@ -432,14 +438,12 @@ buildRules = do
 
   -- Advice
   advicePage'     <- loadPage "site/advice.md"
-  advicePagePaths <- getDirectoryFiles "." ["site/advice//*.md"]
-  advicePages'    <- forP advicePagePaths loadPage
+  advicePages'    <- loadSortedPages today "site/advice//*.md"
   let advice = Advice advicePage' advicePages'
 
   -- Stories
   storiesPage'     <- loadPage "site/stories.md"
-  storiesPagePaths <- getDirectoryFiles "." ["site/stories//*.md"]
-  storiesPages'    <- forP storiesPagePaths loadPage
+  storiesPages'    <- loadSortedPages today "site/stories//*.md"
   let stories = Stories storiesPage' storiesPages'
 
   buildSite $ Site home now future past info advice stories

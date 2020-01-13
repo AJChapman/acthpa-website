@@ -12,5 +12,5 @@ Canberra pilot Kari Ellis secured third place in the women's category of the Par
 Kari flew a very tactical race, with the help of the rest of the Australian team, to edge out Marcella Uchoa by only 19 points.
 This was Kari's second World Championships, having [secured second place in the 2017 event in Monte Avena, Italy](https://airtribune.com/worlds2017/results/task2702/comp/women).
 
-Kari can often be seen flying at our local sites.
-Just look for the comp wing flying high above everyone else.
+During the event Kari kept her Facebook followers in the loop with a write-up of each task, which she has kindly allowed us to [post here as well](/stories/kari-worlds-2019).
+
