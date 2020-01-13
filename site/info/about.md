@@ -4,7 +4,7 @@ title: "About ACTHPA"
 
 The Australian Capital Territory Hang Gliding and Paragliding Association (ACTHPA) is an incorporated body in the ACT.
 It is both a State Association affiliated with the Sports Aviation Federation of Australia (SAFA, formerly HGFA), and the primary club for free flying in the Canberra region.
-[Here are the ACTHPA Objects and Rules as of 7 June 2016](https://www.dropbox.com/s/2586faq56i1sy62/ACTHPA%20Constitution%20-%207%20June%202016.pdf?dl=0).
+[Here are the ACTHPA Objects and Rules as of 7 June 2016](/files/ACTHPA Objects and Rules - 7 June 2016.pdf).
  
 ## Committee Members
 

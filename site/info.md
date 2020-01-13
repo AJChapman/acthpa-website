@@ -44,7 +44,7 @@ It is at the vehicles owner's discretion as to whether they accept payment.
 
 The Canberra region has great sites located close to the city, but unfortunately this means that we fly close to controlled airspace.
 Make sure that before flying anywhere in the region you familiarise yourself with the airspace restrictions.
-The best way to do this is to look at the Canberra Visual Terminal Chart on Airservices Australia 'Flying Around' site HERE. 
+The best way to do this is to look at the Canberra region in [AirCheck](http://xcaustralia.org/aircheck/aircheck.php), but the [Now page](/now) also gives a visual overview.
 
 The penalties for flying in controlled airspace without authorisation are harsh and jeopardise flying activities for others.
 

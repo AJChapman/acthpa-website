@@ -1399,3 +1399,7 @@ input[type="text"] {
     max-width: 800px;
     max-height: 600px;
 }
+
+.container img {
+    max-width: 1200px;
+}

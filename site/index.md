@@ -13,9 +13,9 @@ We have a strong social scene.
 If it is 'on' then you can pretty much guarantee that someone will be out flying.
 If you are planning to go for a fly at [one of our sites](/flying-ACT/sites), please post a message on [our Facebook group](https://www.facebook.com/groups/260458037465074/) so you can meet up with others.
 The [wind talkers](http://www.freeflightwx.com/acthpa/) provide current wind speed and direction and records this information for the previous 12 hours.
-The weather section links to the Bureau of Meteorology and other useful weather information.
+The [weather resources page](info/weather-resources) links to useful weather information.
 
-If you are a visiting pilot, remember to contact one of the locals prior to flying any site.
+If you are a [visiting pilot](info), remember to contact one of the locals prior to flying any site.
 
 ## Recent Flights Around Canberra
 

@@ -1,9 +1,10 @@
-{-# LANGUAGE DataKinds       #-}
-{-# LANGUAGE DeriveAnyClass  #-}
-{-# LANGUAGE DeriveGeneric   #-}
-{-# LANGUAGE DerivingVia     #-}
-{-# LANGUAGE RecordWildCards #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE DataKinds         #-}
+{-# LANGUAGE DeriveAnyClass    #-}
+{-# LANGUAGE DeriveGeneric     #-}
+{-# LANGUAGE DerivingVia       #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE RecordWildCards   #-}
+{-# LANGUAGE TemplateHaskell   #-}
 module Page
   ( Page(..)
   , pageTitle
@@ -78,7 +79,7 @@ comparingPages :: Day -> Page -> Page -> Ordering
 comparingPages today l r =
   case comparingPagesByDate today l r of
     EQ -> compare l r -- Fall back on Ord instance
-    x -> x
+    x  -> x
 
 pageDaysDistant :: Day -> Page -> Maybe Integer
 pageDaysDistant today Page{..} =
@@ -114,5 +115,7 @@ pageRelativizeUrl from to =
 
 isActivePage :: Page -> Page -> Bool
 isActivePage activePage page =
-  (page ^. pageUrl) `T.isPrefixOf` (activePage ^. pageUrl)
+  if page ^. pageUrl == ""
+    then page == activePage
+    else (page ^. pageUrl) `T.isPrefixOf` (activePage ^. pageUrl)
 

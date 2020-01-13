@@ -23,7 +23,7 @@ module Main
   , infoSites
   , infoSiteRecords
   , infoWeatherResources
-  , infoFAQ
+  -- , infoFAQ
   , infoAbout
   , Advice(..)
   , advicePage
@@ -112,7 +112,7 @@ data Info = Info
   , _infoSites            :: Page
   , _infoSiteRecords      :: Page
   , _infoWeatherResources :: Page
-  , _infoFAQ              :: Page
+  -- , _infoFAQ              :: Page
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Info)
 makeLenses ''Info
@@ -158,7 +158,7 @@ instance ToMenuItem Info where
       , toMenuItem _infoSites
       , toMenuItem _infoSiteRecords
       , toMenuItem _infoWeatherResources
-      , toMenuItem _infoFAQ
+      -- , toMenuItem _infoFAQ
       ]
 
 instance ToMenuItem About where
@@ -315,14 +315,14 @@ buildAbout site About{..} pages = do
 buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
   let pages =
-        [ _infoFAQ
-        , _infoSites
+        [ _infoSites
         , _infoSiteRecords
         , _infoWeatherResources
+        -- , _infoFAQ
         ]
   buildAbout site _infoAbout pages
-  buildPostListPage site _infoPage pages
   traverse_ (buildPageDefault site) pages
+  buildPostListPage site _infoPage (_infoAbout ^. aboutPage : pages)
 
 buildPageDefault :: Site -> Page -> Action ()
 buildPageDefault = buildPage "default"
@@ -418,7 +418,7 @@ buildRules = do
   lifeMemberPagePaths  <- getDirectoryFiles "." ["site/info/about//*.md"]
   lifeMemberPages      <- forP lifeMemberPagePaths loadPage
   about                <- loadPage "site/info/about.md"
-  faqPage              <- loadPage "site/info/faq.md"
+  -- faqPage              <- loadPage "site/info/faq.md"
   sitesPage            <- loadPage "site/info/sites.md"
   siteRecordsPage      <- loadPage "site/info/site-records.md"
   weatherResourcesPage <- loadPage "site/info/weather-resources.md"
@@ -428,7 +428,7 @@ buildRules = do
         sitesPage
         siteRecordsPage
         weatherResourcesPage
-        faqPage
+        -- faqPage
 
   -- Advice
   advicePage'     <- loadPage "site/advice.md"
