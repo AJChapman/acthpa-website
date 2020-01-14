@@ -42,7 +42,7 @@ module Main
   , addTableClassToTables
   ) where
 
-import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses,
+import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses, view,
                                      only, prism', re, toListOf)
 import Control.Lens.Operators       hiding ((.=))
 import Control.Lens.Plated          (deep)
@@ -54,6 +54,7 @@ import Data.Aeson.Lens              (_Object, _String)
 import Data.Binary.Instances.Time   ()
 import Data.Foldable                (traverse_)
 import Data.List.NonEmpty           (nonEmpty)
+import Data.Maybe                   (isJust)
 import Data.Text                    (Text)
 import Data.Time                    (Day, getZonedTime, localDay,
                                      zonedTimeToLocalTime)
@@ -399,6 +400,10 @@ loadSortedPages today filePattern = do
   pagePaths <- getDirectoryFiles "." [filePattern]
   forP pagePaths loadPage <&> sortPages today
 
+chooseFeatures :: Day -> [Page] -> [Page]
+chooseFeatures today =
+  sortPages today . filter (isJust . view pageTeaser)
+
 buildRules :: Action ()
 buildRules = do
   -- Resources
@@ -422,7 +427,10 @@ buildRules = do
   let home = Home homePage'
         -- Feature all current events (there's probably at most 1), 4 future events and 4 news items
         -- Order them by how close to the present they are.
-        (sortPages today $ currentEvents <> take 4 futureEvents <> take 4 pastEvents)
+        (chooseFeatures today
+          $ currentEvents
+          <> take 4 futureEvents
+          <> take 4 pastEvents)
 
   -- Info
   infoPage'            <- loadPage "site/info.md"

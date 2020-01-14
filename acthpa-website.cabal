@@ -55,6 +55,7 @@ executable scrape
   main-is:          Main.hs
   hs-source-dirs:   scrape
   other-modules:    Flights
+                  , XContest
   build-depends:    blaze-markup ^>= 0.8.2.2
                   , coordinate ^>= 0.2
                   , either ^>= 5.0.1.1
