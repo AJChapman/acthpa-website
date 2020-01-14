@@ -12,9 +12,7 @@ Wes Kilham, Rene Sedlmaier, Michael Porter, Ken Crowe, Allister Higgins, Jacques
 
 ## Presentation of Annual Report
 
-Rene Sedlmaier presented and spoke to the Annual Report for 2018/19 and
-with Allister Higgins reported on the Association's current financial
-position.
+Rene Sedlmaier presented and spoke to the [Annual Report for 2018/19](/files/The 2018 annual report ACTHPA.docx) and with Allister Higgins reported on the Association's current financial position.
 
 ## Committee Elections
 Michael Porter deputized for the Public Officer and conducted elections for the committee for the coming year, resulting in the following appointments
