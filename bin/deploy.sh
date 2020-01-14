@@ -38,6 +38,10 @@ case "$(basename "$0")" in
         cabal new-build scrape
         cabal new-exec scrape
         cabal new-build build-site
+
+        # Remove any previous build
+        rm -rf gen/ .shake/
+
         cabal new-exec build-site
         rsync -rvz gen/ "${DEPLOY_TO}"
         ;;

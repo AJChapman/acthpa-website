@@ -39,6 +39,7 @@ module Main
   , siteInfo
   , siteAdvice
   , siteStories
+  , addTableClassToTables
   ) where
 
 import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses,
@@ -176,12 +177,12 @@ makeMenu :: Site -> Menu
 makeMenu Site{..} =
   Menu . NE.fromList $
     [ toMenuItem _siteHome
+    , toMenuItem _siteInfo
     , toMenuItem _siteNow
     , toMenuItem _siteFuture
     , toMenuItem _sitePast
     , toMenuItem _siteStories
     , toMenuItem _siteAdvice
-    , toMenuItem _siteInfo
     ]
 
 setTextValue :: Text -> Text -> Value -> Value
@@ -213,7 +214,9 @@ addTableClassToTables =
 htmlChunks :: Prism' Text [Node]
 htmlChunks = prism' joinNodes getNodes where
   joinNodes :: [Node] -> Text
-  joinNodes = L.toStrict . mconcat . toListOf (traverse . re html)
+  joinNodes nodes =
+    let html' = nodes & L.toStrict . mconcat . toListOf (traverse . re html)
+    in T.replace "<br></br>" "<br />" html' -- HACK to fix bug in Taggy
   getNodes :: Text -> Maybe [Node]
   getNodes t = ("<html>" <> L.fromStrict t <> "</html>") ^? html . element . children
 
@@ -249,7 +252,8 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
       fullPageData = pageData & withPageUrl & withTeaser
 
   -- Convert to our Page datatype
-  convert fullPageData
+  page <- convert fullPageData
+  pure page
 
 data Tense = Future | Present | Past
   deriving (Eq, Ord, Show)

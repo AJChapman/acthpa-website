@@ -8,6 +8,7 @@
 module Page
   ( Page(..)
   , pageTitle
+  , pageSubtitle
   , pageContent
   , pageUrl
   , pageTeaser
@@ -53,6 +54,7 @@ import qualified Data.Text as T
 -- We also keep it around in other data structures (for now).
 data Page = Page
   { _pageTitle       :: Text
+  , _pageSubtitle    :: Maybe Text
   , _pageContent     :: Text
   , _pageUrl         :: Text -- E.g. "info/faq", with the filepath for that url being "info/faq/index.html"
   , _pageTeaser      :: Maybe Text

@@ -1,21 +1,30 @@
 ---
 title: Home
 ---
-The ACT Hang gliding and Paragliding Association (ACTHPA) is the club for all hang gliders, paragliders and their motorised forms in the region.
+## About ACTHPA
+The [ACT Hang gliding and Paragliding Association (ACTHPA)](info/about) is the club for all hang gliders, paragliders and their motorised forms in the region.
 The region is excellent for carbon-free flying and there are some great areas for motorised flight as well.
-We have many excellent sites, local paragliding instructors and an active pilot community.
-We maintain a number of launch sites, and wind talkers in the local area to help in deciding when and where to fly.
+We have [many excellent sites](info/sites), local paragliding instructors and an active pilot community.
+We maintain a number of launch sites, and [wind talkers] in the local area to help in deciding when and where to fly.
+
+## Flying in Canberra
+
+If it is 'on' then you can pretty much guarantee that someone will be out flying.
+If you are planning to go for a fly at [one of our sites](/flying-ACT/sites), please post a message on [our Facebook group] so you can meet up with others.
+The [wind talkers] provide current wind speed and direction and records this information for the previous 12 hours.
+The [weather resources page](info/weather-resources) links to useful weather information.
+
+If you are a [visiting pilot](info), remember to contact one of the locals prior to flying any site.
+
+## Learning to Fly
+
+If you're interested in learning to fly, take a look at the [SAFA Schools page](https://www.safa.asn.au/training/flight-schools), and you could also join [our Facebook group] or come along to a club meeting to ask for recommendations.
+
+## Club Meetings
 
 Club meetings are held on the first Tuesday of each month (except December and January) at [the Canberra Labor Club](http://www.laborclub.com.au) in Weston Creek starting at 7.30 pm.
 At the meetings we talk about flying and put members in contact with each other.
 We have a strong social scene.
-
-If it is 'on' then you can pretty much guarantee that someone will be out flying.
-If you are planning to go for a fly at [one of our sites](/flying-ACT/sites), please post a message on [our Facebook group](https://www.facebook.com/groups/260458037465074/) so you can meet up with others.
-The [wind talkers](http://www.freeflightwx.com/acthpa/) provide current wind speed and direction and records this information for the previous 12 hours.
-The [weather resources page](info/weather-resources) links to useful weather information.
-
-If you are a [visiting pilot](info), remember to contact one of the locals prior to flying any site.
 
 ## Recent Flights Around Canberra
 
@@ -29,3 +38,6 @@ These are some of the longest cross-country flights recorded in the Canberra reg
 Also see the [site records page](info/site-records) for records broken down by site and wing category.
 
 {{{longestCanberra}}}
+
+[wind talkers]: http://www.freeflightwx.com/acthpa/
+[our Facebook group]: https://www.facebook.com/groups/260458037465074/
