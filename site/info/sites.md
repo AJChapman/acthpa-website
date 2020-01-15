@@ -3,6 +3,17 @@ title: "Local Flying Sites"
 ---
 The ACT and surrounding region have some great flying sites.
 
+## Site Guides
+
+Also check out [the Info page](../) for more detailed information on flying in the Canberra region.
+
+- [Spring Hill]
+- [Lake George]
+- [Lanyon]
+- [Collector]
+- [Honeysuckle (Tumut)]
+- [Pig Hill]
+
 ## Our Main Sites
 
 These are our regular flying sites.
@@ -62,3 +73,10 @@ These are sites we have previously flown from, but are currently closed.
 Geary's gap is just across the highway from the south launch, but is currently closed.
 
 **[Lake George (Geary's Gap) Site Guide](https://siteguide.org.au/Sites/Lake%20George%20(Geary's%20Gap).html)**
+
+[Spring Hill]: https://siteguide.org.au/Sites/Spring%20Hill.html
+[Lake George]: https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html
+[Lanyon]: https://siteguide.org.au/Sites/Lanyon.html
+[Collector]: https://siteguide.org.au/Sites/Lake%20George%20(Collector).html
+[Honeysuckle (Tumut)]: https://siteguide.org.au/Sites/Honeysuckle.html
+[Pig Hill]: https://siteguide.org.au/Sites/Pig%20Hill.html

@@ -16,7 +16,7 @@ The [weather resources page](info/weather-resources) links to useful weather inf
 
 If you are a [visiting pilot](info), remember to contact one of the locals prior to flying any site.
 
-## Learning to Fly
+## Learn to Fly
 
 If you're interested in learning to fly, take a look at the [SAFA Schools page](https://www.safa.asn.au/training/flight-schools), and you could also join [our Facebook group] or come along to a club meeting to ask for recommendations.
 

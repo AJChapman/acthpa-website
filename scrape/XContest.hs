@@ -10,16 +10,14 @@ module XContest
   , pilotFromFlightRow
   , rowPilotName
   , cellFlightKms
-  , rowFlightTime
+  , rowFlightDate
   , rowFlightUrl
-  , xContestDay
   ) where
 
 import Control.Lens             (Fold, Prism', Traversal', at, ix, only, prism,
                                  to, _Show)
 import Control.Lens.Operators
 import Control.Monad.IO.Class   (liftIO)
-import Data.Geodetic.LL         (LL (..))
 import Data.Maybe               (mapMaybe)
 import Data.Text                (Text)
 import Data.Text.Encoding.Error (lenientDecode)
@@ -33,7 +31,8 @@ import Text.Taggy.Lens          (Element, allAttributed, allNamed, attributed,
                                  attrs, children, content, contents, element,
                                  elements, html, named)
 
-import qualified Data.Text      as T
+import qualified Data.Text as T
+-- import qualified Data.Text.IO   as TIO
 import qualified Data.Text.Lazy as L
 
 import Flights
@@ -63,9 +62,9 @@ flightFromFlightRow row =
       url = makeAbsoluteUrlOf xContestOrg (row ^? rowFlightUrl)
   in Flight
     <$> pilotFromFlightRow row
-    <*> cells ^? traverse . cellSite
+    <*> cells ^? traverse . cellSiteName
     <*> cells ^? traverse . cellFlightKms
-    <*> row ^? rowFlightTime
+    <*> row ^? rowFlightDate
     <*> url
 
 pilotFromFlightRow :: Element -> Maybe Pilot
@@ -85,14 +84,14 @@ cellFlightKms = attributed (ix "class" .  only "km")
   . unpacked
   . _Show
 
-cellSite :: Fold Element Site
-cellSite = allNamed (only "a")
+cellSiteName :: Fold Element SiteName
+cellSiteName = allNamed (only "a")
   . attributed (ix "class" . only "lau")
   . contents
-  . to Site
+  . to SiteName
 
-rowFlightTime :: Traversal' Element Day
-rowFlightTime = children
+rowFlightDate :: Traversal' Element Day
+rowFlightDate = children
   . ix 1
   . element
   . children
@@ -117,30 +116,31 @@ xContestDay =
 xContestOrg :: Text
 xContestOrg = "www.xcontest.org"
 
-xContestOptions :: Text -> LL -> Int -> Option scheme
-xContestOptions sort loc radiusInMetres =
-  "filter[point]"            =: formatLL loc
-  <> "filter[radius]"        =: (radiusInMetres :: Int)
-  -- <> "filter[mode]"          =: ("START" :: Text)
-  -- <> "filter[date_mode]"     =: ("dmy" :: Text)
-  -- <> "filter[date]"          =: ("" :: Text)
-  -- <> "filter[value_mode]"    =: ("dst" :: Text)
-  -- <> "filter[min_value_dst]" =: ("" :: Text)
-  -- <> "filter[catg]"          =: ("" :: Text)
-  -- <> "filter[route_types]"   =: ("" :: Text)
-  -- <> "filter[avg]"           =: ("" :: Text)
-  -- <> "filter[pilot]"         =: ("" :: Text)
-  <> "list[sort]"            =: sort -- pts, time_start
-  <> "list[dir]"             =: ("down" :: Text)
+xContestOptions :: Text -> Site -> Option scheme
+xContestOptions sort site =
+  let radiusInMetres = site ^. siteRadius
+  in "filter[point]"            =: formatLL (site ^. siteLocation)
+    <> "filter[radius]"        =: (radiusInMetres :: Int)
+    -- <> "filter[mode]"          =: ("START" :: Text)
+    -- <> "filter[date_mode]"     =: ("dmy" :: Text)
+    -- <> "filter[date]"          =: ("" :: Text)
+    -- <> "filter[value_mode]"    =: ("dst" :: Text)
+    -- <> "filter[min_value_dst]" =: ("" :: Text)
+    -- <> "filter[catg]"          =: ("" :: Text)
+    -- <> "filter[route_types]"   =: ("" :: Text)
+    -- <> "filter[avg]"           =: ("" :: Text)
+    -- <> "filter[pilot]"         =: ("" :: Text)
+    <> "list[sort]"            =: sort -- pts, time_start
+    <> "list[dir]"             =: ("down" :: Text)
 
-getFlightsAt :: MonadHttp m => Text -> LL -> Int -> Int -> m [Flight]
-getFlightsAt sort loc radiusInMetres top =
-  take top <$> xContestFlights (xContestOptions sort loc radiusInMetres)
+getFlightsAt :: MonadHttp m => Text -> Site -> Int -> m [Flight]
+getFlightsAt sort site top =
+  take top <$> xContestFlights (xContestOptions sort site)
 
-getLongestFlightsAt :: MonadHttp m => LL -> Int -> Int -> m [Flight]
+getLongestFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
 getLongestFlightsAt = getFlightsAt "pts"
 
-getRecentFlightsAt :: MonadHttp m => LL -> Int -> Int -> m [Flight]
+getRecentFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
 getRecentFlightsAt = getFlightsAt "time_start"
 
 xContestFlightSearchUrl :: Url 'Https

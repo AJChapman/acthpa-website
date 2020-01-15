@@ -3,15 +3,16 @@ module Main
   ( main
   ) where
 
-import Control.Monad (void)
-import Network.HTTP.Req (Req, defaultHttpConfig, runReq)
-import System.FilePath ((</>))
+import Control.Monad    (void)
+import Network.HTTP.Req (Req, defaultHttpConfig, runReq, MonadHttp)
 import System.Directory (createDirectoryIfMissing)
+import System.FilePath  ((</>))
 
 import Flights
 
-import qualified XContest as XC
 import qualified Data.Text.IO as TIO
+import qualified Leonardo     as LEO
+import qualified XContest     as XC
 
 scrapeSite :: Bool -> String -> Req [Flight] -> IO ()
 scrapeSite showSite fileName getFlights = do
@@ -25,19 +26,39 @@ scrapeSite showSite fileName getFlights = do
     file
     (renderFlights showSite flights)
 
+getFlightsAt :: MonadHttp m => [Site -> Int -> m [Flight]] -> Site -> Int -> m [Flight]
+getFlightsAt getters site n =
+  mconcat <$> traverse (\f -> f site n) getters
+
+getLongestFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
+getLongestFlightsAt site n = do
+  flights <- getFlightsAt
+    [ XC.getLongestFlightsAt
+    , LEO.getLongestFlightsAt
+    ] site n
+  pure . take n . sortFlightsByLengthDesc $ flights
+
+getRecentFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
+getRecentFlightsAt site n = do
+  flights <- getFlightsAt
+    [ XC.getRecentFlightsAt
+    , LEO.getRecentFlightsAt
+    ] site n
+  pure . take n  . sortFlightsByDateDesc $ flights
+
 main :: IO ()
 main = do
-  scrapeSite True "longestCanberra"    (XC.getLongestFlightsAt canberra    75000 20)
-  scrapeSite False "longestSpringHill"  (XC.getLongestFlightsAt springHill  5000  5)
-  scrapeSite False "longestCollector"   (XC.getLongestFlightsAt collector   1000  5)
-  scrapeSite False "longestLakeGeorge"  (XC.getLongestFlightsAt lakeGeorge  1000  5)
-  scrapeSite False "longestLanyon"  (XC.getLongestFlightsAt lanyon  5000  5)
-  scrapeSite False "longestPigHill"     (XC.getLongestFlightsAt pigHill     5000  5)
-  scrapeSite False "longestHoneysuckle" (XC.getLongestFlightsAt honeysuckle 5000  5)
-  scrapeSite False "longestBowning"     (XC.getLongestFlightsAt bowning     5000  5)
-  scrapeSite False "longestArgalong"    (XC.getLongestFlightsAt argalong    5000  5)
-  scrapeSite False "longestCastleHill"  (XC.getLongestFlightsAt castleHill  5000  5)
-  scrapeSite False "longestBooroomba"   (XC.getLongestFlightsAt booroomba   5000  5)
-  scrapeSite False "longestCarols"      (XC.getLongestFlightsAt carols      5000  5)
+  scrapeSite True "longestCanberra"     (getLongestFlightsAt canberra    20)
+  scrapeSite False "longestSpringHill"  (getLongestFlightsAt springHill  10)
+  scrapeSite False "longestCollector"   (getLongestFlightsAt collector   10)
+  scrapeSite False "longestLakeGeorge"  (getLongestFlightsAt lakeGeorge  10)
+  scrapeSite False "longestLanyon"      (getLongestFlightsAt lanyon      5)
+  scrapeSite False "longestPigHill"     (getLongestFlightsAt pigHill     5)
+  scrapeSite False "longestHoneysuckle" (getLongestFlightsAt honeysuckle 5)
+  scrapeSite False "longestBowning"     (getLongestFlightsAt bowning     5)
+  scrapeSite False "longestArgalong"    (getLongestFlightsAt argalong    5)
+  scrapeSite False "longestCastleHill"  (getLongestFlightsAt castleHill  5)
+  scrapeSite False "longestBooroomba"   (getLongestFlightsAt booroomba   5)
+  scrapeSite False "longestCarols"      (getLongestFlightsAt carols      5)
 
-  scrapeSite True "recentCanberra" (XC.getRecentFlightsAt canberra 75000 20)
+  scrapeSite True "recentCanberra" (getRecentFlightsAt canberra 20)
