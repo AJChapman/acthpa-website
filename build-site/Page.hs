@@ -28,7 +28,6 @@ module Page
   , relativeUrl
   , pageRelativeUrl
   , pageRelativizeUrl
-  , isActivePage
   ) where
 
 import Control.Lens                 (makeLenses)
@@ -46,8 +45,6 @@ import Development.Shake.Classes    (Binary)
 import Development.Shake.FilePath   ((</>))
 import GHC.Generics                 (Generic)
 import System.FilePath              (joinPath, splitDirectories)
-
-import qualified Data.Text as T
 
 -- | Page is the data structure that we load from MarkDown files.
 -- It has a lot of `Maybe` fields, because most metadata is optional.
@@ -125,10 +122,4 @@ pageRelativeUrl from to =
 pageRelativizeUrl :: Page -> Page -> Page
 pageRelativizeUrl from to =
   to & pageUrl . unpacked %~ relativeUrl from
-
-isActivePage :: Page -> Page -> Bool
-isActivePage activePage page =
-  if page ^. pageUrl == ""
-    then page == activePage
-    else (page ^. pageUrl) `T.isPrefixOf` (activePage ^. pageUrl)
 

@@ -8,12 +8,14 @@ module Menu
   , pageListMenuItem
   ) where
 
+import Control.Lens                  (Lens')
 import Control.Lens.Operators
 import Data.List.NonEmpty            (NonEmpty, nonEmpty)
 import Data.Text                     (Text)
 import Text.Blaze.Html.Renderer.Text (renderHtml)
 import Text.Blaze.Html5              ((!))
 
+import qualified Data.Text                   as T
 import qualified Data.Text.Lazy              as L
 import qualified Text.Blaze.Html5            as H
 import qualified Text.Blaze.Html5.Attributes as A
@@ -24,6 +26,11 @@ data MenuItem =
   BranchItem Page (NonEmpty MenuItem)
   | LeafItem Page
   deriving (Eq, Ord)
+
+itemPage :: Lens' MenuItem Page
+itemPage f (LeafItem page) = LeafItem <$> f page
+itemPage f (BranchItem page children) =
+  (`BranchItem` children) <$> f page
 
 newtype Menu = Menu (NonEmpty MenuItem)
 
@@ -44,20 +51,20 @@ submenuHtml activePage =
   H.ul . foldMap (menuItemHtml activePage)
 
 menuItemHtml :: Page -> MenuItem -> H.Html
-menuItemHtml activePage (BranchItem page children) =
+menuItemHtml activePage item@(BranchItem _ children) =
   H.li
-    ( pageLink activePage page
+    ( menuItemLink activePage item
       <> submenuHtml activePage children ! A.class_ "dropdown"
     ) ! A.class_ "has-dropdown"
+menuItemHtml activePage item@(LeafItem _) =
+  H.li $ menuItemLink activePage item
 
-menuItemHtml activePage (LeafItem page) =
-  H.li $ pageLink activePage page
-
-pageLink :: Page -> Page -> H.Html
-pageLink activePage page =
-  H.a (H.toHtml $ page ^. pageTitle)
+menuItemLink :: Page -> MenuItem -> H.Html
+menuItemLink activePage item =
+  let page = item ^. itemPage
+  in H.a (H.toHtml $ page ^. pageTitle)
     ! A.href (H.toValue $ pageRelativeUrl activePage page)
-    & if isActivePage activePage page
+    & if isActiveMenuItem activePage item
         then (! A.class_ "active")
         else id
 
@@ -67,3 +74,11 @@ pageListMenuItem listPage subPages =
       Nothing -> LeafItem listPage
       Just pages ->
         BranchItem listPage (toMenuItem <$> pages)
+
+isActiveMenuItem :: Page -> MenuItem -> Bool
+isActiveMenuItem activePage (LeafItem page) = page == activePage
+isActiveMenuItem activePage (BranchItem page _) =
+  if page ^. pageUrl == ""
+    then page == activePage
+    else (page ^. pageUrl) `T.isPrefixOf` (activePage ^. pageUrl)
+

@@ -53,7 +53,7 @@ import Data.Aeson.Generic.Shorthand (CamelFields, GenericToFromJSON (..))
 import Data.Aeson.Lens              (_Object, _String)
 import Data.Binary.Instances.Time   ()
 import Data.Foldable                (traverse_)
-import Data.List.NonEmpty           (nonEmpty)
+import Data.List.NonEmpty           (nonEmpty, NonEmpty(..))
 import Data.Maybe                   (isJust)
 import Data.Text                    (Text)
 import Data.Time                    (Day, getZonedTime, localDay,
@@ -151,16 +151,17 @@ instance ToMenuItem EventList where
   toMenuItem EventList{..} =
     case nonEmpty _elEvents of
       Nothing     -> LeafItem _elPage
-      Just events -> BranchItem _elPage (toMenuItem <$> events)
+      Just events -> BranchItem _elPage (toMenuItem <$> events <> ((_elPage & pageTitle .~ "All Events") :| []))
 
 instance ToMenuItem Info where
   toMenuItem Info{..} =
-    BranchItem _infoPage $ NE.fromList
-      [ toMenuItem _infoAbout
+    BranchItem (_infoPage & pageTitle .~ "Info") $ NE.fromList
+      [ toMenuItem _infoPage
       , toMenuItem _infoSites
       , toMenuItem _infoSiteRecords
       , toMenuItem _infoWeatherResources
       -- , toMenuItem _infoFAQ
+      , toMenuItem _infoAbout
       ]
 
 instance ToMenuItem About where
@@ -253,8 +254,7 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
       fullPageData = pageData & withPageUrl & withTeaser
 
   -- Convert to our Page datatype
-  page <- convert fullPageData
-  pure page
+  convert fullPageData
 
 data Tense = Future | Present | Past
   deriving (Eq, Ord, Show)
@@ -307,7 +307,7 @@ buildPostListPage site page posts =
 buildPageList :: Page -> [Page] -> Text -> Action Page
 buildPageList page listables templateName = do
   let listables' = pageRelativizeUrl page <$> listables
-      listJson = (object [ templateName .= toJSON listables' ])
+      listJson = object [ templateName .= toJSON listables' ]
   listT <- compileTemplate' $ "site/templates/" <> T.unpack templateName <> ".html"
   list <- substitute' listT listJson
   page & pageContent %%~ substituteInContent (object [ templateName .= list ])
