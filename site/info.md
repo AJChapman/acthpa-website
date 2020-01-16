@@ -4,7 +4,7 @@ title: Flying Canberra
 
 ## Quick Info
 
-**Radio Frequency**: HGFA Open (472.125MHz)
+**Radio Frequency**: HGFA Open (472.125 MHz, no tone squelch)
 
 ### Sites
 
@@ -51,7 +51,7 @@ The penalties for flying in controlled airspace without authorisation are harsh 
 ### Communication
 
 UHF radios are used for communication between pilots and others such as ground crew and landholders.
-The [HGFA Channel (472.125 Mhz open)](http://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) is the main communication channel used by paragliding pilots, while hang glider pilots are using Channel 14 CTCSS 71.9.
+The [HGFA Open Channel](http://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 Mhz, no tone squelch) is the main communication channel used by paraglider pilots, while hang glider pilots are using Channel 14 (476.750 MHz) CTCSS 71.9.
 
 ## More Info
 
