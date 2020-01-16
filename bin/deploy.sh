@@ -25,9 +25,6 @@ case "$(basename "$0")" in
         # Make sure the repo is up to date
         git pull
 
-        # Make sure the WebDAV directory is mounted
-        mount "${MOUNT}" || true
-
         # Start this script running as nix-deploy.sh in a nix-shell
         nix-shell --run "${BIN_DIR}/nix-deploy.sh"
         ;;
@@ -43,7 +40,14 @@ case "$(basename "$0")" in
         rm -rf gen/ .shake/
 
         cabal new-exec build-site
+
+        # Make sure the WebDAV directory is mounted
+        mount "${MOUNT}" || true
+
         rsync -rvz gen/ "${DEPLOY_TO}"
+
+        # Unmount again
+        umount "${MOUNT}" || true
         ;;
 
     *)
