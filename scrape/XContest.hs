@@ -1,8 +1,8 @@
 {-# LANGUAGE DataKinds         #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TemplateHaskell   #-}
 module XContest
   ( xContestFlights
+  , flightsFromHtml
   , getFlightsAt
   , getLongestFlightsAt
   , getRecentFlightsAt
@@ -12,10 +12,13 @@ module XContest
   , cellFlightKms
   , rowFlightDate
   , rowFlightUrl
+  , cellSiteName
+  , cellAircraftName
+  , cellAircraftType
   ) where
 
-import Control.Lens             (Fold, Prism', Traversal', at, ix, only, prism,
-                                 to, _Show)
+import Control.Lens             (Fold, Prism', Traversal', at, from, ix, only,
+                                 prism, to, _Show, _Wrapped)
 import Control.Lens.Operators
 import Control.Monad.IO.Class   (liftIO)
 import Data.Maybe               (mapMaybe)
@@ -27,9 +30,9 @@ import Data.Time                (Day, defaultTimeLocale, formatTime, parseTimeM)
 import Network.HTTP.Req         (GET (..), MonadHttp, NoReqBody (..), Option,
                                  Scheme (Https), Url, https, lbsResponse, req,
                                  req', responseBody, (/:), (=:))
-import Text.Taggy.Lens          (Element, allAttributed, allNamed, attributed,
-                                 attrs, children, content, contents, element,
-                                 elements, html, named)
+import Text.Taggy.Lens          (Element, allAttributed, allNamed, attr,
+                                 attributed, attrs, children, content, contents,
+                                 element, elements, html, named)
 
 import qualified Data.Text as T
 -- import qualified Data.Text.IO   as TIO
@@ -58,12 +61,13 @@ flightsFromHtml t = t ^.. html
 
 flightFromFlightRow :: Element -> Maybe Flight
 flightFromFlightRow row =
-  let cells = row ^.. allNamed (only "td")
+  let cells = row ^.. elements . allNamed (only "td")
       url = makeAbsoluteUrlOf xContestOrg (row ^? rowFlightUrl)
   in Flight
     <$> pilotFromFlightRow row
     <*> cells ^? traverse . cellSiteName
     <*> cells ^? traverse . cellFlightKms
+    <*> (Aircraft <$> cells ^? cellAircraftType <*> Just (cells ^? cellAircraftName))
     <*> row ^? rowFlightDate
     <*> url
 
@@ -89,6 +93,30 @@ cellSiteName = allNamed (only "a")
   . attributed (ix "class" . only "lau")
   . contents
   . to SiteName
+
+cellAircraftType :: Fold [Element] AircraftType
+cellAircraftType =
+  ix 7
+  . elements
+  . named (only "div")
+  . attr "class"
+  . to xcAircraftType
+  where
+    xcAircraftType :: Maybe Text -> AircraftType
+    xcAircraftType Nothing = Paraglider
+    xcAircraftType (Just t) =
+      case T.unpack t of
+        ('h':'g':_) -> HangGlider
+        _           -> Paraglider
+
+cellAircraftName :: Traversal' [Element] AircraftName
+cellAircraftName =
+  ix 7
+  . elements
+  . named (only "div")
+  . attr "title"
+  . traverse
+  . from _Wrapped
 
 rowFlightDate :: Traversal' Element Day
 rowFlightDate = children

@@ -18,6 +18,10 @@ module Flights
   , siteLocation
   , siteRadius
   , siteLeonardoId
+  , AircraftType(..)
+  , AircraftName(..)
+  , Aircraft(..)
+  , HasAircraft(..)
   , Flight(..)
   , flightPilot
   , flightSiteName
@@ -51,7 +55,8 @@ module Flights
 
 import Prelude hiding (div, head, id)
 
-import Control.Lens                  (makeLenses, makeWrapped, view, _Wrapped)
+import Control.Lens                  (makeClassy, makeLenses, makeWrapped, to,
+                                      view, _Wrapped)
 import Control.Lens.Operators
 import Control.Monad                 (when)
 import Control.Monad.Catch.Pure      (runCatch)
@@ -59,6 +64,7 @@ import Data.Either.Combinators       (isRight, rightToMaybe)
 import Data.Fixed                    (Centi)
 import Data.Geodetic.LL              (LL (..), lat, lon)
 import Data.List                     (sortOn)
+import Data.Maybe                    (fromMaybe)
 import Data.String                   (IsString)
 import Data.Text                     (Text)
 import Data.Time                     (Day, defaultTimeLocale, formatTime)
@@ -112,10 +118,42 @@ instance Similar Distance where
   isSimilarTo lhs rhs =
     (< distanceTolerance) . abs $ lhs - rhs
 
+data AircraftType = Paraglider | HangGlider
+  deriving (Eq, Ord)
+
+instance Show AircraftType where
+  show Paraglider = "Paraglider"
+  show HangGlider = "Hang Glider"
+
+showAircraftType :: AircraftType -> Text
+showAircraftType = T.pack . show
+
+instance Similar AircraftType where
+  isSimilarTo = (==)
+
+newtype AircraftName = AircraftName Text
+  deriving (Eq, Ord, Show, IsString)
+$(makeWrapped ''AircraftName)
+
+instance Similar AircraftName where
+  isSimilarTo = (==)
+
+data Aircraft = Aircraft
+  { _aircraftType :: AircraftType
+  , _aircraftName :: Maybe AircraftName
+  } deriving (Eq, Ord, Show)
+$(makeClassy ''Aircraft)
+
+instance Similar Aircraft where
+  isSimilarTo lhs rhs =
+    (lhs ^. aircraftName) == (rhs ^. aircraftName)
+    && (lhs ^. aircraftType) == (rhs ^. aircraftType)
+
 data Flight = Flight
   { _flightPilot    :: Pilot
   , _flightSiteName :: SiteName
   , _flightDistance :: Distance
+  , _flightAircraft :: Aircraft
   , _flightDate     :: Day
   , _flightUrl      :: URI
   } deriving (Eq, Ord, Show)
@@ -177,6 +215,8 @@ flightRow :: Bool -> Flight -> Html
 flightRow showSite flight = tr $ do
   td . text $ flight ^. flightPilot . pilotName
   when showSite (td . text $ flight ^. flightSiteName . _Wrapped)
+  td . text $ flight ^. flightAircraft . aircraftType . to showAircraftType
+  td . text . fromMaybe "" $ flight ^? flightAircraft . aircraftName . traverse . _Wrapped
   td $ a ! href (flight ^. flightUrl & render & textValue) $ flight ^. flightDistance & renderDistance
   td . text $  flight ^. flightDate & renderDate
 
@@ -186,6 +226,8 @@ renderFlights showSite flights =
     tr $ do
       th "Name"
       when showSite $ th "Site"
+      th "Aircraft"
+      th "Model"
       th "Distance"
       th "Date"
     mapM_ (flightRow showSite) flights

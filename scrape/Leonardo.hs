@@ -8,12 +8,14 @@ module Leonardo
   , cellPilotName
   , cellFlightKms
   , cellSiteName
+  , cellAircraftName
+  , cellAircraftType
   , cellFlightDate
   , rowFlightUrl
   ) where
 
-import Control.Lens           (Fold, Prism', Traversal', at, ix, only, prism,
-                               to, _Show)
+import Control.Lens           (Fold, Prism', Traversal', at, from, ix, only, Traversal',
+                               prism, to, _Show, _Wrapped)
 import Control.Lens.Operators
 -- import Control.Monad.IO.Class   (liftIO)
 import Data.Maybe               (mapMaybe)
@@ -25,9 +27,9 @@ import Data.Time                (Day, defaultTimeLocale, formatTime, parseTimeM)
 import Network.HTTP.Req         (GET (..), MonadHttp, NoReqBody (..),
                                  Scheme (Https), Url, header, https,
                                  lbsResponse, req, responseBody, (/:))
-import Text.Taggy.Lens          (Element, allAttributed, allNamed, attributed,
-                                 attrs, children, contents, elements, html,
-                                 named)
+import Text.Taggy.Lens          (Element, allAttributed, allNamed, attr,
+                                 attributed, attrs, children, contents,
+                                 elements, html, named)
 
 import qualified Data.Text as T
 -- import qualified Data.Text.IO   as TIO
@@ -123,30 +125,24 @@ flightFromFlightRow row =
     <$> cells ^? traverse . cellPilotName
     <*> cells ^? traverse . cellSiteName
     <*> (cells ^.. traverse . cellFlightKms) ^? ix 1 -- The first one is straight-line distance, this one is XC kms
+    <*> (Aircraft <$> cells ^? cellAircraftType <*> Just (cells ^? cellAircraftName))
     <*> cells ^? traverse . cellFlightDate
     <*> url
 
 cellPilotName :: Fold Element Pilot
 cellPilotName =
   attributed (ix "class" . only "pilotTakeoffCell")
-  . elements
-  . named (only "div")
+  . elements . named (only "div")
   . attributed (ix "class" . only "pilotLink")
-  . elements
-  . named (only "a")
+  . elements . named (only "a")
   . children
   . traverse
-  . contents
-  . to Pilot
+  . contents . to Pilot
 
 cellFlightKms :: Fold Element Distance
 cellFlightKms =
   attributed (ix "class" .  only "distance")
-  . contents
-  . to crop
-  . unpacked
-  . _Show
-  . to Km
+  . contents . to crop . unpacked . _Show . to Km
   where
     -- Crop e.g. "1.2 km" to "1.2"
     crop :: Text -> Text
@@ -158,16 +154,51 @@ cellSiteName =
   . elements
   . allNamed (only "div")
   . attributed (ix "class" . only "takeoffLink")
-  . elements
-  . named (only "a")
+  . elements . named (only "a")
   . contents
   . to SiteName
+
+cellAircraftType :: Fold [Element] AircraftType
+cellAircraftType =
+  traverse
+  . elements . named (only "div")
+  . attributed (ix "class" . only "catInfo")
+  . elements . named (only "img")
+  . attr "title"
+  . traverse
+  . to leoAircraftType
+  . traverse
+  where
+    leoAircraftType :: Text -> Maybe AircraftType
+    leoAircraftType t =
+      -- Format is e.g:
+      --   - "Paraglider - "
+      --   - "Paraglider - Sport"
+      --   - "Flex wing FAI1 - Kingpost"
+      --   - "Rigid wing FAI5 - "
+      case T.unpack t of
+        ('P':'a':'r':'a':'g':'l':'i':'d':'e':'r':_) -> Just Paraglider
+        ('F':'l':'e':'x':_)                         -> Just HangGlider
+        _                                           -> Nothing
+
+cellAircraftName :: Traversal' [Element] AircraftName
+cellAircraftName =
+  ix 9
+  -- This is convoluted because of unclosed img tags.
+  -- Taggy expects valid xhtml.
+  . elements . named (only "div")
+  . elements . named(only "img")
+  . elements . named(only "div")
+  . elements . named(only "img")
+  . elements . named(only "TD")
+  . elements . named(only "div")
+  . elements . named(only "img")
+  . attr "title" . traverse . from _Wrapped
 
 cellFlightDate :: Traversal' Element Day
 cellFlightDate =
   attributed (ix "class" . only "dateString")
-  . elements
-  . named (only "div")
+  . elements . named (only "div")
   . contents
   . leoDay
 
