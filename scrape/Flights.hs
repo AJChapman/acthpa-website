@@ -7,7 +7,8 @@
 {-# LANGUAGE TemplateHaskell            #-}
 {-# LANGUAGE TypeFamilies               #-}
 module Flights
-  ( Pilot(..)
+  ( Pilot
+  , mkPilot
   , pilotName
   , SiteName(..)
   , Distance(..)
@@ -19,7 +20,8 @@ module Flights
   , siteRadius
   , siteLeonardoId
   , AircraftType(..)
-  , AircraftName(..)
+  , AircraftName
+  , mkAircraftName
   , Aircraft(..)
   , HasAircraft(..)
   , Flight(..)
@@ -96,6 +98,9 @@ newtype Pilot = Pilot
   } deriving (Eq, Ord, Show)
 $(makeLenses ''Pilot)
 
+mkPilot :: Text -> Pilot
+mkPilot = Pilot . T.toTitle . T.strip
+
 instance Similar Pilot where
   isSimilarTo = (==)
 
@@ -131,9 +136,14 @@ showAircraftType = T.pack . show
 instance Similar AircraftType where
   isSimilarTo = (==)
 
-newtype AircraftName = AircraftName Text
+newtype AircraftName = AircraftName
+  { _aircraftNameText :: Text
+  }
   deriving (Eq, Ord, Show, IsString)
-$(makeWrapped ''AircraftName)
+$(makeLenses ''AircraftName)
+
+mkAircraftName :: Text -> AircraftName
+mkAircraftName = AircraftName . T.toTitle . T.strip
 
 instance Similar AircraftName where
   isSimilarTo = (==)
@@ -216,7 +226,7 @@ flightRow showSite flight = tr $ do
   td . text $ flight ^. flightPilot . pilotName
   when showSite (td . text $ flight ^. flightSiteName . _Wrapped)
   td . text $ flight ^. flightAircraft . aircraftType . to showAircraftType
-  td . text . fromMaybe "" $ flight ^? flightAircraft . aircraftName . traverse . _Wrapped
+  td . text . fromMaybe "" $ flight ^? flightAircraft . aircraftName . traverse . aircraftNameText
   td $ a ! href (flight ^. flightUrl & render & textValue) $ flight ^. flightDistance & renderDistance
   td . text $  flight ^. flightDate & renderDate
 

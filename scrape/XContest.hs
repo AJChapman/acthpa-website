@@ -17,8 +17,8 @@ module XContest
   , cellAircraftType
   ) where
 
-import Control.Lens             (Fold, Prism', Traversal', at, from, ix, only,
-                                 prism, to, _Show, _Wrapped)
+import Control.Lens             (Fold, Prism', Traversal', at, ix, only, prism,
+                                 to, _Show)
 import Control.Lens.Operators
 import Control.Monad.IO.Class   (liftIO)
 import Data.Maybe               (mapMaybe)
@@ -73,7 +73,7 @@ flightFromFlightRow row =
 
 pilotFromFlightRow :: Element -> Maybe Pilot
 pilotFromFlightRow row =
-  Pilot <$> row ^? rowPilotName
+  mkPilot <$> row ^? rowPilotName
 
 rowPilotName :: Fold Element Text
 rowPilotName = allAttributed (ix "class" . only "plt")
@@ -109,14 +109,14 @@ cellAircraftType =
         ('h':'g':_) -> HangGlider
         _           -> Paraglider
 
-cellAircraftName :: Traversal' [Element] AircraftName
+cellAircraftName :: Fold [Element] AircraftName
 cellAircraftName =
   ix 7
   . elements
   . named (only "div")
   . attr "title"
   . traverse
-  . from _Wrapped
+  . to mkAircraftName
 
 rowFlightDate :: Traversal' Element Day
 rowFlightDate = children

@@ -14,8 +14,8 @@ module Leonardo
   , rowFlightUrl
   ) where
 
-import Control.Lens           (Fold, Prism', Traversal', at, from, ix, only, Traversal',
-                               prism, to, _Show, _Wrapped)
+import Control.Lens           (Fold, Prism', Traversal', at, ix, only, Traversal',
+                               prism, to, _Show)
 import Control.Lens.Operators
 -- import Control.Monad.IO.Class   (liftIO)
 import Data.Maybe               (mapMaybe)
@@ -137,7 +137,7 @@ cellPilotName =
   . elements . named (only "a")
   . children
   . traverse
-  . contents . to Pilot
+  . contents . to mkPilot
 
 cellFlightKms :: Fold Element Distance
 cellFlightKms =
@@ -181,7 +181,7 @@ cellAircraftType =
         ('F':'l':'e':'x':_)                         -> Just HangGlider
         _                                           -> Nothing
 
-cellAircraftName :: Traversal' [Element] AircraftName
+cellAircraftName :: Fold [Element] AircraftName
 cellAircraftName =
   ix 9
   -- This is convoluted because of unclosed img tags.
@@ -193,7 +193,7 @@ cellAircraftName =
   . elements . named(only "TD")
   . elements . named(only "div")
   . elements . named(only "img")
-  . attr "title" . traverse . from _Wrapped
+  . attr "title" . traverse . to mkAircraftName
 
 cellFlightDate :: Traversal' Element Day
 cellFlightDate =
