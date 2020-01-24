@@ -45,6 +45,8 @@ module Flights
   , sortFlightsByLengthDesc
   , sortFlightsByDateAsc
   , sortFlightsByDateDesc
+  , removeConsecutiveBy
+  , removeConsecutiveSimilar
   ) where
 
 import Prelude hiding (div, head, id)
@@ -56,8 +58,7 @@ import Control.Monad.Catch.Pure      (runCatch)
 import Data.Either.Combinators       (isRight, rightToMaybe)
 import Data.Fixed                    (Centi)
 import Data.Geodetic.LL              (LL (..), lat, lon)
-import Data.List                     (sortBy)
-import Data.Ord                      (comparing)
+import Data.List                     (sortOn)
 import Data.String                   (IsString)
 import Data.Text                     (Text)
 import Data.Time                     (Day, defaultTimeLocale, formatTime)
@@ -75,23 +76,41 @@ import Text.URI.Lens (uriAuthority)
 import qualified Data.Text      as T
 import qualified Data.Text.Lazy as L
 
+class Similar a where
+  isSimilarTo :: a -> a -> Bool
+
+  (~=) :: a -> a -> Bool
+  (~=) = isSimilarTo
+
+instance Similar Day where
+  isSimilarTo = (==)
+
 newtype Pilot = Pilot
   { _pilotName       :: Text
   } deriving (Eq, Ord, Show)
-
 $(makeLenses ''Pilot)
+
+instance Similar Pilot where
+  isSimilarTo = (==)
 
 newtype SiteName = SiteName Text
   deriving (Eq, Ord, Show, IsString)
-
 $(makeWrapped ''SiteName)
+
+instance Similar SiteName where
+  isSimilarTo = (==)
 
 newtype Distance = Km
   { _distanceKm :: Centi
-  } deriving (Eq, Ord)
-  deriving newtype (Show, Read)
-
+  } deriving newtype (Eq, Show, Read, Num, Ord)
 $(makeLenses ''Distance)
+
+distanceTolerance :: Distance
+distanceTolerance = Km 0.3
+
+instance Similar Distance where
+  isSimilarTo lhs rhs =
+    (< distanceTolerance) . abs $ lhs - rhs
 
 data Flight = Flight
   { _flightPilot    :: Pilot
@@ -100,8 +119,22 @@ data Flight = Flight
   , _flightDate     :: Day
   , _flightUrl      :: URI
   } deriving (Eq, Ord, Show)
-
 $(makeLenses ''Flight)
+
+instance Similar Flight where
+  isSimilarTo lhs rhs =
+    -- If the flights have the same URL then they are definitely the same, but if they don't
+    -- then they may still be the same, e.g. same flight from different websites.
+    (lhs ^. flightUrl) == (rhs ^. flightUrl)
+    || (
+      (lhs ^. flightPilot) ~= (rhs ^. flightPilot)
+      -- NB: We're not comparing site name, as this can differ.
+      -- We should change this once we know the site's location,
+      -- but this doesn't matter too much, as what are the chances that the same
+      -- pilot flies the same distance on the same day from two different sites?
+      && (lhs ^. flightDistance) ~= (rhs ^. flightDistance)
+      && (lhs ^. flightDate) ~= (rhs ^. flightDate)
+    )
 
 data LeonardoId = Unknown | SiteId Int | ClubId Text
   deriving (Eq, Ord, Show)
@@ -174,12 +207,20 @@ sortFlightsByLengthDesc :: [Flight] -> [Flight]
 sortFlightsByLengthDesc = reverse . sortFlightsByLengthAsc
 
 sortFlightsByLengthAsc :: [Flight] -> [Flight]
-sortFlightsByLengthAsc =
-  sortBy (comparing (view flightDistance))
+sortFlightsByLengthAsc = sortOn (view flightDistance)
 
 sortFlightsByDateDesc :: [Flight] -> [Flight]
 sortFlightsByDateDesc = reverse . sortFlightsByDateAsc
 
 sortFlightsByDateAsc :: [Flight] -> [Flight]
-sortFlightsByDateAsc =
-  sortBy (comparing (view flightDate))
+sortFlightsByDateAsc = sortOn (view flightDate)
+
+removeConsecutiveBy :: (a -> a -> Bool) -> [a] -> [a]
+removeConsecutiveBy f (x:y:xs) =
+  if f x y
+    then removeConsecutiveBy f (x : xs) -- Retain the first in the list (arbitrary decision)
+    else x : removeConsecutiveBy f (y:xs)
+removeConsecutiveBy _ lst = lst
+
+removeConsecutiveSimilar :: Similar a => [a] -> [a]
+removeConsecutiveSimilar = removeConsecutiveBy isSimilarTo

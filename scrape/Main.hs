@@ -36,7 +36,7 @@ getLongestFlightsAt site n = do
     [ XC.getLongestFlightsAt
     , LEO.getLongestFlightsAt
     ] site n
-  pure . take n . sortFlightsByLengthDesc $ flights
+  pure . take n . removeConsecutiveSimilar . sortFlightsByLengthDesc $ flights
 
 getRecentFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
 getRecentFlightsAt site n = do
@@ -44,7 +44,7 @@ getRecentFlightsAt site n = do
     [ XC.getRecentFlightsAt
     , LEO.getRecentFlightsAt
     ] site n
-  pure . take n  . sortFlightsByDateDesc $ flights
+  pure . take n  . removeConsecutiveSimilar . sortFlightsByDateDesc $ flights
 
 main :: IO ()
 main = do
