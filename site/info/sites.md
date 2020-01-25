@@ -23,24 +23,40 @@ These are our regular flying sites.
 <div class="grid">
 <div class="grid-sizer"></div>
 <div class="grid-item grid-item--height2">![](/images/spring-busy.jpg)</div>
-<div class="grid-item">![](/images/spring-lush-soaring-outlook.jpg)</div>
+<div class="grid-item grid-item--width2">![](/images/spring-lookback-hg-pg.jpg)</div>
 <div class="grid-item">![](/images/spring-launch.jpg)</div>
 <div class="grid-item">![](/images/wes-gh-spring-lz.jpg)</div>
-<div class="grid-item">![](/images/spring-lookback-hg-pg.jpg)</div>
+<div class="grid-item">![](/images/spring-lush-soaring-outlook.jpg)</div>
 </div>
 
 Spring Hill is a west-facing soaring and thermic site just 20 minutes from the centre of Canberra.
 It is a versatile site, with possible flights ranging from short hops on the beginner slopes through to sleddies from the top when it's light, hours of spacious soaring when it's stronger, transitioning to thermalling when the day heats up.
 It's even possible to go XC, though getting away is made more challenging by the low 4,500ft airspace.
 A classic Spring Hill experience is to watch the sun set during an evening glass-off, where the wind turns buttery smooth, and the lift band extends for hundreds of metres out the front of the hill.
-For information on flying Spring Hill, check out the  **[Spring Hill Site Guide](https://siteguide.org.au/Sites/Spring%20Hill.html)**.
+For information on flying Spring Hill, check out the  **[Spring Hill site guide](https://siteguide.org.au/Sites/Spring%20Hill.html)**.
 
 #### Longest flights from Spring Hill
 {{{longestSpringHill}}}
 
 ### Lake George
 
-**[Lake George Site Guide](https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html)** 
+<div class="grid">
+<div class="grid-sizer"></div>
+<div class="grid-item grid-item--width2">![](/images/lake-crowded.jpg)</div>
+<div class="grid-item">![](/images/lake-ridge.jpg)</div>
+<div class="grid-item">![](/images/lake-highway-softfocus.jpg)</div>
+<div class="grid-item grid-item--width2">![](/images/lake-hg-chase.jpg)</div>
+<div class="grid-item">![](/images/lake-sled-artistic.jpg)</div>
+<div class="grid-item">![](/images/wsm-lake-flyby.jpg)</div>
+</div>
+
+Lake George is Canberra's 'coastal' site.
+We soar the 20km+ ridge on the western side of the lake in an easterly breeze, cruising above the Federal Highway.
+We usually launch at the southern end of the ridge, which we refer to as 'the lake', 'geary's gap', or the 'south launch'.
+This allows easy launching and top landing, and a huge lake-sized landing paddock.
+But airspace is at only 3,500ft here, so to go XC we fly to the northern end of the ridge, or start at the Collector launch.
+The lake is also an ideal place for powered paraglider and weight-shift microlight flying.
+For information on flying Lake George, check out the **[Lake George site guide](https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html)** 
 
 #### Longest flights from Lake George (South and Geary's launches)
 {{{longestLakeGeorge}}}
