@@ -1401,3 +1401,13 @@ input[type="text"] {
 .container img.event-image {
     max-width: 80%;
 }
+
+/* fluid 5 columns */
+.grid-item {
+  float: left;
+  border: 2px solid white;
+}
+.grid-sizer,
+.grid-item { width: 33%; }
+/* 2 columns */
+.grid-item--width2 { width: 66%; }
