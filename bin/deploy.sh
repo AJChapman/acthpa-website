@@ -59,7 +59,7 @@ case "$(basename "$0")" in
 
     deploy.sh)
         # Make sure the WebDAV directory is mounted
-        mount "${MOUNT}" || true
+        mountpoint -q "${MOUNT}" || mount "${MOUNT}"
 
         rsync -rvz gen/ "${DEPLOY_TO}"
 
