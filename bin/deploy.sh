@@ -63,10 +63,7 @@ case "$(basename "$0")" in
         mountpoint -q "${MOUNT}" || (sleep 1; mount "${MOUNT}")
         mountpoint -q "${MOUNT}" || (sleep 5; mount "${MOUNT}")
 
-        rsync -rvz gen/ "${DEPLOY_TO}"
-
-        # Unmount again
-        umount "${MOUNT}" || true
+        rsync -rutv gen/ "${DEPLOY_TO}"
         ;;
 
     nix-exec.sh)
