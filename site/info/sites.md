@@ -14,11 +14,7 @@ Also check out [the Info page](../) for general information on flying in the Can
 - [Honeysuckle (Tumut)]
 - [Pig Hill]
 
-## Our Main Sites
-
-These are our regular flying sites.
-
-### Spring Hill
+## Spring Hill
 
 <div class="grid">
 <div class="grid-sizer"></div>
@@ -33,12 +29,13 @@ Spring Hill is a west-facing soaring and thermic site just 20 minutes from the c
 It is a versatile site, with possible flights ranging from short hops on the beginner slopes through to sleddies from the top when it's light, hours of spacious soaring when it's stronger, transitioning to thermalling when the day heats up.
 It's even possible to go XC, though getting away is made more challenging by the low 4,500ft airspace.
 A classic Spring Hill experience is to watch the sun set during an evening glass-off, where the wind turns buttery smooth, and the lift band extends for hundreds of metres out the front of the hill.
+
 For information on flying Spring Hill, check out the  **[Spring Hill site guide](https://siteguide.org.au/Sites/Spring%20Hill.html)**.
 
-#### Longest flights from Spring Hill
+### Longest flights from Spring Hill
 {{{longestSpringHill}}}
 
-### Lake George
+## Lake George
 
 <div class="grid">
 <div class="grid-sizer"></div>
@@ -56,52 +53,70 @@ We usually launch at the southern end of the ridge, which we refer to as 'the la
 This allows easy launching and top landing, and a huge lake-sized landing paddock.
 But airspace is at only 3,500ft here, so to go XC we fly to the northern end of the ridge, or start at the Collector launch.
 The lake is also an ideal place for powered paraglider and weight-shift microlight flying.
-For information on flying Lake George, check out the **[Lake George site guide](https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html)** 
 
-#### Longest flights from Lake George (South and Geary's launches)
+For information on flying Lake George, check out the **[Lake George site guide](https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html)**.
+
+### Longest flights from Lake George (South and Geary's launches)
 {{{longestLakeGeorge}}}
 
-### Lanyon
+## Lanyon
 
-**[Lanyon Site Guide](https://siteguide.org.au/Sites/Lanyon.html)**
+<div class="grid">
+<div class="grid-sizer"></div>
+<div class="grid-item grid-item--width2">![](/images/lanyon-artistic.jpg)</div>
+<div class="grid-item">![](/images/lanyon-evening-soaring.jpg)</div>
+<div class="grid-item">![](/images/lanyon-view-from-airspace.jpg)</div>
+</div>
 
-#### Longest flights from Lanyon
+The Lanyon site overlooks Canberra's most southern suburb.
+It is west-facing, and its valley location means that it can sometimes be flyable when other sites are blown out.
+It holds potential for XC, but like Spring Hill it starts out with a 4,500ft airspace ceiling, so getting away can be challenging.
+
+For information on flying at Lanyon, check out the **[Lanyon site guide](https://siteguide.org.au/Sites/Lanyon.html)**.
+
+### Longest flights from Lanyon
 {{{longestLanyon}}}
 
-## Sites for Special Occasions
+## Collector
 
-These sites work for cross country when the weather is right.
+<div class="grid">
+<div class="grid-sizer"></div>
+<div class="grid-item">![](/images/collector-launch-outlook-lz.jpg)</div>
+<div class="grid-item">![](/images/collector-flyby.jpg)</div>
+<div class="grid-item">![](/images/collector-busy.jpg)</div>
+</div>
 
-### Collector
+Collector is a launch at the northern end of Lake George.
+It takes an easterly, and can be soarable, but it is primarily a thermic site.
+It has a higher airspace ceiling than other sites close to the ACT, at 6,500ft, which makes it good for cross-country.
 
-**[Collector Site Guide](https://siteguide.org.au/Sites/Lake%20George%20(Collector).html)**
+For information on flying from Collector, check out the **[Collector site guide](https://siteguide.org.au/Sites/Lake%20George%20(Collector).html)**.
 
-#### Longest flights from Collector
+### Longest flights from Collector
 {{{longestCollector}}}
 
-### Honeysuckle
+## Honeysuckle
 
 **[Honeysuckle Site Guide](https://siteguide.org.au/Sites/Honeysuckle.html)**
 
-#### Longest flights from Honeysuckle
+### Longest flights from Honeysuckle
 {{{longestHoneysuckle}}}
 
-## Sites Lost and Found
 
-These are sites we have previously flown from, but are currently closed.
 
-### Pig Hill
 
-**[Pig Hill Site Guide](https://siteguide.org.au/Sites/Pig%20Hill.html)**
 
-#### Longest flights from Pig Hill
+
+## Pig Hill
+
+Pig Hill is closed except for organised club days. For more information see the **[Pig Hill site guide](https://siteguide.org.au/Sites/Pig%20Hill.html)**.
+
+### Longest flights from Pig Hill
 {{{longestPigHill}}}
 
-### Lake George
+## Lake George
 
-Geary's gap is just across the highway from the south launch, but is currently closed.
-
-**[Lake George (Geary's Gap) Site Guide](https://siteguide.org.au/Sites/Lake%20George%20(Geary's%20Gap).html)**
+Geary's gap is just across the highway from the south launch, but is currently closed. For more information see the  **[Lake George (Geary's Gap) site guide](https://siteguide.org.au/Sites/Lake%20George%20(Geary's%20Gap).html)**.
 
 [Spring Hill]: https://siteguide.org.au/Sites/Spring%20Hill.html
 [Lake George]: https://siteguide.org.au/Sites/Lake%20George%20(South%20Launch).html

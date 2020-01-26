@@ -1411,3 +1411,4 @@ input[type="text"] {
 .grid-item { width: 33%; }
 /* 2 columns */
 .grid-item--width2 { width: 66%; }
+.grid-item--width3 { width: 100%; }
