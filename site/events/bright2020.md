@@ -3,7 +3,7 @@ title: Bright Open 2020
 eventStart: 2020-02-08
 eventFinish: 2020-02-14
 image: bright-open.jpg
-teaser: The [Bright Open](https://airtribune.com/bright-open-2020/info) is coming up in February. Three Canberra pilots are registered to compete, and entries have now closed.
+teaser: The [Bright Open](/events/bright2020) is coming up in early February. Three Canberra pilots are registered to compete, and entries have now closed.
 ---
 The [Bright Open](https://airtribune.com/bright-open-2020/info) is coming up in February. Three Canberra pilots are registered to compete, and entries have now closed.
 

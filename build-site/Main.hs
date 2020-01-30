@@ -42,8 +42,8 @@ module Main
   , addTableClassToTables
   ) where
 
-import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses, view,
-                                     only, prism', re, toListOf)
+import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses,
+                                     only, prism', re, toListOf, view)
 import Control.Lens.Operators       hiding ((.=))
 import Control.Lens.Plated          (deep)
 import Control.Monad                (void)
@@ -53,19 +53,21 @@ import Data.Aeson.Generic.Shorthand (CamelFields, GenericToFromJSON (..))
 import Data.Aeson.Lens              (_Object, _String)
 import Data.Binary.Instances.Time   ()
 import Data.Foldable                (traverse_)
-import Data.List.NonEmpty           (nonEmpty, NonEmpty(..))
+import Data.List.NonEmpty           (NonEmpty (..), nonEmpty)
 import Data.Maybe                   (isJust)
 import Data.Text                    (Text)
 import Data.Time                    (Day, getZonedTime, localDay,
                                      zonedTimeToLocalTime)
-import Development.Shake            (Action, FilePattern, copyFileChanged, forP,
-                                     getDirectoryFiles, liftIO, readFile',
+import Development.Shake            (Action, FilePattern, Lint (..),
+                                     ShakeOptions (..), Verbosity (Verbose),
+                                     copyFileChanged, forP, getDirectoryFiles,
+                                     liftIO, readFile', shakeOptions,
                                      writeFile')
 import Development.Shake.Classes    (Binary)
 import Development.Shake.FilePath   (dropDirectory1, dropExtension, (</>))
 import Development.Shake.Forward    (cacheAction)
 import GHC.Generics                 (Generic)
-import Slick                        (compileTemplate', convert, slick)
+import Slick                        (compileTemplate', convert, slickWithOpts)
 import Slick.Pandoc                 (defaultHtml5Options,
                                      defaultMarkdownOptions,
                                      markdownToHTMLWithOpts)
@@ -461,4 +463,10 @@ buildRules = do
   buildSite $ Site home now future past info advice stories
 
 main :: IO ()
-main = slick buildRules
+main =
+  let opts = shakeOptions
+        { shakeVerbosity = Verbose
+        , shakeLint = Just LintFSATrace
+        , shakeLintInside = ["site"]
+        }
+  in slickWithOpts opts buildRules
