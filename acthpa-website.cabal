@@ -47,7 +47,7 @@ executable build-site
                   , mustache ^>= 2.3.0
                   , pandoc ^>= 2.7.3
                   , shake ^>= 0.18.3
-                  , slick ^>= 1.0.0
+                  , slick ^>= 1.0.1.0
                   , unordered-containers ^>= 0.2.10
 
 executable scrape
