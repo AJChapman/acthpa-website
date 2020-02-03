@@ -23,9 +23,9 @@ Grum Rose managed [the second longest flight of day 3](https://www.xcontest.org/
 ![The first few days of the comp were hampered by storms and overdevelopment.](/images/manilla-xc-camp-2020/grum-manilla-2020-od.jpg)
 
 Alex Boiko struggled as a relatively inexperienced pilot in strong conditions, but still managed a [PB flight of 20km](https://www.xcontest.org/world/en/flights/detail:AlexBoiko/31.1.2020/07:22).
-Launching after 6pm, he climbed to 1370m then went over the back of Mt. Borah.
+Launching after 5pm, he climbed to 1370m then went over the back of Mt. Borah.
 Sinking back down to 1000m (~500m AGL), he circled in zeroes for 20 minutes before connecting with a good thermal, climbing at between 1m/s and 5m/s for another 20 minutes, reaching his highest ever height of 2709m.
-Then followed a long glide north, landing in a lake (presumably dry?) at around 7:45pm.
+Then followed a long glide north, landing in a lake (presumably dry?) at around 6:45pm.
 
 ![Alex's Landing Spot](/images/manilla-xc-camp-2020/alex-pb-landing.jpg)
 
