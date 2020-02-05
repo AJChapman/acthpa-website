@@ -252,8 +252,9 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
       withPageUrl = setTextValue "url" url'
       teaser = pageData ^? _Object . at "teaser" . traverse . _String
       withTeaser = _Object . at "teaser" .~ (String <$> teaser)
+      withContact = _Object . at "contact" ?~ String "<a href='mailto:website@acthpa.org'>website@acthpa.org</a>"
       -- Add url and teaser
-      fullPageData = pageData & withPageUrl & withTeaser
+      fullPageData = pageData & withPageUrl & withTeaser & withContact
 
   -- Convert to our Page datatype
   convert fullPageData

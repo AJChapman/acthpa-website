@@ -12,6 +12,7 @@ module Page
   , pageContent
   , pageUrl
   , pageTeaser
+  , pageContact
   , pageImage
   , pageAuthor
   , pagePublished
@@ -55,6 +56,7 @@ data Page = Page
   , _pageContent     :: Text
   , _pageUrl         :: Text -- E.g. "info/faq", with the filepath for that url being "info/faq/index.html"
   , _pageTeaser      :: Maybe Text
+  , _pageContact     :: Text
   , _pageImage       :: Maybe Text
   , _pageAuthor      :: Maybe Text
   , _pagePublished   :: Maybe Day
