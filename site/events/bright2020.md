@@ -6,9 +6,46 @@ image: bright-open.jpg
 teaser: The [Bright Open](/events/bright2020) is on! Three Canberra pilots are competing.
 ---
 The [Bright Open](https://airtribune.com/bright-open-2020/info) is happening now. Three Canberra pilots are competing: Kari Ellis, Rafael Esquillaro, and Johno Quinn.
-Keep up with the latest scores on [airScore](http://xc.highcloud.net/task_overview.html?comPk=281).
 
-![Photo by Dave Gibbs](/images/bright-open.jpg)
+## Results
+
+Keep up with the latest results on [airScore](http://xc.highcloud.net/task_overview.html?comPk=281).
+
+### Task 1
+
+Kalle Ojamo of Finland won [this 39.91km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1241) in a time of 1:02:15.
+It looks like it was a tough day to stay in the air, with only 34 out of 81 pilots completing the course.
+
+The Canberra pilots' results were:
+
+- Kari Ellis in 6th place in a time of 1:10:10,
+- Johno Quinn in 20th, in a time of 1:26:42,
+- Rafael Esquillaro in 35th, falling just short at 38.99km.
+
+### Task 2
+
+Peter Slade won [this 93.95km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1256) in a time of 2:32:43.
+It was an even tougher course set by the task committee, with only 27 pilots making end-of-speed.
+Judging by the results it looks as if the Australian national team were flying as a team, with Gareth Carter, Kari Ellis and Felipe Rezende finishing less than a minute behind Peter Slade.
+
+The Canberra pilots' results were
+
+- Kari Ellis in equal 3rd in a time of 2:33:29, now in 2nd overall, 
+- Rafael Esquillaro in 26th at 65.65km, now 32nd overall,
+- Johno Quinn in 30th at 41.07km, now 29th overall.
+
+
+### Task 3
+
+A [75.45km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1257) has been set for today.
+Results coming soon.
+Go Kari!
+
+## About the Bright Open
+
+<div class="inline-img">
+![Launching from Mystic in Bright. Photo by Dave Gibbs](/images/bright-open.jpg)
+</div>
 
 Bright is a beautiful mountain town in Victoria, about five hours' drive from Canberra.
 It is a regular flying destination for Canberra pilots, but is also a favourite for Melbourne pilots, interationals, and has a thriving local scene including several instructors.
