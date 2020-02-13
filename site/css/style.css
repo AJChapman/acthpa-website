@@ -58,6 +58,7 @@ p {
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-weight: 400;
+  clear: both;
   margin: 0 0 20px 0; }
 
 ::-webkit-selection {
@@ -1412,3 +1413,37 @@ input[type="text"] {
 /* 2 columns */
 .grid-item--width2 { width: 66%; }
 .grid-item--width3 { width: 100%; }
+
+div.right {
+    float: right;
+    clear: right;
+    margin-left: 1em;
+}
+
+div.left {
+    float: left;
+    clear: left;
+    margin-right: 1em;
+}
+
+.inline-img {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* Don't make images small on small screens */
+    .inline-img {
+        max-width: 100% !important;
+    }
+}
+
+.inline-img figure {
+    border: 1px solid grey;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.inline-img figcaption {
+    text-align: center;
+}
+

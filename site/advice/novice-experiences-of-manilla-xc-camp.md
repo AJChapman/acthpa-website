@@ -18,7 +18,9 @@ do.
 
 ## Who am I?
 
+<div class="inline-img right" style="max-width: 50%">
 ![Alex enjoying the sky](/images/alex-boiko-in-flight.jpg)
+</div>
 
 I am a novice pilot who went to the 2020 XCC. By "novice" I mean I
 learnt to fly in Manilla in April 2019 (10 months before the XCC) and
@@ -33,7 +35,9 @@ I learnt on when I had 32.4 hours).
 
 ## What I did at XCC 2020
 
+<div class="inline-img left" style="max-width: 50%">
 ![Briefing on launch](/images/manilla-xc-camp-2020/launch-briefing.jpg)
+</div>
 
 I skipped the first two days (Saturday and Sunday) because of the poor
 forecast (OD risk, variable winds) and general consensus that flying
@@ -52,7 +56,9 @@ troopies that drive you back up from the bombouts for $10 a trip).
 
 ## The Flying
 
+<div class="inline-img" style="max-width: 80%">
 ![Flying from the west launch of Mt. Borah.](/images/manilla-xc-camp-2020/west-launch-2.jpg)
+</div>
 
 For good pilots, Manilla on a good day probably offers some of the best
 XC potential in Australia. But for novices like me (at least this year)
@@ -63,7 +69,9 @@ found the thermals trickier to stay in and to core than Bright or
 Corryong. Most landings were quite thermic and on par with my
 experiences at Spring, Bright and Corryong.
 
+<div class="inline-img" style="max-width: 80%">
 ![Launch and the gaggles can be chaotic.](/images/manilla-xc-camp-2020/west-launch-1.jpg)
+</div>
 
 Gaggle flying (140ish pilots were registered, about 90 or so posted at
 least one non-zero day) involved up to 30 or 40 pilots trying to climb
@@ -100,7 +108,9 @@ but there are plenty of good landing options in the valleys (although
 the retrieves are better on the east side of the hill going north or
 south).
 
+<div class="inline-img" style="max-width: 80%">
 ![Alex's Landing Spot](/images/manilla-xc-camp-2020/alex-pb-landing.jpg)
+</div>
 
 Most pilots come to XCC in groups or teams. Those who don't make teams
 on the first day. These are mostly used for organising lifts up the hill
@@ -188,7 +198,9 @@ sometimes-lively conditions, then it can be a very good opportunity to
 improve flying skills and maybe even add a few epic flights to your
 logbook.
 
-![](/images/manilla-xc-camp-2020/west-launch-portrait-gaggle.jpg)
+<div class="inline-img" style="max-width: 80%">
+![West launch at Manilla](/images/manilla-xc-camp-2020/west-launch-portrait-gaggle.jpg)
+</div>
 
 > If you would like to add your experience to this page, please contact us at {{{contact}}}.
 
