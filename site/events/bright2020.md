@@ -28,7 +28,7 @@ Peter Slade won [this 93.95km task](http://xc.highcloud.net/task_result.html?com
 It was an even tougher course set by the task committee, with only 27 pilots making end-of-speed.
 Judging by the results it looks as if the Australian national team were flying as a team, with Gareth Carter, Kari Ellis and Felipe Rezende finishing less than a minute behind Peter Slade.
 
-The Canberra pilots' results were
+The Canberra pilots' results were:
 
 - Kari Ellis in equal 3rd in a time of 2:33:29, now in 2nd overall, 
 - Rafael Esquillaro in 26th at 65.65km, now 32nd overall,
@@ -37,9 +37,17 @@ The Canberra pilots' results were
 
 ### Task 3
 
-A [75.45km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1257) has been set for today.
-Results coming soon.
-Go Kari!
+Peter Slade won [this 75.45km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1257) in a time of 2:25:18.
+
+The Canberra pilots' results were:
+
+- Kari Ellis in third in a time of 2:23:01 (lead-out points made Peter the winner despite five pilots beating him on time), still in 2nd overall,
+- Rafael Esquillaro was 11th in a time of 2:25:53, moving up 11 places to 23rd overall,
+- Johno Quinn was 53rd at 25.78km, now in 49th overall.
+
+### Task 4
+
+At the time of writing, a 45.09km task had been set, with [scores still coming in](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1258).
 
 ## About the Bright Open
 
