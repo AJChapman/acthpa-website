@@ -33,18 +33,18 @@ case "$(basename "$0")" in
         ;;
 
     build-deploy.sh)
-        ${BIN_DIR}/build.sh
-        ${BIN_DIR}/deploy.sh
+        "${BIN_DIR}/build.sh"
+        "${BIN_DIR}/deploy.sh"
         ;;
 
     scrape-build-deploy.sh)
-        ${BIN_DIR}/scrape.sh
-        ${BIN_DIR}/build-deploy.sh
+        "${BIN_DIR}/scrape.sh"
+        "${BIN_DIR}/build-deploy.sh"
         ;;
 
     update-scrape-build-deploy.sh)
-        ${BIN_DIR}/update.sh
-        ${BIN_DIR}/scrape-build-deploy.sh
+        "${BIN_DIR}/update.sh"
+        "${BIN_DIR}/scrape-build-deploy.sh"
         ;;
 
     build.sh)
@@ -64,6 +64,8 @@ case "$(basename "$0")" in
         mountpoint -q "${MOUNT}" || (sleep 5; mount "${MOUNT}")
 
         rsync -rtv gen/ "${DEPLOY_TO}"
+
+        umount "${MOUNT}"
         ;;
 
     nix-exec.sh)
