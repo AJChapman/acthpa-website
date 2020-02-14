@@ -1417,13 +1417,13 @@ input[type="text"] {
 div.right {
     float: right;
     clear: right;
-    margin-left: 1em;
+    margin-left: 1ex;
 }
 
 div.left {
     float: left;
     clear: left;
-    margin-right: 1em;
+    margin-right: 1ex;
 }
 
 .inline-img {
@@ -1440,7 +1440,7 @@ div.left {
 .inline-img figure {
     border: 1px solid grey;
     padding: 1em;
-    margin: 1em auto;
+    margin: 1ex auto;
 }
 
 .inline-img figcaption {
