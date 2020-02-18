@@ -3,13 +3,49 @@ title: Bright Open 2020
 eventStart: 2020-02-08
 eventFinish: 2020-02-14
 image: bright-open.jpg
-teaser: The [Bright Open](/events/bright2020) is on! Three Canberra pilots are competing.
+teaser: The [Bright Open](/events/bright2020) was held in early February. Three Canberra pilots competed.
 ---
-The [Bright Open](https://airtribune.com/bright-open-2020/info) is happening now. Three Canberra pilots are competing: Kari Ellis, Rafael Esquillaro, and Johno Quinn.
+Three Canberra pilots took part in the [Bright Open](https://airtribune.com/bright-open-2020/info).
 
 ## Results
 
-Keep up with the latest results on [airScore](http://xc.highcloud.net/task_overview.html?comPk=281).
+The [final results](http://xc.highcloud.net/comp_overall.html?comPk=281&tasPk=1258) were:
+
+### Canberra Pilots
+
+- Kari Ellis: 3rd overall, 1st woman,
+- Rafael Esquillaro: 33rd overall,
+- Johno Quinn: 45th overall.
+
+### Overall
+
+- 1st: Peter Slade
+- 2nd: Gareth Carter
+- 3rd: Kari Ellis
+
+### Women
+
+- 1st: Kari Ellis
+- 2nd: Tomoko Yoshikawa
+- 3rd: Lucy Legget
+
+### Serial
+
+- 1st: Ari Sahlstrom
+- 2nd: Adam Stott
+- 3rd: Ron McKenzie
+
+### Sports
+
+- 1st: Brandon O'Donnell
+- 2nd: Brian Webb
+- 3rd: Brett Robinson
+
+### Fun
+
+- 1st: Ian Ladyman
+- 2nd: Tim Osborne
+- 3rd: Marie Attagniant
 
 ### Task 1
 
@@ -47,7 +83,13 @@ The Canberra pilots' results were:
 
 ### Task 4
 
-At the time of writing, a 45.09km task had been set, with [scores still coming in](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1258).
+Gareth Carter won [this 45.09km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1258) in a time of 1:38:58.
+
+The Canberra pilots' results were:
+
+- Kari Ellis in fourth in a time of 1:39:49,
+- Johno Quinn in 33rd at 37.66km when the task was stopped, with 25.5km of lead-out.
+- Rafael Esquillaro in equal 50th at 22.34km when the task was stopped, with 33.7km of lead-out.
 
 ## About the Bright Open
 
