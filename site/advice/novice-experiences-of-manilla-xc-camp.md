@@ -18,7 +18,7 @@ do.
 
 ## Who am I?
 
-<div class="inline-img right" style="max-width: 50%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/alex-boiko-in-flight.jpg">
 ![Alex enjoying the sky](/images/alex-boiko-in-flight.jpg)
 </div>
 
@@ -35,7 +35,7 @@ I learnt on when I had 32.4 hours).
 
 ## What I did at XCC 2020
 
-<div class="inline-img left" style="max-width: 50%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/manilla-xc-camp-2020/launch-briefing.jpg">
 ![Briefing on launch](/images/manilla-xc-camp-2020/launch-briefing.jpg)
 </div>
 
@@ -56,7 +56,7 @@ troopies that drive you back up from the bombouts for $10 a trip).
 
 ## The Flying
 
-<div class="inline-img" style="max-width: 80%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/manilla-xc-camp-2020/west-launch-2.jpg">
 ![Flying from the west launch of Mt. Borah.](/images/manilla-xc-camp-2020/west-launch-2.jpg)
 </div>
 
@@ -68,10 +68,6 @@ bought the hype and was expecting too much to come too easily, but I
 found the thermals trickier to stay in and to core than Bright or
 Corryong. Most landings were quite thermic and on par with my
 experiences at Spring, Bright and Corryong.
-
-<div class="inline-img" style="max-width: 80%">
-![Launch and the gaggles can be chaotic.](/images/manilla-xc-camp-2020/west-launch-1.jpg)
-</div>
 
 Gaggle flying (140ish pilots were registered, about 90 or so posted at
 least one non-zero day) involved up to 30 or 40 pilots trying to climb
@@ -86,6 +82,10 @@ lanes of alternating directions). Having at least some experience with
 relatively crowded flying is essential unless you are prepared to launch
 well after the crowd (and even then, the relaunches don't completely
 stop until the end of the day).
+
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/manilla-xc-camp-2020/west-launch-1.jpg">
+![Launch and the gaggles can be chaotic.](/images/manilla-xc-camp-2020/west-launch-1.jpg)
+</div>
 
 The air can be a bit interesting (as expected in the middle of the day,
 in the middle of the summer, in the middle of the hot flatlands), but I
@@ -108,7 +108,7 @@ but there are plenty of good landing options in the valleys (although
 the retrieves are better on the east side of the hill going north or
 south).
 
-<div class="inline-img" style="max-width: 80%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/manilla-xc-camp-2020/alex-pb-landing.jpg">
 ![Alex's Landing Spot](/images/manilla-xc-camp-2020/alex-pb-landing.jpg)
 </div>
 
@@ -198,7 +198,7 @@ sometimes-lively conditions, then it can be a very good opportunity to
 improve flying skills and maybe even add a few epic flights to your
 logbook.
 
-<div class="inline-img" style="max-width: 80%">
+<div class="inline-img" style="max-width: 50%" data-fancybox="gallery" href="/images/manilla-xc-camp-2020/west-launch-portrait-gaggle.jpg">
 ![West launch at Manilla](/images/manilla-xc-camp-2020/west-launch-portrait-gaggle.jpg)
 </div>
 

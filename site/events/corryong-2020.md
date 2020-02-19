@@ -30,7 +30,7 @@ The Canberra pilots' results were:
 
 ### Task 2
 
-<div class="inline-img left" style="max-width: 30%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/corryong-2020/task2-flying.jpg">
 ![Flying during task 2](/images/corryong-2020/task2-flying.jpg)
 </div>
 
@@ -38,7 +38,7 @@ The Canberra pilots' results were:
 It was again won by Gareth Carter, who was the only pilot to make goal, just before the race deadline.
 The 5pm deadline was a factor because the start had been delayed by changing weather conditions around midday, and by the tasks committee's decision to set a late start time to ensure that everyone got off the hill before the start.
 
-<div class="inline-img right" style="max-width: 30%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/corryong-2020/task2-cudgewa.jpg">
 ![First turnpoint: Cudgewa](/images/corryong-2020/task2-cudgewa.jpg)
 </div>
 
@@ -47,7 +47,7 @@ This meant that there was again a long queue on launch, which would be a topic o
 But the launch delays were less, and soon most pilots were in the air with plenty of time before the race start.
 Most spent this time either high over Mt. Elliot, or struggling in weak lift near the start cylinder.
 
-<div class="inline-img left" style="max-width: 30%">
+<div class="inline-img right" style="max-width: 40%" data-fancybox="gallery" href="/images/corryong-2020/task2-towong-waiting-for-start.jpg">
 ![Waiting for the start over Towong](/images/corryong-2020/task2-towong-waiting-for-start.jpg)
 </div>
 
@@ -74,7 +74,7 @@ It's an amazing place to fly -- easily one of the best in Australia.
 Mt. Elliot overlooks the town and offers plenty of height and plenty of thermals, and its easy launch and landing make it suitable for beginners as well.
 The only limitation is a requirement for a VHF endorsement to fly within the Corryong CTAF.
 
-<div class="inline-img">
+<div class="inline-img" style="max-width: 80%" data-fancybox="gallery" href="/images/corryong-pg-open-wide-angle-down.jpg">
 ![The view from over Mt. Elliot](/images/corryong-pg-open-wide-angle-down.jpg)
 </div>
 

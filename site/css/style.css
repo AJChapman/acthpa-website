@@ -1427,6 +1427,7 @@ div.left {
 }
 
 .inline-img {
+    display: block;
     text-align: center;
 }
 
