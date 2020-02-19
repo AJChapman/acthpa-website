@@ -3,7 +3,7 @@ title: Bright Open 2020
 eventStart: 2020-02-08
 eventFinish: 2020-02-14
 image: bright-open.jpg
-teaser: The [Bright Open](/events/bright2020) was held in early February. Three Canberra pilots competed.
+teaser: "The [Bright Open](/events/bright2020) was held in early February. Three Canberra pilots competed."
 ---
 Three Canberra pilots took part in the [Bright Open](https://airtribune.com/bright-open-2020/info).
 
@@ -15,7 +15,7 @@ The [final results](http://xc.highcloud.net/comp_overall.html?comPk=281&tasPk=12
 
 - Kari Ellis: 3rd overall, 1st woman,
 - Rafael Esquillaro: 33rd overall,
-- Johno Quinn: 45th overall.
+- Johno Quinn: 45th overall, winner of the Reynolds class (flying a wing with a certified weight range of no more than 90kg).
 
 ### Overall
 
