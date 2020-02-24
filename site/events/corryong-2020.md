@@ -3,14 +3,59 @@ title: Corryong PG Open 2020
 eventStart: 2020-02-16
 eventFinish: 2020-02-22
 image: paragliders-overhead.jpg
-teaser: "The [Corryong Paragliding Open](/events/corryong-2020) is on now, with five Canberra pilots competing: Kari Ellis, Johno Quinn, Alistair Dickie, Phil Robinson, and Alex Chapman."
+teaser: "The [Corryong Paragliding Open](/events/corryong-2020) took place in late February, with five Canberra pilots competing: Kari Ellis (3rd overall, 1st woman), Johno Quinn (1st in reynolds class), Alistair Dickie (2nd in fun class), Phil Robinson, and Alex Chapman."
 ---
-The [Corryong Paragliding Open](https://airtribune.com/flow-corryong-pg-open-2020/info) is on now, with five Canberra pilots competing: Kari Ellis, Johno Quinn, Alistair Dickie, Phil Robinson, and Alex Chapman.
+The [Corryong Paragliding Open](https://airtribune.com/flow-corryong-pg-open-2020/info) took place in late February, with five Canberra pilots competing: Kari Ellis, Johno Quinn, Alistair Dickie, Phil Robinson, and Alex Chapman.
 
 ## Results
 
-AirScore has the most up-to date [overall results](http://xc.highcloud.net/comp_overall.html?comPk=287), and [task results](http://xc.highcloud.net/task_overview.html?comPk=287).
-During a task you can watch pilots' progress semi-live on [HighCloud's Spot page for the Corryong region](http://highcloud.net/spot/region.html?lat=-36.2&lon=147.8&zoom=11).
+The [final results](http://xc.highcloud.net/comp_overall.html?comPk=287) were:
+
+### Canberra Pilots
+
+- Kari Ellis: 3rd overall (only 7 points behind 1st place!), 1st woman,
+- Johno Quinn: 24th overall, 1st in reynolds class,
+- Alistair Dickie: 46th overall, 2nd in fun class,
+- Alex Chapman: 59th overall,
+- Phil Robinson: 62nd overall.
+
+### Overall
+
+- 1st: Gareth Carter (Ozone Enzo 3)
+- 2nd: Daniel "Wally" Arcidiacono (Gin Leopard)
+- 3rd: Kari Ellis (Ozone Enzo 3)
+
+### Women
+
+- 1st: Kari Ellis (Ozone Enzo 3)
+- 2nd: Kyla MacDonald (Nova Mentor 5)
+- 3rd: Erica Caro (Skywalk Cumeo)
+
+### Serial
+
+- 1st: Daniel "Wally" Arcidiacono (Gin Leopard)
+- 2nd: Richard Perkes (Ozone Zeno)
+- 3rd: Andy McMurray (Flow XC Racer)
+
+### Sports
+
+- 1st: Brian Webb (Flow Fusion)
+- 2nd: Ivan Anissimov (Flow Fusion)
+- 3rd: Jorry Furnell (BGD Cure 2)
+
+### Fun
+
+- 1st: Cameron Lawrence (Nova Mentor 4)
+- 2nd: Alistair Dickie (Nova Mentor 5)
+- 3rd: Conan Burch (Advance XI)
+
+### Reynolds
+
+- 1st: Johno Quinn (Ozone Zeno)
+
+### Novice (under 250 hours)
+
+- 1st: Tom Lines (Gin Carrera Plus)
 
 ### Task 1
 
@@ -64,6 +109,33 @@ The Canberra pilots' results were:
 - Alistair Dickie in 26th, at 40.17km, narrowly missing out on 1st place in Fun class, currently in 39th place overall, and 2nd place in Fun class,
 - Alex Chapman in 46th, at 26.09km, currently in 59th place overall, and
 - Phil Robinson in 52nd, at 16.37km, currently in 62nd place overall. 
+
+### Task 4
+
+[Task 4 was a 71.48km race](http://xc.highcloud.net/task_result.html?comPk=287&tasPk=1267) to Tumbarumba via Walwa.
+It was won by Peter Slade on a Flow Spectra in a time of 2:34:22.
+31 pilots made it to goal, with many succumbing either to sink and scarce thermals on the first leg, or strong winds around Pine Mountain.
+
+The Canberra pilots' results were:
+
+- Kari Ellis in 3rd, in a time of 2:36:06,
+- Johno Quinn in 16th, in a time of 2:59:51,
+- Phil Robinson in 52nd, at 35.99km,
+- Alex Chapman in 61st at 12.08km, and
+- Alistair Dickie in 71st, at 6.93km.
+
+### Task 5
+
+[Task 5 was a 54.7km race](http://xc.highcloud.net/task_result.html?comPk=287&tasPk=1268) across to Mt. Mittamatite, across to Cudgewa, along the length of the Cudgewa valley to Welumbra Creek, then back to the Mt. Elliot LZ.
+It was won by Richard Binstead on a Flow XC Racer in a time of 1:17:09.
+
+The Canberra pilots' results were:
+
+- Kari Ellis in 8th, in a time of 1:19:34,
+- Johno Quinn in 22nd, in a time of 1:45:59,
+- Alistair Dickie in 40th, in a time of 2:24:10,
+- Alex Chapman in 56th, at 22.33km, and
+- Phil Robinson in equal 63rd. 
 
 ## About the Corryong PG Open
 

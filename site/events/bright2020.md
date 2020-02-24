@@ -47,6 +47,10 @@ The [final results](http://xc.highcloud.net/comp_overall.html?comPk=281&tasPk=12
 - 2nd: Tim Osborne
 - 3rd: Marie Attagniant
 
+### Reynolds
+
+- 1st: Johno Quinn
+
 ### Task 1
 
 Kalle Ojamo of Finland won [this 39.91km task](http://xc.highcloud.net/task_result.html?comPk=281&tasPk=1241) in a time of 1:02:15.
@@ -69,7 +73,6 @@ The Canberra pilots' results were:
 - Kari Ellis in equal 3rd in a time of 2:33:29, now in 2nd overall, 
 - Rafael Esquillaro in 26th at 65.65km, now 32nd overall,
 - Johno Quinn in 30th at 41.07km, now 29th overall.
-
 
 ### Task 3
 
