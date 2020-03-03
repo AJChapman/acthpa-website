@@ -4,7 +4,7 @@ title: Flying Canberra
 
 ## Quick Info
 
-**Radio Frequency**: HGFA Open (472.125 MHz, no tone squelch)
+**Radio Frequency**: [HGFA Open](https://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 MHz, no tone squelch)
 
 ### Sites
 
