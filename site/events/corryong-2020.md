@@ -3,7 +3,7 @@ title: Corryong PG Open 2020
 eventStart: 2020-02-16
 eventFinish: 2020-02-22
 image: paragliders-overhead.jpg
-teaser: "The [Corryong Paragliding Open](/events/corryong-2020) took place in late February, with five Canberra pilots competing: Kari Ellis (3rd overall, 1st woman), Johno Quinn (1st in reynolds class), Alistair Dickie (2nd in fun class), Phil Robinson, and Alex Chapman."
+teaser: "The [Corryong Paragliding Open](/events/corryong-2020) took place in late February, with six Canberra pilots competing: Kari Ellis (3rd overall, 1st woman), Johno Quinn (1st in reynolds class), Cameron Lawrence, Alistair Dickie (2nd in fun class), Phil Robinson, and Alex Chapman."
 ---
 The [Corryong Paragliding Open](https://airtribune.com/flow-corryong-pg-open-2020/info) took place in late February, with five Canberra pilots competing: Kari Ellis, Johno Quinn, Alistair Dickie, Phil Robinson, and Alex Chapman.
 
@@ -15,6 +15,7 @@ The [final results](http://xc.highcloud.net/comp_overall.html?comPk=287) were:
 
 - Kari Ellis: 3rd overall (only 7 points behind 1st place!), 1st woman,
 - Johno Quinn: 24th overall, 1st in reynolds class,
+- Cameron Lawrence: 44th overall, 1st in fun class,
 - Alistair Dickie: 46th overall, 2nd in fun class,
 - Alex Chapman: 59th overall,
 - Phil Robinson: 62nd overall.
@@ -69,6 +70,7 @@ The Canberra pilots' results were:
 
 - Johno Quinn in 36th in a time of 1:43:22,
 - Kari Ellis in 43rd,
+- Cameron Lawrence in 46th in a time of 1:58:42,
 - Alistair Dickie in 50th in a time of 2:26:01,
 - Phil Robinson in 59th, at 32.7km when the task was called off due to developing rain and thunderstorms. Phil was at 1736m AMSL when the task was called off,
 - Alex Chapman in 62nd, at 29.35km.
@@ -107,8 +109,25 @@ The Canberra pilots' results were:
 - Kari Ellis in 3rd, at 51.47km with 76.9 lead-out kms, currently in 21st place overall,
 - Johno Quinn in 23rd, at 41.03km, currently in 31st place overall,
 - Alistair Dickie in 26th, at 40.17km, narrowly missing out on 1st place in Fun class, currently in 39th place overall, and 2nd place in Fun class,
+- Cameron Lawrence in 40th, at 29.96km,
 - Alex Chapman in 46th, at 26.09km, currently in 59th place overall, and
 - Phil Robinson in 52nd, at 16.37km, currently in 62nd place overall. 
+
+### Task 3
+
+[Task 3 was a 62.98km race](http://xc.highcloud.net/task_result.html?comPk=287&tasPk=1266) to Walwa, then back via Lighthouse.
+It was won by Kari Ellis on an Ozone Enzo 3 in a time of 2:01:18.
+The task highlight was traversing the length of Pine Mountain and back again, with many pilots finding convergence over the mountain.
+35 pilots made it to goal.
+
+The Canberra pilots' results were:
+
+- Kari Ellis in 1st, in a time of 2:01:18,
+- Johno Quinn in 22nd, in a time of 2:42:56,
+- Alex Chapman in 41st, at 56.14,
+- Alistair Dickie in 47th, at 51.23km,
+- Phil Robinson in 53rd, at 49.57km,
+- Cameron Lawrence in 56th, at 44.87km.
 
 ### Task 4
 
@@ -120,6 +139,7 @@ The Canberra pilots' results were:
 
 - Kari Ellis in 3rd, in a time of 2:36:06,
 - Johno Quinn in 16th, in a time of 2:59:51,
+- Cameron Lawrence in 31st, in a time of 3:56:28, just minutes before the end of task, and the only Fun class glider into goal,
 - Phil Robinson in 52nd, at 35.99km,
 - Alex Chapman in 61st at 12.08km, and
 - Alistair Dickie in 71st, at 6.93km.
