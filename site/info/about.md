@@ -6,6 +6,21 @@ The Australian Capital Territory Hang Gliding and Paragliding Association (ACTHP
 It is both a State Association affiliated with the Sports Aviation Federation of Australia (SAFA, formerly HGFA), and the primary club for free flying in the Canberra region.
 [Here are the ACTHPA Objects and Rules as of 7 June 2016](/files/ACTHPA Objects and Rules - 7 June 2016.pdf).
  
+## Contact Us
+
+To get in contact with the ACTHPA committee, email office.acthpa@gmail.com or call our president, Rene Sedlmaier, on 0408 621 100.
+
+## ACT SAFA Regional Development Levy
+
+The ACTHPA is affiliated with SAFA as the regional association for the ACT and surrounding area.
+Members of SAFA who live in the postcodes described in the SAFA Policy on Regional Boundaries pay a Regional Development Levy (RDL) as part of their annual membership fees with SAFA.
+The RDL is disbursed to the ACTHPA and is used to progress the initiatives outlined in ACTHPA annual plans.
+This includes supporting the development of safety in the region, improving flying site infrastructure including weather stations, supporting regional flying events, and undertaking the administration of the ACTHPA.
+
+Members of the ACTHPA with ideas to improve safety, infrastructure, events or administration are encouraged to reach out to the ACTHPA committee with suggestions.
+Monthly meetings are well attended and are a great place to discuss ideas with other members.
+If necessary, the ACTHPA committee may ask that proposals be outlined in writing for further consideration.
+
 ## Committee Members
 
 Position                 Name              Phone             Email
