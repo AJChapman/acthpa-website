@@ -120,7 +120,7 @@ flightsFromHtml t = t ^.. html
 flightFromFlightRow :: Element -> Maybe Flight
 flightFromFlightRow row =
   let cells = row ^.. allNamed (only "TD")
-      url = makeAbsoluteUrlOf paraglidingForumCom (row ^? rowFlightUrl)
+      url = makeAbsoluteUrlOf paraglidingForumCom =<< row ^? rowFlightUrl
   in Flight
     <$> cells ^? traverse . cellPilotName
     <*> cells ^? traverse . cellSiteName

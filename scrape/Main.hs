@@ -3,16 +3,18 @@ module Main
   ( main
   ) where
 
-import Control.Monad    (void)
-import Network.HTTP.Req (Req, defaultHttpConfig, runReq, MonadHttp)
-import System.Directory (createDirectoryIfMissing)
-import System.FilePath  ((</>))
+import Control.Monad      (void)
+import Network.HTTP.Req   (MonadHttp, Req, defaultHttpConfig, runReq)
+import System.Directory   (createDirectoryIfMissing)
+import System.FilePath    ((</>))
+import Text.Pretty.Simple (pShow)
 
 import Flights
 
-import qualified Data.Text.IO as TIO
-import qualified Leonardo     as LEO
-import qualified XContest     as XC
+import qualified Data.Text.IO      as TIO
+import qualified Data.Text.Lazy.IO as TLIO
+import qualified Leonardo          as LEO
+import qualified XContest2          as XC
 
 scrapeSite :: Bool -> String -> Req [Flight] -> IO ()
 scrapeSite showSite fileName getFlights = do
@@ -22,6 +24,7 @@ scrapeSite showSite fileName getFlights = do
   putStrLn $ "Populating '" <> file <> "'"
   flights <- runReq defaultHttpConfig getFlights
   putStrLn $ "Found " <> show (length flights) <> " flights."
+  TLIO.putStrLn $ pShow flights
   TIO.writeFile
     file
     (renderFlights showSite flights)

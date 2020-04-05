@@ -242,9 +242,8 @@ renderFlights showSite flights =
       th "Date"
     mapM_ (flightRow showSite) flights
 
-makeAbsoluteUrlOf :: Text -> Maybe Text -> Maybe URI
-makeAbsoluteUrlOf _ Nothing = Nothing
-makeAbsoluteUrlOf host' (Just path) = rightToMaybe . runCatch $ do
+makeAbsoluteUrlOf :: Text -> Text -> Maybe URI
+makeAbsoluteUrlOf host' path = rightToMaybe . runCatch $ do
   uri <- mkURI path
   if uri ^. uriAuthority & isRight
     then pure uri
