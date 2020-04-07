@@ -1,57 +1,51 @@
 ---
 title: Home
 ---
-## Sports Aviation Operations Suspended in the ACT Region
+## Current COVID-19 Policy (updated 7 April 2020)
 
-It is with great regret that the ACT Hang Gliding and Paragliding
-Association announces that flying operations are suspended in the ACT
-Region from midnight on 30 Mar 2020. There has been debate in our
-community about the moral and social impacts of flying during the
-coronavirus crisis and some individuals have chosen not to fly. However
-that is no longer relevant as we are now of the opinion that flying
-operations in our region would be unlawful.
+The ACTHPA committee has [updated our policy on flying operations](/files/2020-04-07-COVID-19-Update.pdf).
+Consequently the current policy is:
 
-On the evening of 29 Mar 2020 the Prime Minister announced measures to
-protect the community. NSW effected that through a Public Health Order
-which came into force from midnight on 30 Mar 2020, and the ACT is
-expected to follow suit with a similar Public Health Directive. The [NSW
-Public Health (COVID-19 Restrictions on Gathering and Movement) Order
-2020](https://preview.nsw.gov.au/covid-19/public-health-orders)
-describes two prohibitions that are inconsistent with our operations.
+### Lanyon (and Other Flying in the ACT)
 
-In particular, the Order directs that a person must not leave their
-place of residence without a reasonable excuse. We do not believe that
-flying operations would be viewed as a reasonable excuse. Some have
-considered that our operations, such as hike and fly, might be
-considered exercise and therefore be interpreted to mean a reasonable
-excuse. While hiking might be, flying is not and we urge all pilots to
-avoid trying to interpret the Order in a way which might suit their
-desires but is counter to the intent.
+- The ACT Government has provided [advice that flying is not currently unlawful](/files/2020-04-06-ACT-Sport-Rec-Advice.pdf).
+  This includes further advice about social distancing.
+  Their advice may change, you should monitor the [ACT Government website](https://www.covid19.act.gov.au/) for any park closures or other restrictions.
+- Access to State and National Parks (where Lanyon is located) is a
+  matter for the ACT Government and/or Federal Governments, should
+  they close the Parks this will close the site.
 
-Of equal concern is that the Order directs the closure of certain
-premises. Our flying sites meet the definition of 'community
-facilities'. Flying from our sites would constitute operating the
-premises by land owners, our association (through our agreements with
-the land owners), and the pilots flying from them. This would expose all
-of us and as the flying would be unlawful and our insurances would be
-void, further voiding our agreements with land owners which require that
-we are insured.
+### All ACTHPA Sites Located in NSW
 
-We understand that this suspension will deeply affect those of us who
-are addicted to flying. Once this virus storm has passed we are all
-looking forward to resuming operations.
+- Suspension of sites access remains in place currently; we are awaiting advice from NSW Sports and Rec that flying activities are not unlawful under the blanket provisions.
+  When this is received this will be distributed.
+- NSWHPA has engaged with NSW Sports and Recreation, any advice received by ACTHPA will be provided to members as soon as practicable.
+- Landholder access is a separate issue, we will advise members if access is withdrawn by landholders.
+  The ACTHPA Committee will engage with landholders once guidance is received from the NSW Government to confirm access arrangements.
 
-Notes:
+### Other Matters
 
--   Flying operations includes paragliding, hang gliding, powered
-    paragliding, and powered hang gliding.
+- Tandems are not currently approved by SAFA (email of 30 March 2020 to all SAFA members).
+- ACTHPA Members are advised to read, follow and stay updated with the social distancing rules and other restrictions in force [in the ACT](http://covid19.act.gov.au/) and [NSW](https://nsw.gov.au/covid-19).
+- The organising of public gatherings remains prohibited by Government (this includes organising to fly on Facebook, via messenger or any other means).
+- As per SAFA advice, you should fly even more cautiously than normal and take no unnecessary risks.
 
--   The ACT Region means the same thing as described in the SAFA Policy
-    on Region Boundaries. The geographic extent is defined by postcodes
-    and includes all of the ACT and NSW Postcodes in the areas
-    surrounding the ACT (2580-2582, 2618-2621). This includes our sites
-    in NSW such Collector, Lake George, Spring Hill, and Pig Hill. We
-    are of the view that the Lanyon site should be closed as well.
+### ACTHPA Committee Advice
+
+In our context and following the above we provide the following advice:
+
+- The number of people on the site should be limited.
+  If you turn up to a site and it is not possible to maintain an adequate distance
+from others at all times, then you should leave.
+- Do not share cars, or give other pilots a lift, other than with members of your household.
+- Cross country flights should not occur, people should land in the designated landing zones. This is particularly important where State and Territory borders are present -- the rules are different between the jurisdictions and NSW.
+- People should be aware of the risk of spreading the virus when handling gates or other equipment.
+
+Above all, you should continue to monitor Federal, State and Territory
+government sites to monitor changing rules and regulations. Stay safe
+and protect yourselves and the community from the spread of this virus.
+Should circumstances change, we will consider whether amendments to this
+advice are required.
 
 ## About ACTHPA
 
