@@ -1,51 +1,91 @@
 ---
 title: Home
 ---
-## Current COVID-19 Policy (updated 7 April 2020)
+## Current COVID-19 Policy (updated 8 April 2020)
 
-The ACTHPA committee has [updated our policy on flying operations](/files/2020-04-07-COVID-19-Update.pdf).
-Consequently the current policy is:
+The ACTHPA Committee met by phone hookup this week to review the recent
+decision to suspend flying at the sites we manage, after we sought
+clarification from ACT Sport and Recreation regarding the status of hang
+gliding and paragliding as sports that could be regarded as forms of
+individual exercise.
 
-### Lanyon (and Other Flying in the ACT)
+We are pleased to inform you that advice has been received from the
+Executive Branch Manager that hang gliding and paragliding fall outside
+the current restrictions and may proceed. [The full statement is
+here](/files/2020-04-06-ACT-Sport-Rec-Advice.pdf).
+It is important that you read it in full.
 
-- The ACT Government has provided [advice that flying is not currently unlawful](/files/2020-04-06-ACT-Sport-Rec-Advice.pdf).
-  This includes further advice about social distancing.
-  Their advice may change, you should monitor the [ACT Government website](https://www.covid19.act.gov.au/) for any park closures or other restrictions.
-- Access to State and National Parks (where Lanyon is located) is a
-  matter for the ACT Government and/or Federal Governments, should
-  they close the Parks this will close the site.
+This means that flying at ACT sites is lawful, although it is always
+subject to change and it is our individual responsibility to monitor [the
+ACT Government website (https://www.covid19.act.gov.au)](https://www.covid19.act.gov.au).
+Access to
+State and National Parks is a matter for the ACT Government and/or the
+Federal Government and if there is a decision to close the parks our
+flying sites will close. The site most commonly used in the ACT is
+Lanyon.
 
-### All ACTHPA Sites Located in NSW
+Tandem Flight restrictions handed down from SAFA still apply in the ACT
+as is does across Australia.
 
-- Suspension of sites access remains in place currently; we are awaiting advice from NSW Sports and Rec that flying activities are not unlawful under the blanket provisions.
-  When this is received this will be distributed.
-- NSWHPA has engaged with NSW Sports and Recreation, any advice received by ACTHPA will be provided to members as soon as practicable.
-- Landholder access is a separate issue, we will advise members if access is withdrawn by landholders.
-  The ACTHPA Committee will engage with landholders once guidance is received from the NSW Government to confirm access arrangements.
+The situation is not yet resolved for ACTHPA managed sites in NSW. The
+NSWHPA has likewise engaged with NSW Sport and Recreation. Any advice
+they receive will be provided to members as soon as practicable. We have
+provided them with a copy of the advice from the ACT.
 
-### Other Matters
+So that is good news for those that are keen to continue flying.
 
-- Tandems are not currently approved by SAFA (email of 30 March 2020 to all SAFA members).
-- ACTHPA Members are advised to read, follow and stay updated with the social distancing rules and other restrictions in force [in the ACT](http://covid19.act.gov.au/) and [NSW](https://nsw.gov.au/covid-19).
-- The organising of public gatherings remains prohibited by Government (this includes organising to fly on Facebook, via messenger or any other means).
-- As per SAFA advice, you should fly even more cautiously than normal and take no unnecessary risks.
+When you read [the document from ACT Sport and Recreation](/files/2020-04-06-ACT-Sport-Rec-Advice.pdf) you will see
+that it is no longer "business as usual". There are strict directives
+that must be followed about the size of groups, physical distancing, use
+of equipment, transport and the like.
 
-### ACTHPA Committee Advice
+The committee considered how to interpret these directives for our sport
+and we list them as follows:
 
-In our context and following the above we provide the following advice:
+-   We are restricted to groups of two, so we recommend only one pilot
+    on launch at any one time
 
-- The number of people on the site should be limited.
-  If you turn up to a site and it is not possible to maintain an adequate distance
-from others at all times, then you should leave.
-- Do not share cars, or give other pilots a lift, other than with members of your household.
-- Cross country flights should not occur, people should land in the designated landing zones. This is particularly important where State and Territory borders are present -- the rules are different between the jurisdictions and NSW.
-- People should be aware of the risk of spreading the virus when handling gates or other equipment.
+-   If there are four pilots in the air already, please wait until
+    someone has landed before launching
 
-Above all, you should continue to monitor Federal, State and Territory
-government sites to monitor changing rules and regulations. Stay safe
-and protect yourselves and the community from the spread of this virus.
-Should circumstances change, we will consider whether amendments to this
-advice are required.
+-   No car pooling
+
+-   No cross country flights. Land only in the site designated LZ
+
+-   Please use radios at the site and also carry a mobile phone and
+    other safety devices you may regularly use
+
+-   Please assess the conditions carefully to ensure they are within
+    your capability. Safety is a critical factor at this time
+
+-   Please be careful using padlocks and gates. The virus can live on
+    hard surfaces for an extended time
+
+-   Our strong preference is that you do not post your intentions or
+    activities on the ACTHPA Facebook page (this could be seen as an invitation to a social
+    gathering).
+
+The most obvious directive is not specific to flying, ie physical
+distancing, but it should be obvious that this is the most crucial
+factor of all. It should be easy enough to maintain your four square
+meters on the hill and indeed in the air.
+
+Finally, we ask that you respect the decisions people make right now.
+Some will choose not to fly. Others will be in the air as soon as
+conditions allow and they will be flying lawfully, at least in the ACT.
+
+As we stated above, the situation for ACTHPA managed sites in NSW is
+under active review.
+
+In fact all the committee's decisions need to constantly monitored and
+reviewed as this is a rapidly changing situation and the laws may be
+tightened or relaxed at any time.
+
+As ever the committee is keen to promote the sport, to improve safety
+and to protect and develop our sites. This also means maintaining close
+working relationships with land owners and land holders.
+
+Thank you all for your patience.
 
 ## About ACTHPA
 
