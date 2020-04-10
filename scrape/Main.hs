@@ -7,7 +7,7 @@ import Control.Monad      (void)
 import Network.HTTP.Req   (MonadHttp, Req, defaultHttpConfig, runReq)
 import System.Directory   (createDirectoryIfMissing)
 import System.FilePath    ((</>))
-import Text.Pretty.Simple (pShow)
+import Text.Pretty.Simple (pShowNoColor)
 
 import Flights
 
@@ -24,7 +24,7 @@ scrapeSite showSite fileName getFlights = do
   putStrLn $ "Populating '" <> file <> "'"
   flights <- runReq defaultHttpConfig getFlights
   putStrLn $ "Found " <> show (length flights) <> " flights."
-  TLIO.putStrLn $ pShow flights
+  TLIO.putStrLn $ pShowNoColor flights
   TIO.writeFile
     file
     (renderFlights showSite flights)

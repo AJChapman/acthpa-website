@@ -36,7 +36,7 @@ import Data.Text.Lens             (unpacked)
 import Data.Time                  (Day)
 import Network.HTTP.Req           (MonadHttp, Option, Scheme (Https))
 import Text.HTML.TagSoup.Navigate
-import Text.Pretty.Simple         (pShow)
+import Text.Pretty.Simple         (pShowNoColor)
 import Text.URI                   (URI)
 
 import qualified Data.HashMap.Strict as HM
@@ -340,6 +340,6 @@ flightsFromHtml t =
   -- t & parseTree <&> fromTagTree <&> evalTagTreePosState findFlights
   case t & L.toStrict & parseTree & pageFlights of
     Left err -> do
-      liftIO . TLIO.putStrLn $ pShow err -- TODO: fail instead of just printing
+      liftIO . TLIO.putStrLn $ pShowNoColor err -- TODO: fail instead of just printing
       pure []
     Right flights -> pure flights
