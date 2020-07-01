@@ -21,7 +21,7 @@ Visiting pilots are always very welcome at any of our sites.
 We only ask that you adhere to these common sense rules:
 
 - Be a current member of [SAFA] (formerly HGFA). International pilots must hold a [SAFA Visiting Pilot Membership (VPM)].
-- Familiarise yourself with the [site guide](http://acthpa.localhost/info/sites/) of the site you are flying.
+- Familiarise yourself with the [site guide](http://acthpa.org/info/sites/) of the site you are flying.
 - Make yourself known to a site safety officer and obtain a site briefing (if possible).
 - Fly with a UHF radio (see Communication, below).
 
