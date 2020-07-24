@@ -3,18 +3,21 @@ module Main
   ( main
   ) where
 
-import Control.Monad      (void)
-import Network.HTTP.Req   (MonadHttp, Req, defaultHttpConfig, runReq)
-import System.Directory   (createDirectoryIfMissing)
-import System.FilePath    ((</>))
-import Text.Pretty.Simple (pShowNoColor)
+import Control.Lens           (_Wrapped)
+import Control.Lens.Operators
+import Control.Monad          (void)
+import Formatting
+import Network.HTTP.Req       (MonadHttp, Req, defaultHttpConfig, runReq)
+import System.Directory       (createDirectoryIfMissing)
+import System.FilePath        ((</>))
+import Text.Pretty.Simple     (pShowNoColor)
 
 import Flights
 
 import qualified Data.Text.IO      as TIO
 import qualified Data.Text.Lazy.IO as TLIO
 import qualified Leonardo          as LEO
-import qualified XContest2          as XC
+import qualified XContest2         as XC
 
 scrapeSite :: Bool -> String -> Req [Flight] -> IO ()
 scrapeSite showSite fileName getFlights = do
@@ -24,10 +27,18 @@ scrapeSite showSite fileName getFlights = do
   putStrLn $ "Populating '" <> file <> "'"
   flights <- runReq defaultHttpConfig getFlights
   putStrLn $ "Found " <> show (length flights) <> " flights."
-  TLIO.putStrLn $ pShowNoColor flights
+  sequence_ $ fprint formatFlight <$> flights
   TIO.writeFile
     file
     (renderFlights showSite flights)
+
+formatFlight :: Format r (Flight -> r)
+formatFlight = later $ \flight ->
+  bprint ("- " % stext % " flew " % fixed 2 % "km from " % stext % " on " % build % ".\n")
+    (flight ^. flightPilot . pilotName)
+    (flight ^. flightDistance . distanceKm)
+    (flight ^. flightSiteName . _Wrapped)
+    (flight ^. flightDate)
 
 getFlightsAt :: MonadHttp m => [Site -> Int -> m [Flight]] -> Site -> Int -> m [Flight]
 getFlightsAt getters site n =
