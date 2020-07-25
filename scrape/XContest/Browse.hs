@@ -10,16 +10,15 @@ module XContest.Browse
   , xContestFlightsHtml
   ) where
 
+import Control.Category         ((>>>))
 import Control.Lens.Operators
-import Control.Monad.IO.Class   (liftIO)
 import Data.Text                (Text)
 import Data.Text.Encoding.Error (lenientDecode)
 import Data.Text.Lazy.Encoding  (decodeUtf8With)
 import Network.HTTP.Req         (GET (..), MonadHttp, NoReqBody (..), Option,
                                  Scheme (Https), Url, https, lbsResponse, req,
-                                 req', responseBody, (/:), (=:))
+                                 responseBody, (/:), (=:))
 
-import qualified Data.Text.IO   as TIO
 import qualified Data.Text.Lazy as L
 
 import Flights
@@ -60,16 +59,13 @@ getRecentFlightsHtmlAt = getFlightsHtmlAt "time_start"
 
 xContestFlightsHtml :: MonadHttp m => Option 'Https -> m L.Text
 xContestFlightsHtml opts = do
-  req' GET xContestFlightSearchUrl NoReqBody opts (\rq _ -> liftIO $ print rq)
-  r <- req GET
+  req GET
     xContestFlightSearchUrl
     NoReqBody
     lbsResponse
     opts
-  let page = r
-        & responseBody
-        & decodeUtf8With lenientDecode
-  -- For debugging
-  liftIO $ TIO.writeFile "result.html" (L.toStrict page)
-  pure page
+  >>=
+    (responseBody
+    >>> decodeUtf8With lenientDecode
+    >>> pure)
 

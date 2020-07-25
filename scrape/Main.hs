@@ -10,12 +10,10 @@ import Formatting
 import Network.HTTP.Req       (MonadHttp, Req, defaultHttpConfig, runReq)
 import System.Directory       (createDirectoryIfMissing)
 import System.FilePath        ((</>))
-import Text.Pretty.Simple     (pShowNoColor)
 
 import Flights
 
 import qualified Data.Text.IO      as TIO
-import qualified Data.Text.Lazy.IO as TLIO
 import qualified Leonardo          as LEO
 import qualified XContest2         as XC
 
