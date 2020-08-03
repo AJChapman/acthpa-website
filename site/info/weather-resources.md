@@ -6,6 +6,7 @@ description: Links to some useful weather resources
 The [Wind Talkers] show the current conditions and trends at our most commonly used local sites.
 The links below are to websites used by numerous pilots to access local weather conditions:
 
+* [Where To Fly] ([overview][Where To Fly Overview]) - [iPhone App][Where To Fly iPhone App] / [Android App][Where To Fly Android App]
 * [Bureau of Meteorology (BOM)]
 * [Weatherzone] - [iPhone App][Weatherzone iPhone App] / [Android App][Weatherzone Android App]
 * [WillyWeather] - [iPhone App][WillyWeather iPhone App] / [Android App][WillyWeather Android App]
@@ -25,6 +26,10 @@ the obvious rain radar.
 * [Synoptic Charts]
 
 [Wind Talkers]: http://freeflightwx.com/acthpa
+[Where To Fly]: https://wheretofly.info/
+[Where To Fly Overview]: https://mhgc.vhpa.org.au/wp-content/uploads/wtf-overview.pdf
+[Where To Fly iPhone App]: https://apps.apple.com/au/app/where-to-fly/id1439721253
+[Where To Fly Android App]: https://play.google.com/store/apps/details?id=name.seeley.phil.wheretoflyapp
 [Bureau of Meteorology (BOM)]: http://www.bom.gov.au/
 [Weatherzone]: http://www.weatherzone.com.au/
 [Weatherzone iPhone App]: https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8
