@@ -1,0 +1,5433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <Folder>
+      <name>Waypoints</name>
+      <Placemark>
+        <name>APX048</name>
+        <description>Apex North</description>
+        <Point>
+        <coordinates>146.983414,-36.708302,480.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>APX060</name>
+        <description>Apex Lookout</description>
+        <Point>
+        <coordinates>146.974396,-36.716430,600.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BAK040</name>
+        <description>Bakers Gully</description>
+        <Point>
+        <coordinates>146.954208,-36.744362,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BBN092</name>
+        <description>Big Ben</description>
+        <Point>
+        <coordinates>146.982216,-36.416913,920.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCK055</name>
+        <description>Boggy Creek Hill</description>
+        <Point>
+        <coordinates>148.077593,-36.058675,550.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BER064</name>
+        <description>Berringama</description>
+        <Point>
+        <coordinates>147.664318,-36.207161,640.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BIG067</name>
+        <description>Biggara</description>
+        <Point>
+        <coordinates>148.018456,-36.303229,670.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BLH110</name>
+        <description>Buffalo Little Horn</description>
+        <Point>
+        <coordinates>146.746799,-36.656966,1107.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BMM131</name>
+        <description>Buffalo Mt McLeod</description>
+        <Point>
+        <coordinates>146.797582,-36.690365,1310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BMT054</name>
+        <description>Buffalo Back Creek</description>
+        <Point>
+        <coordinates>146.707504,-36.611820,540.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOG057</name>
+        <description>Bogandyera</description>
+        <Point>
+        <coordinates>147.925673,-35.973352,570.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRB028</name>
+        <description>Briggs Bridge</description>
+        <Point>
+        <coordinates>147.118637,-36.638771,281.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRI045</name>
+        <description>Bringenbrong</description>
+        <Point>
+        <coordinates>148.066349,-36.176683,460.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BYW015</name>
+        <description>Hume Highway Junction</description>
+        <Point>
+        <coordinates>146.375870,-36.310188,150.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAL080</name>
+        <description>Callaghan Creek Rd Ridge</description>
+        <Point>
+        <coordinates>147.345351,-36.385426,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHN056</name>
+        <description>Chinamans Hat</description>
+        <Point>
+        <coordinates>147.871855,-36.280321,560.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLH065</name>
+        <description>Colac Colac Hill</description>
+        <Point>
+        <coordinates>147.846451,-36.252303,650.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COL033</name>
+        <description>Colac Colac</description>
+        <Point>
+        <coordinates>147.829521,-36.215991,330.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COR029</name>
+        <description>Corryong Airbase</description>
+        <Point>
+        <coordinates>147.892456,-36.183437,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CRT045</name>
+        <description>Corryong Tower</description>
+        <Point>
+        <coordinates>147.918147,-36.198653,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CUD034</name>
+        <description>Cudgewa</description>
+        <Point>
+        <coordinates>147.771435,-36.190815,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CUD050</name>
+        <description>Settlement Rd Hill</description>
+        <Point>
+        <coordinates>147.866879,-36.061867,540.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CUD060</name>
+        <description>Cudgewa Tintaldra Rd</description>
+        <Point>
+        <coordinates>147.812119,-36.120128,600.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CUD079</name>
+        <description>Mt Cudgewa South</description>
+        <Point>
+        <coordinates>147.530374,-36.354677,790.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CUD101</name>
+        <description>Mt Cudgewa Nth Peak</description>
+        <Point>
+        <coordinates>147.483310,-36.314682,1010.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DDV025</name>
+        <description>Dederang Pub</description>
+        <Point>
+        <coordinates>147.016876,-36.470322,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EKN050</name>
+        <description>Eskdale North Ridge</description>
+        <Point>
+        <coordinates>147.250149,-36.426448,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EKS080</name>
+        <description>Eskdale South Ridge</description>
+        <Point>
+        <coordinates>147.213884,-36.479814,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELL030</name>
+        <description>Mt Elliot Landing</description>
+        <Point>
+        <coordinates>147.946444,-36.173807,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELL094</name>
+        <description>Mt Elliot Launch</description>
+        <Point>
+        <coordinates>147.974553,-36.186035,940.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELZ029</name>
+        <description>Mt Elliot LZ</description>
+        <Point>
+        <coordinates>147.955667,-36.161012,295.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EML080</name>
+        <description>Little Emu</description>
+        <Point>
+        <coordinates>147.206068,-36.693587,799.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EMZ038</name>
+        <description>Mt Emu LZ</description>
+        <Point>
+        <coordinates>147.188538,-36.702575,385.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ESM013</name>
+        <description>Esmond</description>
+        <Point>
+        <coordinates>146.175207,-36.067405,135.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ETP053</name>
+        <description>Elliot Towong Peaks</description>
+        <Point>
+        <coordinates>147.986679,-36.153751,530.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEA190</name>
+        <description>Feathertop</description>
+        <Point>
+        <coordinates>147.138261,-36.894186,1900.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GDN064</name>
+        <description>Gundowring North</description>
+        <Point>
+        <coordinates>147.094910,-36.387348,648.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GDR044</name>
+        <description>Ovens Valley Gund Rd</description>
+        <Point>
+        <coordinates>147.072678,-36.448662,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GDW026</name>
+        <description>Gundowring LZ</description>
+        <Point>
+        <coordinates>147.077399,-36.392862,260.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GDW064</name>
+        <description>Gundowring Launch</description>
+        <Point>
+        <coordinates>147.089739,-36.395707,649.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GER035</name>
+        <description>Germantown</description>
+        <Point>
+        <coordinates>147.016815,-36.743210,352.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GES091</name>
+        <description>Gundowering Eskdale Spur</description>
+        <Point>
+        <coordinates>147.161020,-36.379832,910.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLP050</name>
+        <description>Glenrowan Peak</description>
+        <Point>
+        <coordinates>146.219323,-36.444500,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GMN100</name>
+        <description>Goldmine</description>
+        <Point>
+        <coordinates>147.004562,-36.764950,1000.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GMR079</name>
+        <description>Goldmine Ridge middle</description>
+        <Point>
+        <coordinates>147.002933,-36.755200,794.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRW052</name>
+        <description>Growlers Gully</description>
+        <Point>
+        <coordinates>145.715704,-37.055999,520.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GUN066</name>
+        <description>Gungls</description>
+        <Point>
+        <coordinates>147.018234,-36.712589,660.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GUY042</name>
+        <description>Guys Forest</description>
+        <Point>
+        <coordinates>147.641304,-36.072032,420.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAP108</name>
+        <description>Albion Peak West</description>
+        <Point>
+        <coordinates>147.021761,-36.909109,1080.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAR117</name>
+        <description>Great Alpine Road Meg</description>
+        <Point>
+        <coordinates>147.058954,-36.929238,1170.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAR125</name>
+        <description>Great Alpine Rd</description>
+        <Point>
+        <coordinates>147.053316,-36.968540,1250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAS129</name>
+        <description>Hotham Airstrip</description>
+        <Point>
+        <coordinates>147.330097,-37.049044,1290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAT116</name>
+        <description>Albion Top</description>
+        <Point>
+        <coordinates>147.027351,-36.891190,1160.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HCB100</name>
+        <description>Cobunga</description>
+        <Point>
+        <coordinates>147.402853,-37.095753,1000.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HDP158</name>
+        <description>Hotham Dinner Plain</description>
+        <Point>
+        <coordinates>147.236727,-37.021170,1580.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HEN021</name>
+        <description>Highlands Ensay</description>
+        <Point>
+        <coordinates>147.830334,-37.380408,210.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HER141</name>
+        <description>Harrietville East Ridge Middle</description>
+        <Point>
+        <coordinates>147.137872,-36.812829,1410.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HER155</name>
+        <description>Harrietville East Ridge 01</description>
+        <Point>
+        <coordinates>147.135258,-36.858858,1555.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HFT188</name>
+        <description>Hotham FireTower</description>
+        <Point>
+        <coordinates>147.134425,-36.977011,1880.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HGL100</name>
+        <description>Huggins Lookout</description>
+        <Point>
+        <coordinates>146.963135,-36.739769,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HLZ052</name>
+        <description>Harrietville LZ</description>
+        <Point>
+        <coordinates>147.066642,-36.888821,520.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HMK006</name>
+        <description>Highlands Monkey Creek Flats</description>
+        <Point>
+        <coordinates>147.878475,-37.660066,60.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HMS145</name>
+        <description>Mt Sugarloaf Hotham</description>
+        <Point>
+        <coordinates>147.053985,-36.987965,1510.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HNY014</name>
+        <description>Highlands Nalleys Farm</description>
+        <Point>
+        <coordinates>147.840385,-37.504355,145.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HOM068</name>
+        <description>Highlands Omeo Town</description>
+        <Point>
+        <coordinates>147.594069,-37.098288,685.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HRZ170</name>
+        <description>Hotham Razorback South</description>
+        <Point>
+        <coordinates>147.124069,-36.954219,1700.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HRZ178</name>
+        <description>Hotham Razorback North</description>
+        <Point>
+        <coordinates>147.132767,-36.913803,1780.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSC028</name>
+        <description>Highlands Swifts Creek</description>
+        <Point>
+        <coordinates>147.721705,-37.263167,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSR003</name>
+        <description>Swan Reach Hwy Bridge</description>
+        <Point>
+        <coordinates>147.861551,-37.822102,30.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JCK071</name>
+        <description>Mount Jack East</description>
+        <Point>
+        <coordinates>146.983154,-36.500368,240.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JIN020</name>
+        <description>Jingellic</description>
+        <Point>
+        <coordinates>147.701526,-35.931595,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KBA034</name>
+        <description>Mt Beauty Airstrip</description>
+        <Point>
+        <coordinates>147.168137,-36.731628,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KCO033</name>
+        <description>Kancoona</description>
+        <Point>
+        <coordinates>146.993088,-36.564129,334.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KHN029</name>
+        <description>Khancoban</description>
+        <Point>
+        <coordinates>148.113599,-36.215575,292.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KWE114</name>
+        <description>Kiewa West End Peak</description>
+        <Point>
+        <coordinates>147.051210,-36.610414,1140.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KWG099</name>
+        <description>Kiewa West Gap Track</description>
+        <Point>
+        <coordinates>147.103644,-36.686935,990.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KWM111</name>
+        <description>Kiewa West Middle Peak</description>
+        <Point>
+        <coordinates>147.079947,-36.657246,1110.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LBN068</name>
+        <description>Little Buffalo North</description>
+        <Point>
+        <coordinates>146.866155,-36.709772,685.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LBS062</name>
+        <description>Little Buffalo South</description>
+        <Point>
+        <coordinates>146.853127,-36.716586,620.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LCK084</name>
+        <description>Lockharts Peak</description>
+        <Point>
+        <coordinates>147.237201,-36.358703,840.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LEB001</name>
+        <description>Lakes Entrance Beach</description>
+        <Point>
+        <coordinates>147.995342,-37.883224,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGH068</name>
+        <description>Light House</description>
+        <Point>
+        <coordinates>148.045921,-36.082679,680.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LMY061</name>
+        <description>Little Mystic</description>
+        <Point>
+        <coordinates>146.996201,-36.742649,610.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LUC070</name>
+        <description>Lucyvale</description>
+        <Point>
+        <coordinates>147.626209,-36.251057,700.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LUC105</name>
+        <description>Liucy Vale South</description>
+        <Point>
+        <coordinates>147.648964,-36.300068,1050.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAR044</name>
+        <description>Maragle</description>
+        <Point>
+        <coordinates>148.095703,-35.911298,510.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAR060</name>
+        <description>Maragle Creek</description>
+        <Point>
+        <coordinates>148.138618,-35.912967,600.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MBL166</name>
+        <description>Mt Bogong Little Peak</description>
+        <Point>
+        <coordinates>147.259724,-36.731033,1660.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MBS199</name>
+        <description>Mt Bogong Summit</description>
+        <Point>
+        <coordinates>147.305711,-36.732636,1990.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MBW196</name>
+        <description>Mt Bogong West Peak</description>
+        <Point>
+        <coordinates>147.277780,-36.740037,1960.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MER062</name>
+        <description>Merriang Peak</description>
+        <Point>
+        <coordinates>146.662004,-36.574495,620.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MIN080</name>
+        <description>Mitta North</description>
+        <Point>
+        <coordinates>147.930093,-36.120925,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MIT055</name>
+        <description>Mitta Foothills</description>
+        <Point>
+        <coordinates>147.808771,-36.181792,460.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MIT098</name>
+        <description>Mt Mitta Mitta</description>
+        <Point>
+        <coordinates>147.860312,-36.151217,980.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MKP084</name>
+        <description>McCormicks Peak</description>
+        <Point>
+        <coordinates>147.976881,-36.249391,840.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MKR066</name>
+        <description>McCormicks Ridge</description>
+        <Point>
+        <coordinates>147.973896,-36.212475,660.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOW060</name>
+        <description>Mother Wilson</description>
+        <Point>
+        <coordinates>148.052351,-36.120585,695.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MPN080</name>
+        <description>Myrtleford Plantation North</description>
+        <Point>
+        <coordinates>146.764175,-36.557510,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MPN101</name>
+        <description>Mt Porepunka North</description>
+        <Point>
+        <coordinates>146.921797,-36.639954,1010.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MPP200</name>
+        <description>Mt Porepunka</description>
+        <Point>
+        <coordinates>146.962097,-36.656921,1200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MPS103</name>
+        <description>Mt Porepunka South</description>
+        <Point>
+        <coordinates>146.967188,-36.673521,1030.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRE032</name>
+        <description>Masters Road End</description>
+        <Point>
+        <coordinates>147.949708,-36.203893,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MUN057</name>
+        <description>Munderoo</description>
+        <Point>
+        <coordinates>147.874990,-35.839000,570.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MUR041</name>
+        <description>Murray Cudgewa</description>
+        <Point>
+        <coordinates>147.729549,-36.221288,410.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MUR046</name>
+        <description>Murray River Rd</description>
+        <Point>
+        <coordinates>147.961807,-36.090448,460.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MYS033</name>
+        <description>Mystic LZ</description>
+        <Point>
+        <coordinates>146.978852,-36.746181,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MYS080</name>
+        <description>Mystic Launch</description>
+        <Point>
+        <coordinates>146.965393,-36.757881,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ON1072</name>
+        <description>Ovens North A</description>
+        <Point>
+        <coordinates>146.886695,-36.635819,720.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ON2060</name>
+        <description>Ovens North B</description>
+        <Point>
+        <coordinates>146.864318,-36.619949,600.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ON3065</name>
+        <description>Ovens North C</description>
+        <Point>
+        <coordinates>146.836509,-36.610039,650.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OS1083</name>
+        <description>Ovens South A</description>
+        <Point>
+        <coordinates>146.833491,-36.696531,830.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OS2078</name>
+        <description>Ovens South B</description>
+        <Point>
+        <coordinates>146.807592,-36.664505,780.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OS3055</name>
+        <description>Ovens South C</description>
+        <Point>
+        <coordinates>146.779707,-36.624637,550.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OS4032</name>
+        <description>Ovens South D</description>
+        <Point>
+        <coordinates>146.720622,-36.584952,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OVN052</name>
+        <description>Ovens West Ridge End</description>
+        <Point>
+        <coordinates>146.805840,-36.600764,520.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE1069</name>
+        <description>Keiwa East Rob Laws Track</description>
+        <Point>
+        <coordinates>147.103411,-36.414453,690.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE2073</name>
+        <description>Kiewa East Ridge B</description>
+        <Point>
+        <coordinates>147.110643,-36.429594,730.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE3068</name>
+        <description>Kiewa East Ridge C</description>
+        <Point>
+        <coordinates>147.112513,-36.456338,680.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE5080</name>
+        <description>Kiewa East Ridge E</description>
+        <Point>
+        <coordinates>147.102510,-36.522510,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE6125</name>
+        <description>Kiewa East Ridge F</description>
+        <Point>
+        <coordinates>147.125486,-36.550075,1250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE7114</name>
+        <description>Kiewa East Ridge G</description>
+        <Point>
+        <coordinates>147.162097,-36.567116,1140.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE8071</name>
+        <description>Kiewa East Ridge H</description>
+        <Point>
+        <coordinates>147.159722,-36.654253,710.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OXY018</name>
+        <description>Oxley</description>
+        <Point>
+        <coordinates>146.360733,-36.440239,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PEA044</name>
+        <description>Pines Ridge East 1</description>
+        <Point>
+        <coordinates>146.622678,-36.414735,443.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PEB040</name>
+        <description>Pines Ridge East 2</description>
+        <Point>
+        <coordinates>146.605797,-36.418810,396.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PEC042</name>
+        <description>Pines Ridge East 3</description>
+        <Point>
+        <coordinates>146.591962,-36.437290,416.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PIN025</name>
+        <description>Pines LZ</description>
+        <Point>
+        <coordinates>146.649580,-36.426771,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PIN055</name>
+        <description>Pines Launch</description>
+        <Point>
+        <coordinates>146.659477,-36.409301,551.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PIN100</name>
+        <description>Pines Ridge</description>
+        <Point>
+        <coordinates>147.829456,-36.027722,1000.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PPA028</name>
+        <description>Porepunka Airstrip</description>
+        <Point>
+        <coordinates>146.891526,-36.717281,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PPO029</name>
+        <description>Poo Ponds</description>
+        <Point>
+        <coordinates>146.933289,-36.707142,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PPR028</name>
+        <description>Porepunka Roundabout</description>
+        <Point>
+        <coordinates>146.909455,-36.700169,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PWB056</name>
+        <description>Pines Ridge West 1</description>
+        <Point>
+        <coordinates>146.677709,-36.413105,568.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PWC060</name>
+        <description>Pines Ridge West 2</description>
+        <Point>
+        <coordinates>146.691060,-36.416399,610.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PYD074</name>
+        <description>Little Pyramid</description>
+        <Point>
+        <coordinates>147.037369,-36.737365,743.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PYD121</name>
+        <description>Pyramid</description>
+        <Point>
+        <coordinates>147.069590,-36.757861,1216.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>REL100</name>
+        <description>Reliance</description>
+        <Point>
+        <coordinates>147.025786,-36.792218,900.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RGO016</name>
+        <description>Rutherglen Oval</description>
+        <Point>
+        <coordinates>146.457983,-36.050546,160.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ROP076</name>
+        <description>Rocky Outcrop Point</description>
+        <Point>
+        <coordinates>147.892938,-36.084797,762.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RRP083</name>
+        <description>Ranch Road Peak</description>
+        <Point>
+        <coordinates>147.913463,-36.133881,830.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RTL042</name>
+        <description>Pizza Hut</description>
+        <Point>
+        <coordinates>147.032861,-36.758529,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SCH068</name>
+        <description>Schintlers Peak</description>
+        <Point>
+        <coordinates>147.895427,-36.255675,683.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SET076</name>
+        <description>Settlement Rd Ridge</description>
+        <Point>
+        <coordinates>147.875977,-36.029111,760.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHE057</name>
+        <description>Shelly Rd</description>
+        <Point>
+        <coordinates>147.684402,-36.001063,576.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SKR095</name>
+        <description>Smoko Ridge</description>
+        <Point>
+        <coordinates>147.041132,-36.820480,950.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SKV042</name>
+        <description>Smoko Valley</description>
+        <Point>
+        <coordinates>147.053955,-36.811981,420.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SMY076</name>
+        <description>Smyth Rd Eskdale</description>
+        <Point>
+        <coordinates>147.180975,-36.536177,764.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SRH033</name>
+        <description>Snow Road Hilltop</description>
+        <Point>
+        <coordinates>146.549130,-36.506391,333.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TGL097</name>
+        <description>Tawonga Gap Launch</description>
+        <Point>
+        <coordinates>147.122754,-36.716393,974.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>THO087</name>
+        <description>Thowgla</description>
+        <Point>
+        <coordinates>147.961807,-36.270573,873.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TIN024</name>
+        <description>Tintaldra</description>
+        <Point>
+        <coordinates>147.930908,-36.049099,246.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TIN056</name>
+        <description>Tintaldra Ridge</description>
+        <Point>
+        <coordinates>147.895889,-36.016893,566.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TIP058</name>
+        <description>Sugar Loaf</description>
+        <Point>
+        <coordinates>147.895932,-36.226481,596.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TLE023</name>
+        <description>Bullioh</description>
+        <Point>
+        <coordinates>147.323822,-36.197609,206.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TLZ038</name>
+        <description>Towonga LZ</description>
+        <Point>
+        <coordinates>147.150456,-36.724988,385.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TOO026</name>
+        <description>Tooma</description>
+        <Point>
+        <coordinates>148.057592,-35.967753,268.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TOW040</name>
+        <description>Towong</description>
+        <Point>
+        <coordinates>147.987900,-36.136766,407.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TUM067</name>
+        <description>Timbarumba</description>
+        <Point>
+        <coordinates>148.001697,-35.777975,674.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TVP081</name>
+        <description>Tallengatta Valley Peak</description>
+        <Point>
+        <coordinates>147.349878,-36.326987,812.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TVS101</name>
+        <description>Tallangatta Creek Valley South</description>
+        <Point>
+        <coordinates>147.405276,-36.378145,1017.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WAL030</name>
+        <description>Walwa</description>
+        <Point>
+        <coordinates>147.736931,-35.964113,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WEL056</name>
+        <description>Welumbra Crk</description>
+        <Point>
+        <coordinates>148.103728,-36.047538,560.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WHO019</name>
+        <description>Whorouly Oval</description>
+        <Point>
+        <coordinates>146.587160,-36.507604,190.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WWU022</name>
+        <description>Wagga Wagga Uni Oval</description>
+        <Point>
+        <coordinates>147.355431,-35.066891,220.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HYS075</name>
+        <description>Happy Valley South</description>
+        <Point>
+        <coordinates>146.936014,-36.610274,750.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HYS067</name>
+        <description>Happy Valley East</description>
+        <Point>
+        <coordinates>146.968192,-36.580608,670.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AIL003</name>
+        <description>Aireys Inlet - Sunnymeade beach</description>
+        <Point>
+        <coordinates>144.119000,-38.451000,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COT001</name>
+        <description>Cape Otway West</description>
+        <Point>
+        <coordinates>143.495000,-38.841000,60.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COT002</name>
+        <description>Cape Otway South</description>
+        <Point>
+        <coordinates>143.518000,-38.855000,30.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOH001</name>
+        <description>Moonlight Head</description>
+        <Point>
+        <coordinates>143.260000,-38.766000,110.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSB002</name>
+        <description>Murrels - Bridgewater Run 2</description>
+        <Point>
+        <coordinates>141.487000,-38.372000,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSB003</name>
+        <description>Murrels - Bridgewater Run 3</description>
+        <Point>
+        <coordinates>141.515000,-38.386000,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DAX031</name>
+        <description>Bright Township</description>
+        <Point>
+        <coordinates>146.960000,-36.728820,314.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KWE121</name>
+        <description>Kiewa Kancoona Peak</description>
+        <Point>
+        <coordinates>147.062038,-36.625007,1211.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MYK126</name>
+        <description>Mount York</description>
+        <Point>
+        <coordinates>147.170544,-36.620378,1262.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KE4120</name>
+        <description>Kiewa East Ridge D</description>
+        <Point>
+        <coordinates>147.103935,-36.490869,1200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CRN000</name>
+        <description>Pointy End</description>
+        <Point>
+        <coordinates>144.950261,-38.489143,28.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CRN001</name>
+        <description>Cairns Bay Launch</description>
+        <Point>
+        <coordinates>144.968608,-38.490253,33.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CRN002</name>
+        <description>Cliffs End</description>
+        <Point>
+        <coordinates>144.980122,-38.489748,55.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CRN005</name>
+        <description>Lifty</description>
+        <Point>
+        <coordinates>144.962355,-38.485333,34.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI001</name>
+        <description>Flinders Launch</description>
+        <Point>
+        <coordinates>145.012109,-38.482780,42.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI002</name>
+        <description>Creek</description>
+        <Point>
+        <coordinates>145.003864,-38.482556,23.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI003</name>
+        <description>RidgyDig</description>
+        <Point>
+        <coordinates>145.000877,-38.482990,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI004</name>
+        <description>Blowhole View</description>
+        <Point>
+        <coordinates>144.989434,-38.486189,34.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI005</name>
+        <description>Happy Ending</description>
+        <Point>
+        <coordinates>145.017826,-38.484556,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI006</name>
+        <description>The Ledge</description>
+        <Point>
+        <coordinates>145.025696,-38.482894,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FLI007</name>
+        <description>Gunnery Fence</description>
+        <Point>
+        <coordinates>145.029629,-38.483849,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FSH000</name>
+        <description>Fisher Street Launch</description>
+        <Point>
+        <coordinates>145.183861,-38.456458,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FSH001</name>
+        <description>On the Beach</description>
+        <Point>
+        <coordinates>145.180048,-38.464697,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FSH002</name>
+        <description>Ford Point</description>
+        <Point>
+        <coordinates>145.176229,-38.460233,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FSH003</name>
+        <description>North Beach</description>
+        <Point>
+        <coordinates>145.192064,-38.456474,13.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FSH004</name>
+        <description>Up theCreek</description>
+        <Point>
+        <coordinates>145.197979,-38.455336,9.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRO000</name>
+        <description>Grossards Launch</description>
+        <Point>
+        <coordinates>145.162434,-38.465547,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRO001</name>
+        <description>Grossards 1</description>
+        <Point>
+        <coordinates>145.163961,-38.463323,15.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRO002</name>
+        <description>Grossards 2</description>
+        <Point>
+        <coordinates>145.159396,-38.468696,12.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRO003</name>
+        <description>Grossards 3</description>
+        <Point>
+        <coordinates>145.157606,-38.474718,13.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRO004</name>
+        <description>Grossards 4</description>
+        <Point>
+        <coordinates>145.154480,-38.478087,15.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KIL000</name>
+        <description>Kilcunda Launch</description>
+        <Point>
+        <coordinates>145.493584,-38.564114,16.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KIL001</name>
+        <description>Kilcunda Dunes</description>
+        <Point>
+        <coordinates>145.505040,-38.575535,15.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KIL002</name>
+        <description>Powlett River Mouth</description>
+        <Point>
+        <coordinates>145.512114,-38.583730,12.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KIL003</name>
+        <description>Over the River</description>
+        <Point>
+        <coordinates>145.516058,-38.586739,13.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KIL004</name>
+        <description>Your Point</description>
+        <Point>
+        <coordinates>145.486266,-38.557356,12.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KIL005</name>
+        <description>Trestle Bridge</description>
+        <Point>
+        <coordinates>145.479332,-38.552672,7.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MON000</name>
+        <description>Monument Launch</description>
+        <Point>
+        <coordinates>145.027444,-38.477448,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MON001</name>
+        <description>Up the Creek</description>
+        <Point>
+        <coordinates>145.029564,-38.466504,15.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MON002</name>
+        <description>Boyds</description>
+        <Point>
+        <coordinates>145.036357,-38.464621,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MON003</name>
+        <description>On the Way</description>
+        <Point>
+        <coordinates>145.036032,-38.458714,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MON004</name>
+        <description>Long March</description>
+        <Point>
+        <coordinates>145.039720,-38.452610,25.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR001</name>
+        <description>Portsea Launch</description>
+        <Point>
+        <coordinates>144.693976,-38.333394,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR002</name>
+        <description>London Bridge</description>
+        <Point>
+        <coordinates>144.688970,-38.327059,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR003</name>
+        <description>Second Point</description>
+        <Point>
+        <coordinates>144.681438,-38.322215,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR004</name>
+        <description>Third Point</description>
+        <Point>
+        <coordinates>144.671506,-38.317249,22.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR005</name>
+        <description>Home Ridge</description>
+        <Point>
+        <coordinates>144.701137,-38.333361,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR006</name>
+        <description>Top Up Ridge</description>
+        <Point>
+        <coordinates>144.704802,-38.334403,35.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR007</name>
+        <description>Portsea Surf Club</description>
+        <Point>
+        <coordinates>144.710069,-38.337361,40.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR008</name>
+        <description>Long Walk</description>
+        <Point>
+        <coordinates>144.720152,-38.341894,15.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POR009</name>
+        <description>Sorrento Surf Club</description>
+        <Point>
+        <coordinates>144.729862,-38.347460,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POT001</name>
+        <description>Potters East</description>
+        <Point>
+        <coordinates>145.390608,-38.538203,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>POT002</name>
+        <description>Potters West</description>
+        <Point>
+        <coordinates>145.383810,-38.539241,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RHY000</name>
+        <description>Rhyll Launch</description>
+        <Point>
+        <coordinates>145.308789,-38.456041,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RHY001</name>
+        <description>East Ridge</description>
+        <Point>
+        <coordinates>145.309762,-38.465169,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RHY002</name>
+        <description>North Bend</description>
+        <Point>
+        <coordinates>145.299748,-38.458403,18.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RHY003</name>
+        <description>North End</description>
+        <Point>
+        <coordinates>145.292451,-38.458103,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHO000</name>
+        <description>Shorham Launch</description>
+        <Point>
+        <coordinates>145.046334,-38.442664,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHO001</name>
+        <description>Right Bowl</description>
+        <Point>
+        <coordinates>145.034558,-38.445540,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHO002</name>
+        <description>In to Wind</description>
+        <Point>
+        <coordinates>145.044185,-38.447083,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHO003</name>
+        <description>Gravity Wins</description>
+        <Point>
+        <coordinates>145.049344,-38.432420,0.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHO004</name>
+        <description>Tree Surfing</description>
+        <Point>
+        <coordinates>145.051883,-38.432785,15.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ALE040</name>
+        <description>Strath Creek</description>
+        <Point>
+        <coordinates>145.233654,-37.284321,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ALN047</name>
+        <description>Allendale</description>
+        <Point>
+        <coordinates>143.921872,-37.369402,470.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ALS018</name>
+        <description>Bet Bet Creek Rd</description>
+        <Point>
+        <coordinates>143.738519,-36.945742,180.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ALX022</name>
+        <description>Alexandra Oval</description>
+        <Point>
+        <coordinates>145.706504,-37.185361,216.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AMP028</name>
+        <description>Ampitheatre</description>
+        <Point>
+        <coordinates>143.400818,-37.182552,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ANO005</name>
+        <description>Annuello</description>
+        <Point>
+        <coordinates>142.833542,-34.853435,57.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ARARAT</name>
+        <description>Ararat</description>
+        <Point>
+        <coordinates>142.935898,-37.281193,313.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ARN024</name>
+        <description>St Arnaud</description>
+        <Point>
+        <coordinates>143.255600,-36.613102,246.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AVA024</name>
+        <description>Avoca</description>
+        <Point>
+        <coordinates>143.471069,-37.090988,240.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AVL016</name>
+        <description>Avenel</description>
+        <Point>
+        <coordinates>145.245433,-36.908967,160.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BAD019</name>
+        <description>Baddaginnie</description>
+        <Point>
+        <coordinates>145.866698,-36.594726,190.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BBG025</name>
+        <description>Bung Bong</description>
+        <Point>
+        <coordinates>143.566932,-37.062255,259.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BDA041</name>
+        <description>Break o Day Road - A</description>
+        <Point>
+        <coordinates>145.347316,-37.360252,410.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BDB033</name>
+        <description>Break o Day Road - B</description>
+        <Point>
+        <coordinates>145.359927,-37.368734,330.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BDC031</name>
+        <description>Break O'Day Road - C</description>
+        <Point>
+        <coordinates>145.361495,-37.384870,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEA021</name>
+        <description>Bealiba</description>
+        <Point>
+        <coordinates>143.545456,-36.792011,213.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEB045</name>
+        <description>Ben More Ridge</description>
+        <Point>
+        <coordinates>143.452622,-37.217226,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEC039</name>
+        <description>Ben More Knob</description>
+        <Point>
+        <coordinates>143.459922,-37.237224,390.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEK006</name>
+        <description>Berriwilock</description>
+        <Point>
+        <coordinates>142.997270,-35.477170,60.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEM035</name>
+        <description>Ben More Landing Zone</description>
+        <Point>
+        <coordinates>143.425092,-37.238058,350.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEM045</name>
+        <description>Ben More Gully</description>
+        <Point>
+        <coordinates>143.433660,-37.218920,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEM062</name>
+        <description>Ben More Launch</description>
+        <Point>
+        <coordinates>143.435547,-37.228335,620.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEN017</name>
+        <description>Benalla</description>
+        <Point>
+        <coordinates>145.991478,-36.580660,175.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEN043</name>
+        <description>Little Ben</description>
+        <Point>
+        <coordinates>143.414101,-37.230195,430.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BER056</name>
+        <description>Ben More Ridge 2</description>
+        <Point>
+        <coordinates>143.440736,-37.233293,560.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BETBET</name>
+        <description>Bet Bet Going to the TAB</description>
+        <Point>
+        <coordinates>143.755891,-36.924312,180.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEU009</name>
+        <description>Beulah</description>
+        <Point>
+        <coordinates>142.420410,-35.939075,90.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BFD021</name>
+        <description>Broadford</description>
+        <Point>
+        <coordinates>145.072060,-37.191502,210.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BFR035</name>
+        <description>One for the road</description>
+        <Point>
+        <coordinates>145.261603,-37.273691,350.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BGH037</name>
+        <description>Big Hill</description>
+        <Point>
+        <coordinates>145.431603,-36.831980,375.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BHM008</name>
+        <description>Barham</description>
+        <Point>
+        <coordinates>144.124725,-35.628162,80.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BKT042</name>
+        <description>Break Track</description>
+        <Point>
+        <coordinates>143.432427,-37.458778,420.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BLS039</name>
+        <description>Bonds Lane Saddle</description>
+        <Point>
+        <coordinates>145.562640,-36.911756,390.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BLY032</name>
+        <description>Ballyrogan on Geeelong Road</description>
+        <Point>
+        <coordinates>143.175891,-37.423646,325.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BM5029</name>
+        <description>Greenhill Creek</description>
+        <Point>
+        <coordinates>143.467730,-37.186417,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BM6036</name>
+        <description>Joseph Lane</description>
+        <Point>
+        <coordinates>143.462801,-37.216417,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BM8033</name>
+        <description>Ben More Leaving the Hill</description>
+        <Point>
+        <coordinates>143.455651,-37.203472,330.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BMH048</name>
+        <description>Balmattum Hill</description>
+        <Point>
+        <coordinates>145.611090,-36.766335,480.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BN2062</name>
+        <description>Brigadoon Road</description>
+        <Point>
+        <coordinates>145.425954,-37.079180,617.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BN3054</name>
+        <description>Lades Road</description>
+        <Point>
+        <coordinates>145.426012,-37.044982,540.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNA037</name>
+        <description>Broughton 1</description>
+        <Point>
+        <coordinates>145.398473,-37.127612,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNB030</name>
+        <description>Bonnie Doon B</description>
+        <Point>
+        <coordinates>145.887760,-37.014823,295.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNB052</name>
+        <description>Broughton 2</description>
+        <Point>
+        <coordinates>145.386898,-37.120151,526.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNC049</name>
+        <description>Broughton 3</description>
+        <Point>
+        <coordinates>145.369391,-37.117754,490.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BND022</name>
+        <description>Bendigo - beware airspace</description>
+        <Point>
+        <coordinates>144.278976,-36.761021,220.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BND031</name>
+        <description>Bonnie Doon</description>
+        <Point>
+        <coordinates>145.850000,-37.028333,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNG018</name>
+        <description>Goulburn River</description>
+        <Point>
+        <coordinates>145.427325,-37.168551,190.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNG025</name>
+        <description>Bung Bong</description>
+        <Point>
+        <coordinates>143.551287,-37.103091,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNS019</name>
+        <description>Broughton south</description>
+        <Point>
+        <coordinates>145.416605,-37.148447,190.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNV029</name>
+        <description>Ben Nevis Landing</description>
+        <Point>
+        <coordinates>143.136113,-37.218540,297.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNV038</name>
+        <description>Forrest Edge - Ben Nevis</description>
+        <Point>
+        <coordinates>143.181132,-37.228016,388.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNV077</name>
+        <description>Ben Nevis Launch</description>
+        <Point>
+        <coordinates>143.194961,-37.230106,772.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNV078</name>
+        <description>Ben Nevis Peak</description>
+        <Point>
+        <coordinates>143.202723,-37.225051,788.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNW024</name>
+        <description>Broughton 4</description>
+        <Point>
+        <coordinates>145.462839,-37.146645,240.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNX060</name>
+        <description>Broughton 5</description>
+        <Point>
+        <coordinates>145.455811,-37.134610,600.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNY060</name>
+        <description>Broughton 6</description>
+        <Point>
+        <coordinates>145.438205,-37.130470,575.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BNZ059</name>
+        <description>Broughton -1</description>
+        <Point>
+        <coordinates>145.427388,-37.113488,587.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOB006</name>
+        <description>Boundary Bend</description>
+        <Point>
+        <coordinates>143.152649,-34.717480,63.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOG012</name>
+        <description>Borung</description>
+        <Point>
+        <coordinates>143.751739,-36.291752,120.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRC009</name>
+        <description>Birchip Tow Paddock</description>
+        <Point>
+        <coordinates>143.002053,-35.816457,91.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRC010</name>
+        <description>Birchip</description>
+        <Point>
+        <coordinates>142.917023,-35.983551,102.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRF024</name>
+        <description>Bradford</description>
+        <Point>
+        <coordinates>144.048131,-36.915098,242.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRIM__</name>
+        <description>Brim</description>
+        <Point>
+        <coordinates>142.417328,-36.076141,104.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRT009</name>
+        <description>Boort</description>
+        <Point>
+        <coordinates>143.723419,-36.116657,94.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRW013</name>
+        <description>Bridgewater on Loddon</description>
+        <Point>
+        <coordinates>143.941544,-36.600838,139.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BSB058</name>
+        <description>Ben Nevis Bowl</description>
+        <Point>
+        <coordinates>143.209558,-37.212517,580.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BSS049</name>
+        <description>Ben Nevis Spur</description>
+        <Point>
+        <coordinates>143.203704,-37.205558,490.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BTN021</name>
+        <description>MT Broughton Landing Zone</description>
+        <Point>
+        <coordinates>145.409545,-37.141315,214.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BTN064</name>
+        <description>Mt Broughton Launch</description>
+        <Point>
+        <coordinates>145.413465,-37.123417,640.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BUA097</name>
+        <description>Mt Buangor Launch</description>
+        <Point>
+        <coordinates>143.222267,-37.295550,970.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BUR036</name>
+        <description>Burnbank</description>
+        <Point>
+        <coordinates>143.581667,-37.252122,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BXH036</name>
+        <description>Box Hill</description>
+        <Point>
+        <coordinates>145.353490,-37.210332,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BYR036</name>
+        <description>Break o Day Ridge</description>
+        <Point>
+        <coordinates>145.376556,-37.386654,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAR048</name>
+        <description>Mt Caroline</description>
+        <Point>
+        <coordinates>145.428823,-37.312400,489.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAV060</name>
+        <description>Caveat</description>
+        <Point>
+        <coordinates>145.485666,-37.063859,600.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAV074</name>
+        <description>Cave Hill Launch</description>
+        <Point>
+        <coordinates>143.255204,-37.323890,740.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CBK019</name>
+        <description>Carisbrook</description>
+        <Point>
+        <coordinates>143.812530,-37.047329,195.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CCS040</name>
+        <description>Creightons Creek Spur</description>
+        <Point>
+        <coordinates>145.554394,-36.841026,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CEA064</name>
+        <description>Mt Cole Ridge Road</description>
+        <Point>
+        <coordinates>143.332512,-37.303525,640.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CEB042</name>
+        <description>Raglan Elmhurst Road</description>
+        <Point>
+        <coordinates>143.295340,-37.298227,420.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CEB045</name>
+        <description>Mt Cole Spur</description>
+        <Point>
+        <coordinates>145.421330,-37.324352,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CEC062</name>
+        <description>Forte Road</description>
+        <Point>
+        <coordinates>143.346926,-37.300710,620.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CFA001</name>
+        <description>Carisbrook Falls</description>
+        <Point>
+        <coordinates>143.809000,-38.688000,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CGP070</name>
+        <description>Colliers Gap Launch</description>
+        <Point>
+        <coordinates>143.218720,-37.210554,705.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHK006</name>
+        <description>Chinkapook</description>
+        <Point>
+        <coordinates>142.945404,-35.189781,61.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHL005</name>
+        <description>Chillingollah</description>
+        <Point>
+        <coordinates>143.051605,-35.264660,57.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHR013</name>
+        <description>Charlton</description>
+        <Point>
+        <coordinates>143.366175,-36.273480,132.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHR038</name>
+        <description>Church Road</description>
+        <Point>
+        <coordinates>143.454939,-37.444970,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CHU008</name>
+        <description>Big Ones Cohuna</description>
+        <Point>
+        <coordinates>144.220016,-35.808857,86.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLB034</name>
+        <description>Middle Creek- Green</description>
+        <Point>
+        <coordinates>143.211021,-37.412294,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLB035</name>
+        <description>Middle Creek- Blue</description>
+        <Point>
+        <coordinates>143.229697,-37.397297,350.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLB038</name>
+        <description>Ferntree Gully Road</description>
+        <Point>
+        <coordinates>143.275107,-37.373980,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLD008</name>
+        <description>Caldwell</description>
+        <Point>
+        <coordinates>144.499878,-35.634739,80.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLG008</name>
+        <description>Culgoa</description>
+        <Point>
+        <coordinates>143.106232,-35.716259,83.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CMR021</name>
+        <description>King Parrot Creek</description>
+        <Point>
+        <coordinates>145.255138,-37.265064,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CNG009</name>
+        <description>Conargo</description>
+        <Point>
+        <coordinates>145.145016,-35.324790,94.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CNR064</name>
+        <description>Yark Ridge 02</description>
+        <Point>
+        <coordinates>145.567985,-37.036976,640.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CON061</name>
+        <description>Mt Concorde</description>
+        <Point>
+        <coordinates>145.549107,-37.132266,616.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COP012</name>
+        <description>Cope Cope</description>
+        <Point>
+        <coordinates>143.066010,-36.463318,127.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CSF015</name>
+        <description>Campbells Forrest</description>
+        <Point>
+        <coordinates>144.151623,-36.622135,144.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CST028</name>
+        <description>Castlemaine</description>
+        <Point>
+        <coordinates>144.217514,-37.065994,281.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CWP006</name>
+        <description>Carwarp</description>
+        <Point>
+        <coordinates>142.198929,-34.460083,62.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CY-049</name>
+        <description>Chapo's Baby</description>
+        <Point>
+        <coordinates>145.504595,-37.142752,479.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CYA052</name>
+        <description>Chapo's Baby - A</description>
+        <Point>
+        <coordinates>145.489976,-37.138477,520.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CYB020</name>
+        <description>Chapo's Baby - B</description>
+        <Point>
+        <coordinates>145.514944,-37.143962,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CYC030</name>
+        <description>Chapo's Baby - C</description>
+        <Point>
+        <coordinates>145.508405,-37.151250,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DHR043</name>
+        <description>Dalgleishs Road</description>
+        <Point>
+        <coordinates>143.410569,-37.472627,430.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DLN051</name>
+        <description>Dunnhill North</description>
+        <Point>
+        <coordinates>145.412652,-37.266942,510.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DMB010</name>
+        <description>Dimboola</description>
+        <Point>
+        <coordinates>142.024643,-36.450665,104.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DNE045</name>
+        <description>Do Not Enter</description>
+        <Point>
+        <coordinates>145.407959,-37.359060,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DNG010</name>
+        <description>Dingee</description>
+        <Point>
+        <coordinates>144.232452,-36.370632,107.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DNI009</name>
+        <description>Deniliquin</description>
+        <Point>
+        <coordinates>144.921448,-35.531877,93.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DNL011</name>
+        <description>Donald</description>
+        <Point>
+        <coordinates>142.985626,-36.374542,116.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DOO015</name>
+        <description>Dookie Sports Ground</description>
+        <Point>
+        <coordinates>145.684170,-36.332368,155.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DRM011</name>
+        <description>Drummartin</description>
+        <Point>
+        <coordinates>144.427171,-36.443201,119.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DRX009</name>
+        <description>Durham Ox</description>
+        <Point>
+        <coordinates>143.923676,-36.125450,96.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DSP087</name>
+        <description>Mt Despair</description>
+        <Point>
+        <coordinates>145.544505,-37.424649,875.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DUM010</name>
+        <description>Dumosa</description>
+        <Point>
+        <coordinates>143.223923,-35.933178,100.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DUN019</name>
+        <description>Dunolly</description>
+        <Point>
+        <coordinates>143.732758,-36.859951,194.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EAC046</name>
+        <description>Hills SW of Euroa</description>
+        <Point>
+        <coordinates>145.539353,-36.808660,460.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ECH010</name>
+        <description>Echuca</description>
+        <Point>
+        <coordinates>144.750641,-36.139957,100.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EDD016</name>
+        <description>The Big E- Eddington</description>
+        <Point>
+        <coordinates>143.832476,-36.878769,163.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EDD018</name>
+        <description>Forrest Edge</description>
+        <Point>
+        <coordinates>143.837454,-36.861277,184.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EDP032</name>
+        <description>Evansford Paddock</description>
+        <Point>
+        <coordinates>143.660044,-37.245586,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EHK052</name>
+        <description>Mt EagleHawk</description>
+        <Point>
+        <coordinates>145.278723,-37.119405,526.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELD021</name>
+        <description>Eildon</description>
+        <Point>
+        <coordinates>145.890026,-37.251237,215.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELD046</name>
+        <description>Eildon 1</description>
+        <Point>
+        <coordinates>145.898419,-37.265585,461.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELM030</name>
+        <description>Elmhurst</description>
+        <Point>
+        <coordinates>143.248734,-37.181026,303.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EMR013</name>
+        <description>Elmore</description>
+        <Point>
+        <coordinates>144.612076,-36.493294,133.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EMU044</name>
+        <description>The Other Mt Emu</description>
+        <Point>
+        <coordinates>143.479746,-37.385170,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ENC031</name>
+        <description>Eagles Nest Creek</description>
+        <Point>
+        <coordinates>145.439072,-37.440246,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ENX044</name>
+        <description>Mintyres lane</description>
+        <Point>
+        <coordinates>145.803415,-37.220386,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ENY035</name>
+        <description>Eildon A</description>
+        <Point>
+        <coordinates>145.822931,-37.239787,350.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ENZ037</name>
+        <description>Eildon B</description>
+        <Point>
+        <coordinates>145.844730,-37.245803,370.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ETS038</name>
+        <description>Elmhurst Saddle</description>
+        <Point>
+        <coordinates>143.220502,-37.191490,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EUR018</name>
+        <description>Euroa</description>
+        <Point>
+        <coordinates>145.561667,-36.758333,181.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EUR020</name>
+        <description>Euroa Seven Creek</description>
+        <Point>
+        <coordinates>145.581126,-36.791403,204.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EUS005</name>
+        <description>Euston</description>
+        <Point>
+        <coordinates>142.745651,-34.575218,56.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EVN035</name>
+        <description>Evansford</description>
+        <Point>
+        <coordinates>143.630746,-37.257907,350.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FE2034</name>
+        <description>Broadford Flowerdale Rd</description>
+        <Point>
+        <coordinates>145.261577,-37.278205,341.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEC025</name>
+        <description>Flowerdale South Landing Area</description>
+        <Point>
+        <coordinates>145.283882,-37.311454,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEF038</name>
+        <description>Flowerdale Farm</description>
+        <Point>
+        <coordinates>145.344909,-37.348174,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEL026</name>
+        <description>Flowerdale South Landing Area</description>
+        <Point>
+        <coordinates>145.287985,-37.302610,263.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEL028</name>
+        <description>Flowerdale (3 Sisters) Landing Zone- Nor</description>
+        <Point>
+        <coordinates>145.272964,-37.291203,284.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEL049</name>
+        <description>Three Sisters Launch</description>
+        <Point>
+        <coordinates>145.279923,-37.296558,487.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEN050</name>
+        <description>Flowerdale Tehans Rd</description>
+        <Point>
+        <coordinates>145.227685,-37.295437,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEP025</name>
+        <description>Flowerdale Pub</description>
+        <Point>
+        <coordinates>145.287660,-37.319595,251.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FET026</name>
+        <description>Flowerdale Town</description>
+        <Point>
+        <coordinates>145.292489,-37.317116,265.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEY045</name>
+        <description>Flowerdale B</description>
+        <Point>
+        <coordinates>145.264968,-37.305830,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEZ051</name>
+        <description>Flowerdale C</description>
+        <Point>
+        <coordinates>145.273378,-37.303644,510.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FPH044</name>
+        <description>Flagpole Hill</description>
+        <Point>
+        <coordinates>145.329998,-37.335381,443.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FPS040</name>
+        <description>Flagpole Spur</description>
+        <Point>
+        <coordinates>145.305460,-37.328975,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FRH063</name>
+        <description>Fassifern Road Hill</description>
+        <Point>
+        <coordinates>145.466474,-37.098932,630.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FT7048</name>
+        <description>SEC Track Ridge</description>
+        <Point>
+        <coordinates>145.489847,-37.405414,480.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GBW008</name>
+        <description>GunBower</description>
+        <Point>
+        <coordinates>144.367828,-35.956402,86.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GG0002</name>
+        <description>Grannies Grave Launch</description>
+        <Point>
+        <coordinates>142.508093,-38.400626,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GGR019</name>
+        <description>Ghin Ghin Rd</description>
+        <Point>
+        <coordinates>145.378579,-37.202063,194.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GGR036</name>
+        <description>Growlers Gully Road</description>
+        <Point>
+        <coordinates>145.725056,-37.028690,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GHA054</name>
+        <description>Granite Hill - A</description>
+        <Point>
+        <coordinates>145.459835,-36.959917,534.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GHB040</name>
+        <description>Granite Hill - B</description>
+        <Point>
+        <coordinates>145.502326,-36.945841,398.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GHI018</name>
+        <description>Ghin Ghin Town</description>
+        <Point>
+        <coordinates>145.373503,-37.163717,186.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLB024</name>
+        <description>Glenburn</description>
+        <Point>
+        <coordinates>145.424309,-37.425252,244.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLL035</name>
+        <description>Glenlogie</description>
+        <Point>
+        <coordinates>143.302324,-37.242440,359.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLN017</name>
+        <description>Glenorchy</description>
+        <Point>
+        <coordinates>142.662735,-36.911293,177.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNE058</name>
+        <description>Gordon East Landing</description>
+        <Point>
+        <coordinates>144.088471,-37.587258,580.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNF025</name>
+        <description>Glenburn Farm</description>
+        <Point>
+        <coordinates>145.468941,-37.372860,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNL066</name>
+        <description>Gordon South Launch</description>
+        <Point>
+        <coordinates>144.079113,-37.586469,660.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNP029</name>
+        <description>Glenburn Paddock</description>
+        <Point>
+        <coordinates>145.433609,-37.430186,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNS027</name>
+        <description>Glenbun spur</description>
+        <Point>
+        <coordinates>145.409386,-37.427600,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNS059</name>
+        <description>Gordon South Landing</description>
+        <Point>
+        <coordinates>144.081793,-37.593257,590.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GNW057</name>
+        <description>Gordon South West Landing</description>
+        <Point>
+        <coordinates>144.072952,-37.593256,570.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GPH024</name>
+        <description>Goulburn Plains Hill</description>
+        <Point>
+        <coordinates>145.453576,-37.199979,241.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRK016</name>
+        <description>Goroke</description>
+        <Point>
+        <coordinates>141.471664,-36.719170,161.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRW024</name>
+        <description>Great Western</description>
+        <Point>
+        <coordinates>142.853775,-37.151817,241.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRX011</name>
+        <description>Goulburn River Crossing</description>
+        <Point>
+        <coordinates>145.217811,-36.171677,114.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GSB032</name>
+        <description>Goughs Bay</description>
+        <Point>
+        <coordinates>146.064649,-37.177834,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GST029</name>
+        <description>Glenburn Station</description>
+        <Point>
+        <coordinates>145.396989,-37.404790,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GT1040</name>
+        <description>Gutt Ridge No.1</description>
+        <Point>
+        <coordinates>145.311124,-37.277464,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GT2046</name>
+        <description>Gutt Ridge No.2</description>
+        <Point>
+        <coordinates>145.323384,-37.285633,460.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GVH027</name>
+        <description>Goulburn Valley Highway Crossing</description>
+        <Point>
+        <coordinates>145.487189,-37.191443,273.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GVS044</name>
+        <description>Goulburn Valley Spur</description>
+        <Point>
+        <coordinates>145.810000,-37.044434,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GVS059</name>
+        <description>Goulburn Valley Spur 2</description>
+        <Point>
+        <coordinates>145.762520,-37.059580,590.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>H3W040</name>
+        <description>Hollowback 3 Ways</description>
+        <Point>
+        <coordinates>143.856165,-37.376550,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAL023</name>
+        <description>Halls gap</description>
+        <Point>
+        <coordinates>142.521423,-37.143032,235.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HAT005</name>
+        <description>Hattah</description>
+        <Point>
+        <coordinates>142.279831,-34.765850,53.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HCH023</name>
+        <description>Hughs Creek Hill</description>
+        <Point>
+        <coordinates>145.139344,-36.871183,230.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HCS052</name>
+        <description>Hugheys Chook Shed</description>
+        <Point>
+        <coordinates>145.713941,-36.736150,524.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HCS057</name>
+        <description>Hugheys chook Shed Gully</description>
+        <Point>
+        <coordinates>145.752075,-36.729797,575.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HCT032</name>
+        <description>Harcourt</description>
+        <Point>
+        <coordinates>144.259277,-36.999378,328.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HCX062</name>
+        <description>Highland Caveat Rds</description>
+        <Point>
+        <coordinates>145.498588,-37.091241,620.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HDH045</name>
+        <description>Homestead Hill</description>
+        <Point>
+        <coordinates>145.224969,-37.252792,453.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HEL046</name>
+        <description>Mt St Helen South</description>
+        <Point>
+        <coordinates>145.384330,-37.021247,462.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HKL056</name>
+        <description>Mt Hollowback South Launch</description>
+        <Point>
+        <coordinates>143.816851,-37.441558,560.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HKN049</name>
+        <description>Mt Hollowback North Landing Zone</description>
+        <Point>
+        <coordinates>143.816391,-37.434619,490.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HKS044</name>
+        <description>Mt Hollowback South Landing Zone</description>
+        <Point>
+        <coordinates>143.828445,-37.447109,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HKY080</name>
+        <description>Mt Hickey</description>
+        <Point>
+        <coordinates>145.152786,-37.176772,800.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HMB024</name>
+        <description>Sims Ln Homebush</description>
+        <Point>
+        <coordinates>143.535471,-37.057899,248.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HMW022</name>
+        <description>Homewood</description>
+        <Point>
+        <coordinates>145.309526,-37.176315,220.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HRS013</name>
+        <description>Horsham</description>
+        <Point>
+        <coordinates>142.199432,-36.714054,133.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HWD018</name>
+        <description>Homewood</description>
+        <Point>
+        <coordinates>145.336969,-37.194070,180.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IWD015</name>
+        <description>Inglewood</description>
+        <Point>
+        <coordinates>143.862167,-36.570332,158.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JMY041</name>
+        <description>Mt Jimmy</description>
+        <Point>
+        <coordinates>145.352641,-37.227533,416.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JNH051</name>
+        <description>Junction Hill</description>
+        <Point>
+        <coordinates>145.367807,-37.298403,513.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JNR044</name>
+        <description>Junction Ridge</description>
+        <Point>
+        <coordinates>145.406100,-37.345268,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JOH001</name>
+        <description>Johanna Launch</description>
+        <Point>
+        <coordinates>143.367500,-38.758000,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JOM038</name>
+        <description>Just One More</description>
+        <Point>
+        <coordinates>145.260497,-37.290927,387.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JPT008</name>
+        <description>Jeparit</description>
+        <Point>
+        <coordinates>141.986145,-36.140869,88.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JRD040</name>
+        <description>Junction Ridge Dam</description>
+        <Point>
+        <coordinates>145.393521,-37.325620,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JRK010</name>
+        <description>Jarklin</description>
+        <Point>
+        <coordinates>143.967926,-36.267651,106.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JRT044</name>
+        <description>Junction ridge 3 Ways Track</description>
+        <Point>
+        <coordinates>145.377105,-37.335070,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JYH032</name>
+        <description>Jury (foot) Hills</description>
+        <Point>
+        <coordinates>145.894554,-37.021563,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KBX028</name>
+        <description>Kneebones Carbour Xroad</description>
+        <Point>
+        <coordinates>146.498703,-36.521461,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KHR020</name>
+        <description>Killingworth Road</description>
+        <Point>
+        <coordinates>145.432044,-37.187544,205.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KMK015</name>
+        <description>Kamarooka</description>
+        <Point>
+        <coordinates>144.344217,-36.479957,150.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KNB027</name>
+        <description>Kanurnbra</description>
+        <Point>
+        <coordinates>145.668208,-37.051868,266.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KNV014</name>
+        <description>Kaniva</description>
+        <Point>
+        <coordinates>141.241058,-36.377281,146.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KOO045</name>
+        <description>Kooroocheang</description>
+        <Point>
+        <coordinates>144.011353,-37.297616,454.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KOR042</name>
+        <description>Koriella</description>
+        <Point>
+        <coordinates>145.647041,-37.173147,417.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KPR034</name>
+        <description>King Parrot Ridge A</description>
+        <Point>
+        <coordinates>145.292269,-37.268663,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KPR035</name>
+        <description>King Parrot Ridge B</description>
+        <Point>
+        <coordinates>145.276778,-37.248873,351.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KPR036</name>
+        <description>King Parrot Ridge C</description>
+        <Point>
+        <coordinates>145.287317,-37.252933,359.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KPST24</name>
+        <description>King Parrot Springvalley</description>
+        <Point>
+        <coordinates>145.293035,-37.292532,240.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KPX023</name>
+        <description>King Parrot Junction</description>
+        <Point>
+        <coordinates>145.287407,-37.282511,230.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KRG008</name>
+        <description>Kerang</description>
+        <Point>
+        <coordinates>143.920364,-35.734394,85.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KW2028</name>
+        <description>Killingworth B</description>
+        <Point>
+        <coordinates>145.447810,-37.173445,281.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KW4021</name>
+        <description>Killingworth D</description>
+        <Point>
+        <coordinates>145.418104,-37.189248,209.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KWH018</name>
+        <description>Killingworth Hill</description>
+        <Point>
+        <coordinates>145.435939,-37.204345,180.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KWH019</name>
+        <description>Killingworth</description>
+        <Point>
+        <coordinates>145.424190,-37.178535,192.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KY-046</name>
+        <description>Mt Kelly</description>
+        <Point>
+        <coordinates>145.764722,-37.210882,469.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KYL006</name>
+        <description>Kyalite</description>
+        <Point>
+        <coordinates>143.481827,-34.954613,66.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KYO011</name>
+        <description>Kyabram Oval</description>
+        <Point>
+        <coordinates>145.042105,-36.312013,110.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LAE026</name>
+        <description>Lima East</description>
+        <Point>
+        <coordinates>146.013743,-36.791521,258.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LAL008</name>
+        <description>Lalbert</description>
+        <Point>
+        <coordinates>143.374619,-35.672501,89.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LAN016</name>
+        <description>Laanecoorie</description>
+        <Point>
+        <coordinates>143.909431,-36.821450,160.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LAS033</name>
+        <description>Lima South</description>
+        <Point>
+        <coordinates>146.029606,-36.828673,327.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LBG007</name>
+        <description>Lake Boga</description>
+        <Point>
+        <coordinates>143.631760,-35.462544,74.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LCH007</name>
+        <description>Lake Charm</description>
+        <Point>
+        <coordinates>143.794891,-35.623814,79.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LCK010</name>
+        <description>Lockington</description>
+        <Point>
+        <coordinates>144.535400,-36.270916,109.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LDB025</name>
+        <description>Landsborough</description>
+        <Point>
+        <coordinates>143.131226,-37.007458,257.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LDS056</name>
+        <description>Landscape</description>
+        <Point>
+        <coordinates>145.171600,-37.097083,562.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LEC017</name>
+        <description>Leichardt</description>
+        <Point>
+        <coordinates>144.072506,-36.684524,173.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LEH045</name>
+        <description>Lade Hill</description>
+        <Point>
+        <coordinates>145.233755,-37.258952,453.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LEX029</name>
+        <description>Lexton</description>
+        <Point>
+        <coordinates>143.503864,-37.196611,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LEX031</name>
+        <description>Lexton Climb</description>
+        <Point>
+        <coordinates>143.519971,-37.245995,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LEX032</name>
+        <description>Lexton Skene Street</description>
+        <Point>
+        <coordinates>143.516525,-37.274773,316.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGN017</name>
+        <description>Logan</description>
+        <Point>
+        <coordinates>143.489533,-36.621963,176.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGS037</name>
+        <description>Lake Goldsmith</description>
+        <Point>
+        <coordinates>143.388342,-37.513902,374.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LGW018</name>
+        <description>Longwood-Oval</description>
+        <Point>
+        <coordinates>145.427867,-36.804917,186.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHC044</name>
+        <description>Lifty</description>
+        <Point>
+        <coordinates>143.353931,-37.268920,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHD050</name>
+        <description>Mt Lonarch Climb</description>
+        <Point>
+        <coordinates>143.344890,-37.246773,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHD056</name>
+        <description>Mt Lonarch Gully</description>
+        <Point>
+        <coordinates>143.316457,-37.269322,560.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHE069</name>
+        <description>Mt Lonarch Climb</description>
+        <Point>
+        <coordinates>143.335910,-37.250475,690.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHF062</name>
+        <description>Mt Lonarch Gully</description>
+        <Point>
+        <coordinates>143.321934,-37.254929,620.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHZ035</name>
+        <description>Mt Lonarch Landing Zone</description>
+        <Point>
+        <coordinates>143.365944,-37.261442,355.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LIL027</name>
+        <description>Lillicur</description>
+        <Point>
+        <coordinates>143.544454,-37.162255,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LIM032</name>
+        <description>Limestone</description>
+        <Point>
+        <coordinates>145.508498,-37.258071,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LIT011</name>
+        <description>Litchfield</description>
+        <Point>
+        <coordinates>142.850113,-36.300098,118.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LMP026</name>
+        <description>Lamplough</description>
+        <Point>
+        <coordinates>143.513048,-37.140100,267.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LMS032</name>
+        <description>Limestone</description>
+        <Point>
+        <coordinates>145.454092,-37.287165,322.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LNH044</name>
+        <description>Leishman Hill</description>
+        <Point>
+        <coordinates>143.847880,-37.265672,442.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LNL068</name>
+        <description>Mt Lonarch Launch</description>
+        <Point>
+        <coordinates>143.341634,-37.258863,681.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LOG001</name>
+        <description>Logans Beach Launch</description>
+        <Point>
+        <coordinates>142.525956,-38.404886,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LSC008</name>
+        <description>Lascelles</description>
+        <Point>
+        <coordinates>142.580139,-35.608021,81.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LTH054</name>
+        <description>Lone Tree hill</description>
+        <Point>
+        <coordinates>145.169051,-37.225666,545.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAL037</name>
+        <description>Maldon</description>
+        <Point>
+        <coordinates>144.068619,-36.990318,373.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAN005</name>
+        <description>Manangatang</description>
+        <Point>
+        <coordinates>142.882904,-35.051025,56.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAR014</name>
+        <description>Lake Marma</description>
+        <Point>
+        <coordinates>142.466370,-36.620930,143.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAR046</name>
+        <description>Mt Marrianne</description>
+        <Point>
+        <coordinates>145.261230,-37.209824,466.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MBG097</name>
+        <description>Mt Buangor Launch</description>
+        <Point>
+        <coordinates>143.222267,-37.295553,970.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MCC028</name>
+        <description>Mount Cole Creek</description>
+        <Point>
+        <coordinates>143.137409,-37.204159,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MCC044</name>
+        <description>Macs Cove</description>
+        <Point>
+        <coordinates>146.139278,-37.179809,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MCH012</name>
+        <description>Murchison</description>
+        <Point>
+        <coordinates>145.209174,-36.616320,123.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MDH075</name>
+        <description>Mansfield Hill</description>
+        <Point>
+        <coordinates>146.237721,-37.061061,750.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MDL036</name>
+        <description>Maindample</description>
+        <Point>
+        <coordinates>145.946330,-37.001335,358.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MHH044</name>
+        <description>Molesworth Hill</description>
+        <Point>
+        <coordinates>145.539923,-37.185826,444.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MHY031</name>
+        <description>Maindample Y Junction</description>
+        <Point>
+        <coordinates>146.001020,-36.962864,314.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MIE013</name>
+        <description>Miepol</description>
+        <Point>
+        <coordinates>145.471332,-36.604983,131.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ML-052</name>
+        <description>Mt Mitchell</description>
+        <Point>
+        <coordinates>143.580133,-37.280051,521.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MLW017</name>
+        <description>Molesworth on Highway</description>
+        <Point>
+        <coordinates>145.542166,-37.166478,178.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MMC029</name>
+        <description>Mount Cole Creek</description>
+        <Point>
+        <coordinates>143.143411,-37.216590,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MMO032</name>
+        <description>Mt Moolort- Last Chance Hill</description>
+        <Point>
+        <coordinates>143.860500,-37.047471,325.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MN-012</name>
+        <description>Mt Meuron Launch</description>
+        <Point>
+        <coordinates>143.855800,-38.673350,120.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MNB028</name>
+        <description>Moonambel</description>
+        <Point>
+        <coordinates>143.315994,-36.985966,281.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MND031</name>
+        <description>Maindample</description>
+        <Point>
+        <coordinates>145.935001,-37.029144,314.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MNS031</name>
+        <description>Mansfield</description>
+        <Point>
+        <coordinates>146.085000,-37.051667,318.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOL070</name>
+        <description>Mollongghip</description>
+        <Point>
+        <coordinates>144.023381,-37.476047,704.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOS050</name>
+        <description>Minto Spur</description>
+        <Point>
+        <coordinates>145.350703,-37.305261,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOU007</name>
+        <description>Moulamein</description>
+        <Point>
+        <coordinates>144.034027,-35.092403,73.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOY025</name>
+        <description>Moyston</description>
+        <Point>
+        <coordinates>142.761551,-37.301941,258.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MPK007</name>
+        <description>Mystic Park</description>
+        <Point>
+        <coordinates>143.725950,-35.558140,76.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRB007</name>
+        <description>Murrabit</description>
+        <Point>
+        <coordinates>143.956848,-35.525310,77.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRG018</name>
+        <description>Marong- beware bendigo airspace</description>
+        <Point>
+        <coordinates>144.128754,-36.734962,188.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRJ044</name>
+        <description>Merrijig</description>
+        <Point>
+        <coordinates>146.261415,-37.106944,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRN015</name>
+        <description>Marnoo</description>
+        <Point>
+        <coordinates>142.870102,-36.669354,150.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRT034</name>
+        <description>Merton</description>
+        <Point>
+        <coordinates>145.711667,-36.976667,341.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRY024</name>
+        <description>Maryborough</description>
+        <Point>
+        <coordinates>143.733902,-37.049164,242.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MTM010</name>
+        <description>Mitiamo</description>
+        <Point>
+        <coordinates>144.232544,-36.211113,101.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MTY006</name>
+        <description>Mittyack</description>
+        <Point>
+        <coordinates>142.659210,-35.157978,67.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MUR012</name>
+        <description>Murchison</description>
+        <Point>
+        <coordinates>145.262636,-36.612599,123.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MUR032</name>
+        <description>Murrindindi</description>
+        <Point>
+        <coordinates>145.487451,-37.331320,321.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MYP013</name>
+        <description>Minyip</description>
+        <Point>
+        <coordinates>142.586182,-36.464348,131.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NAG013</name>
+        <description>Nagambie</description>
+        <Point>
+        <coordinates>145.163489,-36.782012,131.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NAG016</name>
+        <description>Nagambie</description>
+        <Point>
+        <coordinates>145.144758,-36.792722,100.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NAL014</name>
+        <description>Nalinga</description>
+        <Point>
+        <coordinates>145.724258,-36.421929,147.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NAV023</name>
+        <description>Navarre</description>
+        <Point>
+        <coordinates>143.111374,-36.899658,232.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NES038</name>
+        <description>Nillahcootie Spur</description>
+        <Point>
+        <coordinates>146.033748,-36.876570,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NEW021</name>
+        <description>Newstead</description>
+        <Point>
+        <coordinates>144.058334,-37.111710,214.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NHL013</name>
+        <description>Nhill</description>
+        <Point>
+        <coordinates>141.653198,-36.335171,133.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NMK012</name>
+        <description>Natimuk</description>
+        <Point>
+        <coordinates>141.942261,-36.743416,120.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRB027</name>
+        <description>Broken river bridge - Nillahcootie</description>
+        <Point>
+        <coordinates>146.005910,-36.927601,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NUL009</name>
+        <description>Nullawil</description>
+        <Point>
+        <coordinates>143.177383,-35.852905,93.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NYR056</name>
+        <description>Nyarrin</description>
+        <Point>
+        <coordinates>142.763490,-35.393660,56.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NYW008</name>
+        <description>Nyah West</description>
+        <Point>
+        <coordinates>143.345001,-35.186306,84.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OES037</name>
+        <description>Old Mine Hill Spur B</description>
+        <Point>
+        <coordinates>145.404632,-37.302096,370.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OES043</name>
+        <description>Old Mine Hill Spur</description>
+        <Point>
+        <coordinates>145.415377,-37.292992,430.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OMH051</name>
+        <description>Old Mine Hill</description>
+        <Point>
+        <coordinates>145.396385,-37.288893,513.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ONE029</name>
+        <description>One Hill of Two</description>
+        <Point>
+        <coordinates>145.456332,-37.396775,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OTH026</name>
+        <description>Over the Houses</description>
+        <Point>
+        <coordinates>145.282007,-37.288956,260.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OTH033</name>
+        <description>One Tree Hill</description>
+        <Point>
+        <coordinates>145.126870,-37.246152,330.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OUY005</name>
+        <description>Ouyen</description>
+        <Point>
+        <coordinates>142.317474,-35.072014,57.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PAR050</name>
+        <description>Portland-Amos Road Launch</description>
+        <Point>
+        <coordinates>141.390490,-38.348000,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PDX052</name>
+        <description>Mt Paradox</description>
+        <Point>
+        <coordinates>145.709846,-37.043858,529.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PIR045</name>
+        <description>Piries</description>
+        <Point>
+        <coordinates>146.131670,-37.148844,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PLB043</name>
+        <description>Petes Lttle Beauty</description>
+        <Point>
+        <coordinates>145.300636,-37.305776,435.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSL085</name>
+        <description>Paps Launch</description>
+        <Point>
+        <coordinates>145.990791,-37.044080,850.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSN041</name>
+        <description>Paps North Landing Zone</description>
+        <Point>
+        <coordinates>145.986280,-37.035741,410.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSP043</name>
+        <description>Mt Prospect 2</description>
+        <Point>
+        <coordinates>145.693743,-37.152398,437.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSP057</name>
+        <description>Mt Prospect</description>
+        <Point>
+        <coordinates>144.036572,-37.387909,570.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSW044</name>
+        <description>Paps West Landing Zone</description>
+        <Point>
+        <coordinates>145.977970,-37.043131,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PT-036</name>
+        <description>Mt Pleasant</description>
+        <Point>
+        <coordinates>145.712410,-37.213844,362.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PTW007</name>
+        <description>Patchewollock</description>
+        <Point>
+        <coordinates>142.190414,-35.383492,75.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PYH009</name>
+        <description>Pyramid Hill</description>
+        <Point>
+        <coordinates>144.114792,-36.056023,92.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PYH028</name>
+        <description>Pyrenees Highway</description>
+        <Point>
+        <coordinates>143.096943,-37.198628,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>QMB009</name>
+        <description>Quambatook</description>
+        <Point>
+        <coordinates>143.520538,-35.850700,93.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RAG038</name>
+        <description>Raglan</description>
+        <Point>
+        <coordinates>143.345469,-37.360999,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RBK028</name>
+        <description>RedBank</description>
+        <Point>
+        <coordinates>143.325851,-36.940712,286.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RBV006</name>
+        <description>Robinvale</description>
+        <Point>
+        <coordinates>142.778625,-34.588272,62.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RBW009</name>
+        <description>Rainbow</description>
+        <Point>
+        <coordinates>141.996429,-35.899162,91.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RCH012</name>
+        <description>Rochester</description>
+        <Point>
+        <coordinates>144.703248,-36.362844,120.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RED028</name>
+        <description>Redesdale</description>
+        <Point>
+        <coordinates>144.533905,-37.018925,281.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RNB042</name>
+        <description>Lifty</description>
+        <Point>
+        <coordinates>143.346312,-37.343293,420.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RNC039</name>
+        <description>Lifty</description>
+        <Point>
+        <coordinates>143.325754,-37.334520,390.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RND044</name>
+        <description>Mt Cole Road</description>
+        <Point>
+        <coordinates>143.312760,-37.345250,440.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RUF050</name>
+        <description>Ruffy</description>
+        <Point>
+        <coordinates>145.502354,-36.973878,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RUP014</name>
+        <description>Rupanyup</description>
+        <Point>
+        <coordinates>142.630981,-36.631405,141.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RWD013</name>
+        <description>Raywood</description>
+        <Point>
+        <coordinates>144.244398,-36.548648,136.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RYW013</name>
+        <description>Raywood</description>
+        <Point>
+        <coordinates>144.208786,-36.534100,131.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SGR034</name>
+        <description>Spring Valley Road Hill</description>
+        <Point>
+        <coordinates>145.301701,-37.288001,344.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SHL020</name>
+        <description>Shelbourne</description>
+        <Point>
+        <coordinates>144.039336,-36.847994,205.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SKC046</name>
+        <description>Spion Kopje Col</description>
+        <Point>
+        <coordinates>145.523225,-37.280100,466.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SKH029</name>
+        <description>She Oak Hill</description>
+        <Point>
+        <coordinates>145.429895,-37.232005,293.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SLF031</name>
+        <description>Mt Sugarloaf 2</description>
+        <Point>
+        <coordinates>145.275977,-37.161850,315.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SLF071</name>
+        <description>Mt Sugarloaf</description>
+        <Point>
+        <coordinates>143.183427,-37.236189,716.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SLK005</name>
+        <description>Sea Lake</description>
+        <Point>
+        <coordinates>142.851486,-35.503189,56.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SPD006</name>
+        <description>Speed</description>
+        <Point>
+        <coordinates>142.438416,-35.399731,64.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SRP012</name>
+        <description>Serpentine</description>
+        <Point>
+        <coordinates>143.974518,-36.411678,122.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>STC020</name>
+        <description>Strath Creek</description>
+        <Point>
+        <coordinates>145.218057,-37.237525,205.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>STW024</name>
+        <description>Stawell</description>
+        <Point>
+        <coordinates>142.778397,-37.058338,244.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SWH007</name>
+        <description>Swan Hill</description>
+        <Point>
+        <coordinates>143.559601,-35.340603,76.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SWN021</name>
+        <description>Swanpool</description>
+        <Point>
+        <coordinates>145.999761,-36.745968,214.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SWZ020</name>
+        <description>Switzerland Rd</description>
+        <Point>
+        <coordinates>145.384703,-37.141934,203.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAL024</name>
+        <description>Talbot</description>
+        <Point>
+        <coordinates>143.704697,-37.175995,242.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAR020</name>
+        <description>Tarnagulla</description>
+        <Point>
+        <coordinates>143.830460,-36.772049,207.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAR027</name>
+        <description>Mt Tarrengower LZ</description>
+        <Point>
+        <coordinates>144.031424,-36.995554,276.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAR052</name>
+        <description>Mt Tarrengower</description>
+        <Point>
+        <coordinates>144.045074,-36.995475,522.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAT023</name>
+        <description>Tatong</description>
+        <Point>
+        <coordinates>146.101685,-36.716320,235.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TBC007</name>
+        <description>Tooleybuc</description>
+        <Point>
+        <coordinates>143.337235,-35.029602,71.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TBR031</name>
+        <description>Tooborac</description>
+        <Point>
+        <coordinates>144.797165,-37.046220,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TCM046</name>
+        <description>Tarcombe</description>
+        <Point>
+        <coordinates>145.343285,-36.975130,467.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TER053</name>
+        <description>Terip Terip Hill</description>
+        <Point>
+        <coordinates>145.511275,-37.022417,530.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TGL010</name>
+        <description>Tongala</description>
+        <Point>
+        <coordinates>144.978157,-36.269610,107.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TMB008</name>
+        <description>Torrumbarry</description>
+        <Point>
+        <coordinates>144.515274,-36.027145,89.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TMB115</name>
+        <description>Mt Timbertop</description>
+        <Point>
+        <coordinates>146.319269,-37.155369,1152.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TMP007</name>
+        <description>Tempy</description>
+        <Point>
+        <coordinates>142.420868,-35.341331,77.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TMW011</name>
+        <description>Tocumwal</description>
+        <Point>
+        <coordinates>145.565741,-35.837177,117.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TMW019</name>
+        <description>Timor West</description>
+        <Point>
+        <coordinates>143.691538,-36.972172,190.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TOL083</name>
+        <description>Tolmie</description>
+        <Point>
+        <coordinates>146.240000,-36.946667,843.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TRG059</name>
+        <description>Trig Station Reserve</description>
+        <Point>
+        <coordinates>145.465593,-37.008790,597.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TRP051</name>
+        <description>Terip x roads</description>
+        <Point>
+        <coordinates>145.554000,-36.980000,519.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TRW017</name>
+        <description>Trawool pub</description>
+        <Point>
+        <coordinates>145.215350,-37.119550,174.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TRW037</name>
+        <description>Trawalla</description>
+        <Point>
+        <coordinates>143.469371,-37.438625,371.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TSR048</name>
+        <description>Tehans Road</description>
+        <Point>
+        <coordinates>145.248071,-37.299215,467.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UBL006</name>
+        <description>Underbool</description>
+        <Point>
+        <coordinates>141.808426,-35.166645,62.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ULT008</name>
+        <description>Ultima</description>
+        <Point>
+        <coordinates>143.267212,-35.468143,81.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UPT043</name>
+        <description>Upton Hill</description>
+        <Point>
+        <coordinates>145.384222,-36.891698,431.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VLT018</name>
+        <description>Violet Town</description>
+        <Point>
+        <coordinates>145.664470,-36.687175,188.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VLT020</name>
+        <description>Harrys Creek Rd</description>
+        <Point>
+        <coordinates>145.726183,-36.647967,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WAA010</name>
+        <description>Waaia</description>
+        <Point>
+        <coordinates>145.365569,-36.059511,108.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WAL059</name>
+        <description>Wallace</description>
+        <Point>
+        <coordinates>144.053531,-37.553427,589.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WCH011</name>
+        <description>Watchem</description>
+        <Point>
+        <coordinates>142.859833,-36.146709,115.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WDB018</name>
+        <description>Wedderburn</description>
+        <Point>
+        <coordinates>143.613419,-36.416531,183.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WDF030</name>
+        <description>Woodfield</description>
+        <Point>
+        <coordinates>145.798059,-37.018419,301.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WER028</name>
+        <description>Werribee Gorge</description>
+        <Point>
+        <coordinates>144.378320,-37.689050,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WHL054</name>
+        <description>Wheelers Hill</description>
+        <Point>
+        <coordinates>145.551682,-36.862592,540.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WHL067</name>
+        <description>Wattle Hill</description>
+        <Point>
+        <coordinates>145.446637,-37.088219,674.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WLK008</name>
+        <description>Walkool</description>
+        <Point>
+        <coordinates>144.389297,-35.470150,80.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WLP011</name>
+        <description>Walpeup</description>
+        <Point>
+        <coordinates>142.022186,-35.137978,115.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WMB051</name>
+        <description>Mt Wombat</description>
+        <Point>
+        <coordinates>145.647469,-36.897057,516.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WML008</name>
+        <description>Woomelang</description>
+        <Point>
+        <coordinates>142.664444,-35.680809,85.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WRK011</name>
+        <description>Warracknabeel</description>
+        <Point>
+        <coordinates>142.392670,-36.252216,112.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WSK020</name>
+        <description>Woodstock</description>
+        <Point>
+        <coordinates>144.056714,-36.787876,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WSM037</name>
+        <description>Weismans Hill</description>
+        <Point>
+        <coordinates>143.571373,-36.947403,375.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WTC005</name>
+        <description>Waitchie</description>
+        <Point>
+        <coordinates>143.103714,-35.367435,58.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WYE010</name>
+        <description>Wyuna East</description>
+        <Point>
+        <coordinates>145.095429,-36.229412,104.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WYP011</name>
+        <description>Wycheproof</description>
+        <Point>
+        <coordinates>143.226868,-36.077347,112.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WYR025</name>
+        <description>Whittlesea Yea Road 1</description>
+        <Point>
+        <coordinates>145.364424,-37.258917,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WYR045</name>
+        <description>Whittlesea Yea Road 2</description>
+        <Point>
+        <coordinates>145.323820,-37.317543,450.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WYR053</name>
+        <description>Whittlesea Yea Road 3</description>
+        <Point>
+        <coordinates>145.307360,-37.314637,530.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YAL031</name>
+        <description>Yalong Road</description>
+        <Point>
+        <coordinates>143.484021,-37.244149,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YAP008</name>
+        <description>Yaapeet</description>
+        <Point>
+        <coordinates>142.052322,-35.768860,80.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YAR021</name>
+        <description>Yarck</description>
+        <Point>
+        <coordinates>145.641375,-37.108381,214.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YAS043</name>
+        <description>Yea Ridge spur</description>
+        <Point>
+        <coordinates>145.328770,-37.274977,430.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YEA017</name>
+        <description>Yea Sports Oval</description>
+        <Point>
+        <coordinates>145.423365,-37.209414,171.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YEA027</name>
+        <description>South Yea</description>
+        <Point>
+        <coordinates>145.393534,-37.234000,274.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YES023</name>
+        <description>Why did the chicken cross the road ?</description>
+        <Point>
+        <coordinates>145.636768,-37.080083,234.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YKE031</name>
+        <description>Yark East</description>
+        <Point>
+        <coordinates>145.666547,-37.066227,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YKR054</name>
+        <description>Yark Ridge 03</description>
+        <Point>
+        <coordinates>145.564810,-37.001607,540.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YKR063</name>
+        <description>Yarck Ridge</description>
+        <Point>
+        <coordinates>145.569812,-37.081252,630.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YKW025</name>
+        <description>Yarck West</description>
+        <Point>
+        <coordinates>145.585500,-37.111855,253.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YRB022</name>
+        <description>Yea River Bridge</description>
+        <Point>
+        <coordinates>145.473792,-37.382883,216.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YRR020</name>
+        <description>Yea River Reserve</description>
+        <Point>
+        <coordinates>145.466318,-37.316667,205.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YRR043</name>
+        <description>Yea River Ridge</description>
+        <Point>
+        <coordinates>145.438433,-37.360612,435.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YRT017</name>
+        <description>Yea Horse racing track</description>
+        <Point>
+        <coordinates>145.401687,-37.210381,176.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YRV031</name>
+        <description>Yea River Valley</description>
+        <Point>
+        <coordinates>145.481510,-37.321360,319.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YVV034</name>
+        <description>Yea Valley Vineyard</description>
+        <Point>
+        <coordinates>145.488918,-37.342470,348.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YVX024</name>
+        <description>Yea Valley Crossing</description>
+        <Point>
+        <coordinates>145.483390,-37.358227,244.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>13B40W</name>
+        <description>13th Beach 40W (Hang glider launch)</description>
+        <Point>
+        <coordinates>144.487100,-38.288500,7.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AIL002</name>
+        <description>Aireys Inlet Lighthouse</description>
+        <Point>
+        <coordinates>144.104479,-38.467988,24.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ANG001</name>
+        <description>Anglesea Rivermouth</description>
+        <Point>
+        <coordinates>144.190920,-38.413025,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AYR001</name>
+        <description>Aire River Beach</description>
+        <Point>
+        <coordinates>143.461875,-38.806387,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BBW001</name>
+        <description>Winkipop Launch , Hangliders only, PG fo</description>
+        <Point>
+        <coordinates>144.286310,-38.365399,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCE014</name>
+        <description>Boorhaman Crop Circle</description>
+        <Point>
+        <coordinates>146.289139,-36.222099,144.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCK038</name>
+        <description>Buckland Lumsdens</description>
+        <Point>
+        <coordinates>146.859146,-36.773540,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCK075</name>
+        <description>Bucklands</description>
+        <Point>
+        <coordinates>146.874602,-36.768091,740.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BEL001</name>
+        <description>Bells Beach</description>
+        <Point>
+        <coordinates>144.278410,-38.372280,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BHC002</name>
+        <description>13th Beach - 30W</description>
+        <Point>
+        <coordinates>144.494534,-38.290027,7.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BHG001</name>
+        <description>13th Beach - 40W</description>
+        <Point>
+        <coordinates>144.439100,-38.281330,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BIG012</name>
+        <description>Big Hill</description>
+        <Point>
+        <coordinates>144.027039,-38.486746,88.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BLF055</name>
+        <description>Blackfellas</description>
+        <Point>
+        <coordinates>146.924149,-36.724670,558.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOW031</name>
+        <description>Bowmans Forrest</description>
+        <Point>
+        <coordinates>146.658524,-36.483349,314.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BPE032</name>
+        <description>Buffalo Parks Entrance</description>
+        <Point>
+        <coordinates>146.856842,-36.698318,320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRD026</name>
+        <description>Lake Buffalo Dam</description>
+        <Point>
+        <coordinates>146.660111,-36.713951,264.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRF028</name>
+        <description>Bright Radio Field</description>
+        <Point>
+        <coordinates>146.942520,-36.719452,290.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRN025</name>
+        <description>Buff River Rd North</description>
+        <Point>
+        <coordinates>146.692322,-36.658249,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRO031</name>
+        <description>Bright Oval</description>
+        <Point>
+        <coordinates>146.973801,-36.738628,310.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BUA066</name>
+        <description>Buffalo Foothills</description>
+        <Point>
+        <coordinates>146.858271,-36.740446,658.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BUF132</name>
+        <description>Mt Buffalo Chalet</description>
+        <Point>
+        <coordinates>146.818726,-36.722599,1320.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAC001</name>
+        <description>Castle</description>
+        <Point>
+        <coordinates>143.427917,-38.782616,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CBT028</name>
+        <description>Carboor T</description>
+        <Point>
+        <coordinates>146.557205,-36.662330,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CBY028</name>
+        <description>Carboor Y</description>
+        <Point>
+        <coordinates>146.546570,-36.640449,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLN063</name>
+        <description>Clearspot Ridge North End</description>
+        <Point>
+        <coordinates>146.947772,-36.738115,635.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLS098</name>
+        <description>Clearspot South</description>
+        <Point>
+        <coordinates>146.932538,-36.764323,902.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CLT098</name>
+        <description>Clearspot Tower</description>
+        <Point>
+        <coordinates>146.937409,-36.756981,980.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CRJ060</name>
+        <description>Bonnie Doon Rd</description>
+        <Point>
+        <coordinates>145.853977,-36.805711,596.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DDJ027</name>
+        <description>Dederang Junction</description>
+        <Point>
+        <coordinates>146.998352,-36.457119,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DEM099</name>
+        <description>Demon Ridge Nth</description>
+        <Point>
+        <coordinates>146.943870,-36.774402,995.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DEM107</name>
+        <description>Demon Ridge middle</description>
+        <Point>
+        <coordinates>146.933477,-36.826745,1070.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DEM122</name>
+        <description>Demon Ridge Peak</description>
+        <Point>
+        <coordinates>146.923386,-36.851062,1220.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DEV028</name>
+        <description>Devils Crk Rd Buckland</description>
+        <Point>
+        <coordinates>146.881317,-36.749740,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DFM025</name>
+        <description>Deerfarm</description>
+        <Point>
+        <coordinates>146.860123,-36.667000,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DIN084</name>
+        <description>Dingo Ridge</description>
+        <Point>
+        <coordinates>146.918030,-36.754044,843.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DWC001</name>
+        <description>Dead Whale Cove</description>
+        <Point>
+        <coordinates>143.402053,-38.777965,18.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EBN020</name>
+        <description>Eurobin</description>
+        <Point>
+        <coordinates>146.866211,-36.641811,220.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EBZ125</name>
+        <description>Ebenezer</description>
+        <Point>
+        <coordinates>147.022386,-36.842419,1250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EDI019</name>
+        <description>Edi T Junction</description>
+        <Point>
+        <coordinates>146.421784,-36.647709,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ELD020</name>
+        <description>Eldorado</description>
+        <Point>
+        <coordinates>146.502197,-36.313320,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EM1200</name>
+        <description>Mt Emu Launch</description>
+        <Point>
+        <coordinates>147.218491,-36.673038,1327.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EM2100</name>
+        <description>Mt Emu</description>
+        <Point>
+        <coordinates>147.205231,-36.664902,1140.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EUM001</name>
+        <description>Eumeralla</description>
+        <Point>
+        <coordinates>144.229200,-38.396800,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EVE020</name>
+        <description>Everton</description>
+        <Point>
+        <coordinates>146.541596,-36.433380,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EVW001</name>
+        <description>Eastern View</description>
+        <Point>
+        <coordinates>144.050033,-38.466943,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FEV012</name>
+        <description>Far Eastern View</description>
+        <Point>
+        <coordinates>144.038621,-38.470197,120.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FRB038</name>
+        <description>Freeburgh</description>
+        <Point>
+        <coordinates>147.021424,-36.757889,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GAP027</name>
+        <description>Gapsted</description>
+        <Point>
+        <coordinates>146.685318,-36.526828,270.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HVK044</name>
+        <description>Harrietville Kempys</description>
+        <Point>
+        <coordinates>147.083298,-36.837459,443.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HVL047</name>
+        <description>Harrietville</description>
+        <Point>
+        <coordinates>147.065964,-36.868980,474.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HVS091</name>
+        <description>Harrietville Smoko Bowl</description>
+        <Point>
+        <coordinates>147.064068,-36.850623,914.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HYH036</name>
+        <description>Havillah</description>
+        <Point>
+        <coordinates>146.858841,-36.594291,323.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HYP038</name>
+        <description>Pinacles</description>
+        <Point>
+        <coordinates>146.923035,-36.566749,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JAN002</name>
+        <description>Jan Juc- Bird Rock</description>
+        <Point>
+        <coordinates>144.302176,-38.349646,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KBR024</name>
+        <description>Boyd Road Keiwa West</description>
+        <Point>
+        <coordinates>147.061035,-36.423351,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KBR025</name>
+        <description>Boyd Road Keiwa East</description>
+        <Point>
+        <coordinates>147.037277,-36.429508,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KBR030</name>
+        <description>Keegans Bridge</description>
+        <Point>
+        <coordinates>147.056518,-36.502698,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KER025</name>
+        <description>Kergunyah West</description>
+        <Point>
+        <coordinates>147.028137,-36.327221,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KER026</name>
+        <description>Kergunyah East</description>
+        <Point>
+        <coordinates>147.060639,-36.329921,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KHH084</name>
+        <description>Hollonds Hill Kiewa</description>
+        <Point>
+        <coordinates>147.163542,-36.764356,848.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KRC035</name>
+        <description>Running Creek</description>
+        <Point>
+        <coordinates>147.054245,-36.539928,350.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KRC076</name>
+        <description>Kiewa Running Creek Peak</description>
+        <Point>
+        <coordinates>147.015595,-36.534781,760.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KST107</name>
+        <description>Kiewa Simmonds Tops</description>
+        <Point>
+        <coordinates>147.108562,-36.758502,1070.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KTW036</name>
+        <description>Tawonga</description>
+        <Point>
+        <coordinates>147.144562,-36.697418,360.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>KVR025</name>
+        <description>Kergunya</description>
+        <Point>
+        <coordinates>147.043183,-36.376129,250.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LHL002</name>
+        <description>Last Hill before Lorne</description>
+        <Point>
+        <coordinates>143.991979,-38.514398,20.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LMT030</name>
+        <description>Little Mystic Toe</description>
+        <Point>
+        <coordinates>146.997635,-36.733200,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LPB050</name>
+        <description>Levy Point Launch</description>
+        <Point>
+        <coordinates>142.425705,-38.372791,500.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LSB001</name>
+        <description>Lorne Swing Bridge</description>
+        <Point>
+        <coordinates>143.978590,-38.534011,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MAC015</name>
+        <description>Macdonalds</description>
+        <Point>
+        <coordinates>146.258224,-36.432850,150.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MBH102</name>
+        <description>Bogong Hill</description>
+        <Point>
+        <coordinates>147.226081,-36.730812,1020.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MBR034</name>
+        <description>Mongans Bridge</description>
+        <Point>
+        <coordinates>147.092851,-36.584618,340.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MCS055</name>
+        <description>Marcus Ridge</description>
+        <Point>
+        <coordinates>146.961622,-36.748813,568.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MIL001</name>
+        <description>Milanesia Beach</description>
+        <Point>
+        <coordinates>143.325983,-38.755923,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MIL020</name>
+        <description>Miliawa</description>
+        <Point>
+        <coordinates>146.431789,-36.449042,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MLO001</name>
+        <description>Marriners Lookout B</description>
+        <Point>
+        <coordinates>143.684571,-38.730006,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MLO020</name>
+        <description>Marriners Lookout Launch</description>
+        <Point>
+        <coordinates>143.667477,-38.737022,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MMX001</name>
+        <description>Mad Max</description>
+        <Point>
+        <coordinates>144.089431,-38.468319,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOY020</name>
+        <description>Moyhu</description>
+        <Point>
+        <coordinates>146.377974,-36.578937,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MRN080</name>
+        <description>Moran Tops</description>
+        <Point>
+        <coordinates>146.960590,-36.767564,798.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MYR040</name>
+        <description>Myrtleford</description>
+        <Point>
+        <coordinates>146.719708,-36.561566,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NUG026</name>
+        <description>Nug Nug Rd</description>
+        <Point>
+        <coordinates>146.678925,-36.679939,300.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OAR026</name>
+        <description>Ovens Alpine Rd</description>
+        <Point>
+        <coordinates>146.897064,-36.685928,260.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OGR001</name>
+        <description>Ocean Grove</description>
+        <Point>
+        <coordinates>144.522430,-38.271340,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OGR002</name>
+        <description>Ocean Grove Dunes</description>
+        <Point>
+        <coordinates>144.563120,-38.275565,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OGR050</name>
+        <description>Ocean Grove Launch</description>
+        <Point>
+        <coordinates>144.522250,-38.271350,5.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OVE026</name>
+        <description>Happy Valley</description>
+        <Point>
+        <coordinates>146.760910,-36.588180,226.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>OVH030</name>
+        <description>Valley Homestead</description>
+        <Point>
+        <coordinates>146.808746,-36.614269,306.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PBB002</name>
+        <description>Portland- Bridgewater Bay Launch</description>
+        <Point>
+        <coordinates>141.409210,-38.367200,12.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PDB001</name>
+        <description>Portland Discovery Bay A</description>
+        <Point>
+        <coordinates>141.335000,-38.254000,11.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PDB002</name>
+        <description>Portland Discovery Bay B</description>
+        <Point>
+        <coordinates>141.271000,-38.201000,11.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PDB003</name>
+        <description>Portland Discovery Bay C</description>
+        <Point>
+        <coordinates>141.088000,-38.097000,11.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PDL001</name>
+        <description>Portland Discovery Bay Launch</description>
+        <Point>
+        <coordinates>141.398000,-38.332300,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PDW001</name>
+        <description>Portland- Dutton Way Launch</description>
+        <Point>
+        <coordinates>141.617521,-38.295002,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PEC015</name>
+        <description>Peechalba Crop circles</description>
+        <Point>
+        <coordinates>146.266205,-36.176868,150.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PGC001</name>
+        <description>Portland - Golf Course Launch</description>
+        <Point>
+        <coordinates>141.627150,-38.365260,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PIN054</name>
+        <description>Pines Ridge</description>
+        <Point>
+        <coordinates>146.637650,-36.410271,550.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PLL001</name>
+        <description>Pt Lonsdale Lighthouse</description>
+        <Point>
+        <coordinates>144.613904,-38.292028,10.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PMB003</name>
+        <description>Portland Murrells Beach Launch</description>
+        <Point>
+        <coordinates>141.529371,-38.401950,33.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PMB005</name>
+        <description>Portland- Murrells Beach NW</description>
+        <Point>
+        <coordinates>141.530127,-38.403689,54.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PNB001</name>
+        <description>Portland- Nunns Beach</description>
+        <Point>
+        <coordinates>141.609000,-38.338190,14.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSB001</name>
+        <description>Shelly Beach Launch</description>
+        <Point>
+        <coordinates>141.443600,-38.359700,18.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PSC006</name>
+        <description>Cape Bridgewater Launch</description>
+        <Point>
+        <coordinates>141.408330,-38.381570,64.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PTA006</name>
+        <description>Pt Addis Peregrine Point</description>
+        <Point>
+        <coordinates>144.252224,-38.383894,67.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PTR004</name>
+        <description>Pt Roadknight Cliffs</description>
+        <Point>
+        <coordinates>144.180965,-38.417368,40.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SKE003</name>
+        <description>Skenes Creek</description>
+        <Point>
+        <coordinates>143.712293,-38.720447,32.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SPK003</name>
+        <description>Spion Kop Launch</description>
+        <Point>
+        <coordinates>144.069410,-38.468030,37.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SRN070</name>
+        <description>Salami Ridge North</description>
+        <Point>
+        <coordinates>147.054199,-36.782680,670.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SRS050</name>
+        <description>Salami Ridge South</description>
+        <Point>
+        <coordinates>147.082258,-36.807900,926.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SSL006</name>
+        <description>Bells Beach - Southside Launch</description>
+        <Point>
+        <coordinates>144.268684,-38.376376,58.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SSR078</name>
+        <description>Snake Ridge Clearspot</description>
+        <Point>
+        <coordinates>146.929263,-36.745336,739.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TAL020</name>
+        <description>Tallangatta</description>
+        <Point>
+        <coordinates>147.178146,-36.213242,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TBR001</name>
+        <description>Three Brothers Lorne</description>
+        <Point>
+        <coordinates>143.958107,-38.573677,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TED009</name>
+        <description>Teddys Lookout</description>
+        <Point>
+        <coordinates>143.980000,-38.553800,96.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TRW020</name>
+        <description>Tarrawingee</description>
+        <Point>
+        <coordinates>146.442612,-36.390579,200.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WAP038</name>
+        <description>Wandi Pub</description>
+        <Point>
+        <coordinates>146.982209,-36.777729,380.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WAS034</name>
+        <description>Wandi Village Snowdens</description>
+        <Point>
+        <coordinates>146.981870,-36.767475,344.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WHI020</name>
+        <description>Whitfield Village</description>
+        <Point>
+        <coordinates>146.414246,-36.765899,400.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WHX028</name>
+        <description>Whitfield Docker Xroad</description>
+        <Point>
+        <coordinates>146.379288,-36.515461,280.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WYR001</name>
+        <description>Wye River</description>
+        <Point>
+        <coordinates>143.890189,-38.636531,2.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YAR019</name>
+        <description>Yarrawonga Airstrip</description>
+        <Point>
+        <coordinates>146.026668,-36.031748,190.000000</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

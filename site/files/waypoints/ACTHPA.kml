@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ACTHPA</name>
+	<open>1</open>
+	<snippet>Created Sat Aug 29 13:09:44 2020</snippet>
+	<description>ACTHPA Waypoints</description>
+	<LookAt>
+		<longitude>149.141553</longitude>
+		<latitude>-35.008155</latitude>
+		<altitude>0</altitude>
+		<heading>0</heading>
+		<tilt>0</tilt>
+		<range>128166.361616</range>
+	</LookAt>
+	<StyleMap id="waypoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_n">
+		<IconStyle>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="waypoint_h">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Waypoints</name>
+		<Placemark>
+			<name>OTH087</name>
+			<description>One Tree Hill</description>
+				<Point>
+				<coordinates>149.091464,-35.142121,874</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BHN060</name>
+			<description>Barton Hw and Nanima Rd</description>
+				<Point>
+				<coordinates>149.045497,-35.123251,599</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>QKV068</name>
+			<description>Quarry Kaveneys Rd</description>
+				<Point>
+				<coordinates>149.026945,-35.092626,676</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PCH063</name>
+			<description>Poachers Pantry</description>
+				<Point>
+				<coordinates>149.057789,-35.084489,625</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SFD062</name>
+			<description>Springfield Dam</description>
+				<Point>
+				<coordinates>149.074086,-35.074974,624</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SHL088</name>
+			<description>Spring Hill Launch</description>
+				<Point>
+				<coordinates>149.083342,-35.093946,876</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>FBE058</name>
+			<description>Forest near Barton Estate Wines</description>
+				<Point>
+				<coordinates>149.034965,-35.056943,584</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MBM057</name>
+			<description>Murrumbateman</description>
+				<Point>
+				<coordinates>149.032982,-34.970858,572</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>QMA061</name>
+			<description>Murra quarry</description>
+				<Point>
+				<coordinates>149.084635,-34.949383,611</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GNI057</name>
+			<description>Gunning</description>
+				<Point>
+				<coordinates>149.265638,-34.786071,562</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>YAS053</name>
+			<description>Yass 1</description>
+				<Point>
+				<coordinates>148.968106,-34.867343,527</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>LGS074</name>
+			<description>Lake George South Launch</description>
+				<Point>
+				<coordinates>149.375752,-35.106702,739</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SIL069</name>
+			<description>Silver</description>
+				<Point>
+				<coordinates>149.390412,-35.14601,694</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BGP074</name>
+			<description>Bungendore gap</description>
+				<Point>
+				<coordinates>149.403984,-35.230239,739</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>RAK068</name>
+			<description>Kevin Rest Area</description>
+				<Point>
+				<coordinates>149.374514,-35.067585,678</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>RAB068</name>
+			<description>Badcoe Rest Area</description>
+				<Point>
+				<coordinates>149.378049,-35.035365,681</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>LGN080</name>
+			<description>Lake George N Knob</description>
+				<Point>
+				<coordinates>149.378576,-34.999781,797</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>COL087</name>
+			<description>Collector Launch</description>
+				<Point>
+				<coordinates>149.375205,-34.970439,870</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>HFH069</name>
+			<description>Hume and Federal Highways</description>
+				<Point>
+				<coordinates>149.609291,-34.804028,694</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PIG098</name>
+			<description>Pig Hill Launch</description>
+				<Point>
+				<coordinates>148.897019,-35.22106,975</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MUL060</name>
+			<description>Mullion</description>
+				<Point>
+				<coordinates>148.905946,-35.161718,603</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>WEJ039</name>
+			<description>Wee Jasper</description>
+				<Point>
+				<coordinates>148.673816,-35.110557,385</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>HAL063</name>
+			<description>Hall Playing Fields</description>
+				<Point>
+				<coordinates>149.071889,-35.171462,626</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SHS084</name>
+			<description>Spring Hill S</description>
+				<Point>
+				<coordinates>149.075416,-35.107115,834.9999999999999</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SHN077</name>
+			<description>Spring Hill N</description>
+				<Point>
+				<coordinates>149.086292,-35.084962,773</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>ACH076</name>
+			<description>Anchow hill</description>
+				<Point>
+				<coordinates>149.055741,-35.097917,760</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NJR062</name>
+			<description>Nanima and Johnson Rd</description>
+				<Point>
+				<coordinates>149.059289,-35.112464,618</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GDR058</name>
+			<description>Gundaroo Mcleods Ck Dam</description>
+				<Point>
+					<coordinates>149.2710309552353,-35.01937425995099,580</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>LGR067</name>
+		<description>Lake George Reach</description>
+		<Point>
+			<coordinates>149.3864901411956,-35.104554270316,670</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTH080</name>
+		<description>Big Thermal Hill</description>
+		<Point>
+			<coordinates>149.5006710110824,-35.02318277333718,800</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>TGO068</name>
+		<description>Tarago Cricket Oval</description>
+		<Point>
+			<coordinates>149.6579065264401,-35.06720074297267,680</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>CRH068</name>
+		<description>Collector Reach</description>
+		<Point>
+			<coordinates>149.3897025887202,-34.97726071592017,680</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>CNB085</name>
+		<description>Collector North Bowl</description>
+		<Point>
+			<coordinates>149.3794167325461,-34.96046539291091,850</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>CCP069</name>
+		<description>Collector Cricket Pitch</description>
+		<Point>
+			<coordinates>149.4341651467684,-34.91729763853959,690</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>WLM072</name>
+		<description>Woodlawn Mine</description>
+		<Point>
+			<coordinates>149.5697911189588,-35.06311642429941,720</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>NCH081</name>
+		<description>Hill near Nelanglo Ck</description>
+		<Point>
+			<coordinates>149.2839094065822,-34.94603637646077,810</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>OTB077</name>
+		<description>Over the back, Collector</description>
+		<Point>
+			<coordinates>149.343552712904,-34.96109718679867,770</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BJK057</name>
+		<description>Ridge N of lake Burrinjuck</description>
+		<Point>
+			<coordinates>148.7795967650997,-34.86032122473286,570</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>LAN090</name>
+		<description>Lanyon Launch</description>
+		<Point>
+			<coordinates>149.1076501317035,-35.48369760847554,900</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>LRS087</name>
+		<description>Lanyon Ridge S</description>
+		<Point>
+			<coordinates>149.1072391080501,-35.49054405199498,870</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>MRR108</name>
+		<description>Mt Rob Roy</description>
+		<Point>
+			<coordinates>149.1287982986437,-35.494930883799,1080</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HSL103</name>
+		<description>Hill S of Lanyon 2</description>
+		<Point>
+			<coordinates>149.1135950280708,-35.51293622648778,1030</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HSL097</name>
+		<description>Hill S of Lanyon 1</description>
+		<Point>
+			<coordinates>149.1140296229347,-35.50114066506303,970</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>THR057</name>
+		<description>Tharwa</description>
+		<Point>
+			<coordinates>149.070148411293,-35.50987531515786,570</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>OOW060</name>
+		<description>Out of the woods</description>
+		<Point>
+			<coordinates>149.0577669164553,-35.52725856628621,600</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HNT071</name>
+		<description>Hill near Tharwa Dr</description>
+		<Point>
+			<coordinates>149.0853679805218,-35.4995289346189,710</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>TEN138</name>
+		<description>Mt Tennent</description>
+		<Point>
+			<coordinates>149.0447032626044,-35.55002669893231,1380</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HSP069</name>
+		<description>Honeysuckle PG Launch</description>
+		<Point>
+			<coordinates>148.32212,-35.13493,690</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HSH069</name>
+		<description>Honeysuckle HG Launch</description>
+		<Point>
+			<coordinates>148.31665,-35.13009,690</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HSN070</name>
+		<description>Honeysuckle NW Spur</description>
+		<Point>
+			<coordinates>148.3092783489112,-35.11984250946218,700</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HSS069</name>
+		<description>Honeysuckle SE Spur</description>
+		<Point>
+			<coordinates>148.3319248746048,-35.14864139166669,690</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>NAC065</name>
+		<description>Nanima Airspace Corner</description>
+		<Point>
+			<coordinates>149.0705519836427,-35.0307892896335,650</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HNN075</name>
+		<description>Hill NE of Nanima</description>
+		<Point>
+			<coordinates>149.1204246141209,-34.99169007290653,750</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>YRR056</name>
+		<description>Yass River Road</description>
+		<Point>
+			<coordinates>149.1983986865117,-34.93615795052421,560</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
