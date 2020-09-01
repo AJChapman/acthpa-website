@@ -1,0 +1,62 @@
+<Task fai_finish="0" finish_min_height_ref="AGL" finish_min_height="0" start_close_time="16:00" start_open_time="08:00" start_max_height_ref="AGL" start_max_height="0" start_max_speed="0" start_requires_arm="0" aat_min_time="10800" type="RT">
+	<Point type="Start">
+		<Waypoint altitude="876" comment="Spring Hill Launch" id="10" name="SHL088">
+			<Location latitude="-35.0939" longitude="149.083"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="773" comment="Spring Hill N" id="29" name="SHN077">
+			<Location latitude="-35.085" longitude="149.086"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="625" comment="Poachers Pantry" id="8" name="PCH063">
+			<Location latitude="-35.0845" longitude="149.058"/>
+		</Waypoint>
+		<ObservationZone radius="1600" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="876" comment="Spring Hill Launch" id="10" name="SHL088">
+			<Location latitude="-35.0939" longitude="149.083"/>
+		</Waypoint>
+		<ObservationZone radius="800" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="835" comment="Spring Hill S" id="28" name="SHS084">
+			<Location latitude="-35.1071" longitude="149.075"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="760" comment="Anchow hill" id="30" name="ACH076">
+			<Location latitude="-35.0979" longitude="149.056"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="676" comment="Quarry Kaveneys Rd" id="7" name="QKV068">
+			<Location latitude="-35.0926" longitude="149.027"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="618" comment="Nanima and Johnson Rd" id="31" name="NJR062">
+			<Location latitude="-35.1125" longitude="149.059"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="876" comment="Spring Hill Launch" id="10" name="SHL088">
+			<Location latitude="-35.0939" longitude="149.083"/>
+		</Waypoint>
+		<ObservationZone radius="800" type="Cylinder"/>
+	</Point>
+	<Point type="Finish">
+		<Waypoint altitude="876" comment="Spring Hill Launch" id="10" name="SHL088">
+			<Location latitude="-35.0939" longitude="149.083"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+</Task>
