@@ -12,7 +12,10 @@ Bring your own camp chair, shade, and picnic lunch.
 Please also help us stick to our COVID plan:
 
 - Do not come if you are unwell,
+- Do not come if you have visited Victoria in the 14 days prior,
+- Do not come if you have attended any of the reported case locations listed on the [NSW Health website](https://nsw.gov.au/covid-19/latest-news-and-updates),
 - This event is for ACTHPA and SAFA members only,
+- Please register your intent to come on [the Facebook event](https://www.facebook.com/events/1017522405344405),
 - Maintain 1.5 metres physical distance where practical,
 - Handle only your own equipment.
 
