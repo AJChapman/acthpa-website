@@ -1,8 +1,8 @@
 ---
 title: Parachute Repack Night
 eventStart: 2020-09-04
-teaser: "The parachute repack night start at 6pm at Mount Stromlo High School.."
-image: alex-reserve.jpg
+teaser: "The [parachute repack night](/events/parachute-repack-sep-2020) starts at 6pm on Friday September 4 at Mount Stromlo High School."
+image: reserve-drying.jpg
 ---
 The parachute repack night is on Friday September 4 commencing at 6pm at Mount Stromlo High School.
 [Register your interest here](https://tinyurl.com/yxe78955).
