@@ -4,7 +4,8 @@ title: Flying Canberra
 
 ## Quick Info
 
-**Radio Frequency**: [HGFA Open](https://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 MHz, no tone squelch)
+- **Radio Frequency**: [HGFA Open](https://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 MHz, no tone squelch)
+- **Waypoints**: <a href='/files/waypoints/ACTHPA.wpt' download>ACTHPA.wpt</a>
 
 ### Sites
 
@@ -52,6 +53,15 @@ The penalties for flying in controlled airspace without authorisation are harsh 
 
 UHF radios are used for communication between pilots and others such as ground crew and landholders.
 The [HGFA Open Channel](http://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 Mhz, no tone squelch) is the main communication channel used by paraglider pilots, while hang glider pilots are using Channel 14 (476.750 MHz) CTCSS 71.9.
+
+### Waypoints
+
+We have waypoint files for setting tasks around the ACT sites:
+
+- <a href='/files/waypoints/ACTHPA.wpt' download>ACTHPA.wpt</a>: For flight instruments,
+- <a href='/files/waypoints/ACTHPA.kml' download>ACTHPA.kml</a>: For use in [Google Earth Pro](https://www.google.com/earth/versions/#earth-pro),
+- <a href='/files/waypoints/TPCACT2020.wpt' download>TPCACT2020.wpt</a>: For use in the ACTHPA Turnpoint Challenge; includes all waypoints from ACTHPA.wpt, plus waypoints in the Corryong area.
+- <a href='/files/waypoints/TPCACT2020.kml' download>TPCACT2020.kml</a>: Google Earth version.
 
 ## More Info
 
