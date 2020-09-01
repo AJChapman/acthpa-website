@@ -1,5 +1,5 @@
 ---
-title: September Club Meeting / Fly In / Barbeque
+title: September Club Meeting / Fly In
 eventStart: 2020-09-05
 teaser: "Join us on Saturday September 5 for a [club meeting / fly-in](/events/club-meeting-sep-2020) at Spring Hill."
 image: spring-lush-soaring-outlook.jpg
@@ -7,7 +7,16 @@ image: spring-lush-soaring-outlook.jpg
 After a long hiatus our [next club meeting](/events/club-meeting-sep-2020) will be held in a new, COVID-safe format at [Spring Hill](https://siteguide.org.au/Sites/Spring%20Hill.html), where we will meet outdoors, then do some flying or ground handling, or other activity, depending on the weather.
 
 We'll be starting at 10am.
-Bring your own camp chair and shade.
+Bring your own camp chair, shade, and picnic lunch.
+
+Please also help us stick to our COVID plan:
+
+- Do not come if you are unwell,
+- This event is for ACTHPA and SAFA members only,
+- Maintain 1.5 metres physical distance where practical,
+- Handle only your own equipment.
+
+We will be supplying hand sanitiser for your use.
 
 ## Task
 
