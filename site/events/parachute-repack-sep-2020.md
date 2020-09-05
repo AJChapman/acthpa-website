@@ -1,25 +1,17 @@
 ---
 title: Parachute Repack Night
 eventStart: 2020-09-04
-teaser: "The [parachute repack night](/events/parachute-repack-sep-2020) starts at 6pm on Friday September 4 at Mount Stromlo High School."
-image: reserve-drying.jpg
+teaser: "The [parachute repack night](/events/parachute-repack-sep-2020) was held on Friday September 4."
+image: parachute-repack-2020-09-04.jpg
 ---
-The parachute repack night is on Friday September 4 commencing at 6pm at Mount Stromlo High School.
+The parachute repack night was held on Friday September 4 at Mount Stromlo High School.
+
+The event was run by Stephen York and Rafael Esquillaro, both very experienced riggers.
+Stephen also provided 'party bags' packed with the essentials for parachute repacking: rubber bands, string, and lollies.
+Phil Lyng organised the night, which went very smoothly at a great venue.
+
+If you missed the night, or you want your chute professionally repacked Stephen will do this for you for a cost of $80.
+We may also run another repack night in the near future if there is enough interest.
 [Register your interest here](https://tinyurl.com/yxe78955).
 
-The event will be run by Stephen York and Rafael Esquillaro, both very experienced riggers.
-Phil Lyng has done all the organisation for the night and he too has very useful skills.
-
-If you want your chute professionally repacked Stephen will do this for you for a cost of $80, but obviously not on the night in question.
-
-It might be an opportunity to bring your wing as well and if time allows we can do wing checks.
-
-The repack night is at no cost to members.
-
-The first 20 people to register will be accepted and others will be placed on a waiting list for a second night.
-
-We do need a Covid-19 plan to use the hall and we will publish details.
-Obviously they relate to social distancing and hygiene and leaving the hall and facilities clean.
-Please bring hand sanitiser if you have some.
-
-![](/images/alex-reserve.jpg)
+![](/images/parachute-repack-2020-09-04.jpg)

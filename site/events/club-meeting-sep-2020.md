@@ -1,29 +1,20 @@
 ---
 title: September Club Meeting / Fly In
 eventStart: 2020-09-05
-teaser: "Join us on Saturday September 5 for a [club meeting / fly-in](/events/club-meeting-sep-2020) at Spring Hill."
-image: spring-lush-soaring-outlook.jpg
+teaser: "Spring Hill turned on some great flying weather for our [first combined club meeting and fly-in](/events/club-meeting-sep-2020) on Saturday September 5."
+image: spring-flyin-meeting-2020-09-05.jpg
 ---
-After a long hiatus our [next club meeting](/events/club-meeting-sep-2020) will be held in a new, COVID-safe format at [Spring Hill](https://siteguide.org.au/Sites/Spring%20Hill.html), where we will meet outdoors, then do some flying or ground handling, or other activity, depending on the weather.
+We held our first club meeting since the start of the pandemic at [Spring Hill](https://siteguide.org.au/Sites/Spring%20Hill.html) on Saturday September 5.
+The meeting was to start at 10am, but it was flyable, so what are you going to do?
+So we flew, and had the meeting when the wind got too strong for paragliders (the hang gliders were just starting to get into their element).
 
-We'll be starting at 10am.
-Bring your own camp chair, shade, and picnic lunch.
-
-Please also help us stick to our COVID plan:
-
-- Do not come if you are unwell,
-- Do not come if you have visited Victoria in the 14 days prior,
-- Do not come if you have attended any of the reported case locations listed on the [NSW Health website](https://nsw.gov.au/covid-19/latest-news-and-updates),
-- This event is for ACTHPA and SAFA members only,
-- Please register your intent to come on [the Facebook event](https://www.facebook.com/events/1017522405344405),
-- Maintain 1.5 metres physical distance where practical,
-- Handle only your own equipment.
-
-We will be supplying hand sanitiser for your use.
+<div class="inline-img" style="max-width: 100%" data-facybox="gallery" href="/images/spring-flyin-meeting-2020-09-05.jpg">
+![](/images/spring-flyin-meeting-2020-09-05.jpg)
+</div>
 
 ## Task
 
-If it's flyable, we'll have an elapsed-time task for some friendly competition:
+We had an elapsed-time task set for some friendly competition:
 
 - Waypoints file: <a href='/files/waypoints/ACTHPA.wpt' download>ACTHPA.wpt</a>
 - XCTrack task: <a href='/files/tasks/SpringHillFlyIn-2020-09.xctsk' download>SpringHillFlyIn-2020-09.xctsk</a>
@@ -58,4 +49,12 @@ Here are the task details:
 - **Shortest path**: 12.5km
 - **Through centers**: 19.3km
 
-![](/images/spring-lush-soaring-outlook.jpg)
+<div class="inline-img" style="max-width: 90%" data-facybox="gallery" href="/images/spring-crowded-2020-09-05.jpg">
+![](/images/spring-crowded-2020-09-05.jpg)
+</div>
+<div class="inline-img" style="max-width: 90%" data-facybox="gallery" href="/images/spring-two-pilots-2020-09-05.jpg">
+![](/images/spring-two-pilots-2020-09-05.jpg)
+</div>
+<div class="inline-img" style="max-width: 90%" data-facybox="gallery" alt="A pilot flying an EN-A or EN-B BGD wing." href="/images/solo-bgd-pilot-2020-09-05.jpg">
+![](/images/solo-bgd-pilot-2020-09-05.jpg)
+</div>
