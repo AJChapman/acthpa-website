@@ -61,4 +61,4 @@ Also see the [site records page](info/site-records) for records broken down by s
 {{{longestCanberra}}}
 
 [wind talkers]: http://www.freeflightwx.com/acthpa/
-[our Facebook group]: https://www.facebook.com/groups/260458037465074/
+[our Facebook group]: https://www.facebook.com/groups/acthpa

@@ -75,4 +75,4 @@ We have waypoint files for setting tasks around the ACT sites:
 [Pig Hill]: https://siteguide.org.au/Sites/Pig%20Hill.html
 [SAFA]: https://www.safa.asn.au
 [SAFA Visiting Pilot Membership (VPM)]: https://www.safa.asn.au/visiting-international-pilots
-[our Facebook group]: https://www.facebook.com/groups/260458037465074/
+[our Facebook group]: https://www.facebook.com/groups/acthpa

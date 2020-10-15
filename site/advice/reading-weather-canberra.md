@@ -36,7 +36,7 @@ Generally we fly in Canberra blue skies (meaning no clouds) which makes it a lit
 
 ## Short term predictions…
 
-~~_Check the ACT Forum_~~ (Ed: these days use the [Facebook group](https://www.facebook.com/groups/260458037465074/)) to see what other people are saying, usually on a Friday people post predictions for the weekend.
+~~_Check the ACT Forum_~~ (Ed: these days use the [Facebook group](https://www.facebook.com/groups/acthpa)) to see what other people are saying, usually on a Friday people post predictions for the weekend.
 
 [_ACT overview and forecast for the day from the BoM_ (Bureau of Meteorology)](http://www.bom.gov.au/act/forecasts/act.shtml)
 
