@@ -15,7 +15,6 @@ body {
   font-size: 16px;
   line-height: 2;
   font-family: "Roboto", Arial, sans-serif;
-  color: #666666;
   background: #fff; }
 
 #page {
@@ -1441,7 +1440,7 @@ div.left {
 .inline-img figure {
     border: 1px solid grey;
     padding: 1em;
-    margin: 1ex auto;
+    margin: 1em auto;
 }
 
 .inline-img figcaption {
