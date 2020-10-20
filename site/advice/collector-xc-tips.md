@@ -1,8 +1,8 @@
 ---
 title: "Tips for Flying Cross-Country from Collector"
 author: Alex Chapman
-published: 2020-10-18
-image: collector-xc/collector-sign.jpg
+published: 2020-10-20
+image: collector-xc/web_collector-sign.jpg
 ---
 [Collector](/info/sites/#collector) is an excellent cross-country site, even for beginners.
 It's also arguably the best Canberra site for going big distances.
@@ -13,7 +13,7 @@ It can be hard to know which way to go.
 This article will give you some tips to help you get up and away, and on the road to Gundagai.
 
 <div class="inline-img right" style="max-width: 50%" data-fancybox="gallery" href="/images/collector-xc/collector-sign.jpg">
-![Welcome to Collector. Note that the altitudes are all wrong: launch is at 878m, LZ at 685m, and airspace is 6500'.](/images/collector-xc/collector-sign.jpg)
+![Welcome to Collector. Note that the altitudes are all wrong: launch is at 878m, LZ at 685m, and airspace is 6500'.](/images/collector-xc/web_collector-sign.jpg)
 </div>
 
 What follows is based on my experiences as a beginner and intermediate paraglider pilot flying the following routes from Collector, mostly on a Mentor 4 (a high-B wing):
@@ -25,13 +25,13 @@ What follows is based on my experiences as a beginner and intermediate paraglide
 - 40km east to Tarago ([xcontest](https://www.xcontest.org/world/en/flights/detail:alex.chapman/28.10.2019/02:30)) ([ayvri](https://ayvri.com/scene/qv5pp7w15r/ck2a36u5d00011w67fhxxzbeq)) (third attempt, low save),
 - 188km west then south-west to Tarcutta ([xcontest](https://www.xcontest.org/world/en/flights/detail:alex.chapman/19.1.2020/01:45)) ([ayvri](https://ayvri.com/scene/qv5pp7w15r/ck5l1djzh00011w670g1ugaxi)) (second attempt).
 
-Note that when I say 'Collector' in this article, I mean the launch, not the town.
+Note that when I say 'Collector' in this article, I mean the launch, not the nearby town it is named after.
 
-<div class="inline-img" style="max-width: 80%" data-fancybox="gallery" href="/images/collector-xc/alex-following-highway.jpg">
-![Following the Hume Higway](/images/collector-xc/alex-following-highway.jpg)
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/alex-following-highway.jpg">
+![](/images/collector-xc/web_alex-following-highway.jpg)
 </div>
 
-## The Basic XC Algorithm
+## Adjust the basic XC algorithm
 
 The basic XC algorithm is:
 
@@ -71,6 +71,10 @@ First, there are actually plenty of gaps in the trees if you look for them, so l
 Second, the thermals always seem to consolidate behind the ridge, especially as you get higher.
 So going over the back early is an option.
 
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-busy.jpg">
+![Thermic ridge soaring at Collector.](/images/collector-busy.jpg)
+</div>
+
 If you don't like the option of going over the back early, then don't catch take the thermals over the ridge.
 Head out from the ridge and catch a thermal over the flat.
 This way you can get height before you commit to going over the back.
@@ -81,6 +85,10 @@ The other scenario is a day with very little wind.
 Here the challenge is finding a thermal before you lose all your height.
 This is pretty much up to luck.
 You have several options: go right, go straight, or go left.
+
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-launch-outlook-lz.jpg">
+![Launching in light winds at Collector.](/images/collector-launch-outlook-lz.jpg)
+</div>
 
 If you go right, there's first a gully which can often squirt out a tight, turbulent thermal (don't worry, it will get smoother up higher).
 After that the ridge over the winery is often a great source of thermals, but also has some occasionally-unfriendly eagles.
@@ -196,7 +204,7 @@ But if you take a closer look on a map you'll see that there are actually plenty
 And once you go a bit further and get into the forested hills, you'll probably find that there are plenty of thermals, and your problem will once again become staying below airspace, not landing in tiger country.
 
 <div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/collector-high-looking-nw.jpg">
-![High over Collector, looking north-west, roughly the way I recommend going.](/images/collector-xc/collector-high-looking-nw.jpg)
+![High over Collector, looking north-west, roughly the way I recommend going. Hardly any tigers.](/images/collector-xc/collector-high-looking-nw.jpg)
 </div>
 
 ## Where to From Here?
@@ -208,7 +216,7 @@ If you get past the tiger country then go straight on 'til morning.
 </div>
 
 <div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/lake-burrinjuck.jpg">
-![Lake Burrinjuck. After this, airspace steps up to 8500'.](/images/collector-xc/lake-burrinjuck.jpg)
+![Lake Burrinjuck. After this, airspace steps up to 8500'.](/images/collector-xc/web_lake-burrinjuck.jpg)
 </div>
 
 If you keep heading west or north-west then you'll eventually reach the Hume Highway, so you can follow that to make the retrieve easier.
@@ -216,9 +224,19 @@ It eventually turns south-west.
 Note that if you follow that too far you will eventually get to Albury's airspace, so it's probably better to head west again, towards Wagga.
 
 <div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/following-highway.jpg">
-![On the road to Gundagai.](/images/collector-xc/following-highway.jpg)
+![On the road to Gundagai.](/images/collector-xc/web_following-highway.jpg)
 </div>
 
 <div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/jugiong.jpg">
 ![Jugiong. If you get here then you're having a good day.](/images/collector-xc/jugiong.jpg)
 </div>
+
+## See you out there!
+
+I hope this has been useful, and it encourages you to get out to my favourite site and have an adventure.
+If you have any questions, feedback, or tips of your own, please contact me at [alex@farfromthere.net](mailto:alex@farfromthere.net).
+
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-flyby.jpg">
+![](/images/collector-flyby.jpg)
+</div>
+
