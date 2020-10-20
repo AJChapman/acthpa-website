@@ -119,6 +119,10 @@ Keep a look out for clouds, birds, or 'wind technicians' to give you a clue, but
 If you get up on a light wind day then you can go any direction you like (except directly south), so it's worth persisting.
 Head north to Collector, then on to Goulburn, or east to Tarago, then on to Braidwood or even Captain's Flat, then follow the Tinderrys south towards Cooma.
 
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/tarago-lake-bathurst.jpg">
+![Tarago and Lake Bathurst (dry).](/images/collector-xc/web_tarago-lake-bathurst.jpg)
+</div>
+
 ## Expect to bomb out -- persist!
 
 It's pretty common to bomb out at Collector.
@@ -155,7 +159,7 @@ The strategy I have adopted is based on my current height below airspace, in met
 - 400m below: add speed bar,
 - 300m below: remove speed bar, add big-ears, re-apply speed bar gradually,
 - 200m below: big ears and full speed bar,
-- 100m below: expletives.
+- 100m below: emit expletives.
 
 Using this strategy I have still come within 90m of airspace before escaping the lift.
 
@@ -223,12 +227,16 @@ If you keep heading west or north-west then you'll eventually reach the Hume Hig
 It eventually turns south-west.
 Note that if you follow that too far you will eventually get to Albury's airspace, so it's probably better to head west again, towards Wagga.
 
-<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/following-highway.jpg">
-![On the road to Gundagai.](/images/collector-xc/web_following-highway.jpg)
-</div>
-
 <div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/jugiong.jpg">
 ![Jugiong. If you get here then you're having a good day.](/images/collector-xc/jugiong.jpg)
+</div>
+
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/following-highway.jpg">
+![Coolac, on the road to Gundagai.](/images/collector-xc/web_following-highway.jpg)
+</div>
+
+<div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-xc/alex-landed-happy.jpg">
+![That tired-but-satisfied feeling after a nice long flight.](/images/collector-xc/web_alex-landed-happy.jpg)
 </div>
 
 ## See you out there!
