@@ -47,6 +47,12 @@ case "$(basename "$0")" in
         "${BIN_DIR}/build-deploy.sh"
         ;;
 
+    update-scrape-build.sh)
+        "${BIN_DIR}/update.sh"
+        "${BIN_DIR}/scrape.sh"
+        "${BIN_DIR}/build.sh"
+        ;;
+
     update-scrape-build-deploy.sh)
         "${BIN_DIR}/update.sh"
         "${BIN_DIR}/scrape-build-deploy.sh"
