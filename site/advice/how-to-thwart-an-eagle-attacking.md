@@ -17,8 +17,8 @@ Of an angry swooping wedgy
 
 The day before Dave Hanna   
 Found his situation hectic  
-But in true Dave Hanna manne   
-He just pulled an asymmetri
+But in true Dave Hanna manner  
+He just pulled an asymmetric 
 
 So I'd argue that Pete's penguin  
 Remains a topic of debate  
