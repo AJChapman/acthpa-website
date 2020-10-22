@@ -953,6 +953,7 @@ input[type="text"] {
       border: 1px solid #F6490D; }
 
 #colorlib-footer {
+  color: #666666;
   background: #212125; }
   #colorlib-footer .colorlib-footer-links {
     padding: 0;
