@@ -75,7 +75,7 @@ So going over the back early is an option.
 ![Thermic ridge soaring at Collector.](/images/collector-busy.jpg)
 </div>
 
-If you don't like the option of going over the back early, then don't catch take the thermals over the ridge.
+If you don't like the option of going over the back early, then don't catch the thermals over the ridge.
 Head out from the ridge and catch a thermal over the flat.
 This way you can get height before you commit to going over the back.
 
@@ -83,7 +83,7 @@ This way you can get height before you commit to going over the back.
 
 The other scenario is a day with very little wind.
 Here the challenge is finding a thermal before you lose all your height.
-This is pretty much up to luck.
+This is pretty much up to luck[^jono][^stu].
 You have several options: go right, go straight, or go left.
 
 <div class="inline-img" style="max-width: 100%" data-fancybox="gallery" href="/images/collector-launch-outlook-lz.jpg">
@@ -136,7 +136,7 @@ This is part of the mental side of paragliding, and this too takes training.
 The quickest way back up, if you're fit, is to land at the bottom of the ridge and walk back up.
 It's a steep climb that way, but not so far really.
 If it's been raining recently then beware of the swamp between the LZ and the ridge -- it can be almost impassable.
-To avoid it, land nice and close to the ridge, but look out for fences and blackberries, and of course powerlines.
+To avoid it, land nice and close to the ridge, but look out for fences and blackberries, and of course powerlines[^wes].
 
 A longer but less strenuous way to walk is up the spur to the south of launch.
 
@@ -186,7 +186,7 @@ Compare the average speed of those flights with that of my [Tarcutta flight](htt
 ![Collector Airspace.](/files/Collector Airspace.jpg)
 </div>
 
-If you look at a map of the airspace around Collector, the top of 5500' circle is directly to the west.
+If you look at a map of the airspace around Collector, the top of the 5500' circle is directly to the west.
 So if you simply fly due west, your headroom below airspace will suddenly drop by 1000'.
 On a day with low cloudbase, this may be fine, as there may be no chance of breaching airspace anyway.
 But generally I would recommend heading slightly north of west, so that you stay in the 6500' airspace.
@@ -248,3 +248,6 @@ If you have any questions, feedback, or tips of your own, please contact me at [
 ![](/images/collector-flyby.jpg)
 </div>
 
+[^jono]: Jonathan Bishops adds: "Something I do to find that first thermal on a light wind day is look for localised areas of trees/leaves moving, which is often the thermal leaving the surface. Also if I'm low and feel I'm drifting in a direction that isn't the prevailing wind, it is often the air being drawn towards a strong thermal.", and "I like to think there is more to it than just luck 😂".
+[^wes]: Wes Kilham adds: "When you inevitably land at the base of the hill at Collector, having avoided the power lines and the boggy gully, also try to avoid the snakes in the warmer months. There are a lot."
+[^stu]: Stuart McElroy adds: "There is sometimes a form of 'hill convergence' extending from the vineyard eastward. I've used this twice to access the Currawang massif that you see on the other side of the highway when looking east from launch. Also, if you are loitering around out the front the highway is a great trigger, and so too is the lonely tree in a big paddock...there is one out in the paddock east of the dentists house which the eagles use, and I've had some luck with too."
