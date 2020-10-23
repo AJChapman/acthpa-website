@@ -56,12 +56,11 @@ The [HGFA Open Channel](http://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.
 
 ### Waypoints
 
-We have waypoint files for setting tasks around the ACT sites:
+We have waypoint files for setting tasks around the ACT sites, courtesy of the [Turnpoint Challenge](/events/turnpoint-challenge-2020):
 
-- <a href='/files/waypoints/ACTHPA.wpt' download>ACTHPA.wpt</a>: For flight instruments,
-- <a href='/files/waypoints/ACTHPA.kml' download>ACTHPA.kml</a>: For use in [Google Earth Pro](https://www.google.com/earth/versions/#earth-pro),
-- <a href='/files/waypoints/TPCACT2020.wpt' download>TPCACT2020.wpt</a>: For use in the ACTHPA Turnpoint Challenge; includes all waypoints from ACTHPA.wpt, plus waypoints in the Corryong area.
-- <a href='/files/waypoints/TPCACT2020.kml' download>TPCACT2020.kml</a>: Google Earth version.
+- <a href='/files/waypoints/TPCACT2020-v1.0.wpt' download>TPCACT2020-v1.0.wpt</a>: Over 150 waypoints in the Canberra area, plus Corryong.
+- <a href='/files/waypoints/TPCACT2020-v1.0.kml' download>TPCACT2020-v1.0.kml</a>: Google Earth version.
+- <a href='/files/waypoints/TPCACT2020F-v1.0.txt' download>TPCACT2020F-v1.0.txt</a>: An 'airspace' file that gives each waypoint a 400m radius and marks it as an airspace for your flight instrument.
 
 ## More Info
 
