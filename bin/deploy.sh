@@ -3,7 +3,7 @@
 # Run this command from anywhere as deploy.sh.
 # It assumes certain things about the environment:
 #   1. deploy.sh is in the bin/ dir of the acthpa-website/ directory
-#   2. There exists an folder at acthpa-website/../acthpa.org that is configured to be a WebDAV mount of the acthpa.org web server.
+#   2. The web server will serve the gen/ dir, which must be chowned :zulip (because this is how it is on the server)
 #   3. You have nix installed.
 
 set -euo pipefail
@@ -14,8 +14,9 @@ BIN_DIR=$(dirname "$(readlink -f "$0")")
 
 # And of our repo
 ACTHPA_DIR=$(readlink -f "${BIN_DIR}/..")
-MOUNT=${MOUNT:-"${ACTHPA_DIR}/../acthpa.org"}
-DEPLOY_TO=${DEPLOY_TO:-"${MOUNT}/public_html/"}
+
+GEN_DIR=${ACTHPA_DIR}/gen
+WEB_USER_GROUP=zulip
 
 # Make sure we're in the acthpa-website base dir
 cd "${ACTHPA_DIR}"
@@ -69,14 +70,7 @@ case "$(basename "$0")" in
         ;;
 
     deploy.sh)
-        # Make sure the WebDAV directory is mounted (seems we need to retry a couple of times)
-        mountpoint -q "${MOUNT}" || mount "${MOUNT}" || true
-        mountpoint -q "${MOUNT}" || (sleep 1; mount "${MOUNT}") || true
-        mountpoint -q "${MOUNT}" || (sleep 5; mount "${MOUNT}")
-
-        rsync -rtv gen/ "${DEPLOY_TO}"
-
-        umount "${MOUNT}"
+        chown -R :${WEB_USER_GROUP} ${GEN_DIR}
         ;;
 
     nix-exec.sh)
