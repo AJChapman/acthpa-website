@@ -43,8 +43,9 @@ module Main
   , addTableClassToTables
   ) where
 
-import Control.Lens                 (ASetter', Prism', Traversal', at, makeLenses, only,
-                                     prism', re, toListOf, view)
+import Control.Lens                 (ASetter', Prism', Traversal', at,
+                                     makeLenses, only, prism', re, toListOf,
+                                     view)
 import Control.Lens.Operators       hiding ((.=))
 import Control.Lens.Plated          (deep)
 import Control.Monad                (void)
@@ -214,8 +215,11 @@ addScrapedContent = do
 
 --------------------------------------------------------------------------------
 addTableClassToTables :: Text -> Text
-addTableClassToTables =
-  htmlChunks . traverse . nodeTablesClass ?~ "table"
+addTableClassToTables t =
+  "<div class='table-responsive'>"
+  <> (t & htmlChunks . traverse . nodeTablesClass
+        ?~ "table table-striped")
+  <> "</div>"
 
 htmlChunks :: Prism' Text [Node]
 htmlChunks = prism' joinNodes getNodes where
