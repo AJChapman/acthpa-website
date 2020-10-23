@@ -1,6 +1,8 @@
 ---
 title: "Novice Experiences at the Manilla XC Camp"
 published: 2020-02-05
+image: alex-boiko-in-flight.jpg
+teaser: Alex Boiko [reflects on his trip](/advice/novice-experiences-of-manilla-xc-camp) to the Manilla XC Camp as a novice pilot this year.
 ---
 > The [Manilla XC Camp] is an annual event held in northern NSW over the week including Australia day.
 > All are welcome to fly XC in whatever direction they choose, with competition categories from beginner upwards.

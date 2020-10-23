@@ -8,7 +8,7 @@ It is both a State Association affiliated with the Sports Aviation Federation of
  
 ## Contact Us
 
-To get in contact with the ACTHPA committee, email office.acthpa@gmail.com or call our president, Rene Sedlmaier, on 0408 621 100.
+To get in contact with the ACTHPA committee, email office@acthpa.org or call our president, Rene Sedlmaier, on 0408 621 100.
 
 ## ACT SAFA Regional Development Levy
 

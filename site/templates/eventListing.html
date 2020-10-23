@@ -1,3 +1,3 @@
 <a href='{{url}}'>{{title}}</a> {{#eventStart}}: {{eventStart}}{{#eventFinish}} to {{eventFinish}}{{/eventFinish}}{{/eventStart}}
-{{#teaser}}<p>{{{teaser}}}</p>{{/teaser}}
+{{#teaser}}{{#published}} {{published}}{{/published}}<p>{{{teaser}}}</p>{{/teaser}}
 {{#image}}<p><img class="event-image" alt="{{title}}" src="/images/{{image}}" /></p>{{/image}}

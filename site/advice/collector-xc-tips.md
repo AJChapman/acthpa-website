@@ -3,6 +3,7 @@ title: "Tips for Flying Cross-Country from Collector"
 author: Alex Chapman
 published: 2020-10-20
 image: collector-xc/web_collector-sign.jpg
+teaser: Alex Chapman gives us some [tips for flying XC](/advice/collector-xc-tips) from the site just north of Canberra, at the northern end of Lake George.
 ---
 [Collector](/info/sites/#collector) is an excellent cross-country site, even for beginners.
 It's also arguably the best Canberra site for going big distances.

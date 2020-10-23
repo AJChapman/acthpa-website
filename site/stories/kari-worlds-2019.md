@@ -3,6 +3,8 @@ title: "Racing at the Paragliding World Championships 2019"
 author: Kari Ellis
 tags: [paraglider, racing, world-championships]
 description: Kari Ellis's experiences in the Paragliding World Championships 2019, in Krushevo, Macedonia.
+teaser: Kari Ellis gives us [a detailed breakdown](/stories/kari-worlds-2019) of what it was like to fly in the world paragliding championships in Krushevo, Macedonia in 2019.
+image: kari-worlds-2019/task8-kari-launch-jumper.jpg 
 eventStart: 2019-08-07
 eventFinish: 2019-08-17
 ---
@@ -238,5 +240,3 @@ Thank you to the organisation for an epic competition. Thank you to Dave and Phi
 It’s been an honour and a privilege to represent Australia here. I will be back for the 2021 Worlds in Annecy for sure!!! 🇦🇺
 
 ![](/images/kari-worlds-2019/task10-spot-tracker.jpg)
-
-

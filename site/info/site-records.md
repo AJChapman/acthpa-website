@@ -44,7 +44,7 @@ Flights need to be submitted to the XC contest server and the records are open t
 
 http://www.xcontest.org/australia/
 
-If a member would like a flight reviewed as being an official record please request by emailing office.acthpa@gmail.com.
+If a member would like a flight reviewed as being an official record please request by emailing office@acthpa.org.
 Each month we acknowledge the winners at the club meeting and all site records to the ACTHPA website.
 
 ## Checking airspace compliance

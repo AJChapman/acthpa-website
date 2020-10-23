@@ -2,6 +2,7 @@
 title: HOW TO THWART AN EAGLE ATTACKING
 subtitle: A PARAGLIDER OR HANG GLIDER (PART TWO)
 author: Wes Kilham, Poet in Residence
+teaser: Wes Kilham [gives us some sage advice](/advice/how-to-thwart-an-eagle-attacking) on avoiding this common peril.
 published: 2016-01-28
 ---
 

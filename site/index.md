@@ -25,14 +25,14 @@ Each pilot is individually responsible to ensure that they comply with all laws 
 You must not rely on this notice for that reasonable excuse.
 Should pilots be queried about travel to and from these sites by police, please abide by the police directive and report your interaction to the ACTHPA committee so that information can be passed to members and ACTHPA guidance updated.
 
-## About ACTHPA
+## [About ACTHPA](info/about)
 
 The [ACT Hang gliding and Paragliding Association (ACTHPA)](info/about) is the club for all hang gliders, paragliders and their motorised forms in the region.
 The region is excellent for carbon-free flying and there are some great areas for motorised flight as well.
 We have [many excellent sites](info/sites), local paragliding instructors and an active pilot community.
 We maintain a number of launch sites, and [wind talkers] in the local area to help in deciding when and where to fly.
 
-## Flying in Canberra
+## [Flying in Canberra](info)
 
 If it is 'on' then you can pretty much guarantee that someone will be out flying.
 If you are planning to go for a fly at [one of our sites](/flying-ACT/sites), please post a message on [our Facebook group] so you can meet up with others.
@@ -47,9 +47,8 @@ If you're interested in learning to fly, take a look at the [SAFA Schools page](
 
 ## Club Meetings
 
-Club meetings are held on the first Tuesday of each month (except December and January) at [the Canberra Labor Club](http://www.laborclub.com.au) in Weston Creek starting at 7.30 pm.
+Club meetings are now held on the first Saturday of each month at [Spring Hill](/info/sites/#spring-hill), at 10am.
 At the meetings we talk about flying and put members in contact with each other.
-We have a strong social scene.
 
 ## Recent Flights Around Canberra
 

@@ -2,6 +2,8 @@
 title: "Flying in Canberra - a few tips"
 author: Barry Oliver
 tags: [weather, Canberra, advice]
+published: 2017-01-01
+teaser: Barry Oliver gives us [a guide](/advice/flying-canberra-a-few-tips) to deciding where and when to fly, and how to fly Lake George in particular.
 ---
 
 Below is an article by Barry Oliver outlining his flying routine as it

@@ -12,6 +12,7 @@ module Main
   , Home(..)
   , homePage
   , homeFeatures
+  , homeHistory
   , EventList
   , elPage
   , elEvents
@@ -42,15 +43,15 @@ module Main
   , addTableClassToTables
   ) where
 
-import Control.Lens                 (Lens', Prism', Traversal', at, makeLenses,
-                                     only, prism', re, toListOf, view)
+import Control.Lens                 (ASetter', Prism', Traversal', at, makeLenses, only,
+                                     prism', re, toListOf, view)
 import Control.Lens.Operators       hiding ((.=))
 import Control.Lens.Plated          (deep)
 import Control.Monad                (void)
 import Data.Aeson                   (FromJSON, ToJSON, Value (..), object,
                                      toJSON, (.=))
 import Data.Aeson.Generic.Shorthand (CamelFields, GenericToFromJSON (..))
-import Data.Aeson.Lens              (_Object, _String)
+import Data.Aeson.Lens              (key, _Object, _String)
 import Data.Binary.Instances.Time   ()
 import Data.Foldable                (traverse_)
 import Data.List.NonEmpty           (NonEmpty (..), nonEmpty)
@@ -91,7 +92,8 @@ outputFolder = "gen/"
 
 data Home = Home
   { _homePage     :: Page
-  , _homeFeatures :: [Page]
+  , _homeFeatures :: [Page] -- ^ Featured at the top
+  , _homeHistory  :: [Page] -- ^ Listed at the bottom
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] Home)
 $(makeLenses ''Home)
@@ -190,7 +192,7 @@ makeMenu Site{..} =
     ]
 
 setTextValue :: Text -> Text -> Value -> Value
-setTextValue k t = _Object . at k ?~ String t
+setTextValue k t = _Object . (at k) ?~ String t
 
 copyStaticFiles :: Action ()
 copyStaticFiles = do
@@ -262,33 +264,33 @@ loadPage srcPath = cacheAction ("build" :: Text, srcPath) $ do
 data Tense = Future | Present | Past
   deriving (Eq, Ord, Show)
 
-pageTense :: Day -> Page -> Maybe Tense
+pageTense :: Day -> Page -> Tense
 pageTense today Page{..} =
   case _pageEventStart of
-    Nothing -> Nothing
+    Nothing -> Past
     Just start ->
       if start > today
-        then Just Future
+        then Future
         else case _pageEventFinish of
-          Nothing -> Just Past
+          Nothing -> Past
           Just finish ->
             if finish < today
-              then Just Past
-              else Just Present
+              then Past
+              else Present
 
 inFuture, inPast, inPresent :: Day -> Page -> Bool
 inFuture today page =
-  pageTense today page == Just Future
+  pageTense today page == Future
 inPresent today page =
-  pageTense today page == Just Present
+  pageTense today page == Present
 inPast today page =
-  pageTense today page == Just Past
+  pageTense today page == Past
 
 buildHome :: Site -> Home -> Action ()
 buildHome site home = do
   homeT <- compileTemplate' "site/templates/index.html"
   writeOutFileWithTemplate
-    homeT site (home ^. homePage) (homePage . pageContent) home
+    homeT site (home ^. homePage) (toJSON home) (home ^. homePage . pageContent) (key "page" . _Object . at "content")
 
 buildEvents :: Site -> EventList -> Action ()
 buildEvents site EventList{..} = do
@@ -338,27 +340,42 @@ buildPageDefault = buildPage "default"
 buildPage :: Text -> Site -> Page -> Action ()
 buildPage templateName site page@Page{..} = do
   template <- compileTemplate' $ "site/templates/" <> T.unpack templateName <> ".html"
-  writeOutFileWithTemplate template site page pageContent page
+  writeOutFileWithTemplate template site page (toJSON page) (page ^. pageContent) (_Object . at "content")
 
-writeOutFileWithTemplate :: ToJSON a => Template -> Site -> Page -> Lens' a Text -> a -> Action ()
-writeOutFileWithTemplate template site page lContent obj = do
+-- writeOutFileWithTemplate :: ToJSON a => Template -> Site -> Page -> Lens' a Text -> a -> Action ()
+-- writeOutFileWithTemplate template site page lContent obj = do
+--   liftIO . putStrLn $ "Writing page: " <> pageFilePath page
+--   withScrapedContent <- addScrapedContent
+--   let relPath = pageFilePath page
+--       addToVars =
+--         addMenu site page     -- Plus the page menu
+--         . withScrapedContent    -- Plus scraped content
+--         . setTextValue "root" (T.pack $ pathToRootPath relPath)
+--       templateVars = toJSON obj & addToVars -- The page and metadata
+--   -- Render the content, expanding any mustache within the markdown
+--   renderedContent <- substituteInContent templateVars (obj ^. lContent)
+--   let templateVars' = obj
+--         & lContent .~ addTableClassToTables renderedContent
+--         & toJSON
+--         & addToVars
+--   -- Render the whole page
+--   content <- substitute' template templateVars'
+--   writeFile' (outputFolder </> relPath) (T.unpack content)
+
+writeOutFileWithTemplate :: Template -> Site -> Page -> Value -> Text -> ASetter' Value (Maybe Value) -> Action ()
+writeOutFileWithTemplate template site page vars content pContent = do
   liftIO . putStrLn $ "Writing page: " <> pageFilePath page
   withScrapedContent <- addScrapedContent
   let relPath = pageFilePath page
-      addToVars =
-        addMenu site page     -- Plus the page menu
-        . withScrapedContent    -- Plus scraped content
-        . setTextValue "root" (T.pack $ pathToRootPath relPath)
-      templateVars = toJSON obj & addToVars -- The page and metadata
-  -- Render the content, expanding any mustache within the markdown
-  renderedContent <- substituteInContent templateVars (obj ^. lContent)
-  let templateVars' = obj
-        & lContent .~ addTableClassToTables renderedContent
-        & toJSON
-        & addToVars
-  -- Render the whole page
-  content <- substitute' template templateVars'
-  writeFile' (outputFolder </> relPath) (T.unpack content)
+      vars' = vars
+        & addMenu site page
+        & withScrapedContent
+        & setTextValue "root" (T.pack $ pathToRootPath relPath)
+  content' <- substituteInContent vars' content
+  let content'' = addTableClassToTables content'
+      vars'' = vars' & pContent ?~ String content''
+  rendered <- substitute' template vars''
+  writeFile' (outputFolder </> relPath) (T.unpack rendered)
 
 substitute' :: ToJSON k => Template -> k -> Action Text
 substitute' tpl v = do
@@ -425,6 +442,16 @@ buildRules = do
       future = EventList futurePage futureEvents
       past   = EventList pastPage pastEvents
 
+  -- Advice
+  advicePage'     <- loadPage "site/advice.md"
+  advicePages'    <- loadSortedPages today "site/advice//*.md"
+  let advice = Advice advicePage' advicePages'
+
+  -- Stories
+  storiesPage'     <- loadPage "site/stories.md"
+  storiesPages'    <- loadSortedPages today "site/stories//*.md"
+  let stories = Stories storiesPage' storiesPages'
+
   -- Home
   homePage' <- loadPage "site/index.md"
   let home = Home homePage'
@@ -434,6 +461,10 @@ buildRules = do
           $ currentEvents
           <> take 4 futureEvents
           <> take 4 pastEvents)
+        (chooseFeatures today
+          $ allEventPages
+          <> advicePages'
+          <> storiesPages')
 
   -- Info
   infoPage'            <- loadPage "site/info.md"
@@ -450,16 +481,6 @@ buildRules = do
         siteRecordsPage
         weatherResourcesPage
         -- faqPage
-
-  -- Advice
-  advicePage'     <- loadPage "site/advice.md"
-  advicePages'    <- loadSortedPages today "site/advice//*.md"
-  let advice = Advice advicePage' advicePages'
-
-  -- Stories
-  storiesPage'     <- loadPage "site/stories.md"
-  storiesPages'    <- loadSortedPages today "site/stories//*.md"
-  let stories = Stories storiesPage' storiesPages'
 
   buildSite $ Site home now future past info advice stories
 
