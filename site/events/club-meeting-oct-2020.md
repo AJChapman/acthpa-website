@@ -2,7 +2,7 @@
 title: October AGM / Fly In
 eventStart: 2020-10-03
 teaser: "We held [our AGM](/events/club-meeting-oct-2020) on Saturday October 3rd at Spring Hill."
-image: 2020-oct-agm/crop_agm-spring-hill.png
+image: 2020-oct-agm/crop_agm-spring-hill.jpg
 ---
 
 <div class="inline-img" data-fancybox="gallery" href="/images/2020-oct-agm/agm-spring-hill.jpg">
