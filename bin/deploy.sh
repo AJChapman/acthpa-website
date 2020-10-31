@@ -7,7 +7,7 @@
 #   3. You have nix installed.
 
 set -euo pipefail
-set -x
+# set -x
 
 # Get the location of this script
 BIN_DIR=$(dirname "$(readlink -f "$0")")
