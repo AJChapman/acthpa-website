@@ -5,25 +5,14 @@ title: Home
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/470868857?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <br />
 
-## Current COVID-19 Policy (updated 20 April 2020)
+## Current COVID-19 Policy (updated 8 December 2020)
 
-All of ACTHPA's sites are currently open, but please see the advice below.
-We note the current NSW government restrictions on travel for essential purposes only and advise pilots to ensure their travel for exercise purposes complies with these NSW government restrictions.
- 
-We reiterate our previous hygiene and social distancing advice:
+The four main ACTHPA sites (Lake George, Lanyon, Spring Hill, and Collector) are currently open.
+However, both the ACT and NSW governments still have restrictions in place in relation to gatherings of people.
 
--  Fly at your closest currently flyable site.
--  It is strongly advised you carry hand sanitiser and/or wash your hands before and after opening and closing any gates or interacting with any fences.
--  When on site you must stay 2m away from any other pilots at all times.
--  Fly within the footprint of the site and only land in the designated landing zones for the site.
--  XC flying is not advised.
--  No car pooling or lifts up the hill.
--  Please do not drive another pilot’s car down the hill if possible.
--  If you require an SO or duty pilot to fly you can post a request for someone to contact you to arrange a site briefing and ok to fly.
+***All pilots must comply with all government guidelines and restrictions when travelling to and flying or gathering at all ACTHPA sites.***
 
-Each pilot is individually responsible to ensure that they comply with all laws and regulations, including all aspects of the public health order related to having a reasonable excuse for leaving home.
-You must not rely on this notice for that reasonable excuse.
-Should pilots be queried about travel to and from these sites by police, please abide by the police directive and report your interaction to the ACTHPA committee so that information can be passed to members and ACTHPA guidance updated.
+If flying XC, please be aware that hitchhiking may be more difficult than usual.
 
 ## [About ACTHPA](info/about)
 
