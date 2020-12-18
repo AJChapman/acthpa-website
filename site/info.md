@@ -52,7 +52,7 @@ The penalties for flying in controlled airspace without authorisation are harsh 
 ### Communication
 
 UHF radios are used for communication between pilots and others such as ground crew and landholders.
-The [HGFA Open Channel](http://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 Mhz, no tone squelch) is the main communication channel used by paraglider pilots, while hang glider pilots are using Channel 14 (476.750 MHz) CTCSS 71.9.
+[See here for more details](/info/radios).
 
 ### Waypoints
 

@@ -22,6 +22,7 @@ module Main
   , Info(..)
   , infoPage
   , infoSites
+  , infoRadios
   , infoSiteRecords
   , infoWeatherResources
   -- , infoFAQ
@@ -116,6 +117,7 @@ makeLenses ''About
 data Info = Info
   { _infoPage             :: Page
   , _infoAbout            :: About
+  , _infoRadios           :: Page
   , _infoSites            :: Page
   , _infoSiteRecords      :: Page
   , _infoWeatherResources :: Page
@@ -163,6 +165,7 @@ instance ToMenuItem Info where
     BranchItem (_infoPage & pageTitle .~ "Info") $ NE.fromList
       [ toMenuItem _infoPage
       , toMenuItem _infoSites
+      , toMenuItem _infoRadios
       , toMenuItem _infoSiteRecords
       , toMenuItem _infoWeatherResources
       -- , toMenuItem _infoFAQ
@@ -330,6 +333,7 @@ buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
   let pages =
         [ _infoSites
+        , _infoRadios
         , _infoSiteRecords
         , _infoWeatherResources
         -- , _infoFAQ
@@ -476,12 +480,14 @@ buildRules = do
   about                <- loadPage "site/info/about.md"
   -- faqPage              <- loadPage "site/info/faq.md"
   sitesPage            <- loadPage "site/info/sites.md"
+  radiosPage           <- loadPage "site/info/radios.md"
   siteRecordsPage      <- loadPage "site/info/site-records.md"
   weatherResourcesPage <- loadPage "site/info/weather-resources.md"
   let info = Info
         infoPage'
         (About about lifeMemberPages)
         sitesPage
+        radiosPage
         siteRecordsPage
         weatherResourcesPage
         -- faqPage
