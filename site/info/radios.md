@@ -1,6 +1,9 @@
 ---
 title: Radios
 ---
+<div class="inline-img" data-fancybox="gallery" href="/images/radios-2.jpg">
+![](/images/radios-2_web.jpg)
+</div>
 
 ## UHF Radios
 
