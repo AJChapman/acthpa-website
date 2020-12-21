@@ -12,10 +12,10 @@ The ACTHPA radio channel is *HGFA Open* (472.125 MHz, no tone squelch), though w
 
 ## Explanation of SAFA/HGFA Channels
 
-In Australia we have [80 CB channels](https://en.wikipedia.org/wiki/UHF_CB#UHF_CB_band_plan), in the frequency range of 476.425 MHz to 477.4125 Mhz.
-But SAFA has purchased rights to use another UHF channel outside of this range, at 472.125 Mhz.
+In Australia we have [80 CB channels](https://en.wikipedia.org/wiki/UHF_CB#UHF_CB_band_plan), in the frequency range of 476.425 MHz to 477.4125 MHz.
+But SAFA has purchased rights to use another UHF channel outside of this range, at 472.125 MHz.
 Within that single frequency SAFA have nominated four CTCSS frequencies that pilots can use, so as to make the most of this single channel by dividing it up into four distinct sub-channels.
-These sub-channels are not quite as good as having four distinct channels, because transmissions on any one of the four will lock others out for the duration of the transmission, even if they are using a different sub-channel.
+These sub-channels are not quite as good as having four distinct channels, because transmissions on any one of the four will lock others out for the duration of the transmission, even if they are using a different sub-channel^[Assuming Busy Channel Lockout (see glossary) is enabled, otherwise they will unknowingly transmit over the top of each other, also bad.].
 To make matters slightly more complicated, we also have the option of using the SAFA frequency *without* tone squelch.
 We refer to this as *HGFA Open*.
 
@@ -26,13 +26,14 @@ See below for a summary of the differences between these two.
 
 The *HGFA Open* (*SAFA 5 Open*) channel ignores CTCSS, so it can hear transmissions from any of the other HGFA channels:
 
-| When someone is transmitting on &#92; Can you hear it on: | HGFA Open | HGFA1  | HGFA2  | HGFA3  | HGFA4  |
-| --------------------------------- | --------- | ------ | ------ | ------ | ------ |
-| HGFA Open                         | Yes       | No     | No     | No     | No     |
-| HGFA1                             | Yes       | Yes    | No     | No     | No     |
-| HGFA2                             | Yes       | No     | Yes    | No     | No     |
-| HGFA3                             | Yes       | No     | No     | Yes    | No     |
-| HGFA4                             | Yes       | No     | No     | No     | Yes    |
+|         When someone transmits on: | HGFA Open | HGFA1  | HGFA2  | HGFA3  | HGFA4  |
+| ---------------------------------- | --------- | ------ | ------ | ------ | ------ |
+| **Can it be heard on:**            |           |        |        |        |        |
+| **HGFA Open**                      | Yes       | Yes    | Yes    | Yes    | Yes    |
+| **HGFA1**                          | No        | Yes    | No     | No     | No     |
+| **HGFA2**                          | No        | No     | Yes    | No     | No     |
+| **HGFA3**                          | No        | No     | No     | Yes    | No     |
+| **HGFA4**                          | No        | No     | No     | No     | Yes    |
 
 The result of this is that if you use *HGFA Open*, you will hear everyone, but only other *HGFA Open* users will hear you.
 If you use any of the other HGFA channels then you will only hear other users of the same HGFA channel, and they will only hear you.
@@ -58,11 +59,13 @@ Fortunately the old channels and the new are roughly interoperable, though the q
 
 ## Glossary
 
+- **Bandwidth**: The span of frequencies a radio transmission uses. When a radio is set to use a particular frequency (e.g. 472.125 MHz) it doesn't just transmit on this frequency; it transmits across a band of frequencies. For UHF radios this band is typically either 12.5 kHz (narrow band) or 25 kHz (wide band).
 - **Busy Channel Lockout**: This radio feature stops you from transmitting if anyone else is transmitting on the same frequency. Without this feature enabled users would interfere with each other's messages if they transmitted at the same time, and would do this unknowingly when using different CTCSS frequencies.
-- **Channel**: In the context of UHF radios, this is a particular frequency (and bandwidth) used to send and receive radio messages. UHF Channel frequencies are given in megahertz (MHz), and their bandwidths in kilohertz (kHZ). Compare with CTCSS freqencies, which are given in hertz (Hz).
+- **Channel**: A channel is a particular radio configuration in which users can hear each other when they send and receive radio messages. In some cases this can just mean that they are using the same UHF frequency. In other cases, such as when CTCSS is used, it is when they share the same UHF frequency and the same CTCSS frequency. Note that when CTCSS is being used, multiple channels can share the same frequency.
 - **CTCSS**: (from [Wikipedia](https://en.wikipedia.org/wiki/UHF_CB#CTCSS)) "Continuous tone coded squelch system (CTCSS) allows a group of radios set with the same tone to converse on a channel without hearing other radios using that channel. CTCSS can be used to silence a radio until another radio with the same tone transmits. This allows monitoring of a channel for transmissions from radios set with the same tone without hearing other conversations that use different or even no tone."
 - **CTCSS Frequency**: A frequency in the range 67.0 Hz to 254.1 Hz, which defines a particular CTCSS sub-channel.
 - **CTCSS Code Number**: Some radios (e.g. those made by Uniden) list their CTCSS frequencies by number, rather than by frequency. So, for example, the SAFA1, SAFA2, SAFA3, and SAFA4 CTCSS frequencies (192.8, 82.5, 110.9, 151.4 Hz) are CTCSS code numbers 31, 6, 15 and 24, respectively ([source](https://www.uniden.com.au/wp-content/uploads/OM_XTRAK_40.pdf)). Unfortunately these numbers are not standard across different radio manufacturers! For example, the ICOM numbers for the same frequencies are 39, 8, 17 and 26. So in general it is better to talk about CTCSS frequencies, rather than numbers.
 - **CTCSS Transmit and CTCSS Receive**: Some radios allow you to set the CTCSS frequency you *transmit* with differently to the one you *receive* with. When programming one of these radios make sure you set both
 - **DCS**: Digital-Coded Squelch. Also known as CDCSS, DTCS. A digital variation on CTCSS concept. Not used by ACTHPA.
 - **Tone squelch**: See CTCSS.
+- **UHF**: Ultra High Frequency, generally measured in megahertz (MHz). CB Radios are UHF radios.
