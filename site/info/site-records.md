@@ -2,7 +2,7 @@
 title: "Site Records"
 ---
 
-| Wing Type / Flying Site | Spring Hill                                       | Collector                                                   | Gearys Gap                                                |  Pig Hill                                      |  Lanyon                                                   | Binalong                                                | Honeysuckle                                                |
+| Wing Type / Flying Site | Spring Hill                                       | Collector                                                   | Geary's Gap                                                |  Pig Hill                                      |  Lanyon                                                   | Binalong                                                | Honeysuckle                                                |
 | ----------------------- | ------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------- | -----------                                                |
 | *PG Beginner (EN-A)*    | [4km triangle 27/9/2020 Marco Gandi][marco-spring]|                                                             | [25.76 km triangle 8/11/2020 Marco Gandi][marco-gearys]   |                                                |                                                           |                                                         | [5.47 km triangle 25/1/2014 Dave Clarke][dave-honeysuckle] |
 | *PG Intermediate (EN-B)*| [28.14 km 19/3/2016 Shaun Archer][shaun-spring]   | [188.17 km 19/1/2020 Alex Chapman][alex-collector]          | [33.86km triangle 6/7/2019 Graham Rose][grum-gearys]      | [28.83 km 9/3/2008 Barry Oliver][barry-pig]    | [5.90 km 1/1/2018 Shaun Archer][shaun-lanyon]             | [3.5 km 9/11/2008  David Scott][david-binalong]         | [165.71 km 10/12/2020 Daniel Thuillier][dan-honeysuckle]   |
@@ -61,3 +61,29 @@ When submitting your IGC file the XC contest site will check for airspace infrin
 ## Region Longest Flights
 
 {{{longestCanberra}}}
+
+## Site Longest Flights
+
+### Spring Hill
+
+{{{longestSpringHill}}}
+
+### Collector
+
+{{{longestCollector}}}
+
+### Geary's Gap (Lake George)
+
+{{{longestLakeGeorge}}}
+
+### Pig Hill
+
+{{{longestPigHill}}}
+
+### Lanyon
+
+{{{longestLanyon}}}
+
+### Honeysuckle (Tumut)
+
+{{{longestHoneysuckle}}}
