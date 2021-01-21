@@ -184,7 +184,7 @@ The one thing it has going for it is live location tracking.
 
 WhatsApp is better than Facebook Messenger in that it lets you have invite links that users can use to add themselves to a group.
 We have trialed using WhatsApp for ad-hoc daily flying groups, and it works well if someone sets it up, but it takes someone to set it up, and someone doesn't always do this.
-It also doesn't have threaded discussion topics, but does have live location tracking. 
+It also doesn't have threaded discussion topics, but does have live location tracking.
 If we had one big WhatsApp group then we would get real-time push notifications, but it would be like a firehose of messages, which would naturally suppress discussion as people don't want to bother others with trivial chat.
 
 #### Why not Telegram?
