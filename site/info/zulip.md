@@ -14,14 +14,6 @@ So please give us your feedback, preferably in the [\# Zulip Meta] stream.
 
 ## Quick Start Guide
 
-<div class="inline-img right" data-fancybox="gallery" style="max-width: 50%" href="/images/zulip.png">
-![A Zulip chat session. Streams are on the left, with topics beneath them. Chat is on the right.](/images/zulip.png)
-</div>
-
-<div class="inline-img right" data-fancybox="gallery" style="max-width: 20%" href="/images/zulip-mobile.jpg">
-![The Zulip App, in the [\# Comps] channel. You can also use your phone's browser, but this won't give you notifications.](/images/zulip-mobile.jpg)
-</div>
-
 **Step 1:** Sign up.
 To sign up, point your web browser at <https://zulip.acthpa.org/register>.
 You can create an account on the Zulip server using your email address, or you can use an existing Facebook or GitHub account.
@@ -53,6 +45,14 @@ You should now start getting notifications when someone posts in a stream you're
 - And more: search, private messages, ad-hoc groups, etc.
 
 ## Streams
+
+<div class="inline-img right" data-fancybox="gallery" style="max-width: 50%" href="/images/zulip.png">
+![A Zulip chat session. Streams are on the left, with topics beneath them. Chat is on the right.](/images/zulip.png)
+</div>
+
+<div class="inline-img right" data-fancybox="gallery" style="max-width: 20%" href="/images/zulip-mobile.jpg">
+![The Zulip App, in the [\# Comps] channel. You can also use your phone's browser, but this won't give you notifications.](/images/zulip-mobile.jpg)
+</div>
 
 You can think of streams as channels, or rooms, in which only a particular type of topic is discussed.
 This way you have the option to only join the ones you're interested in, e.g. join [\# HG], but not [\# PG] and you won't hear all the paraglider chatter if you're only interested in hang gliding.
