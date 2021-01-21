@@ -23,6 +23,7 @@ module Main
   , infoPage
   , infoSites
   , infoRadios
+  , infoZulip
   , infoSiteRecords
   , infoWeatherResources
   -- , infoFAQ
@@ -118,6 +119,7 @@ data Info = Info
   { _infoPage             :: Page
   , _infoAbout            :: About
   , _infoRadios           :: Page
+  , _infoZulip            :: Page
   , _infoSites            :: Page
   , _infoSiteRecords      :: Page
   , _infoWeatherResources :: Page
@@ -165,8 +167,9 @@ instance ToMenuItem Info where
     BranchItem (_infoPage & pageTitle .~ "Info") $ NE.fromList
       [ toMenuItem _infoPage
       , toMenuItem _infoSites
-      , toMenuItem _infoRadios
       , toMenuItem _infoSiteRecords
+      , toMenuItem _infoRadios
+      , toMenuItem _infoZulip
       , toMenuItem _infoWeatherResources
       -- , toMenuItem _infoFAQ
       , toMenuItem _infoAbout
@@ -333,8 +336,9 @@ buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
   let pages =
         [ _infoSites
-        , _infoRadios
         , _infoSiteRecords
+        , _infoRadios
+        , _infoZulip
         , _infoWeatherResources
         -- , _infoFAQ
         ]
@@ -481,14 +485,16 @@ buildRules = do
   -- faqPage              <- loadPage "site/info/faq.md"
   sitesPage            <- loadPage "site/info/sites.md"
   radiosPage           <- loadPage "site/info/radios.md"
+  zulipPage            <- loadPage "site/info/zulip.md"
   siteRecordsPage      <- loadPage "site/info/site-records.md"
   weatherResourcesPage <- loadPage "site/info/weather-resources.md"
   let info = Info
         infoPage'
         (About about lifeMemberPages)
         sitesPage
-        radiosPage
         siteRecordsPage
+        radiosPage
+        zulipPage
         weatherResourcesPage
         -- faqPage
 
