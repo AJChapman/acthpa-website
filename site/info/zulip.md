@@ -8,7 +8,7 @@ We are currently trialling the use of Zulip, an open source web chat platform.
 Zulip combines the features of real-time chat, such as in WhatsApp and Telegram, with those of a web forum, such as Discourse or paraglidingforum.com.
 We are hoping that it will complement our Facebook group, rather than replace it.
 
-Please sign up and try Zulip out, but also keep posting in Facebook, which is still our primary communication platform.
+If you're a club member, then please sign up and try Zulip out, but also keep posting in Facebook, which is still our primary communication platform.
 After trial by the community for two months we will make a decision as to whether to continue with Zulip.
 So please give us your feedback, preferably in the [\# Zulip Meta] stream.
 
@@ -98,8 +98,8 @@ Or if I wanted to discuss some other paragliding topic then I could start a new 
 
 ### Who can sign up?
 
-For now we're leaving registration open to anyone, not just members of our club.
-We want to make it easy for visiting pilots to get in touch, not to mention nearby NSW pilots, former pilots, partners of pilots (for [\# Retrieves]!), etc.
+For now we're asking that you only sign up if you are a member of the ACTHPA.
+In the future we may broaden this to allow anyone connected to our community to sign up, but for this trial we're keeping it small.
 
 ### Doesn't this force me to check two locations instead of one?
 
