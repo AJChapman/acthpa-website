@@ -4,7 +4,7 @@ title: Flying Canberra
 
 ## Quick Info
 
-- **Radio Frequency**: [HGFA Open](https://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf) (472.125 MHz, no tone squelch)
+- **Radio Frequency**: [SAFA1](http://members.hgfa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cDNnTHFRcmdyam93bG5oUVF0V3FSdz09) (472.125 MHz, no tone squelch, narrow band (12.5 kHz))
 - **Waypoints**: <a href='/files/waypoints/ACTHPA.wpt' download>ACTHPA.wpt</a>
 
 ### Sites

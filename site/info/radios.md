@@ -8,7 +8,7 @@ title: Radios
 ## UHF Radios
 
 Use of UHF radios is strongly encouraged at all ACTHPA sites.
-The ACTHPA radio channel is *HGFA Open* (472.125 MHz, no tone squelch), though we are [proposing to change this in the near future](/events/radio-policy-proposal).
+The ACTHPA radio channel is *SAFA1* (472.125 MHz, 192.8Hz CTCSS tone squelch, narrow band (12.5 kHz)).
 
 ## Explanation of SAFA/HGFA Channels
 
@@ -17,32 +17,32 @@ But SAFA has purchased rights to use another UHF channel outside of this range, 
 Within that single frequency SAFA have nominated four CTCSS frequencies that pilots can use, so as to make the most of this single channel by dividing it up into four distinct sub-channels.
 These sub-channels are not quite as good as having four distinct channels, because transmissions on any one of the four will lock others out for the duration of the transmission, even if they are using a different sub-channel^[Assuming Busy Channel Lockout (see glossary) is enabled, otherwise they will unknowingly transmit over the top of each other, also bad.].
 To make matters slightly more complicated, we also have the option of using the SAFA frequency *without* tone squelch.
-We refer to this as *HGFA Open*.
+We refer to this as *SAFA Open*, or *HGFA Open*.
 
-The full [HGFA UHF Radio Channel document can be found on the SAFA website](https://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf), but will soon be (or is it already?) superseded by [the new SAFA UHF Radio Channel document](http://members.hgfa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cDNnTHFRcmdyam93bG5oUVF0V3FSdz09).
-See below for a summary of the differences between these two.
+The full [SAFA UHF & VHF Radio Frequencies document](http://members.hgfa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cDNnTHFRcmdyam93bG5oUVF0V3FSdz09) can be found on the SAFA website.
+This supersedes the [old HGFA UHF Radio Channel document](https://www.safa.asn.au/resources/HGFA_UHF_Radio_Channel.pdf).
 
 ### Interactions between the HGFA channels
 
-The *HGFA Open* (*SAFA 5 Open*) channel ignores CTCSS, so it can hear transmissions from any of the other HGFA channels:
+The *SAFA Open* channel ignores CTCSS, so it can hear transmissions from any of the other SAFA channels:
 
-|         When someone transmits on: | HGFA Open | HGFA1  | HGFA2  | HGFA3  | HGFA4  |
+|         When someone transmits on: | SAFA Open | SAFA1  | SAFA2  | SAFA3  | SAFA4  |
 | ---------------------------------- | --------- | ------ | ------ | ------ | ------ |
 | **Can it be heard on:**            |           |        |        |        |        |
-| **HGFA Open**                      | Yes       | Yes    | Yes    | Yes    | Yes    |
-| **HGFA1**                          | No        | Yes    | No     | No     | No     |
-| **HGFA2**                          | No        | No     | Yes    | No     | No     |
-| **HGFA3**                          | No        | No     | No     | Yes    | No     |
-| **HGFA4**                          | No        | No     | No     | No     | Yes    |
+| **SAFA Open**                      | Yes       | Yes    | Yes    | Yes    | Yes    |
+| **SAFA1**                          | No        | Yes    | No     | No     | No     |
+| **SAFA2**                          | No        | No     | Yes    | No     | No     |
+| **SAFA3**                          | No        | No     | No     | Yes    | No     |
+| **SAFA4**                          | No        | No     | No     | No     | Yes    |
 
-The result of this is that if you use *HGFA Open*, you will hear everyone, but only other *HGFA Open* users will hear you.
-If you use any of the other HGFA channels then you will only hear other users of the same HGFA channel, and they will only hear you.
+The result of this is that if you use *SAFA Open*, you will hear everyone, but only other *SAFA Open* users will hear you.
+If you use any of the other SAFA channels then you will only hear other users of the same SAFA channel, and they will only hear you.
 
-### Busy channel lockout on the HGFA channels
+### Busy channel lockout on the SAFA channels
 
-The HGFA (and SAFA) channels require use of the busy channel lockout feature when using CTCSS.
-This ensures that we don't unknowingly transmit over the top of each other when we're on different sub-channels of the HGFA frequency.
-The use of busy channel lockout on *HGFA Open* is unnecessary, as you will be able to hear other pilots transmitting, and won't interrupt them.
+The SAFA channels require use of the busy channel lockout feature when using CTCSS.
+This ensures that we don't unknowingly transmit over the top of each other when we're on different sub-channels of the SAFA frequency.
+The use of busy channel lockout on *SAFA Open* is unnecessary, as you will be able to hear other pilots transmitting, and won't interrupt them.
 
 ## History of SAFA/HGFA Channels
 
