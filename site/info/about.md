@@ -25,11 +25,12 @@ If necessary, the ACTHPA committee may ask that proposals be outlined in writing
 
 Position                 Name              Phone             Email
 ---------------          ----------------- ----------------- ---------------------------
-President                Rene Sedlmaier    0408 621 100
-Vice President           Graham Rose
-Treasurer                Allister Higgins  0408 608 709      treasurer.acthpa@gmail.com
+President                Rene Sedlmaier    0408 621 100      office@acthpa.org
+Vice President           Alex Boiko
+Treasurer                Brett Davis                         treasurer.acthpa@gmail.com
 Secretary                Wes Kilham        0420 322 040
 Site Development Officer Doug Mathie
+General Member           Mark Wallace
 General Member           Alex Chapman
 General Member           Phil Lyng
 Public Officer           Peter Lamont      0407 771 075
