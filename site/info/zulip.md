@@ -44,7 +44,9 @@ You should now start getting notifications when someone posts in a stream you're
 - Video conferencing -- we have an instance of Jitsi at <https://jitsi.acthpa.org>. Get the 'Jitsi Meet' app and start new video chats from within Zulip.
 - And more: search, private messages, ad-hoc groups, etc.
 
-## Streams
+## Using ACTHPA's Zulip
+
+### Streams
 
 <div class="inline-img right" data-fancybox="gallery" style="max-width: 50%" href="/images/zulip.png">
 ![A Zulip chat session. Streams are on the left, with topics beneath them. Chat is on the right.](/images/zulip.png)
@@ -86,7 +88,7 @@ Ask an admin to add you to these if you think you should be there.
 It's also possible for users to create new streams.
 If you're thinking of creating a new stream, perhaps run the idea past us in [\# Zulip meta] beforehand.
 
-## Topics
+### Topics
 
 Anything you say in a stream should be in a topic.
 This is a thread of conversation on that given topic, which makes it easy to continue a conversation hours, weeks, even months after someone last had something to say about it.
