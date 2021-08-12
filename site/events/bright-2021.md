@@ -3,30 +3,41 @@ title: Bright Open 2021
 eventStart: 2021-01-30
 eventFinish: 2021-02-05
 image: bright-open.jpg
-teaser: "The [Bright Open](/events/bright-2021) will be held in early February. Eight Canberra pilots are competing."
+teaser: "The [Bright Open](/events/bright-2021) was held early February. Eight Canberra pilots competed in three tasks."
 ---
-The [Bright Open](https://airtribune.com/bright-open-2021/info) will be held in early February.
-It was a near-run thing with the Victorian border being closed due to COVID until shortly before the comp, but we're now in a 'green zone'.
-There are eight current and recent members of ACTHPA taking part in this year's Bright Open, out of a field of 53 competitors:
+The [Bright Open](https://airtribune.com/bright-open-2021/info) was held in early February.
+There were seven ACTHPA pilots who took part in this year's Bright Open, out of a field of 53 competitors:
 
 - Kari Ellis,
 - Alistair Dickie,
-- Graham Rose,
 - Phil Robinson,
 - Alex Chapman,
 - Alex Boiko,
 - Daniel Thuillier and
 - Johno Quinn.
 
+Astute readers will notice the absence of Graham Rose, who put himself out of the running by crashing his mountain bike on Mystic.
+Stick to a safer sport Grum -- like paragliding!
+
+Alistair also sponsored the competition, giving away a stack of BlueFly varios for good sportsmanship or personal achievements.
+
 ## Results
 
-Results will be up on [airScore](http://xc.highcloud.net/task_overview.html?comPk=310).
-We'll also keep up with the Canberra pilots' progress on this page.
+[Results are up on airScore](http://xc.highcloud.net/comp_overall.html?comPk=310).
+[The tasks we flew are here](http://xc.highcloud.net/task_overview.html?comPk=310).
+
+- Daniel Thuillier came 2nd in the fun class, and 1st in the intermediate (under two years and 250 hours flying),
+- Alex Chapman came 26th overall, 6th in the sports class,
+- Johno Quinn came 29th overall, and
+- Phil Robinson came 41st overall,
+- Alistair Dickie came 46th overall,
+- Alex Boiko came 47th overall,
+- Kari Ellis was just along for the ride (not officially in the comp),
 
 ## About the Bright Open
 
 <div class="inline-img">
-![Launching from Mystic in Bright. Photo by Dave Gibbs](/images/bright-open.jpg)
+![](/images/bright-open-2021/mystic-sign.jpg)
 </div>
 
 Bright is a beautiful mountain town in Victoria, about five hours' drive from Canberra.

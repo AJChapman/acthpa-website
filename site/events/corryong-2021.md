@@ -3,11 +3,12 @@ title: Corryong PG Open 2021
 eventStart: 2021-02-07
 eventFinish: 2021-02-13
 image: paragliders-overhead.jpg
-teaser: "The [Corryong Paragliding Open](/events/corryong-2021) will take place in February, with eight Canberra pilots competing."
+teaser: "The [Corryong Paragliding Open](/events/corryong-2021) will take place in February, with nine Canberra pilots competing."
 ---
 The [Corryong Paragliding Open](https://airtribune.com/flow-corryong-pg-open-2021/info) will take place in February.
-There are currently eight current and recent members of ACTHPA taking part in this year's Corryong PG Open, out of a field of 54 competitors:
+There are currently nine current and recent members of ACTHPA taking part in this year's Corryong PG Open, out of a field of 54 competitors:
 
+- Kari Ellis,
 - Cameron Lawrence,
 - Alistair Dickie,
 - Graham Rose,
@@ -17,10 +18,22 @@ There are currently eight current and recent members of ACTHPA taking part in th
 - Daniel Thuillier and
 - Johno Quinn.
 
+Alistair also sponsored the competition, giving away a stack of BlueFly varios for good sportsmanship or personal achievements.
+
 ## Results
 
-Results will be up on [airScore](http://xc.highcloud.net/).
-We'll also keep up with the Canberra pilots' progress on this page.
+Results are up on [airScore](http://xc.highcloud.net/comp_overall.html?comPk=311).
+[The tasks we flew are here](http://xc.highcloud.net/task_overview.html?comPk=311).
+
+- Kari Ellis on her Enzo 3 came 1st in the women's class, 19th overall after not flying in the last task. She also came in first place in tasks 3 and 4,
+- Graham Rose on his Cure 2 came 5th in the sports class, 30th overall,
+- Johno Quinn on his Zeno came 32nd,
+- Alistair Dickie on his Fusion came 42nd,
+- Cameron Lawrence on his Mentor 6 came 3rd in the fun class, 46th overall,
+- Alex Chapman on his Sigma 10 came 53rd,
+- Daniel Thuillier on his Rise 4 came 58th,
+- Phil Robinson on his Cure 2 came 64th, and
+- Alex Boiko on his Iota came 72nd.
 
 ## About the Corryong PG Open
 
