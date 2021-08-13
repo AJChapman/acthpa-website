@@ -10,7 +10,7 @@ teaser: "The [Corryong Paragliding Open](/events/corryong-2021) took place in Fe
 </div>
 
 The [Corryong Paragliding Open](https://airtribune.com/flow-corryong-pg-open-2021/info) took take place in February.
-There were nine current and recent members of ACTHPA taking part in this year's Corryong PG Open, out of a field of 54 competitors:
+There were nine current and recent members of ACTHPA taking part in this year's Corryong PG Open, out of a field of 75 competitors:
 
 - Kari Ellis,
 - Cameron Lawrence,
