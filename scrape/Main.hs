@@ -6,27 +6,33 @@ module Main
 import Control.Lens           (_Wrapped)
 import Control.Lens.Operators
 import Control.Monad          (void)
+import Control.Monad.IO.Class
+import Data.Text              (Text)
 import Formatting
-import Network.HTTP.Req       (MonadHttp, Req, defaultHttpConfig, runReq)
+import Network.HTTP.Client    (CookieJar)
+import Network.HTTP.Req       (MonadHttp, defaultHttpConfig, runReq)
+import Prelude                hiding (log)
 import System.Directory       (createDirectoryIfMissing)
 import System.FilePath        ((</>))
 
 import Flights
 
-import qualified Data.Text.IO      as TIO
-import qualified Leonardo          as LEO
-import qualified XContest2         as XC
+import qualified Data.Text.IO       as TIO
+import qualified Leonardo           as LEO
+import           XContest.Browse    (xContestLogin)
+import           XContest.Passwords
+import qualified XContest2          as XC
 
-scrapeSite :: Bool -> String -> Req [Flight] -> IO ()
-scrapeSite showSite fileName getFlights = do
+scrapeSite :: MonadHttp m => (Text -> m ()) -> Bool -> String -> m [Flight] -> m ()
+scrapeSite log showSite fileName getFlights = do
   let scrapeDir = "site/scraped"
-  void $ createDirectoryIfMissing False scrapeDir
+  void $ liftIO $ createDirectoryIfMissing False scrapeDir
   let file = scrapeDir </> fileName <> ".html"
-  putStrLn $ "Populating '" <> file <> "'"
-  flights <- runReq defaultHttpConfig getFlights
-  putStrLn $ "Found " <> show (length flights) <> " flights."
-  sequence_ $ fprint formatFlight <$> flights
-  TIO.writeFile
+  log $ sformat ("Populating '"%string%"'") file
+  flights <- getFlights
+  log $ sformat ("Found "%int%" flights.") $ length flights
+  sequence_ $ log . sformat formatFlight <$> flights
+  liftIO $ TIO.writeFile
     file
     (renderFlights showSite flights)
 
@@ -42,35 +48,39 @@ getFlightsAt :: MonadHttp m => [Site -> Int -> m [Flight]] -> Site -> Int -> m [
 getFlightsAt getters site n =
   mconcat <$> traverse (\f -> f site n) getters
 
-getLongestFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
-getLongestFlightsAt site n = do
+getLongestFlightsAt :: MonadHttp m => CookieJar -> Site -> Int -> m [Flight]
+getLongestFlightsAt xcCookies site n = do
   flights <- getFlightsAt
-    [ XC.getLongestFlightsAt
+    [ XC.getLongestFlightsAt xcCookies
     , LEO.getLongestFlightsAt
     ] site n
   pure . take n . removeConsecutiveSimilar . sortFlightsByLengthDesc $ flights
 
-getRecentFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
-getRecentFlightsAt site n = do
+getRecentFlightsAt :: MonadHttp m => CookieJar -> Site -> Int -> m [Flight]
+getRecentFlightsAt xcCookies site n = do
   flights <- getFlightsAt
-    [ XC.getRecentFlightsAt
+    [ XC.getRecentFlightsAt xcCookies
     , LEO.getRecentFlightsAt
     ] site n
   pure . take n  . removeConsecutiveSimilar . sortFlightsByDateDesc $ flights
 
 main :: IO ()
-main = do
-  scrapeSite True "longestCanberra"     (getLongestFlightsAt canberra    20)
-  scrapeSite False "longestSpringHill"  (getLongestFlightsAt springHill  10)
-  scrapeSite False "longestCollector"   (getLongestFlightsAt collector   10)
-  scrapeSite False "longestLakeGeorge"  (getLongestFlightsAt lakeGeorge  10)
-  scrapeSite False "longestLanyon"      (getLongestFlightsAt lanyon      5)
-  scrapeSite False "longestPigHill"     (getLongestFlightsAt pigHill     5)
-  scrapeSite False "longestHoneysuckle" (getLongestFlightsAt honeysuckle 5)
-  scrapeSite False "longestBowning"     (getLongestFlightsAt bowning     5)
-  scrapeSite False "longestArgalong"    (getLongestFlightsAt argalong    5)
-  scrapeSite False "longestCastleHill"  (getLongestFlightsAt castleHill  5)
-  scrapeSite False "longestBooroomba"   (getLongestFlightsAt booroomba   5)
-  scrapeSite False "longestCarols"      (getLongestFlightsAt carols      5)
+main = runReq defaultHttpConfig $ do
+  xcCookies <- xContestLogin xContestUsername xContestPassword
+  let scrape = scrapeSite (liftIO . TIO.putStrLn)
+      getRecent = getRecentFlightsAt xcCookies
+      getLongest = getLongestFlightsAt xcCookies
+  scrape True "longestCanberra"     (getLongest canberra    20)
+  scrape False "longestSpringHill"  (getLongest springHill  10)
+  scrape False "longestCollector"   (getLongest collector   10)
+  scrape False "longestLakeGeorge"  (getLongest lakeGeorge  10)
+  scrape False "longestLanyon"      (getLongest lanyon      5)
+  scrape False "longestPigHill"     (getLongest pigHill     5)
+  scrape False "longestHoneysuckle" (getLongest honeysuckle 5)
+  scrape False "longestBowning"     (getLongest bowning     5)
+  scrape False "longestArgalong"    (getLongest argalong    5)
+  scrape False "longestCastleHill"  (getLongest castleHill  5)
+  scrape False "longestBooroomba"   (getLongest booroomba   5)
+  scrape False "longestCarols"      (getLongest carols      5)
 
-  scrapeSite True "recentCanberra" (getRecentFlightsAt canberra 20)
+  scrape True "recentCanberra" (getRecent canberra 20)

@@ -5,14 +5,15 @@ title: Home
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/470868857?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <br />
 
-## Current COVID-19 Policy (updated 8 December 2020)
+## Current COVID-19 Policy (updated 13 August 2021)
 
-The four main ACTHPA sites (Lake George, Lanyon, Spring Hill, and Collector) are currently open.
-However, both the ACT and NSW governments still have restrictions in place in relation to gatherings of people.
+The ACTHPA Committee considered the ACT lockdown at its meeting last night.
+As the ACTHPA Committee, we are not closing any of our sites at this time.
 
-***All pilots must comply with all government guidelines and restrictions when travelling to and flying or gathering at all ACTHPA sites.***
+However we ask all our members to please read and follow all ACT and NSW Governments' public health orders and restrictions.
+Each pilot should independently decide whether travelling to a site and flying is within the scope of exercise or activities permitted in their particular circumstances.
 
-If flying XC, please be aware that hitchhiking may be more difficult than usual.
+Please be aware that there are border declaration requirements for travel to NSW from the ACT and that visiting the ACT will require likely NSW residents to follow a stay-at-home order.
 
 ## [About ACTHPA](info/about)
 
@@ -36,8 +37,7 @@ If you're interested in learning to fly, take a look at the [SAFA Schools page](
 
 ## Club Meetings
 
-Club meetings are now held on the first Saturday of each month at [Spring Hill](/info/sites/#spring-hill), at 10am.
-At the meetings we talk about flying and put members in contact with each other.
+Club meetings are on the first Tuesday of each month at 7:30pm at the Weston Creek Labor Club, COVID-willing.
 
 ## Recent Flights Around Canberra
 

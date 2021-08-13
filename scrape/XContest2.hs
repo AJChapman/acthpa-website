@@ -34,6 +34,7 @@ import Data.Maybe                 (isJust)
 import Data.Text                  (Text)
 import Data.Text.Lens             (unpacked)
 import Data.Time                  (Day)
+import Network.HTTP.Client        (CookieJar)
 import Network.HTTP.Req           (MonadHttp, Option, Scheme (Https))
 import Text.HTML.TagSoup.Navigate
 import Text.Pretty.Simple         (pShowNoColor)
@@ -320,17 +321,17 @@ flightsTableColumns t =
     _ftcUrl <- lookupColumn "info" <&> (+1) -- hack: the info column has colspan=2
     pure FlightsTableColumns{..}
 
-getFlightsAt :: MonadHttp m => Text -> Int -> Site -> m [Flight]
-getFlightsAt sort num site =
-  getFlightsHtmlAt sort site >>= flightsFromHtml <&> take num
+getFlightsAt :: MonadHttp m => CookieJar -> Text -> Int -> Site -> m [Flight]
+getFlightsAt cookies sort num site =
+  getFlightsHtmlAt cookies sort site >>= flightsFromHtml <&> take num
 
-getLongestFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
-getLongestFlightsAt site num =
-  getLongestFlightsHtmlAt site >>= flightsFromHtml <&> take num
+getLongestFlightsAt :: MonadHttp m => CookieJar -> Site -> Int -> m [Flight]
+getLongestFlightsAt cookies site num =
+  getLongestFlightsHtmlAt cookies site >>= flightsFromHtml <&> take num
 
-getRecentFlightsAt :: MonadHttp m => Site -> Int -> m [Flight]
-getRecentFlightsAt site num =
-  getRecentFlightsHtmlAt site >>= flightsFromHtml <&> take num
+getRecentFlightsAt :: MonadHttp m => CookieJar -> Site -> Int -> m [Flight]
+getRecentFlightsAt cookies site num =
+  getRecentFlightsHtmlAt cookies site >>= flightsFromHtml <&> take num
 
 xContestFlights :: MonadHttp m => Option 'Https -> m [Flight]
 xContestFlights opts = xContestFlightsHtml opts >>= flightsFromHtml

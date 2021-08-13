@@ -10,3 +10,4 @@ site/scraped/
 gen/
 .shake
 site/images/to-use/
+scrape/XContest/Passwords.hs

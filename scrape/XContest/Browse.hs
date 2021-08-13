@@ -8,6 +8,7 @@ module XContest.Browse
   , getLongestFlightsHtmlAt
   , getRecentFlightsHtmlAt
   , xContestFlightsHtml
+  , xContestLogin
   ) where
 
 import Control.Category         ((>>>))
@@ -15,9 +16,8 @@ import Control.Lens.Operators
 import Data.Text                (Text)
 import Data.Text.Encoding.Error (lenientDecode)
 import Data.Text.Lazy.Encoding  (decodeUtf8With)
-import Network.HTTP.Req         (GET (..), MonadHttp, NoReqBody (..), Option,
-                                 Scheme (Https), Url, https, lbsResponse, req,
-                                 responseBody, (/:), (=:))
+import Network.HTTP.Client      (CookieJar)
+import Network.HTTP.Req
 
 import qualified Data.Text.Lazy as L
 
@@ -26,12 +26,16 @@ import Flights
 xContestOrg :: Text
 xContestOrg = "www.xcontest.org"
 
+xContestWorldEnUrl :: Url 'Https
+xContestWorldEnUrl =
+  https xContestOrg /: "world" /: "en"
+
 xContestFlightSearchUrl :: Url 'Https
 xContestFlightSearchUrl =
-  https xContestOrg /: "world" /: "en" /: "flights-search"
+  xContestWorldEnUrl /: "flights-search"
 
-xContestOptions :: Text -> Site -> Option scheme
-xContestOptions sort site =
+xContestOptions :: CookieJar -> Text -> Site -> Option scheme
+xContestOptions cookies sort site =
   let radiusInMetres = site ^. siteRadius
   in "filter[point]"            =: formatLL (site ^. siteLocation)
     <> "filter[radius]"        =: (radiusInMetres :: Int)
@@ -46,19 +50,20 @@ xContestOptions sort site =
     -- <> "filter[pilot]"         =: ("" :: Text)
     <> "list[sort]"            =: sort -- pts, time_start
     <> "list[dir]"             =: ("down" :: Text)
+    <> cookieJar cookies
 
-getFlightsHtmlAt :: MonadHttp m => Text -> Site -> m L.Text
-getFlightsHtmlAt sort site =
-  xContestFlightsHtml (xContestOptions sort site)
+getFlightsHtmlAt :: MonadHttp m => CookieJar -> Text -> Site -> m L.Text
+getFlightsHtmlAt cookies sort site =
+  xContestFlightsHtml (xContestOptions cookies sort site)
 
-getLongestFlightsHtmlAt :: MonadHttp m => Site -> m L.Text
-getLongestFlightsHtmlAt = getFlightsHtmlAt "pts"
+getLongestFlightsHtmlAt :: MonadHttp m => CookieJar -> Site -> m L.Text
+getLongestFlightsHtmlAt cookies = getFlightsHtmlAt cookies "pts"
 
-getRecentFlightsHtmlAt :: MonadHttp m => Site -> m L.Text
-getRecentFlightsHtmlAt = getFlightsHtmlAt "time_start"
+getRecentFlightsHtmlAt :: MonadHttp m => CookieJar -> Site -> m L.Text
+getRecentFlightsHtmlAt cookies = getFlightsHtmlAt cookies "time_start"
 
 xContestFlightsHtml :: MonadHttp m => Option 'Https -> m L.Text
-xContestFlightsHtml opts = do
+xContestFlightsHtml opts =
   req GET
     xContestFlightSearchUrl
     NoReqBody
@@ -69,3 +74,14 @@ xContestFlightsHtml opts = do
     >>> decodeUtf8With lenientDecode
     >>> pure)
 
+xContestLogin :: MonadHttp m => Text -> Text -> m CookieJar
+xContestLogin username password =
+  req POST
+    xContestWorldEnUrl
+    (ReqBodyUrlEnc
+      ( queryParam "login[username]" (Just username)
+     <> queryParam "login[password]" (Just password)
+     <> queryParam "login[persist_login]" (Just ("Y" :: Text))))
+    lbsResponse
+    mempty
+  <&> responseCookieJar

@@ -1,13 +1,18 @@
 ---
-title: Radio Policy Change Proposal
+title: Radio Policy Change
 published: 2020-12-18
 eventStart: 2021-02-01
 image: radios-2.jpg
-teaser: "The ACTHPA committee is [proposing that we switch our standard frequency to HGFA1](/events/radio-policy-proposal), and are looking for feedback."
+author: Alex Boiko
+teaser: "We have [switched our standard frequency to SAFA1](/events/radio-policy-proposal)"
 ---
 <div class="inline-img" style="max-width: 80%" data-fancybox="gallery" href="/images/radios-1_web.jpg">
 ![](/images/radios-1_web.jpg)
 </div>
+
+From 1 February 2021 we switched our standard radio channel to SAFA1 (HGFA1).
+The original proposal and call for feedback is below.
+See [the radios page](/info/radios) for up-to-date information about radio use.
 
 Dear Canberra Pilots
 
