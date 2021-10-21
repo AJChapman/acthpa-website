@@ -31,6 +31,7 @@ Treasurer                Phil Lyng                            treasurer.acthpa@g
 Secretary                Nick Lemon
 Site Development Officer Peter Evans
 Site Development Officer Rowan Beggs-French 
+Novice Representative    "Tony Pony"
 General Member           Mark Wallace
 General Member           Alex Chapman
 Public Officer           Peter Lamont       0407 771 075
