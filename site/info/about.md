@@ -23,17 +23,17 @@ If necessary, the ACTHPA committee may ask that proposals be outlined in writing
 
 ## Committee Members
 
-Position                 Name              Phone             Email
----------------          ----------------- ----------------- ---------------------------
-President                Rene Sedlmaier    0408 621 100      office@acthpa.org
+Position                 Name               Phone             Email
+---------------          -----------------  ----------------- ---------------------------
+President                Rene Sedlmaier     0408 621 100      office@acthpa.org
 Vice President           Alex Boiko
-Treasurer                Brett Davis                         treasurer.acthpa@gmail.com
-Secretary                Wes Kilham        0420 322 040
-Site Development Officer Doug Mathie
+Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
+Secretary                Nick Lemon
+Site Development Officer Peter Evans
+Site Development Officer Rowan Beggs-French 
 General Member           Mark Wallace
 General Member           Alex Chapman
-General Member           Phil Lyng
-Public Officer           Peter Lamont      0407 771 075
+Public Officer           Peter Lamont       0407 771 075
 
 ## ACTHPA Safety Committee:
 
