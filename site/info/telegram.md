@@ -39,6 +39,6 @@ Go to [telegram.org](https://telegram.org) and follow the links to install it fo
     <li>Keep things clean and civil -- don't say anything you wouldn't say in person, and don't say anything if you don't have anything nice to say.</li>
     <li>Commercial posts must be relevant and of interest to our users. If in doubt ask a moderator before posting.</li>
   </ul>
-  <button type="submit" class="btn-control btn-primary">Send</button>
+  <button type="submit" class="btn-control btn-primary">Send Request to Join</button>
 </form>
 
