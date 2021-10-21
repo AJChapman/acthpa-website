@@ -172,7 +172,7 @@ instance ToMenuItem Info where
       , toMenuItem _infoSiteRecords
       , toMenuItem _infoRadios
       , toMenuItem _infoTelegram
-      , toMenuItem _infoZulip
+      -- , toMenuItem _infoZulip -- Removed from menu but the page is still there for now
       , toMenuItem _infoWeatherResources
       -- , toMenuItem _infoFAQ
       , toMenuItem _infoAbout
@@ -496,11 +496,11 @@ buildRules = do
   let info = Info
         infoPage'
         (About about lifeMemberPages)
-        sitesPage
-        siteRecordsPage
         radiosPage
         telegramPage
         zulipPage
+        sitesPage
+        siteRecordsPage
         weatherResourcesPage
         -- faqPage
 
