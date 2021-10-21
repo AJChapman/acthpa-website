@@ -25,11 +25,11 @@ We maintain a number of launch sites, and [wind talkers] in the local area to he
 ## [Flying in Canberra](info)
 
 If it is 'on' then you can pretty much guarantee that someone will be out flying.
-If you are planning to go for a fly at [one of our sites](/flying-ACT/sites), please post a message on [our Facebook group] so you can meet up with others.
+If you are planning to go for a fly at [one of our sites](/flying-ACT/sites), please post a message on [our Telegram group] so you can meet up with others.
 The [wind talkers] provide current wind speed and direction and records this information for the previous 12 hours.
 The [weather resources page](info/weather-resources) links to useful weather information.
 
-If you are a [visiting pilot](info), remember to contact one of the locals prior to flying any site.
+If you are a [visiting pilot](info), remember to contact one of the locals (best done through [our Telegram group]) prior to flying any site.
 
 ## Learn to Fly
 
@@ -54,3 +54,4 @@ Also see the [site records page](info/site-records) for records broken down by s
 
 [wind talkers]: http://www.freeflightwx.com/acthpa/
 [our Facebook group]: https://www.facebook.com/groups/acthpa
+[our Telegram group]: /info/telegram

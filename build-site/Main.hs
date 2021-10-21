@@ -23,6 +23,7 @@ module Main
   , infoPage
   , infoSites
   , infoRadios
+  , infoTelegram
   , infoZulip
   , infoSiteRecords
   , infoWeatherResources
@@ -119,6 +120,7 @@ data Info = Info
   { _infoPage             :: Page
   , _infoAbout            :: About
   , _infoRadios           :: Page
+  , _infoTelegram         :: Page
   , _infoZulip            :: Page
   , _infoSites            :: Page
   , _infoSiteRecords      :: Page
@@ -169,6 +171,7 @@ instance ToMenuItem Info where
       , toMenuItem _infoSites
       , toMenuItem _infoSiteRecords
       , toMenuItem _infoRadios
+      , toMenuItem _infoTelegram
       , toMenuItem _infoZulip
       , toMenuItem _infoWeatherResources
       -- , toMenuItem _infoFAQ
@@ -338,6 +341,7 @@ buildInfo site Info{..} = do
         [ _infoSites
         , _infoSiteRecords
         , _infoRadios
+        , _infoTelegram
         , _infoZulip
         , _infoWeatherResources
         -- , _infoFAQ
@@ -485,6 +489,7 @@ buildRules = do
   -- faqPage              <- loadPage "site/info/faq.md"
   sitesPage            <- loadPage "site/info/sites.md"
   radiosPage           <- loadPage "site/info/radios.md"
+  telegramPage         <- loadPage "site/info/telegram.md"
   zulipPage            <- loadPage "site/info/zulip.md"
   siteRecordsPage      <- loadPage "site/info/site-records.md"
   weatherResourcesPage <- loadPage "site/info/weather-resources.md"
@@ -494,6 +499,7 @@ buildRules = do
         sitesPage
         siteRecordsPage
         radiosPage
+        telegramPage
         zulipPage
         weatherResourcesPage
         -- faqPage

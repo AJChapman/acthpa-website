@@ -26,7 +26,7 @@ We only ask that you adhere to these common sense rules:
 - Make yourself known to a site safety officer and obtain a site briefing (if possible).
 - Fly with a UHF radio (see Communication, below).
 
-The best way to get in touch with local pilots is through [our Facebook group].
+The best way to get in touch with local pilots is through [our Telegram group].
 
 ## Flying Canberra
 
@@ -75,3 +75,4 @@ We have waypoint files for setting tasks around the ACT sites, courtesy of the [
 [SAFA]: https://www.safa.asn.au
 [SAFA Visiting Pilot Membership (VPM)]: https://www.safa.asn.au/visiting-international-pilots
 [our Facebook group]: https://www.facebook.com/groups/acthpa
+[our Telegram group]: /info/telegram
