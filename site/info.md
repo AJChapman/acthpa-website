@@ -5,7 +5,7 @@ title: Flying Canberra
 ## Quick Info
 
 - **Radio Frequency**: [SAFA1](http://members.hgfa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cDNnTHFRcmdyam93bG5oUVF0V3FSdz09) (472.125 MHz, 192.8Hz CTCSS tone squelch, narrow band (12.5 kHz))
-- **Waypoints**: <a href='/files/waypoints/ACTHPA.wpt' download>ACTHPA.wpt</a>
+- **Waypoints (including Corryong)**: <a href='/files/waypoints/TPCacthpa2021-v1.0.wpt' download>TPCacthpa2021-v1.0.wpt</a>
 
 ### Sites
 
@@ -58,9 +58,8 @@ UHF radios are used for communication between pilots and others such as ground c
 
 We have waypoint files for setting tasks around the ACT sites, courtesy of the [Turnpoint Challenge](/events/turnpoint-challenge-2020):
 
-- <a href='/files/waypoints/TPCACT2020-v1.0.wpt' download>TPCACT2020-v1.0.wpt</a>: Over 150 waypoints in the Canberra area, plus Corryong.
-- <a href='/files/waypoints/TPCACT2020-v1.0.kml' download>TPCACT2020-v1.0.kml</a>: Google Earth version.
-- <a href='/files/waypoints/TPCACT2020F-v1.0.txt' download>TPCACT2020F-v1.0.txt</a>: An 'airspace' file that gives each waypoint a 400m radius and marks it as an airspace for your flight instrument.
+- <a href='/files/waypoints/TPCacthpa2021-v1.0.wpt' download>TPCacthpa2021-v1.0.wpt</a>: 194 waypoints in the Canberra and Corryong areas.
+- <a href='/files/waypoints/TPCacthpa2021-v1.0.txt' download>TPCacthpa2021-v1.0.txt</a>: An 'airspace' file that gives each waypoint a 400m radius and marks it as an airspace for your flight instrument.
 
 ## More Info
 
