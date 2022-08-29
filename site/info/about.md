@@ -8,18 +8,18 @@ It is both a State Association affiliated with the Sports Aviation Federation of
  
 ## Contact Us
 
-To get in contact with the ACTHPA committee, email office@acthpa.org or call our president, Rene Sedlmaier, on 0408 621 100.
+To contact the ACTHPA committee, email office@acthpa.org or call our president, Rene Sedlmaier, on 0408 621 100.
 
 ## ACT SAFA Regional Development Levy
 
 The ACTHPA is affiliated with SAFA as the regional association for the ACT and surrounding area.
-Members of SAFA who live in the postcodes described in the SAFA Policy on Regional Boundaries pay a Regional Development Levy (RDL) as part of their annual membership fees with SAFA.
+Members of SAFA who live in the postcodes described in the SAFA Policy on Regional Boundaries pay a Regional Development Levy (RDL) as part of their annual SAFA membership fee.
 The RDL is disbursed to the ACTHPA and is used to progress the initiatives outlined in ACTHPA annual plans.
-This includes supporting the development of safety in the region, improving flying site infrastructure including weather stations, supporting regional flying events, and undertaking the administration of the ACTHPA.
+This includes promoting safety, improving flying site infrastructure including weather stations, supporting regional flying events, and ACTHPA administration.
 
 Members of the ACTHPA with ideas to improve safety, infrastructure, events or administration are encouraged to reach out to the ACTHPA committee with suggestions.
 Monthly meetings are well attended and are a great place to discuss ideas with other members.
-If necessary, the ACTHPA committee may ask that proposals be outlined in writing for further consideration.
+The ACTHPA committee may ask that proposals be outlined in writing for further consideration.
 
 ## Committee Members
 
@@ -44,21 +44,31 @@ Public Officer           Peter Lamont       0407 771 075
 
 **AIRS Managers:** James Astley, Peter Evans, Peter Lamont
 
-**Site Guide Administrator:** Doug Mathie
-
 
 ### Senior Safety Officers:
 
-- **PG:** Matt Smith, Alistair Dickie, Phil Robinson, Shaun Archer, Mike Brady
-- **PPG:** Matt Smith
-- **HG:** Geoff Robertson, Phil Robinson
-
+- **PG:**
+    - Mike Brady,
+    - Alistair Dickie,
+    - Phil Robinson
+- **HG:** Phil Robinson
 
 ### Safety Officers:
 
-- **PG:** Kris Smith, Stu McElroy, Andrew Gough, Rafael Esquillaro, Bill Oates, Belinda Head, Dave Hanna, Rene Sedlmaier, Anthony Willing, Ian Leaver, Jim Astley, Alex Chapman, Bruce March, Cameron Lawrence, Graham Rose, Jonathan Bishop, Kari Ellis, Wesley Kilham
-- **PPG:** Belinda Head, Dave Hanna, Mike Brady, Anthony Willing, Ian Leaver, Peter Evans
-- **HG:** Stu McElroy, Phil Seeley, Bruce March, Peter Evans, Peter Kupsovsky
+- **PG:**
+    - Jim Astley,
+    - Alex Chapman,
+    - Kari Ellis,
+    - Wesley Kilham,
+    - Peter Kupsovsky
+    - Cameron Lawrence,
+    - Bruce March,
+- **PPG:** Peter Evans
+- **HG:**
+    - Stuart McElroy,
+    - Bruce March,
+    - Peter Evans,
+    - Peter Kupsovsky
 
 ## Tandem Pilots
 
@@ -67,19 +77,13 @@ ACTHPA sites include:
 
   Paragliding         Hang gliding
  ------------------- --------------
- Barry Oliver        Andrew Luton
- Alistair Dickie     Phil Robinson
- Matt Smith          Brad Porter
- Kari Ellis
- Rafael Esquillaro
- Clancy Pamment
+ Alistair Dickie     Andrew Luton
+ Kari Ellis          Phil Robinson 
+ Rafael Esquillaro   Brad Porter
  Andrew Gough
  Chris Neal
  Mike Brady
- William Oates
  Jim Astley
- Karl Texler
- Antony Prehn
  Phil Robinson
  Stuart McElroy
  Rene Sedlmaier

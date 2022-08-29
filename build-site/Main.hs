@@ -116,13 +116,25 @@ data About = About
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] About)
 makeLenses ''About
 
+data FlyingSites = FlyingSites
+  { _fsPage :: Page
+  , _fsSpringHill :: Page
+  , _fsLakeGeorge :: Page
+  , _fsLanyon :: Page
+  , _fsCollector :: Page
+  , _fsHoneysuckle :: Page
+  , _fsOneTreeHill :: Page
+  } deriving (Generic, Eq, Ord, Show, Binary)
+  deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] FlyingSites)
+-- makeLenses ''FlyingSites
+
 data Info = Info
   { _infoPage             :: Page
   , _infoAbout            :: About
   , _infoRadios           :: Page
   , _infoTelegram         :: Page
   , _infoZulip            :: Page
-  , _infoSites            :: Page
+  , _infoSites            :: FlyingSites
   , _infoSiteRecords      :: Page
   , _infoWeatherResources :: Page
   -- , _infoFAQ              :: Page
@@ -176,6 +188,17 @@ instance ToMenuItem Info where
       , toMenuItem _infoWeatherResources
       -- , toMenuItem _infoFAQ
       , toMenuItem _infoAbout
+      ]
+
+instance ToMenuItem FlyingSites where
+  toMenuItem FlyingSites{..} =
+    BranchItem _fsPage $ NE.fromList
+      [ toMenuItem _fsSpringHill
+      , toMenuItem _fsLakeGeorge
+      , toMenuItem _fsLanyon
+      , toMenuItem _fsCollector
+      , toMenuItem _fsHoneysuckle
+      , toMenuItem _fsOneTreeHill
       ]
 
 instance ToMenuItem About where
@@ -338,17 +361,26 @@ buildAbout site About{..} pages = do
 buildInfo :: Site -> Info -> Action ()
 buildInfo site Info{..} = do
   let pages =
-        [ _infoSites
-        , _infoSiteRecords
+        [ _infoSiteRecords
         , _infoRadios
         , _infoTelegram
         , _infoZulip
         , _infoWeatherResources
         -- , _infoFAQ
-        ]
+        ] <> sitePages _infoSites
   buildAbout site _infoAbout pages
   traverse_ (buildPageDefault site) pages
   buildPostListPage site _infoPage (_infoAbout ^. aboutPage : pages)
+  where
+    sitePages FlyingSites{..} =
+      [ _fsPage
+      , _fsSpringHill
+      , _fsLakeGeorge
+      , _fsLanyon
+      , _fsCollector
+      , _fsHoneysuckle
+      , _fsOneTreeHill
+      ]
 
 buildPageDefault :: Site -> Page -> Action ()
 buildPageDefault = buildPage "default"
@@ -488,6 +520,12 @@ buildRules = do
   about                <- loadPage "site/info/about.md"
   -- faqPage              <- loadPage "site/info/faq.md"
   sitesPage            <- loadPage "site/info/sites.md"
+  springHillPage       <- loadPage "site/info/sites/spring-hill.md"
+  lakeGeorgePage       <- loadPage "site/info/sites/lake-george.md"
+  lanyonPage           <- loadPage "site/info/sites/lanyon.md"
+  collectorPage        <- loadPage "site/info/sites/collector.md"
+  honeysucklePage      <- loadPage "site/info/sites/honeysuckle.md"
+  onetreePage          <- loadPage "site/info/sites/one-tree-hill.md"
   radiosPage           <- loadPage "site/info/radios.md"
   telegramPage         <- loadPage "site/info/telegram.md"
   zulipPage            <- loadPage "site/info/zulip.md"
@@ -499,7 +537,13 @@ buildRules = do
         radiosPage
         telegramPage
         zulipPage
-        sitesPage
+        (FlyingSites sitesPage
+          springHillPage
+          lakeGeorgePage
+          lanyonPage
+          collectorPage
+          honeysucklePage
+          onetreePage)
         siteRecordsPage
         weatherResourcesPage
         -- faqPage

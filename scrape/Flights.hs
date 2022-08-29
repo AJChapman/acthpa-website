@@ -38,6 +38,7 @@ module Flights
   , lanyon
   , pigHill
   , honeysuckle
+  , onetreehill
   , bowning
   , argalong
   , castleHill
@@ -195,7 +196,7 @@ data Site = Site
   } deriving (Eq, Ord, Show)
 $(makeLenses ''Site)
 
-canberra, lakeGeorge, lanyon, collector, bowning, honeysuckle, carols, springHill, pigHill, argalong, castleHill, booroomba, binalong, arboretum :: Site
+canberra, lakeGeorge, lanyon, collector, bowning, honeysuckle, onetreehill, carols, springHill, pigHill, argalong, castleHill, booroomba, binalong, arboretum :: Site
 canberra    = Site "Canberra"                   (LL 149.104562 (-35.300332)) 75000 (ClubId "0.15")
 springHill  = Site "Spring Hill"                (LL 149.08332 (-35.09403))    5000 (SiteId 11640) -- also 42740?
 collector   = Site "Collector"                  (LL 149.37467 (-34.97003))    1000 (SiteId 13734)
@@ -204,6 +205,7 @@ lanyon      = Site "Lanyon"                     (LL 149.1076 (-35.4837))      50
 -- gearys      = Site ""                          (LL 149.37425 (-35.09573))  5000   (SiteId 13644)
 pigHill     = Site "Pig Hill"                   (LL 148.89708 (-35.22075))    5000 (SiteId 11641) -- Also 42741?
 honeysuckle = Site "Honeysuckle (Tumut)"        (LL 148.318 (-35.1354))       5000 (SiteId 32741)
+onetreehill = Site "One Tree Hill"              (LL 149.0915 (-35.14234))      5000 Unknown
 bowning     = Site "Bowning"                    (LL 148.83158 (-34.77817))    5000 Unknown
 argalong    = Site "Argalong"                   (LL 148.36 (-35.3117))        5000 (SiteId 32895)
 castleHill  = Site "Castle Hill"                (LL 149.034 (-35.47985))      5000 Unknown
