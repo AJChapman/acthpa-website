@@ -1,5 +1,5 @@
 ---
-title: XC Contacts Spreadsheet
+title: XC Contacts
 ---
 
 [The ACTHPA XC Contacts spreadsheet](https://docs.google.com/spreadsheets/d/14CrqvgL1gPR4KqPDc7RtQ6uvGjS-0vYJYAdrHMAz37E/edit#gid=0) is hosted on Google Sheets.
