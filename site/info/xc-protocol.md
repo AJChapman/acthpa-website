@@ -9,40 +9,55 @@ You don't have to do it this way, but it works better if we all do it the same w
 
 For more information on the items in these checklists, check the details in the following sections.
 
+<div style="border: 1px solid black; padding: 2ex; padding-bottom: 0; margin-bottom: 2ex;">
 ### Pilots (before the day)
 
-- Make sure you are in the [ACTHPA Telegram group],
-- Download the [XC Contacts spreadsheet] so it can be accessed offline,
-- Add others' InReach addresses to your EarthMate app so you can message InReach to InReach,
-- Add others' phone numbers to your phone's address book, both for phone to phone and InReach to phone communications,
-- Make sure your [radio works with SAFA 1][radios],
-- Check that your InReach share page is publicly accessible,
-- Check your other live tracking works (XContest Live, Skylines).
-- Make sure you are registered on highcloud.net.
+<div style="padding-left: 4ex;">
+☐ Make sure you are in the [ACTHPA Telegram group],<br />
+☐ Download the [XC Contacts spreadsheet] so it can be accessed offline,<br />
+☐ Add others' InReach addresses to your EarthMate app so you can message InReach to InReach,<br />
+☐ Add others' phone numbers to your phone's address book, both for phone to phone and InReach to phone communications,<br />
+☐ Make sure your [radio works with SAFA 1][radios],<br />
+☐ Check that your InReach share page is publicly accessible,<br />
+☐ Check your other live tracking works (XContest Live, Skylines).<br />
+☐ Make sure you are registered on highcloud.net.
+</div>
+</div>
 
+<div style="border: 1px solid black; padding: 2ex; padding-bottom: 0; margin-bottom: 2ex;">
 ### Pilots (on the day)
 
-- Let others know your intentions on the Telegram group, e.g. where
-  you're going, your ETA, whether you can supervise, carpool, retrieve, etc.
-- When you reach the site, **check in on the Telegram poll**,
-- **Turn on your tracking devices** before you launch (add it to your pre-flight checklist),
-- Do a **radio check**,
-- At the end of the day, when you're safely on your way home, retract your vote (tap the poll and choose 'Retract Vote') and change it to **both 'Checked in' and 'Checked out'**,
-- If you think you may be the last to leave, **check whether anyone has not checked out**.
+<div style="padding-left: 4ex;">
+☐ Let others know your intentions on the Telegram group, e.g. where you're going, your ETA, whether you can supervise, carpool, retrieve, etc.<br />
+☐ When you reach the site, **check in on the Telegram poll**,<br />
+☐ **Turn on your tracking devices** before you launch (add it to your pre-flight checklist),<br />
+☐ Do a **radio check**,<br />
+☐ At the end of the day, when you're safely on your way home, retract your vote (tap the poll and choose 'Retract Vote') and change it to **both 'Checked in' and 'Checked out'**,<br />
+☐ If you think you may be the last to leave, **check whether anyone has not checked out**.
+</div>
+</div>
 
+<div style="border: 1px solid black; padding: 2ex; padding-bottom: 0; margin-bottom: 2ex;">
 ### Retrieve Drivers (before the day)
 
-- Make sure you are in the [ACTHPA Telegram group],
-- Download the [XC Contacts spreadsheet] so it can be accessed offline,
-- Add pilots' phone numbers to your phone's address book,
-- Make sure your [radio works with SAFA 1][radios] (if possible),
-- Check your phone provider's coverage maps for the area.
+<div style="padding-left: 4ex;">
+☐ Make sure you are in the [ACTHPA Telegram group],<br />
+☐ Download the [XC Contacts spreadsheet] so it can be accessed offline,<br />
+☐ Add pilots' phone numbers to your phone's address book,<br />
+☐ Make sure your [radio works with SAFA 1][radios] (if possible),<br />
+☐ Check your phone provider's coverage maps for the area.
+</div>
+</div>
 
+<div style="border: 1px solid black; padding: 2ex; padding-bottom: 0; margin-bottom: 2ex;">
 ### Retrieve Drivers (on the day)
 
-- Check that you can track pilots, preferably before they leave the ground,
-- Do a radio check,
-- At the end of the day, **check whether anyone has not checked out**.
+<div style="padding-left: 4ex;">
+☐ Check that you can track pilots, preferably before they leave the ground,<br />
+☐ Do a radio check,<br />
+☐ At the end of the day, **check whether anyone has not checked out**.
+</div>
+</div>
 
 ## Planning a Day of XC Flying
 
@@ -244,7 +259,7 @@ This is the only option that will work if neither of you have phone reception.
 
 You will need to know their InReach address, which looks like an email address, \<something\>\@inreach.garmin.com, but it isn't one.
 The \<something\> is typically from the email address you signed up with, if it is available.
-E.g. [wally.mcguffin\@gmail.com](mailto:wally.mcguffin@gmail.com) will become [wally.mcguffin\@inreach.garmin.com](mailto:wally.mcguffin@inreach.garmin.com), unless someone already has this, in which case Garmin will tack on a few random charaters.
+E.g. [wally.mcguffin\@gmail.com](mailto:wally.mcguffin@gmail.com) will become [wally.mcguffin\@inreach.garmin.com](mailto:wally.mcguffin@inreach.garmin.com), unless someone already has this, in which case Garmin will tack on a few random characters.
 To be sure, look in the [XC Contacts spreadsheet].
 Use the Earthmate app to send to this address using your InReach, or use the device directly if you prefer or have to.
 
