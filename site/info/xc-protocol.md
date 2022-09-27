@@ -1,5 +1,5 @@
 ---
-title: ACTHPA XC Protocol
+title: XC Protocol
 ---
 
 These are our current best practices for planning a day of XC flying.
