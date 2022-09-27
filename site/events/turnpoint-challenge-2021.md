@@ -1,13 +1,13 @@
 ---
-title: ACTHPA Turnpoint Challenge 2021
+title: ACTHPA Turnpoint Challenge 2021/22
 eventStart: 2021-10-04
-teaser: "This year's [turnpoint challenge](/events/turnpoint-challenge-2021) will run from 1 November 2021 until 31 August 2022."
+teaser: "[The 2021/22 turnpoint challenge](/events/turnpoint-challenge-2021) ran from 1 November 2021 until 31 August 2022."
 image: ACT-TPC-2020-Turnpoints.png
 ---
-With the help of our friends at https://turnpointchallenge.com.au we are again running a challenge throughout the flying season to collect turnpoints in the ACT region (including Corryong).
-This year we have added a few more turnpoints to make a total of 194!
+With the help of our friends at https://turnpointchallenge.com.au we ran a challenge throughout the flying season to collect turnpoints in the ACT region (including Corryong).
+This year we added a few more turnpoints to make a total of 194!
 
-See all the details and register to take part at the [ACTHPA 2021 Turnpoint Challenge page](https://www.turnpointchallenge.com.au/challenge-acthpa2021?chl=13).
+See the results at [ACTHPA 2021 Turnpoint Challenge page](https://www.turnpointchallenge.com.au/results?chl=13).
 
 ## 2020 Results
 
@@ -30,6 +30,3 @@ The **highest score in an individual flight in fun class** went to **Marco Gandi
 Well done everyone, and good luck this year!
 
 ![](/images/ACT-TPC-2020-Turnpoints.png)
-
-
-
