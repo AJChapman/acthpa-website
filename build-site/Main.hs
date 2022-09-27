@@ -24,6 +24,7 @@ module Main
   , infoSites
   , infoRadios
   , infoTelegram
+  , infoXCContacts
   , infoXCProtocol
   , infoZulip
   , infoSiteRecords
@@ -134,6 +135,7 @@ data Info = Info
   , _infoAbout            :: About
   , _infoRadios           :: Page
   , _infoTelegram         :: Page
+  , _infoXCContacts       :: Page
   , _infoXCProtocol       :: Page
   , _infoZulip            :: Page
   , _infoSites            :: FlyingSites
@@ -186,6 +188,7 @@ instance ToMenuItem Info where
       , toMenuItem _infoSiteRecords
       , toMenuItem _infoRadios
       , toMenuItem _infoTelegram
+      , toMenuItem _infoXCContacts
       , toMenuItem _infoXCProtocol
       -- , toMenuItem _infoZulip -- Removed from menu but the page is still there for now
       , toMenuItem _infoWeatherResources
@@ -367,6 +370,7 @@ buildInfo site Info{..} = do
         [ _infoSiteRecords
         , _infoRadios
         , _infoTelegram
+        , _infoXCContacts
         , _infoXCProtocol
         , _infoZulip
         , _infoWeatherResources
@@ -532,6 +536,7 @@ buildRules = do
   onetreePage          <- loadPage "site/info/sites/one-tree-hill.md"
   radiosPage           <- loadPage "site/info/radios.md"
   telegramPage         <- loadPage "site/info/telegram.md"
+  xcContactsPage       <- loadPage "site/info/xc-contacts.md"
   xcProtocolPage       <- loadPage "site/info/xc-protocol.md"
   zulipPage            <- loadPage "site/info/zulip.md"
   siteRecordsPage      <- loadPage "site/info/site-records.md"
@@ -541,6 +546,7 @@ buildRules = do
         (About about lifeMemberPages)
         radiosPage
         telegramPage
+        xcContactsPage
         xcProtocolPage
         zulipPage
         (FlyingSites sitesPage

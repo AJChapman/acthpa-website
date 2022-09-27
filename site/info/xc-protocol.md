@@ -249,5 +249,5 @@ To be sure, look in the [XC Contacts spreadsheet].
 Use the Earthmate app to send to this address using your InReach, or use the device directly if you prefer or have to.
 
 [ACTHPA Telegram group]: ../telegram
-[XC Contacts spreadsheet]: https://docs.google.com/spreadsheets/d/14CrqvgL1gPR4KqPDc7RtQ6uvGjS-0vYJYAdrHMAz37E/edit?usp=sharing
+[XC Contacts spreadsheet]: ../xc-contacts
 [radios]: ../radios
