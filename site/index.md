@@ -5,16 +5,6 @@ title: Home
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/470868857?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <br />
 
-## Current COVID-19 Policy (updated 13 August 2021)
-
-The ACTHPA Committee considered the ACT lockdown at its meeting last night.
-As the ACTHPA Committee, we are not closing any of our sites at this time.
-
-However we ask all our members to please read and follow all ACT and NSW Governments' public health orders and restrictions.
-Each pilot should independently decide whether travelling to a site and flying is within the scope of exercise or activities permitted in their particular circumstances.
-
-Please be aware that there are border declaration requirements for travel to NSW from the ACT and that visiting the ACT will require likely NSW residents to follow a stay-at-home order.
-
 ## [About ACTHPA](info/about)
 
 The [ACT Hang gliding and Paragliding Association (ACTHPA)](info/about) is the club for all hang gliders, paragliders and their motorised forms in the region.
