@@ -28,7 +28,7 @@ For more information on the items in these checklists, check the details in the 
 ### Pilots (on the day)
 
 <div style="padding-left: 4ex;">
-☐ Let others know your intentions on the Telegram group, e.g. where you're going, your ETA, whether you can supervise, carpool, retrieve, etc.<br />
+☐ Let others know your intentions on the [Telegram group], e.g. where you're going, your ETA, whether you can supervise, carpool, retrieve, etc.<br />
 ☐ When you reach the site, **check in on the Telegram poll**,<br />
 ☐ **Turn on your tracking devices** before you launch (add it to your pre-flight checklist),<br />
 ☐ Do a **radio check**,<br />
@@ -61,7 +61,7 @@ For more information on the items in these checklists, check the details in the 
 
 ## Planning a Day of XC Flying
 
-Use the [ACTHPA Telegram group] to come up with a plan.
+Use the [Telegram group] to come up with a plan.
 Things to consider:
 
 - Where to fly,
@@ -75,7 +75,7 @@ Note that our group decisions tend to be tentative, and are often not explicitly
 
 ## Coordinating on the Ground
 
-**Use Telegram** to coordinate on the ground.
+**Use [Telegram]** to coordinate on the ground.
 If there is only one site being flown then use the ACTHPA group, otherwise it's best to create a group for the day for each site.
 Post an invite link on the ACTHPA group so that those interested can join.
 
@@ -156,7 +156,7 @@ Shows all users of XCTrack with live tracking enabled, in real time, as long as 
 
 **Skylines**: Use [**Skylines live tracking**](https://skylines.aero/tracking) or [**Squiggly Cloud**](https://squiggly.cloud).
 
-**Telegram Live Sharing:** Everyone who is sharing their live location with the Telegram group should be visible on its location sharing map.
+**Telegram Live Sharing:** Everyone who is sharing their live location with the [Telegram group] should be visible on its location sharing map.
 Unfortunately Telegram has proven not reliable due to battery optimisation settings both on iPhone and Android, and it doesn't provide altitude nor a record of the track.
 
 ### To Track an Individual
@@ -188,7 +188,7 @@ Once you're in contact, ask them to share their live location if possible (e.g. 
 
 If you have landed and have no organised retrieve:
 
-1. Ask on the Telegram group,
+1. Ask on the [Telegram group],
 2. Consult the [XC Contacts spreadsheet] to find someone who answered 'Yes' to 'Call for retrieve?', starting with someone in a nearby suburb if possible.
 
 Once you are in contact with someone who is willing to retrieve you, share your live location with them and/or arrange a place to meet them.
@@ -264,5 +264,7 @@ To be sure, look in the [XC Contacts spreadsheet].
 Use the Earthmate app to send to this address using your InReach, or use the device directly if you prefer or have to.
 
 [ACTHPA Telegram group]: ../telegram
+[Telegram group]: ../telegram
+[Telegram]: ../telegram
 [XC Contacts spreadsheet]: ../xc-contacts
 [radios]: ../radios
