@@ -2,10 +2,16 @@
 title: XC Contacts
 ---
 
+## Get the ACTHPA XC Contacts spreadsheet (access required)
+
+<p class="text-center" style="margin-block:2em">
+  <a href="https://docs.google.com/spreadsheets/d/14CrqvgL1gPR4KqPDc7RtQ6uvGjS-0vYJYAdrHMAz37E/edit#gid=0" class="btn btn-primary btn-lg" role="button" target="_blank">ACTHPA XC Contacts</a>
+</p>
+
 [The ACTHPA XC Contacts spreadsheet](https://docs.google.com/spreadsheets/d/14CrqvgL1gPR4KqPDc7RtQ6uvGjS-0vYJYAdrHMAz37E/edit#gid=0) is hosted on Google Sheets.
 If you're a local or visiting pilot, or a retrieve driver then we're happy to give you access -- just fill out the form below or if it's urgent ask on [Telegram](../telegram).
 
-## How to Access the ACTHPA XC Contacts spreadsheet
+## How to access the spreadsheet
 
 ### Step 1:
 
