@@ -4,8 +4,8 @@ title: "About ACTHPA"
 
 The Australian Capital Territory Hang Gliding and Paragliding Association (ACTHPA) is an incorporated body in the ACT.
 It is both a State Association affiliated with the Sports Aviation Federation of Australia (SAFA, formerly HGFA), and the primary club for free flying in the Canberra region.
-[Here are the ACTHPA Objects and Rules as of 7 June 2016](/files/ACTHPA Objects and Rules - 7 June 2016.pdf).
- 
+[Here are the ACTHPA Objects and Rules as of 4 October 2020](/files/ACTHPA Objects and Rules - 4 Oct 2020.pdf).
+
 ## Contact Us
 
 To contact the ACTHPA committee, email office@acthpa.org or call our president, Rene Sedlmaier, on 0408 621 100.
@@ -30,7 +30,7 @@ Vice President           Alex Boiko
 Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
 Secretary                Nick Lemon
 Site Development Officer Peter Evans
-Site Development Officer Rowan Beggs-French 
+Site Development Officer Rowan Beggs-French
 Novice Representative    "Tony Pony"
 General Member           Mark Wallace
 General Member           Alex Chapman
@@ -78,7 +78,7 @@ ACTHPA sites include:
   Paragliding         Hang gliding
  ------------------- --------------
  Alistair Dickie     Andrew Luton
- Kari Ellis          Phil Robinson 
+ Kari Ellis          Phil Robinson
  Rafael Esquillaro   Brad Porter
  Andrew Gough
  Chris Neal
@@ -107,4 +107,4 @@ Michael Imholz                                 October 2016
 [Alistair Dickie](Alistair-Dickie)             October 2017
 [Matt Smith](Matt-Smith)                       October 2017
 [Nick Siefken](Nick-Siefken)                   October 2017
-
+[Wesley Kilham](Wesley-Kilham)                 October 2020
