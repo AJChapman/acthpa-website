@@ -541,6 +541,8 @@ buildRules = do
   zulipPage            <- loadPage "site/info/zulip.md"
   siteRecordsPage      <- loadPage "site/info/site-records.md"
   weatherResourcesPage <- loadPage "site/info/weather-resources.md"
+
+  collectorBioPage     <- loadPage "site/info/sites/collector-biosecurity-declaration.md"
   let info = Info
         infoPage'
         (About about lifeMemberPages)
@@ -560,7 +562,9 @@ buildRules = do
         weatherResourcesPage
         -- faqPage
 
-  buildSite $ Site home now future past info advice stories
+  let site = Site home now future past info advice stories
+  buildPageDefault site collectorBioPage
+  buildSite site
 
 main :: IO ()
 main =

@@ -1451,3 +1451,12 @@ div.left {
     text-align: center;
 }
 
+/* Collector biosecurity form styling */
+#collector-bio-form label {
+    margin-top: 1em;
+}
+
+#collector-bio-form fieldset input {
+    margin-left: 1ex;
+    margin-right: 1ex;
+}
