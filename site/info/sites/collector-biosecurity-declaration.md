@@ -2,22 +2,17 @@
 title: ACTHPA Biosecurity Declaration Collector
 ---
 
-[In May 2022, an outbreak of foot and mouth disease (FMD) was reported in cattle in Indonesia and has since spread to Bali](https://www.agriculture.gov.au/biosecurity-trade/pests-diseases-weeds/animal/fmd).
-As many of us are aware, this is an extremely serious viral infection which has the potential to totally devastate the livestock industry, causing pain and suffering to animals and creating huge financial losses for livestock farmers and the broader economy.
+[In May 2022, an outbreak of foot and mouth disease (FMD) was reported in cattle in Indonesia including Bali](https://www.agriculture.gov.au/biosecurity-trade/pests-diseases-weeds/animal/fmd).
 
-There are strict laws in Australia that govern biosecurity.
-Farmers and graziers are under continued pressure to implement and enforce regulations and precesses that extend down from these laws to ultimately protect agricultural indurstries and the welfare of animals.
-We as pilots must be _aware_ of biosecurity threats and _act_ to lower the risks we impose or we can have no place in these environments and may be permanently barred from using these sites.
-We should also be aware that many of our flying sites are privately owned, or part thereof, and these landholders graciously allow us to access them.
-As visitors we are not at liberty to do as we please, but must be respectful and abide by the site-specific requirements landholders may impose.
+Australia has strong biosecurity laws which farmers and graziers must implement to protect agricultural industries.
 
 The landholder/manager of the Collector bombout has requested that we as a club implement the following new actions when using this site:
 
-- Under no circumstances must anyone enter any part of this site (launch orr bombout areas) if they have travelled to Indonesia, including Bali, in the last 3 months.
+- Under no circumstances can anyone enter any part of this site (launch orr bombout areas) if they have travelled to Indonesia, including Bali, in the last 3 months.
 - Persons must record their name, the time and the date they enter the site (by submitting this form).
-- ACTHPA locks are not to be used on this site at the moment. Different locks are required to prevent outsiders gaining access.
+- ACTHPA locks are not to be used on this site at the moment. Different locks are required to ensure access is tightly controlled.
 
-ACTHPA committee members are in close contact with the landowner/manager regarding these issues and conditions may change without notice.
+ACTHPA committee members are in close contact with the landowner/manager regarding these requirements which may change without notice.
 
 Please answer all of the following questions:
 
