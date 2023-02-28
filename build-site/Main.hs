@@ -126,6 +126,7 @@ data FlyingSites = FlyingSites
   , _fsCollector :: Page
   , _fsHoneysuckle :: Page
   , _fsOneTreeHill :: Page
+  , _fsCanglide :: Page
   } deriving (Generic, Eq, Ord, Show, Binary)
   deriving (ToJSON, FromJSON) via (GenericToFromJSON '[CamelFields] FlyingSites)
 -- makeLenses ''FlyingSites
@@ -205,6 +206,7 @@ instance ToMenuItem FlyingSites where
       , toMenuItem _fsCollector
       , toMenuItem _fsHoneysuckle
       , toMenuItem _fsOneTreeHill
+      , toMenuItem _fsCanglide
       ]
 
 instance ToMenuItem About where
@@ -388,6 +390,7 @@ buildInfo site Info{..} = do
       , _fsCollector
       , _fsHoneysuckle
       , _fsOneTreeHill
+      , _fsCanglide
       ]
 
 buildPageDefault :: Site -> Page -> Action ()
@@ -534,6 +537,7 @@ buildRules = do
   collectorPage        <- loadPage "site/info/sites/collector.md"
   honeysucklePage      <- loadPage "site/info/sites/honeysuckle.md"
   onetreePage          <- loadPage "site/info/sites/one-tree-hill.md"
+  canglidePage       <- loadPage "site/info/sites/canglide.md"
   radiosPage           <- loadPage "site/info/radios.md"
   telegramPage         <- loadPage "site/info/telegram.md"
   xcContactsPage       <- loadPage "site/info/xc-contacts.md"
@@ -557,7 +561,8 @@ buildRules = do
           lanyonPage
           collectorPage
           honeysucklePage
-          onetreePage)
+          onetreePage
+          canglidePage)
         siteRecordsPage
         weatherResourcesPage
         -- faqPage

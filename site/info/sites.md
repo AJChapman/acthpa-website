@@ -13,6 +13,7 @@ Also check out [the Info page](../) for general information on flying in the Can
 - [Collector](collector) ([site guide](https://siteguide.org.au/Sites/Lake%20George%20(Collector).html))
 - [Honeysuckle (Tumut)](honeysuckle) ([site guide](https://siteguide.org.au/Sites/Honeysuckle.html))
 - [One Tree Hill](one-tree-hill) ([site guide](https://siteguide.org.au/Sites/One%20Tree%20Hill,%20Gungahlin.html))
+- [CanGlide Paragliding Simulator](canglide)
 
-See also the [Australian National Site Guide's ACT page](https://siteguide.org.au/Site%20Guide%20-%20ACT.html). 
+See also the [Australian National Site Guide's ACT page](https://siteguide.org.au/Site%20Guide%20-%20ACT.html).
 
