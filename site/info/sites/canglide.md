@@ -67,7 +67,7 @@ expectations, so be prepared for a desire to want more flights!
 
 ## Landowners
 
-The landowner is Trevor Vickers, the proprietor of Jet Flight Simulator
+The contact for the site is Trevor, the proprietor of Jet Flight Simulator
 Canberra. Trevor allows the simulator to be located at his premises
 where there is a 737-jet simulator and two Icoras weight-shift VR
 simulators. Trevor sells PG simulator flights to his customers, and this
