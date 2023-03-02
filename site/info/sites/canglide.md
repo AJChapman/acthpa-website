@@ -8,8 +8,8 @@ height="1.7097222222222221in"}
 
 ## Introduction
 
-![](/images/canglide/image4.jpeg){width="3.9763888888888888in"
-height="2.9819444444444443in"}
+![](/images/canglide/image4.jpeg){width="2.9819444444444443in"
+height="3.9763888888888888in"}
 
 ![](/images/canglide/image5.jpeg){width="3.5555555555555554in"
 height="2.6666666666666665in"}
@@ -46,7 +46,7 @@ Four local pilots, Alex Boiko, Paul Shipley (Shippers), Michael
 Claringbould and Nick Lemon have set up CanGlide to facilitate the
 operation of probably the most capable and realistic paragliding
 simulator available today. Around 150,000 Euro was spent on its
-development in the Netherlands by Flightcoach. Alex, Shippers, Michael
+development in the Netherlands by [Flightcoach](https://flightcoach.nl/paragliding-vrsimulator-training/). Alex, Shippers, Michael
 and Nick have put in their own money to set CanGlide up however they are
 not receiving any financial benefit themselves. All money raised from
 selling flights is directed toward paying Flightcoach's monthly licence
@@ -67,10 +67,7 @@ expectations, so be prepared for a desire to want more flights!
 
 ## Landowners
 
-The contact for the site is Trevor, the proprietor of Jet Flight Simulator
-Canberra. Trevor allows the simulator to be located at his premises
-where there is a 737-jet simulator and two Icoras weight-shift VR
-simulators. Trevor sells PG simulator flights to his customers, and this
-covers the equivalent of CanGlide's rent. However, if you want the
-benefit of an experienced paragliding pilot to operate the simulator be
-sure to book through CanGlide.
+The landowner is Trevor, who runs Jet Flight Simulator Canberra.
+Trevor allows the simulator to be located at the premises where there is a 737 jet simulator and two Icaros weight-shift VR simulators.
+Trevor sells PG simulator flights to his customers, and this covers the equivalent of CanGlide’s rent.
+However, if you want the benefit of an experienced paragliding pilot to operate the simulator be sure to book through CanGlide.
