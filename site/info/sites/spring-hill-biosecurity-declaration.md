@@ -1,14 +1,14 @@
 ---
-title: ACTHPA Biosecurity Declaration Collector
+title: ACTHPA Biosecurity Declaration Spring Hill
 ---
 
 [In May 2022, an outbreak of foot and mouth disease (FMD) was reported in cattle in Indonesia including Bali](https://www.agriculture.gov.au/biosecurity-trade/pests-diseases-weeds/animal/fmd).
 
 Australia has strong biosecurity laws which farmers and graziers must implement to protect agricultural industries.
 
-The landholder/manager of the Collector bombout has requested that we as a club implement the following new actions when using this site:
+The landholder of Springrange has requested that we as a club implement the following new actions when using this site:
 
-- Under no circumstances can anyone enter any part of this site (launch or bombout areas) if they have travelled to Indonesia, including Bali, in the last 3 months.
+- Under no circumstances can anyone enter any part of this site (launch or bomb out areas) if they have travelled to Indonesia, including Bali, in the last 3 months.
 - Persons must record their name, the time and the date they enter the site (by submitting this form).
 - ACTHPA locks are not to be used on this site at the moment. Different locks are required to ensure access is tightly controlled.
 
@@ -18,7 +18,7 @@ Please answer all of the following questions:
 
 <form
   id='bio-form'
-  action="https://formspree.io/f/xgeqpdpg"
+  action="https://formspree.io/f/mrgvvopr"
   method="POST"
  class="form-group">
   <label for="name">
@@ -40,14 +40,14 @@ Please answer all of the following questions:
     <input type="radio" value="no" name="items" required>No</input>
   </fieldset>
   <label for="responsibilities">
-    I am unaware of my responsibilities regarding biosecurity at the Collector site.
+    I am unaware of my responsibilities regarding biosecurity at the Spring Hill site.
   </label>
   <fieldset id="responsibilities">
     <input type="radio" value="yes" name="responsibilities">Yes</input>
     <input type="radio" value="no" name="responsibilities" required>No</input>
   </fieldset><br />
 
-  <p><b><u>If you have answered 'Yes' to any of these questions DO NOT proceed onto the Collector site. [Contact the ACTHPA](../../about) for further information.</u></b></p>
+  <p><b><u>If you have answered 'Yes' to any of these questions DO NOT proceed onto the Spring Hill site. [Contact the ACTHPA](../../about) for further information.</u></b></p>
 
-  <button type="submit" class="btn-control btn-primary">Record my entry to the Collector launch/LZ</button>
+  <button type="submit" class="btn-control btn-primary">Record my entry to the Spring Hill launch/LZ</button>
 </form>
