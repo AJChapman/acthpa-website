@@ -8,9 +8,8 @@ Australia has strong biosecurity laws which farmers and graziers must implement 
 
 The landholder of Springrange has requested that we as a club implement the following new actions when using this site:
 
-- Under no circumstances can anyone enter any part of this site (launch or bomb out areas) if they have travelled to Indonesia, including Bali, in the last 3 months.
-- Persons must record their name, the time and the date they enter the site (by submitting this form).
-- ACTHPA locks are not to be used on this site at the moment. Different locks are required to ensure access is tightly controlled.
+- Under no circumstances can anyone enter any part of this site (launch or bomb out areas) if they have travelled to Indonesia, including Bali, in the last seven days.
+- Persons must record their name, contact phone number, the time and the date they enter the site (by submitting this form).
 
 ACTHPA committee members are in close contact with the landowner/manager regarding these requirements which may change without notice.
 
@@ -25,15 +24,19 @@ Please answer all of the following questions:
     Name:
   </label>
     <input type="text" name="name" id="name" class="form-control" required="1" placeholder="Please enter your name..." />
-  <label for="90days">
-    Have you travelled to Indonesia, including Bali, in the last 90 days?
+  <label for="phone">
+    Contact number:
   </label>
-  <fieldset id="90days">
-    <input type="radio" value="yes" name="90days">Yes</input>
-    <input type="radio" value="no" name="90days">No</input>
+    <input type="text" name="phone" id="phone" class="form-control" required="1" placeholder="Contact phone number..." />
+  <label for="7days">
+    Have you travelled to Indonesia, including Bali, in the last seven days?
+  </label>
+  <fieldset id="7days">
+    <input type="radio" value="yes" name="7days">Yes</input>
+    <input type="radio" value="no" name="7days">No</input>
   </fieldset>
   <label for="items">
-    Do you have any items -- clothing, footwear, flying equipment/wings/harnesses that have been in Bali in the last 90 Days? This includes but is not limited to any items in or on a vehicle that you bring onto this site.
+    Do you have any items -- clothing, footwear, flying equipment/wings/harnesses that have been in Bali in the last seven Days? This includes but is not limited to any items in or on a vehicle that you bring onto this site.
   </label>
   <fieldset id="items">
     <input type="radio" value="yes" name="items">Yes</input>
