@@ -1,73 +1,45 @@
 ---
 title: "CanGlide Paragliding Simulator, Lyneham"
+image: canglide/image1.png
 ---
-![](/images/canglide/image1.png){width="6.5in" height="1.8291666666666666in"}
-![](/images/canglide/image2.png){width="6.5in"
-height="1.7097222222222221in"}
-![](/images/canglide/image3.jpeg){width="6.5in" height="4.875in"}
+![](/images/canglide/image1.png)
 
-## Introduction
+The CanGlide paragliding simulator provides one of the best possible virtual reality paragliding experiences for our club members and visitors alike.
 
-![](/images/canglide/image4.jpeg){width="2.9819444444444443in"
-height="3.9763888888888888in"}
+![](/images/canglide/image2.jpeg){width="4.470227471566054in" height="5.957824803149606in"}
 
-![](/images/canglide/image5.jpeg){width="3.5555555555555554in"
-height="2.6666666666666665in"}
+The simulator is ideal for:
 
-This site is suitable for all SAFA pilots and is able to be used by
-anyone who would like to experience what paragliding is like, whether
-they be friends or family. The many virtual reality (VR) sites available
-to choose from take winds from all directions. Landing zones vary from
-target spot landings to out-landings in the mountains, valleys or plains
-depending on your chosen scenario.
+- pilots wanting to fly on days when the weather is not suitable to fly for real,
+- family and friends who might want to find out what paragliding is like,
+- pilots wanting to experience flying at a new site before they go there,
+- experienced pilots wanting to help new pilots improve their thermalling, soaring or landing skills,
+- instructors to augment their teaching of new pilots, and in the future,
+- XC and landing accuracy competitions.
 
-## Launches
+An hour session is \$60 and a 30 minute session is \$40.
 
-Flight simulations start at a point after launch, either close by for
-thermic flights, or near landing areas in simulations which focus on
-spot landing accuracy or out-landing decision making. Some simulations
-are dune or ridge soaring and these commence at points shortly after
-take-off or in an established soaring pattern for which the pilot must
-master clean and efficient turns to remain aloft or else find a safe top
-or bottom landing.
+Events for small groups can be arranged on request.
 
-![](/images/canglide/image6.png){width="5.914703630796151in"
-height="4.989583333333333in"}
+The simulator is conveniently located at [Jet Flight Simulator Canberra](https://maps.app.goo.gl/hKj9XzxiQRsLmDJMA), 4 Montford Cres, Lyneham.
 
-## Access
-
-Vehicular access is available with good parking options at the site. The
-address is 4 Montford Cres, Lyneham. The paragliding simulator is
-located at the premises of Jet Flight Simulator Canberra (JFSC).
-
-## Who and what is CanGlide
-
-Four local pilots, Alex Boiko, Paul Shipley (Shippers), Michael
-Claringbould and Nick Lemon have set up CanGlide to facilitate the
-operation of probably the most capable and realistic paragliding
-simulator available today. Around 150,000 Euro was spent on its
-development in the Netherlands by [Flightcoach](https://flightcoach.nl/paragliding-vrsimulator-training/). Alex, Shippers, Michael
-and Nick have put in their own money to set CanGlide up however they are
-not receiving any financial benefit themselves. All money raised from
-selling flights is directed toward paying Flightcoach's monthly licence
-fee and other minor administration costs. Check out the [CanGlide website](http://www.canglide.com.au) for more details.
+[![](/images/canglide/image3.png){width="6.270138888888889in" height="5.288888888888889in"}](https://maps.app.goo.gl/hKj9XzxiQRsLmDJMA)
 
 ## Booking
 
-Booking is essential but easy to arrange. Either use the form on
-[CanGlide's website](http://www.canglide.com.au) or send an email to
-<info@CanGlide.com.au> with your details and your preferred date and
-time. One of the CanGlide operators will get in touch and set up an
-appointment for you.
+Booking is essential but easy to arrange.
+You can directly message Alex Boiko, Paul Shipley (Shippers), Michael Claringbould or Nick Lemon, or send an email to [info\@CanGlide.com.au](mailto:info@CanGlide.com.au) with your contact details and your preferred date and time.
+One of the CanGlide operators will contact you to arrange your virtual reality flying session.
 
-## Hazards
+## Who and what is CanGlide?
 
-Everyone who has tried the simulator has found it exceeded their
-expectations, so be prepared for a desire to want more flights!
+Local pilots, Alex Boiko, Paul Shipley (Shippers), Michael Claringbould and Nick Lemon have set up CanGlide to facilitate the operation of probably the most capable and realistic paragliding simulator available today.
 
-## Landowners
+Our vision for the simulator is that will be seen and used as a local flying site by club members and visitors alike.
 
-The landowner is Trevor, who runs Jet Flight Simulator Canberra.
-Trevor allows the simulator to be located at the premises where there is a 737 jet simulator and two Icaros weight-shift VR simulators.
-Trevor sells PG simulator flights to his customers, and this covers the equivalent of CanGlide’s rent.
-However, if you want the benefit of an experienced paragliding pilot to operate the simulator be sure to book through CanGlide.
+The simulator is one of two in Australia and was built in 2023 by ex-hang glider pilot Mal Osborne and uses a high-end gaming PC with a top of the range graphics card and one of the most capable virtual reality headsets.
+To avoid any problems with nausea, the simulator physically turns the pilot as they turn in flight.
+All these features ensure the pilot has the best possible virtual reality experience.
+
+Alex, Shippers, Michael and Nick have used their own money to set up CanGlide, but they do not receive any financial benefit.
+All money raised from selling flights is used to sustain the simulator as a local asset for pilots and to develop the software further, working collaboratively with Mal Osborne.
