@@ -25,15 +25,12 @@ The ACTHPA committee may ask that proposals be outlined in writing for further c
 
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
-President                Rene Sedlmaier     0408 621 100      office@acthpa.org
-Vice President           Alex Boiko
+President                Paul Shipley                         office@acthpa.org
+Vice President           Rene Sedlmaier
 Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
-Secretary                Nick Lemon
-Site Development Officer Peter Evans
-Site Development Officer Rowan Beggs-French
-Novice Representative    "Tony Pony"
+Secretary                Callen Hardie
 General Member           Mark Wallace
-General Member           Alex Chapman
+General Member           Ken Crowe
 Public Officer           Peter Lamont       0407 771 075
 
 ## ACTHPA Safety Committee:
