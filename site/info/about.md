@@ -28,12 +28,9 @@ Position                 Name               Phone             Email
 President                Paul Shipley                         office@acthpa.org
 Vice President           Alex Boiko
 Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
-Secretary                Nick Lemon
-Site Development Officer Peter Evans
-Site Development Officer Rowan Beggs-French
-Novice Representative    "Tony Pony"
+Secretary                Callen Hardie
 General Member           Mark Wallace
-General Member           Alex Chapman
+General Member           Ken Crowe
 Public Officer           Peter Lamont       0407 771 075
 
 ## ACTHPA Safety Committee:
