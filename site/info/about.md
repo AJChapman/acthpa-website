@@ -25,7 +25,7 @@ The ACTHPA committee may ask that proposals be outlined in writing for further c
 
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
-President                Rene Sedlmaier     0408 621 100      office@acthpa.org
+President                Paul Shipley                         office@acthpa.org
 Vice President           Alex Boiko
 Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
 Secretary                Nick Lemon
