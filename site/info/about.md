@@ -26,7 +26,7 @@ The ACTHPA committee may ask that proposals be outlined in writing for further c
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
 President                Paul Shipley                         office@acthpa.org
-Vice President           Rene Sedlmaier
+Vice President           Alex Boiko
 Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
 Secretary                Callen Hardie
 General Member           Mark Wallace
