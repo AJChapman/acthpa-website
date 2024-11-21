@@ -8,7 +8,7 @@ It is both a State Association affiliated with the Sports Aviation Federation of
 
 ## Contact Us
 
-To contact the ACTHPA committee, email office@acthpa.org or call our president, Rene Sedlmaier, on 0408 621 100.
+To contact the ACTHPA committee, email office@acthpa.org or call our president, Paul Shipley on 0408 567 325.
 
 ## ACT SAFA Regional Development Levy
 
@@ -25,12 +25,13 @@ The ACTHPA committee may ask that proposals be outlined in writing for further c
 
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
-President                Paul Shipley                         office@acthpa.org
-Vice President           Alex Boiko
+President                Paul Shipley       0408 567 325      office@acthpa.org
+Vice President           Rene Sedlmaier
 Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
 Secretary                Callen Hardie
 General Member           Mark Wallace
 General Member           Ken Crowe
+General Member           Michael Porter
 Public Officer           Peter Lamont       0407 771 075
 
 ## ACTHPA Safety Committee:
