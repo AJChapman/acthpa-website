@@ -5,7 +5,7 @@ Please fill in the following details before entry:
 
 <form
   id='bio-form'
-  action="https://formspree.io/f/general"
+  action="https://formspree.io/f/xyyllkad"
   method="POST"
  class="form-group">
   <label for="name">
