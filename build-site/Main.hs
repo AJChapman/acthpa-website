@@ -546,8 +546,9 @@ buildRules = do
   siteRecordsPage      <- loadPage "site/info/site-records.md"
   weatherResourcesPage <- loadPage "site/info/weather-resources.md"
 
-  collectorBioPage     <- loadPage "site/info/sites/collector-biosecurity-declaration.md"
+  collectorBioPage      <- loadPage "site/info/sites/collector-biosecurity-declaration.md"
   springHillBioPage     <- loadPage "site/info/sites/spring-hill-biosecurity-declaration.md"
+  springHillEntryPage   <- loadPage "site/info/sites/spring-hill-general-entry.md"
   let info = Info
         infoPage'
         (About about lifeMemberPages)
@@ -571,6 +572,7 @@ buildRules = do
   let site = Site home now future past info advice stories
   buildPageDefault site collectorBioPage
   buildPageDefault site springHillBioPage
+  uildPageDefault site springHillEntryPage
   buildSite site
 
 main :: IO ()
