@@ -1,6 +1,13 @@
 ---
 title: Spring Hill - Personal Details Before Entering
 ---
+<b>SPRING HILL - PRIVATE PROPERTY</b>
+
+Entry is permitted after filling in the form below.
+For further information, contact Spring Hill landowner Phil Robinson on 0419 030 016.
+
+No smoking, No shooting.
+
 Please fill in the following details before entry:
 
 <form
@@ -17,9 +24,9 @@ Please fill in the following details before entry:
   </label>
     <input type="text" name="phone" id="phone" class="form-control" required="1" placeholder="Your phone number..." />
   <label for="organisation">
-    Organisation:
+    Organisation or Reason for entering:
   </label>
-    <input type="text" name="phone" id="phone" class="form-control" required="1" placeholder="organisation eg. Transgrid, NSWTA, AFP or whatever..." />
+    <input type="text" name="phone" id="phone" class="form-control" required="1" placeholder="organisation eg. Transgrid, NSWTA, PG, HG or whatever..." />
   <p><b><u>For further information, contact Spring Hill landowner Phil Robinson on 0419 030 016.</u></b></p>
   <button type="submit" class="btn-control btn-primary">Submit</button>
 </form>
