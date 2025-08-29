@@ -9,7 +9,7 @@ title: Collector
 <div class="grid-item">![](/images/collector-busy.jpg)</div>
 </div>
 
-Collector is a launch at the northern end of Lake George.
+Collector is a launch at the northern end of Lake George...
 It takes an easterly, and can be soarable, but it is primarily a thermic site.
 It has a higher airspace ceiling than other sites close to the ACT, at 6,500ft, which makes it good for cross-country.
 
