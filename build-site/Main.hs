@@ -572,7 +572,7 @@ buildRules = do
   let site = Site home now future past info advice stories
   buildPageDefault site collectorBioPage
   buildPageDefault site springHillBioPage
-  uildPageDefault site springHillEntryPage
+  buildPageDefault site springHillEntryPage
   buildSite site
 
 main :: IO ()
