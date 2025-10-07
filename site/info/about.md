@@ -27,7 +27,7 @@ Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
 President                Paul Shipley       0408 567 325      office@acthpa.org
 Vice President           Rene Sedlmaier
-Treasurer                Phil Lyng                            treasurer.acthpa@gmail.com
+Treasurer                Phil Lyng                            treasurer@acthpa.org
 Secretary                Callen Hardie
 General Member           Mark Wallace
 General Member           Ken Crowe
