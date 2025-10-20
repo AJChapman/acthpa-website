@@ -26,12 +26,12 @@ The ACTHPA committee may ask that proposals be outlined in writing for further c
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
 President                Paul Shipley       0408 567 325      office@acthpa.org
-Vice President           Rene Sedlmaier
+Vice President           RJess Fleming
 Treasurer                Phil Lyng                            treasurer@acthpa.org
-Secretary                Callen Hardie
+Secretary                Stuart McElroy
 General Member           Mark Wallace
 General Member           Ken Crowe
-General Member           Michael Porter
+General Member           Grant Werner
 Public Officer           Peter Lamont       0407 771 075
 
 ## ACTHPA Safety Committee:
