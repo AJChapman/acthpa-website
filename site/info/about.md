@@ -26,7 +26,7 @@ The ACTHPA committee may ask that proposals be outlined in writing for further c
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
 President                Paul Shipley       0408 567 325      office@acthpa.org
-Vice President           RJess Fleming
+Vice President           Jess Fleming
 Treasurer                Phil Lyng                            treasurer@acthpa.org
 Secretary                Stuart McElroy
 General Member           Mark Wallace
