@@ -32,6 +32,7 @@ Secretary                Stuart McElroy
 General Member           Mark Wallace
 General Member           Ken Crowe
 General Member           Grant Werner
+SAFA State Rep           Phil Robinson
 Public Officer           Peter Lamont       0407 771 075
 
 ## ACTHPA Safety Committee:
