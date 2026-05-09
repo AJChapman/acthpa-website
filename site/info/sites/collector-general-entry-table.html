@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+<b>Entry is permitted after filling in the form below.</b>
+<style>
+  #bio-form label {
+    display: inline-block;
+    width: 120px;       /* Adjust this value to fit your longest label */
+    vertical-align: top;
+    text-align: right;
+  }
+  
+  #bio-form input {
+    width: 300px;       /* Optional: makes all input boxes the same width */
+  }
+</style>
+
+<form id='bio-form' action="https://formspree.io/f/mbdwyqel" method="POST">
+  <label for="Name">Name:</label>
+    <input type="text" name="Name" id="Name" required="1" placeholder="Please enter your name..." /><br>
+  
+  <label for="Phone">Phone:</label>
+    <input type="text" name="Phone" id="Phone" required="1" placeholder="Your phone number..." /><br>
+  
+  <label for="Reason">Reason for entry or Organisation:</label>
+    <input type="text" name="Reason" id="Reason" required="1" placeholder="eg. PG, HG, Transgrid, NSWTA..." /><br>
+  
+  <button type="submit" class="btn-control btn-primary">Submit</button>
+</form>
+For further information, contact ACTHPA president on <b>0408 567 325</b>
+</body>
+</html>
