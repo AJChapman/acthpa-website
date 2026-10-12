@@ -21,17 +21,17 @@ Members of the ACTHPA with ideas to improve safety, infrastructure, events or ad
 Monthly meetings are well attended and are a great place to discuss ideas with other members.
 The ACTHPA committee may ask that proposals be outlined in writing for further consideration.
 
-## Committee Members
+## Committee Members as of 6-Oct-2026
 
 Position                 Name               Phone             Email
 ---------------          -----------------  ----------------- ---------------------------
 President                Paul Shipley       0408 567 325      office@acthpa.org
 Vice President           Jess Fleming
 Treasurer                Phil Lyng                            treasurer@acthpa.org
-Secretary                Stuart McElroy
+Secretary                Grant Werner
 General Member           Mark Wallace
 General Member           Ken Crowe
-General Member           Grant Werner
+General Member           Mel Bell
 SAFA State Rep           Phil Robinson
 Public Officer           Peter Lamont       0407 771 075
 
